@@ -12,7 +12,7 @@
 
 
 #+BEGIN_EXPORT html
-<img src='media/img/test.jpg' />
+<img src='/media/img/test.jpg' />
 #+END_EXPORT
 
 * Test
