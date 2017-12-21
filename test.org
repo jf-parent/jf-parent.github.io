@@ -1,3 +1,15 @@
+#+TITLE:       Test
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       strongdevteam@gmail
+#+DATE:        2017-12-21 Thu
+#+URI:         /blog/%y/%m/%d/test/
+#+KEYWORDS:    test
+#+TAGS:        :Test:Vivek:
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: test org-page
+
+
 #+BEGIN_EXPORT html
    <button onclick="alert('you are!');">I feel lucky!</button> 
 #+END_EXPORT
