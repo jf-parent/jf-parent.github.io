@@ -4,59 +4,16 @@
     <title>Jean-François Parent - Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>AI {ML,CV,ANN}, Python, Selenium, Emacs {orgmode, spacemacs}</description>
-    <pubDate>Thu, 21 Dec 2017 23:02:03 EAT</pubDate>
-    <lastBuildDate>Thu, 21 Dec 2017 23:02:03 EAT</lastBuildDate>
+    <pubDate>Thu, 21 Dec 2017 23:09:15 EAT</pubDate>
+    <lastBuildDate>Thu, 21 Dec 2017 23:09:15 EAT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
-      <title>Untitled</title>
-      <link>https://jf-parent.github.io/blog/2017/12/21/untitled/</link>
-      <description><![CDATA[<div>
-<div class="post">
-<h1>Untitled</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgd03f494">1. Test</a>
-<ul>
-<li><a href="#orgc5541a5">1.1. Level 1</a>
-<ul>
-<li><a href="#orga664066">1.1.1. Level 2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<button onclick="alert('you are!');">I feel lucky!</button> 
-
-<div id="outline-container-orgd03f494" class="outline-2">
-<h2 id="orgd03f494"><span class="section-number-2">1</span> Test</h2>
-<div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgc5541a5" class="outline-3">
-<h3 id="orgc5541a5"><span class="section-number-3">1.1</span> Level 1</h3>
-<div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-orga664066" class="outline-4">
-<h4 id="orga664066"><span class="section-number-4">1.1.1</span> Level 2</h4>
-<div class="outline-text-4" id="text-1-1-1">
-</div><ol class="org-ol"><li><a id="orgdfe0107"></a>Level 3<br /><div class="outline-text-5" id="text-1-1-1-1">
-<div class="org-src-container">
-<pre class="src src-perl">for (my $i = 0; $i != 10; ++i) {
-     print "hello, world!\n";
-}
-</pre>
-</div>
-</div></li></ol>
-</div>
-</div>
-</div>
-
-</div>
-</div>]]></description>
+      <title>Test</title>
+      <link>https://jf-parent.github.io/blog/2017/12/21/test/</link>
+      <description><![CDATA[test org-page]]></description>
       <pubDate>2017-12-21</pubDate>
-      <guid>https://jf-parent.github.io/blog/2017/12/21/untitled/</guid>
+      <guid>https://jf-parent.github.io/blog/2017/12/21/test/</guid>
     </item>
   </channel>
 </rss>
