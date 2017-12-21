@@ -1,3 +1,4 @@
+#+STARTUP: inlineimages
 #+TITLE:       Test
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       strongdevteam@gmail
@@ -11,7 +12,7 @@
 
 
 #+BEGIN_EXPORT html
-   <button onclick="alert('you are!');">I feel lucky!</button> 
+<img src='assets/test.jpg' />
 #+END_EXPORT
 
 * Test
