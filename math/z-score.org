@@ -24,7 +24,7 @@ z = \frac{\chi - \mu} {\sigma}
 
 
 * References
-** [[https://www.youtube.com/watch?v=bUu5HIHIrRw&index=2&list=PLAshlHpA2Iwc10-3HIioqUtqG0Fc4MNpp][Statistics 101: Understanding Z-scores - YouTube]]
-** [[https://en.wikipedia.org/wiki/Coefficient_of_variation][Coefficient of variation - Wikipedia]]
-** [[https://www.investopedia.com/ask/answers/021115/what-difference-between-standard-deviation-and-z-score.asp][What is the difference between standard deviation and z score? | Investopedia]]
-** [[http://www.statisticshowto.com/probability-and-statistics/z-score/][Z-Score: Definition, Formula and Calculation - Statistics How To]]
+- [[https://www.youtube.com/watch?v=bUu5HIHIrRw&index=2&list=PLAshlHpA2Iwc10-3HIioqUtqG0Fc4MNpp][Statistics 101: Understanding Z-scores - YouTube]]
+- [[https://en.wikipedia.org/wiki/Coefficient_of_variation][Coefficient of variation - Wikipedia]]
+- [[https://www.investopedia.com/ask/answers/021115/what-difference-between-standard-deviation-and-z-score.asp][What is the difference between standard deviation and z score? | Investopedia]]
+- [[http://www.statisticshowto.com/probability-and-statistics/z-score/][Z-Score: Definition, Formula and Calculation - Statistics How To]]
