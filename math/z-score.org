@@ -15,7 +15,7 @@
 * Formula
 
 \begin{equation}
-z = \chi - \mu \dfrac \sigma
+z = \frac{\chi - \mu} {\sigma}
 \end{equation}
 
 * Example
