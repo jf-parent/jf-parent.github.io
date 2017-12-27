@@ -1,7 +1,7 @@
 #+TITLE:       Z-Score (Standard Score)
 #+AUTHOR:      worker-9
 #+DATE:        2017-12-27 Wed
-#+URI:         /blog/%y/%m/%d/zscore/
+#+URI:         /math/z-score/
 #+KEYWORDS:    stats
 #+TAGS:        stats
 #+LANGUAGE:    en
