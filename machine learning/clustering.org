@@ -1,0 +1,11 @@
+#+TITLE:       Clustering
+#+AUTHOR:      worker-9
+#+DATE:        2017-12-25 Mon
+#+URI:         /blog/clustering
+#+KEYWORDS:    <TODO: insert your keywords here>
+#+TAGS:        <TODO: insert your tags here>
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+* Silhouette Score
