@@ -23,9 +23,6 @@ The z-score is the signed number of standard deviations by which the value of an
 z = \frac{\chi - \mu} {\sigma}
 \end{equation}
 
-* Example
-
-
 * References
 - [[https://www.youtube.com/watch?v=bUu5HIHIrRw&index=2&list=PLAshlHpA2Iwc10-3HIioqUtqG0Fc4MNpp][Statistics 101: Understanding Z-scores - YouTube]]
 - [[https://en.wikipedia.org/wiki/Coefficient_of_variation][Coefficient of variation - Wikipedia]]
