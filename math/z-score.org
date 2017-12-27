@@ -10,7 +10,8 @@
 
 * Definition
 
-** The z-score is the signed number of standard deviations by which the value of an data point is above the mean value of what is being measured.
+The z-score is the signed number of standard deviations by which the value of an data point is above the mean value of what is being measured.
+
 
 * Formula
 
