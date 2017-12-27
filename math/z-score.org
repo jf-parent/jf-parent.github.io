@@ -13,6 +13,10 @@
 The z-score is the signed number of standard deviations by which the value of an data point is above the mean value of what is being measured.
 
 
+#+BEGIN_EXPORT html
+<img src='/media/img/normal-distribution.svg' />
+#+END_EXPORT
+
 * Formula
 
 \begin{equation}
@@ -20,7 +24,6 @@ z = \frac{\chi - \mu} {\sigma}
 \end{equation}
 
 * Example
-
 
 
 * References
