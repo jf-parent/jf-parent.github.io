@@ -2,10 +2,28 @@
 #+AUTHOR:      worker-9
 #+DATE:        2017-12-25 Mon
 #+URI:         /blog/clustering
-#+KEYWORDS:    <TODO: insert your keywords here>
-#+TAGS:        <TODO: insert your tags here>
+#+KEYWORDS:    machine_learning
+#+TAGS:        machine_learning
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: <TODO: insert your description here>
+#+DESCRIPTION: Unsupervised Learning Clustering
 
 * Silhouette Score
+** Definition
+*** The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).
+*** The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.
+** Formula
+*** Let /a(i)/ be the average distance of /i/ with all other data within the same cluster. We can interpret /a(i)/ as how well /i/  is assigned to its cluster (the smaller the value, the better the assignment).
+
+*** Let /b(i)/ be the lowest average distance of /i/ to all points in any other cluster, of which /i/ is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of /i/ because it is the next best fit cluster for point /i/.
+
+\begin{equation}
+s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
+\end{equation}
+
+** References
+- [[https://en.wikipedia.org/wiki/Silhouette_%28clustering%29][Silhouette (clustering) - Wikipedia]]
+- [[https://www.youtube.com/watch?v=K2WF4pT5pFY][05 Clustering Coefficient - YouTube]]
+- [[https://www.youtube.com/watch?v=xNfOheh-res][Clustering 6: how many clusters? - YouTube]]
+- [[https://www.youtube.com/watch?v=sZrPu3KJes8][0906 Extracting Silhouette Information from Clustering Clustering - YouTube]]
+- [[http://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html][sklearn.metrics.silhouette_score — scikit-learn 0.19.1 documentation]]
