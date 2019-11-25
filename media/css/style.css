@@ -48,7 +48,21 @@ margin-bottom: 20px;
 }
 
 /* Base */
-html, body { height: 100%; }
+html, body {
+    height: 100%;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url("/media/images/background_penrose_tiling_(P1_over_P3).png");
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+a {
+    text-decoration: underline;
+	  color: #000;
+}
 
 body {
 	font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -67,6 +81,11 @@ h1 {
 h2 {
 	font: italic 19px/1.3em Georgia,serif;
 	color: #bbb;
+}
+
+.home-logo img {
+    height: 50px;
+    width: 50px;
 }
 
 .profile #wrapper {
@@ -109,14 +128,11 @@ h2 {
 }
 
 nav.main-nav {
-	padding: 20px 20px 0;
-
+	padding: 50px 0px 80px;
 	/*max-width: 600px;*/
 	/*width:100%;*/
-	background: #fff;
-	background: rgba(255,255,255,.90);
 	margin: 0 auto;
-	text-align: right;
+	text-align: center;
 	/*position: fixed;*/
 	z-index: 100;
 }
@@ -125,23 +141,18 @@ nav.main-nav a {
 	top: 8px;
 	right: 6px;
 	padding: 8px 12px;
-	color: #5badf0;
-	font-size: 13px;
-	/*font-weight: bold;*/
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
 	line-height: 1.35;
 	border-radius: 3px;
-
-}
-nav.main-nav a.cta {
-	background: #5badf0;
-	color: #fff;
-	margin-left: 12px;
+  text-decoration: none;
 }
 
 #wrapper {
   max-width: 600px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
+  /*padding: 60px 40px 100px 40px;*/
 }
 
 #wrapper.home {
@@ -150,24 +161,8 @@ nav.main-nav a.cta {
 	padding: 0px 40px 20px 40px;
 }
 
-.home #avatar {
-	float: right;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-}
-
 /* Typography */
 /*Accent color*/
-a,
-#title,
-#post-list a:hover,
-#post-list li:hover .dates,
-#title:hover {
-	text-decoration: none;
-	color: #5badf0;
-	color: #5694f1;
-}
 
 p a { color: #5694f1; }
 
@@ -276,7 +271,7 @@ h6 {
 }
 
 p.small {
-	color: #bbb;
+	color: #636363;
 	font-size: 14px;
 	line-height: 1.5;
 	display: block;
@@ -433,7 +428,7 @@ Post List
 }
 
 #footer {
-	box-shadow: inset 0 1px 0 #eee;
+	/*box-shadow: inset 0 1px 0 #eee;*/
 	padding: 40px 0 0 0;
 	margin-top: 100px;
 }
@@ -441,10 +436,6 @@ Post List
 /* Post Page */
 #header {
 	border-bottom: 1px solid #eee;
-}
-
-.post {
-	margin: 80px 0 0 0;
 }
 
 #post-meta {
