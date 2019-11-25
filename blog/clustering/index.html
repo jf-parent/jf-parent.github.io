@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <title>Clustering - org-page</title>
     <meta charset="utf-8" />
     <meta name="author" content="worker-9" />
-    <meta name="description" content="Unsupervised Learning Clustering" />
-    <meta name="keywords" content="machine_learning" />
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
-  </head>
+        <meta name="description" content="Unsupervised Learning Clustering" />
+        <meta name="keywords" content="machine_learning" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/css/highlight.css">
+    <style type="text/css"></style>
+</head>
+
   <body class="container">
-    <div>
-      <header class="masthead">
-        <h1 class="masthead-title"><a href="/">org-page</a></h1>
-        <p>static site generator</p>
-        <ul>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/machine-learning/">Machine Learning</a></li>
-          <li><a href="/math/">Math</a></li>
-          <li><a href="/tags/">Tags</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="https://github.com/kelvinh/org-page">GitHub</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
-        </ul>
-        <form method="get" id="searchform" action="//www.google.com/search">
-          <input type="text" class="field" name="q" id="s" placeholder="Search">
-          <input type="hidden" name="as_sitesearch" value="jf-parent.github.io">
-        </form>
-      </header>
-    </div>
+    <nav class="main-nav">
+        <a href="/blog">Archive</a>
+        <a href="/tags">Tag</a>
+        <a href="/about/">About</a>
+        <a class="cta" href="https://github.com/kelvinh/org-page">GitHub</a>
+    </nav>
 
 <div>
-<div class="post">
-<h1>Clustering</h1>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>Clustering</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                
+<div id="outline-container-org6b8ddfc" class="outline-2">
+<h2 id="org6b8ddfc">Silhouette Score</h2>
+<div class="outline-text-2" id="text-org6b8ddfc">
+</div>
+<div id="outline-container-orgdc69d0d" class="outline-3">
+<h3 id="orgdc69d0d">Definition</h3>
+<div class="outline-text-3" id="text-orgdc69d0d">
+</div>
+<div id="outline-container-orgd446076" class="outline-4">
+<h4 id="orgd446076">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
+</div>
+<div id="outline-container-org7c7fed5" class="outline-4">
+<h4 id="org7c7fed5">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
+</div>
+</div>
+<div id="outline-container-org8616654" class="outline-3">
+<h3 id="org8616654">Formula</h3>
+<div class="outline-text-3" id="text-org8616654">
+</div>
+<div id="outline-container-orgf9970e0" class="outline-4">
+<h4 id="orgf9970e0">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
+</div>
 
-<div id="outline-container-org96f9705" class="outline-2">
-<h2 id="org96f9705">Silhouette Score</h2>
-<div class="outline-text-2" id="text-org96f9705">
-</div>
-<div id="outline-container-orga5c2fe9" class="outline-3">
-<h3 id="orga5c2fe9">Definition</h3>
-<div class="outline-text-3" id="text-orga5c2fe9">
-</div>
-<div id="outline-container-org21973ef" class="outline-4">
-<h4 id="org21973ef">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
-</div>
-<div id="outline-container-orge0d3745" class="outline-4">
-<h4 id="orge0d3745">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
-</div>
-</div>
-<div id="outline-container-org734fd27" class="outline-3">
-<h3 id="org734fd27">Formula</h3>
-<div class="outline-text-3" id="text-org734fd27">
-</div>
-<div id="outline-container-orgbfb6040" class="outline-4">
-<h4 id="orgbfb6040">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
-</div>
-
-<div id="outline-container-org26fb943" class="outline-4">
-<h4 id="org26fb943">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
-<div class="outline-text-4" id="text-org26fb943">
+<div id="outline-container-org23726c2" class="outline-4">
+<h4 id="org23726c2">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
+<div class="outline-text-4" id="text-org23726c2">
 \begin{equation}
 s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 \end{equation}
@@ -67,9 +61,9 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 </div>
 </div>
 
-<div id="outline-container-org61ef744" class="outline-3">
-<h3 id="org61ef744">References</h3>
-<div class="outline-text-3" id="text-org61ef744">
+<div id="outline-container-org1ed7220" class="outline-3">
+<h3 id="org1ed7220">References</h3>
+<div class="outline-text-3" id="text-org1ed7220">
 <ul class="org-ul">
 <li><a href="https://en.wikipedia.org/wiki/Silhouette_(clustering)">Silhouette (clustering) - Wikipedia</a></li>
 <li><a href="https://www.youtube.com/watch?v=K2WF4pT5pFY">05 Clustering Coefficient - YouTube</a></li>
@@ -81,31 +75,37 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 </div>
 </div>
 
+            </section>
+    </section>
 </div>
-</div>
+
     <div>
+    <section id="wrapper">
       <div class="post-meta">
         <span title="post date" class="post-info">2017-12-25</span>
-        <span title="last modification date" class="post-info">2019-11-22</span>
         <span title="tags" class="post-info"><a href="/tags/machine_learning/">machine_learning</a></span>
-        <span title="author" class="post-info">worker-9</span>
       </div>
+      <br />
+      <br />
       <section>
         <h1>Comments</h1>
       </section>
-      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       <script src="/media/js/main.js"></script>
-      <div class="footer">
-        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
-        <p>
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
           Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:jean-francoisparent &lt;at&gt; pyrat &lt;dot&gt; local">worker-9</a>
           &nbsp;&nbsp;-&nbsp;&nbsp;
           Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
           <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
         </p>
+        <br />
+      </footer>
       </div>
+      </section>
     </div>
 
   </body>

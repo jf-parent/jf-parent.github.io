@@ -4,15 +4,15 @@
     <title>org-page</title>
     <link>https://jf-parent.github.io</link>
     <description>static site generator</description>
-    <pubDate>Sat, 23 Nov 2019 16:11:21 EST</pubDate>
-    <lastBuildDate>Sat, 23 Nov 2019 16:11:21 EST</lastBuildDate>
+    <pubDate>Mon, 25 Nov 2019 11:11:10 EST</pubDate>
+    <lastBuildDate>Mon, 25 Nov 2019 11:11:10 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>Test</title>
       <link>https://jf-parent.github.io/blog/2017/12/21/test/</link>
       <description><![CDATA[test org-page]]></description>
-      <pubDate>2019-11-23</pubDate>
+      <pubDate>2019-11-25</pubDate>
       <guid>https://jf-parent.github.io/blog/2017/12/21/test/</guid>
     </item>
     <item>
