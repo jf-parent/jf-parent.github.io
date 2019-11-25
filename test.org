@@ -12,6 +12,8 @@
 
 This is a blog. Happy Reading!
 
+I am testing the style right now...
+
 
 #+BEGIN_EXPORT html
 <img src='/media/img/test.jpg' />
