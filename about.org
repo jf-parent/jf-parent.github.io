@@ -1,16 +1,30 @@
 #+STARTUP: inlineimages
 #+TITLE:       About
 #+AUTHOR:      Jean-François Parent
-#+EMAIL:       strongdevteam@gmail
-#+DATE:        2017-12-21 Thu
 #+URI:         /about
-#+KEYWORDS:    test
-#+TAGS:        :Test:Vivek:
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: test org-page
+#+DESCRIPTION: About
 
-This is a blog. Happy Reading!
+* Intro
 
-I am testing the style right now...
+French-Canadian programmer (Python, Bash, C, Clojure, Common Lisp, Emacs Lisp, Javascript).
 
+Passionate about Emacs (Spacemacs, EWW) and Org-Mode (org-wiki, org-page, org-agenda, org-msg).
+
+Currently living on a hobby farm in South Quebec with his Wonder-Wifey.
+
+Slowly walking towards a self-reliance lifestyle using no-tech, low-tech and high-tech solutions.
+
+Computer Musician (IDM, Drone-Music and Electro-Acoustic) (FoxDot, Overtone, Logic Pro X).
+
+* Active Projects
+** Agritech
+** Self-reliance
+** [[https://github.com/jf-parent/gen-art][jf-parent/gen-art: Generative Art w/ Clojure Quil]]
+** [[/boudoir][Boudoir]] - Electronic Music + Artistic Video
+
+* Previous Projects
+** [[https://github.com/jf-parent/brome][jf-parent/brome: Selenium Framework for Python 3.5]]
+** [[https://github.com/jf-parent/webbase][jf-parent/webbase: WebBase - Boilerplate for React-Redux-Router & Aiohttp]]
+** [[https://github.com/jf-parent/artscripts][jf-parent/artscripts: Scripted Variation of Artwork]]
