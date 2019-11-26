@@ -1,0 +1,16 @@
+#+STARTUP: inlineimages
+#+TITLE:       About
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       strongdevteam@gmail
+#+DATE:        2017-12-21 Thu
+#+URI:         /about
+#+KEYWORDS:    test
+#+TAGS:        :Test:Vivek:
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: test org-page
+
+This is a blog. Happy Reading!
+
+I am testing the style right now...
+
