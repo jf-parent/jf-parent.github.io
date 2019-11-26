@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  <title>Clustering - org-page</title>
+  <title>Clustering - jf-parent.github.io</title>
   <meta charset="utf-8" />
   <meta name="author" content="worker-9" />
     <meta name="description" content="Unsupervised Learning Clustering" />
@@ -13,11 +13,9 @@
 
   <body class="container">
     <nav class="main-nav">
-  <span class="home-logo" style="width: 80px; height: 80px;">
-    <a href="/">
-      <img src="/media/images/penrose_rhombus_tiling.png" />
-    </a>
-  </span>
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
   <a href="/blog">Archive</a>
   <a href="/tags">Tag</a>
   <a href="/about/">About</a>
@@ -35,32 +33,32 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org9def423" class="outline-2">
-<h2 id="org9def423">Silhouette Score</h2>
-<div class="outline-text-2" id="text-org9def423">
+<div id="outline-container-orgdf2f46c" class="outline-2">
+<h2 id="orgdf2f46c">Silhouette Score</h2>
+<div class="outline-text-2" id="text-orgdf2f46c">
 </div>
-<div id="outline-container-org472c2c6" class="outline-3">
-<h3 id="org472c2c6">Definition</h3>
-<div class="outline-text-3" id="text-org472c2c6">
+<div id="outline-container-orgf4dd5fb" class="outline-3">
+<h3 id="orgf4dd5fb">Definition</h3>
+<div class="outline-text-3" id="text-orgf4dd5fb">
 </div>
-<div id="outline-container-org97da5ce" class="outline-4">
-<h4 id="org97da5ce">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
+<div id="outline-container-orgf0ad6fa" class="outline-4">
+<h4 id="orgf0ad6fa">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
 </div>
-<div id="outline-container-org3af9187" class="outline-4">
-<h4 id="org3af9187">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
+<div id="outline-container-orgf377b36" class="outline-4">
+<h4 id="orgf377b36">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
 </div>
 </div>
-<div id="outline-container-orgf6c6d3e" class="outline-3">
-<h3 id="orgf6c6d3e">Formula</h3>
-<div class="outline-text-3" id="text-orgf6c6d3e">
+<div id="outline-container-org3aae1b0" class="outline-3">
+<h3 id="org3aae1b0">Formula</h3>
+<div class="outline-text-3" id="text-org3aae1b0">
 </div>
-<div id="outline-container-org07b241b" class="outline-4">
-<h4 id="org07b241b">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
+<div id="outline-container-orgb83ce62" class="outline-4">
+<h4 id="orgb83ce62">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
 </div>
 
-<div id="outline-container-org64b33f3" class="outline-4">
-<h4 id="org64b33f3">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
-<div class="outline-text-4" id="text-org64b33f3">
+<div id="outline-container-org6c823d0" class="outline-4">
+<h4 id="org6c823d0">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
+<div class="outline-text-4" id="text-org6c823d0">
 \begin{equation}
 s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 \end{equation}
@@ -68,9 +66,9 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 </div>
 </div>
 
-<div id="outline-container-orgfe70d6f" class="outline-3">
-<h3 id="orgfe70d6f">References</h3>
-<div class="outline-text-3" id="text-orgfe70d6f">
+<div id="outline-container-org09890ed" class="outline-3">
+<h3 id="org09890ed">References</h3>
+<div class="outline-text-3" id="text-org09890ed">
 <ul class="org-ul">
 <li><a href="https://en.wikipedia.org/wiki/Silhouette_(clustering)">Silhouette (clustering) - Wikipedia</a></li>
 <li><a href="https://www.youtube.com/watch?v=K2WF4pT5pFY">05 Clustering Coefficient - YouTube</a></li>
@@ -112,7 +110,7 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
       <div align="center">
       <footer id="footer">
         <p class="small">
-          Copyright &copy; 2018 - <span id="footerYear"></span> <a href="mailto:jean-francoisparent &lt;at&gt; pyrat &lt;dot&gt; local">worker-9</a>
+          Copyright &copy; 2018 - <span id="footerYear"></span> - worker-9
           &nbsp;&nbsp;-&nbsp;&nbsp;
           Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
           <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>

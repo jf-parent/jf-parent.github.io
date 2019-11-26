@@ -83,9 +83,14 @@ h2 {
 	color: #bbb;
 }
 
-.home-logo img {
+.home-logo {
     height: 50px;
     width: 50px;
+}
+
+.home-logo:hover  {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .profile #wrapper {
@@ -150,13 +155,13 @@ nav.main-nav a {
 }
 
 #wrapper {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   /*padding: 60px 40px 100px 40px;*/
 }
 
 #wrapper.home {
-	max-width: 600px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0px 40px 20px 40px;
 }
@@ -185,7 +190,9 @@ ol li {
 }
 
 /* Line Height */
-#post-body, p { line-height:1.7; }
+#post-body, p {
+  line-height:1.7;
+}
 
 b, strong { font-weight: 500;
   color: #1E2025; }
@@ -636,4 +643,10 @@ h2.month {
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+}
+
+article {
+  padding: 50px;
+  background: #fff;
+  font-weight: bold;
 }
