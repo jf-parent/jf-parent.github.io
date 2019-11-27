@@ -20,9 +20,8 @@ Computer Musician (IDM, Drone-Music and Electro-Acoustic) (FoxDot, Overtone, Log
 
 * Active Projects
 ** Agritech
-** Self-reliance
 ** [[https://github.com/jf-parent/gen-art][jf-parent/gen-art: Generative Art w/ Clojure Quil]]
-** [[/boudoir][Boudoir]] - Electronic Music + Artistic Video
+** Boudoir - Electronic Music + Artistic Video
 
 * Previous Projects
 ** [[https://github.com/jf-parent/brome][jf-parent/brome: Selenium Framework for Python 3.5]]
