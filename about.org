@@ -6,7 +6,7 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: About
 
-* Intro
+* Introduction
 
 French-Canadian programmer (Python, Bash, C, Clojure, Common Lisp, Emacs Lisp, Javascript).
 
@@ -14,7 +14,7 @@ Passionate about Emacs (Spacemacs, EWW) and Org-Mode (org-wiki, org-page, org-ag
 
 Currently living on a hobby farm in South Quebec with his Wonder-Wifey.
 
-Slowly walking towards a self-reliance lifestyle using no-tech, low-tech and high-tech solutions.
+Slowly progressing towards a self-reliance lifestyle using no-tech, low-tech and high-tech solutions.
 
 Computer Musician (IDM, Drone-Music and Electro-Acoustic) (FoxDot, Overtone, Logic Pro X).
 
