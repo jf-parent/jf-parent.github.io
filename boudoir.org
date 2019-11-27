@@ -13,10 +13,9 @@
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
 *** Release date: Nov 4, 2019
-*** Production timeframe: 52 hours
+*** Production timeframe: ~52 hours
 *** Length: 10.00
 *** Audio only: [[https://drive.google.com/open?id=18EHxxVYMZdikcNTCVGwqpSRnW0DKVx4o][Link]]
-
 * Suffocation Aristocratique
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=Tue-8tJtIvw" target="_blank"><img src="/media/images/boudoir_covers/boudoir_suffocation-aristocratique.png" /></a>
@@ -24,7 +23,7 @@
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
 *** Release date: Sep 12, 2019
-*** Production timeframe: 24 hours
+*** Production timeframe: ~24 hours
 *** Length: 9.00
 *** Audio only: [[https://drive.google.com/open?id=159n7rE2uLrls8R2GwELDElhUGJAKAJNH][Link]]
 * Parafoudre Prostitué
@@ -34,7 +33,7 @@
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
 *** Release date: Jun 14, 2019
-*** Production timeframe: 12 hours
+*** Production timeframe: ~12 hours
 *** Length: 8.02
 *** Audio only: [[https://drive.google.com/open?id=1MovbYVUXgI7Uutu8b1-RrGs0Jkm-Gs9K][Link]]
 * Faim de Dormir
@@ -44,7 +43,7 @@
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
 *** Release date: Jun 1, 2019
-*** Production timeframe: 12 hours
+*** Production timeframe: ~12 hours
 *** Length: 8.43
 *** Audio only: [[https://drive.google.com/open?id=1ByNjbAMb74Ry7_wrwDM24UKyqj9E7HV1][Link]]
 * Colifichet de Dentelle
@@ -54,7 +53,7 @@
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
 *** Release date: May 20, 2019
-*** Production timeframe: 12 hours
+*** Production timeframe: ~12 hours
 *** Length: 8.16
 *** Audio only: [[https://drive.google.com/open?id=1EdniotOwiUOItlApbBJpaMtbMAlxy7tw][Link]]
 * Privation volontaire du sommeil
@@ -64,7 +63,7 @@
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
 *** Release date: May 8, 2019 
-*** Production timeframe: 8 hours
+*** Production timeframe: ~8 hours
 *** Length: 8.44
 *** Audio only: [[https://drive.google.com/open?id=1gar1s6g_1fBWIanMiWsApYC3vl60OpWE][Link]]
 * Frotter l’argenterie des femmes
@@ -74,7 +73,7 @@
 ** Specs
 *** Software: Logic Pro X, iMovie
 *** Release date: Apr 18, 2019 
-*** Production timeframe: 8 hours
+*** Production timeframe: ~8 hours
 *** Length: 6.14
 *** Audio only: [[https://drive.google.com/open?id=1L3RUKrqQlEKhIDEh4nFmuqMSJpmiRDdG][Link]]
 * Coulisse Herméneutique
@@ -84,7 +83,7 @@
 ** Specs
 *** Software: Logic Pro X, iMovie
 *** Release date: Apr 7, 2019
-*** Production timeframe: 8 hours
+*** Production timeframe: ~8 hours
 *** Length: 6.40
 *** Audio only: [[https://drive.google.com/open?id=1T-9kwVhUDQFTUGkxK_UyduGkX24rowZc][Link]]
 * Psychopompe
@@ -94,6 +93,46 @@
 ** Specs
 *** Software: GarageBand, iMovie
 *** Release date: Mar 21, 2019
-*** Production timeframe: 6 hours
+*** Production timeframe: ~6 hours
 *** Length: 4.29
 *** Audio only: [[https://drive.google.com/open?id=1KIrvbRI1TzxfxLWC1-3-E23vYZPxAGJp][Link]]
+* Apothicaire du Roy
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=gEJVqfEhDyg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_apothicaire-du-roy.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: GarageBand, iMovie
+*** Release date: Feb 23, 2019 
+*** Production timeframe: ~6 hours
+*** Length: 5.41
+*** Audio only: [[https://drive.google.com/open?id=1pnECEb7TK8vMOr3hEQJTbP3kokVhB6Da][Link]]
+* Eslévation Miraculeuse
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=aXYjeSPVwlg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_eslevation-miraculeuse.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: GarageBand, iMovie
+*** Release date: Feb 11, 2019
+*** Production timeframe: ~6 hours
+*** Length: 5.24
+*** Audio only: [[https://drive.google.com/open?id=1luRrDdRufB_Qptnl1mBzHCyedHUusZne][Link]]
+* La Voie du Trident
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=-vT4i_FTz7A" target="_blank"><img src="/media/images/boudoir_covers/boudoir_la-voie-du-trident.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: FoxDot, iMovie
+*** Release date: Dec 2, 2018
+*** Production timeframe: ~4 hours
+*** Length: 4.54
+*** FoxDot Code: [[https://gist.github.com/jf-parent/0dd1fdf3a54200283fc692605057c689][Link]]
+* Volonté de Puissance
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=LO5vJ2VGvsE" target="_blank"><img src="/media/images/boudoir_covers/boudoir_volonte-de-puissance.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: FoxDot, iMovie
+*** Release date: Oct 19, 2018
+*** Production timeframe: ~4 hours
+*** Length: 5.07
+*** FoxDot Code: [[https://gist.github.com/jf-parent/911571068aff0e61142ca847f0a62e19][Link]]
