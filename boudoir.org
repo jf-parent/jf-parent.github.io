@@ -1,0 +1,17 @@
+#+STARTUP: inlineimages
+#+TITLE:       Boudoir
+#+AUTHOR:      Jean-François Parent
+#+URI:         /boudoir
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
+
+* Molimina Karoshi
+#+BEGIN_EXPORT html
+<a href="https://studio.youtube.com/video/Bfk4OiRatvc/edit"><img src='/media/images/boudoir_covers/boudoir_molimina-karoshi.jpg' /></a>
+#+END_EXPORT
+** Specs
+Software: Logic Pro X, Final Cut Pro
+Production timeframe: 52 hours
+Length: 10.00
+Audio only: [[https://drive.google.com/open?id=18EHxxVYMZdikcNTCVGwqpSRnW0DKVx4o][Link]]
