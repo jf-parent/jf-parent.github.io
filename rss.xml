@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <title>jf-parent.github.io</title>
+    <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Tue, 26 Nov 2019 11:27:16 EST</pubDate>
-    <lastBuildDate>Tue, 26 Nov 2019 11:27:16 EST</lastBuildDate>
+    <pubDate>Wed, 27 Nov 2019 12:06:45 EST</pubDate>
+    <lastBuildDate>Wed, 27 Nov 2019 12:06:45 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Boudoir</title>
+      <link>https://jf-parent.github.io/boudoir</link>
+      <description><![CDATA[Boudoir - Electronic Music w/ Art Video]]></description>
+      <pubDate>2019-11-27</pubDate>
+      <guid>https://jf-parent.github.io/boudoir</guid>
+    </item>
     <item>
       <title>Test</title>
       <link>https://jf-parent.github.io/blog/2017/12/21/test/</link>
