@@ -6,6 +6,16 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* Spitzenkörper Tao
+#+BEGIN_EXPORT html
+<a href="" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkörper-tao.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]]
+*** Release date: Nov 27, 2019
+*** Production timeframe: ~32 hours
+*** Length: 8.20
+*** Audio only: TODO
 * Molimina Karoshi
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=Bfk4OiRatvc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_molimina-karoshi.png" /></a>
