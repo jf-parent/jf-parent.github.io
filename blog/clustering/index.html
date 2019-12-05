@@ -34,32 +34,32 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org635426d" class="outline-2">
-<h2 id="org635426d">Silhouette Score</h2>
-<div class="outline-text-2" id="text-org635426d">
+<div id="outline-container-org29581c8" class="outline-2">
+<h2 id="org29581c8">Silhouette Score</h2>
+<div class="outline-text-2" id="text-org29581c8">
 </div>
-<div id="outline-container-orgb679c7e" class="outline-3">
-<h3 id="orgb679c7e">Definition</h3>
-<div class="outline-text-3" id="text-orgb679c7e">
+<div id="outline-container-orgd0ccfc4" class="outline-3">
+<h3 id="orgd0ccfc4">Definition</h3>
+<div class="outline-text-3" id="text-orgd0ccfc4">
 </div>
-<div id="outline-container-org41bd6b1" class="outline-4">
-<h4 id="org41bd6b1">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
+<div id="outline-container-org3739fa8" class="outline-4">
+<h4 id="org3739fa8">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
 </div>
-<div id="outline-container-org860880c" class="outline-4">
-<h4 id="org860880c">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
+<div id="outline-container-org1be746d" class="outline-4">
+<h4 id="org1be746d">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
 </div>
 </div>
-<div id="outline-container-org87a43ed" class="outline-3">
-<h3 id="org87a43ed">Formula</h3>
-<div class="outline-text-3" id="text-org87a43ed">
+<div id="outline-container-orge63bd1a" class="outline-3">
+<h3 id="orge63bd1a">Formula</h3>
+<div class="outline-text-3" id="text-orge63bd1a">
 </div>
-<div id="outline-container-org3b1e309" class="outline-4">
-<h4 id="org3b1e309">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
+<div id="outline-container-org41b7fd7" class="outline-4">
+<h4 id="org41b7fd7">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
 </div>
 
-<div id="outline-container-orgbd3ac82" class="outline-4">
-<h4 id="orgbd3ac82">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
-<div class="outline-text-4" id="text-orgbd3ac82">
+<div id="outline-container-orgad2e16c" class="outline-4">
+<h4 id="orgad2e16c">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
+<div class="outline-text-4" id="text-orgad2e16c">
 \begin{equation}
 s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 \end{equation}
@@ -67,9 +67,9 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 </div>
 </div>
 
-<div id="outline-container-org8128376" class="outline-3">
-<h3 id="org8128376">References</h3>
-<div class="outline-text-3" id="text-org8128376">
+<div id="outline-container-org41d43a0" class="outline-3">
+<h3 id="org41d43a0">References</h3>
+<div class="outline-text-3" id="text-org41d43a0">
 <ul class="org-ul">
 <li><a href="https://en.wikipedia.org/wiki/Silhouette_(clustering)">Silhouette (clustering) - Wikipedia</a></li>
 <li><a href="https://www.youtube.com/watch?v=K2WF4pT5pFY">05 Clustering Coefficient - YouTube</a></li>
