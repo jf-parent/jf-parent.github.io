@@ -27,4 +27,3 @@ Computer Musician (IDM, Drone-Music and Electro-Acoustic) (FoxDot, Overtone, Log
 ** [[https://github.com/jf-parent/brome][jf-parent/brome: Selenium Framework for Python 3.5]]
 ** [[https://github.com/jf-parent/webbase][jf-parent/webbase: WebBase - Boilerplate for React-Redux-Router & Aiohttp]]
 ** [[https://github.com/jf-parent/artscripts][jf-parent/artscripts: Scripted Variation of Artwork]]
-* Test
