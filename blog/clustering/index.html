@@ -3,6 +3,7 @@
   <head>
   <title>Clustering - Jean-François Parent&#39;s Blog</title>
   <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
   <meta name="author" content="worker-9" />
     <meta name="description" content="Unsupervised Learning Clustering" />
     <meta name="keywords" content="machine_learning" />
@@ -34,32 +35,32 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org7ef8a80" class="outline-2">
-<h2 id="org7ef8a80">Silhouette Score</h2>
-<div class="outline-text-2" id="text-org7ef8a80">
+<div id="outline-container-org4cb6210" class="outline-2">
+<h2 id="org4cb6210">Silhouette Score</h2>
+<div class="outline-text-2" id="text-org4cb6210">
 </div>
-<div id="outline-container-org79b712a" class="outline-3">
-<h3 id="org79b712a">Definition</h3>
-<div class="outline-text-3" id="text-org79b712a">
+<div id="outline-container-orgd88f668" class="outline-3">
+<h3 id="orgd88f668">Definition</h3>
+<div class="outline-text-3" id="text-orgd88f668">
 </div>
-<div id="outline-container-org0df45e7" class="outline-4">
-<h4 id="org0df45e7">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
+<div id="outline-container-org575ec12" class="outline-4">
+<h4 id="org575ec12">The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation).</h4>
 </div>
-<div id="outline-container-org720a8f7" class="outline-4">
-<h4 id="org720a8f7">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
+<div id="outline-container-orge1f8ba9" class="outline-4">
+<h4 id="orge1f8ba9">The best value is 1 and the worst value is -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that a sample has been assigned to the wrong cluster, as a different cluster is more similar.</h4>
 </div>
 </div>
-<div id="outline-container-org5435657" class="outline-3">
-<h3 id="org5435657">Formula</h3>
-<div class="outline-text-3" id="text-org5435657">
+<div id="outline-container-orgf7ab603" class="outline-3">
+<h3 id="orgf7ab603">Formula</h3>
+<div class="outline-text-3" id="text-orgf7ab603">
 </div>
-<div id="outline-container-org5302c23" class="outline-4">
-<h4 id="org5302c23">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
+<div id="outline-container-org3e89f5c" class="outline-4">
+<h4 id="org3e89f5c">Let <i>a(i)</i> be the average distance of <i>i</i> with all other data within the same cluster. We can interpret <i>a(i)</i> as how well <i>i</i>  is assigned to its cluster (the smaller the value, the better the assignment).</h4>
 </div>
 
-<div id="outline-container-org63031f1" class="outline-4">
-<h4 id="org63031f1">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
-<div class="outline-text-4" id="text-org63031f1">
+<div id="outline-container-org0554378" class="outline-4">
+<h4 id="org0554378">Let <i>b(i)</i> be the lowest average distance of <i>i</i> to all points in any other cluster, of which <i>i</i> is not a member. The cluster with this lowest average dissimilarity is said to be the "neighbouring cluster" of <i>i</i> because it is the next best fit cluster for point <i>i</i>.</h4>
+<div class="outline-text-4" id="text-org0554378">
 \begin{equation}
 s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 \end{equation}
@@ -67,9 +68,9 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
 </div>
 </div>
 
-<div id="outline-container-org2fbec69" class="outline-3">
-<h3 id="org2fbec69">References</h3>
-<div class="outline-text-3" id="text-org2fbec69">
+<div id="outline-container-org4a824c2" class="outline-3">
+<h3 id="org4a824c2">References</h3>
+<div class="outline-text-3" id="text-org4a824c2">
 <ul class="org-ul">
 <li><a href="https://en.wikipedia.org/wiki/Silhouette_(clustering)">Silhouette (clustering) - Wikipedia</a></li>
 <li><a href="https://www.youtube.com/watch?v=K2WF4pT5pFY">05 Clustering Coefficient - YouTube</a></li>
@@ -93,9 +94,6 @@ s(i) = \frac{b(i) - a(i)}{\max\{a(i),b(i)\}}
       </div>
       <br />
       <br />
-      <section>
-        <h1>Comments</h1>
-      </section>
       <script src="http://code.jquery.com/jquery-latest.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
