@@ -6,16 +6,27 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* divyacakṣus - the divine eye
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=LnvIsdfB8Y0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacakṣus_the-divine-eye.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]], [[https://github.com/jf-parent/gen-art][gen-art]]
+*** Release date: Dec 21, 2019
+*** Production timeframe: ~65 hours 
+*** Length: 7.26
+*** Audio only: [[https://drive.google.com/open?id=1cH4G6i2lK-lnPpO-2dX8JKjHo_z0yKZw][Link]]
+** TODO Attribution: https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b
 * Spitzenkörper Tao
 #+BEGIN_EXPORT html
-<a href="" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkörper-tao.png" /></a>
+<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkörper-tao.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]]
 *** Release date: Nov 27, 2019
 *** Production timeframe: ~32 hours
 *** Length: 8.20
-*** Audio only: TODO
+*** Audio only: [[https://drive.google.com/open?id=1yExPeQyvncmUVVRVqpoG-dC1BQc4H2xR][Link]]
 * Molimina Karoshi
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=Bfk4OiRatvc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_molimina-karoshi.png" /></a>

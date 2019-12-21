@@ -10,17 +10,18 @@
 
 French-Canadian programmer (Python, Bash, C, Clojure, Common Lisp, Emacs Lisp, Javascript).
 
-Passionate about Emacs (Spacemacs, EWW) and Org-Mode (org-wiki, org-page, org-agenda, org-msg).
+Passionate about Emacs (Spacemacs) and Org-Mode.
 
 Currently living on a hobby farm in South Quebec with his Wonder-Wifey.
 
 Slowly progressing towards a self-reliance lifestyle using no-tech, low-tech and high-tech solutions.
 
-Computer Musician (IDM, Drone-Music and Electro-Acoustic) (FoxDot, Overtone, Logic Pro X).
+Computer Musician (IDM, Drone-Music and Electro-Acoustic).
 
 * Active Projects
 ** Agritech
 ** [[https://github.com/jf-parent/gen-art][jf-parent/gen-art: Generative Art w/ Clojure Quil]]
+** [[https://github.com/jf-parent/video_processing][jf-parent/video_processing: Video Processing  BOUDOIR ]]
 ** Boudoir - Electronic Music + Artistic Video
 
 * Previous Projects
