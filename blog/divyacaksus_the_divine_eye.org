@@ -8,10 +8,124 @@
 #+TAGS:        Quil,Boudoir,IDM,MoviePY
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: <TODO: insert your description here>
+#+DESCRIPTION: Technical details behind Boudoir // divyacakṣus - the divine eye
 
 
 * Boudoir // divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LnvIsdfB8Y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
+* Quil Image Blending
+** First, we need to add a bunch of images in the [[https://github.com/jf-parent/gen-art/tree/master/src/blending/images][images folder]].
+** Then we call /lein run -m blending.blending/
+** Use [[https://github.com/jf-parent/gen-art/blob/master/src/blending/rename.sh][rename.sh]] if your images' name contains special characters.
+** The script randomly selects an image and a blending mode and adds it to the canvas. The settings are also randomly selected ([[http://quil.info/api/image/pixels#blend][Quil API Blend]])
+#+begin_src Clojure
+ (ns blending.blending
+  (:require [quil.core :as q]
+            [me.raynes.fs :as fs]))
+
+(defn setup []
+  (q/background 0 0 0)
+  (q/frame-rate 60)
+  (q/set-state! :images (fs/list-dir (str fs/*cwd* "/src/blending/images"))))
+
+(defn draw []
+  (let [modes [:blend :lightest :difference
+               :exclusion :multiply :overlay
+               :screen :soft-light]
+        images (q/state :images)
+        eff-image (q/load-image (fs/absolute (nth images (q/random (count images)))))
+        eff-mode (nth modes (q/random (count modes)))]
+    (q/blend
+     eff-image
+     (q/random 250)
+     (q/random 250)
+     (q/random (q/width))
+     (q/random (q/height))
+     (q/random 1000)
+     (q/random 1000)
+     (q/random 1000)
+     (q/random 1000)
+     eff-mode)))
+
+(q/defsketch Blending
+  :size [1800 1000]
+  :title "Blending"
+  :setup setup
+  :draw draw) 
+
+#+end_src
+
+** The result looks like this:
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l-GJMq48JVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+** Repo: [[https://github.com/jf-parent/gen-art][jf-parent/gen-art: Generative Art w/ Clojure Quil]] // [[https://github.com/jf-parent/gen-art/blob/master/src/blending/blending.clj][Code]]
+* [optional] Shuffle-merge
+** If you need some glitch in your video you can apply the shuffle-merge effect via vprocess.py
+   #+begin_src bash
+  # Inside video-processing
+  ./vprocess.py shuffle-merge --nb-chunk X --max-dur-subclip 1 --min-dur-subclip 0
+   #+end_src
+* The Douglas Vasquez Effect
+** We call the function /the_douglas_vasquez_effect/ with the foreground footage as /input_1/ and the background footage (the quil blending we prepared earlier) with /input_2/.
+** Since this is a dirty script you need to tweak the code accordingly.
+  #+begin_src Python
+ def the_douglas_vasquez_effect(input_1, input_2):
+    clip1 = VideoFileClip(input_1) #.subclip(0, 50)
+
+    clip2 = VideoFileClip(input_2) #.subclip(380)
+    clip2 = clip2.resize((clip1.size[0], clip1.size[1]))
+
+    invertc_counter = 0
+    eff_img = None
+    eff_effect = None
+    counter = 0
+    imgs = []
+
+    def _f(gf, t):
+        nonlocal invertc_counter
+        nonlocal eff_img
+        nonlocal eff_effect
+        nonlocal counter
+        nonlocal imgs
+
+        counter -= 1
+
+        img1 = gf(t)
+        img2 = clip2.get_frame(t)
+
+        if counter <= 0:
+            if not imgs:
+                imgs = ['img1', 'img2', 'img1+img2']
+
+            random.shuffle(imgs)
+            eff_img = imgs.pop()
+            eff_effect = random.choice(BLENDING_MODES)
+            counter = random.randint(25, 70)
+            if eff_img == 'img2':
+                counter += 30
+
+        if eff_img == 'img2':
+            return img2
+        elif eff_img == 'img1':
+            return img1
+        else:
+            invertc_counter -= 1
+
+            if invertc_counter <= -50:
+                invertc_counter = 10
+            elif invertc_counter >= 0:
+                img1 = e.effects.invert_color(img1)
+
+            opacity = random.randint(1, 10) * 0.1
+            return e.effects.blend_images(eff_effect, img1, img2, opacity=opacity)
+
+    clip1.fl(_f).write_videofile("output.mp4", audio=False) 
+  #+end_src
+** The result looks like this:
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nE-93VFEeYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+** Repo: [[https://github.com/jf-parent/video_processing][jf-parent/video_processing: Vprocess BOUDOIR]] // [[https://github.com/jf-parent/video_processing/blob/master/the_douglas_vasquez_effect/the_douglas_vasquez_effect.py][Code]]
