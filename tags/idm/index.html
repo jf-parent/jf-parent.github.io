@@ -4,9 +4,8 @@
     <title>Tag: IDM - Jean-François Parent&#39;s Blog</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
-    <meta name="author" content="Jean-Francois Parent" />
+    <meta name="author" content="Jean-François Parent" />
     <link rel="stylesheet" href="/media/css/style.css">
-    <link rel="stylesheet" href="/media/css/highlight.css">
     <link href="/media/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
@@ -42,12 +41,20 @@
       <section id="wrapper">
         <br />
         <br />
+        <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script async="" src="//www.google-analytics.com/analytics.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="/media/js/main.js"></script>
+        <script src="/media/highlight/highlight.pack.js"></script>
+        <script>
+          hljs.initHighlightingOnLoad();
+          document.querySelectorAll('pre.src').forEach((block) => {
+          hljs.highlightBlock(block);
+          });
+        </script>
         <style type="text/css">
           /* Mathjax */
           .MathJax_Display {
@@ -57,7 +64,7 @@
         <div align="center">
           <footer id="footer">
             <p class="small">
-              Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-Francois Parent
+              Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
               &nbsp;&nbsp;-&nbsp;&nbsp;
               Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
               <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
