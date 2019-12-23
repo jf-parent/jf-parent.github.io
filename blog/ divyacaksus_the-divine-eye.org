@@ -1,0 +1,16 @@
+#+TITLE:       How is divyacakṣus - the divine eye made?
+#+AUTHOR:      Jean-Francois Parent
+#+EMAIL:       jean-francoisparent@pyrat.local
+#+DATE:        2019-12-22 Sun
+#+URI:         /blog/%y/%m/%d/how-is-divyacaksus-the-divine-eye-made
+#+KEYWORDS:    boudoir,idm,moviepy,quil
+#+TAGS:        Quil,Boudoir,IDM,MoviePY
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LnvIsdfB8Y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
