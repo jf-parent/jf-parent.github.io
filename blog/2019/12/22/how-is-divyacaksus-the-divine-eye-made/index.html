@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>How is divyacakṣus - the divine eye made? - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <meta name="author" content="Jean-Francois Parent" />
+    <meta name="description" content="Technical details behind Boudoir // divyacakṣus - the divine eye" />
+    <meta name="keywords" content="boudoir,idm,moviepy,quil" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/css/highlight.css">
+  <link href="/media/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/blog">Archive</a>
+  <a href="/tags">Tag</a>
+  <a href="/about/">About</a>
+  <a href="/boudoir/">Boudoir</a>
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>How is divyacakṣus - the divine eye made?</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                
+
+<div id="outline-container-orgdb8e16a" class="outline-2">
+<h2 id="orgdb8e16a">Boudoir // divyacakṣus - the divine eye</h2>
+<div class="outline-text-2" id="text-orgdb8e16a">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LnvIsdfB8Y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div id="outline-container-orgdf811f1" class="outline-2">
+<h2 id="orgdf811f1">Quil Image Blending</h2>
+<div class="outline-text-2" id="text-orgdf811f1">
+</div>
+<div id="outline-container-org64eacdf" class="outline-3">
+<h3 id="org64eacdf">First, we need to add a bunch of images in the <a href="https://github.com/jf-parent/gen-art/tree/master/src/blending/images">images folder</a>.</h3>
+</div>
+<div id="outline-container-orge9e504d" class="outline-3">
+<h3 id="orge9e504d">Then we call <i>lein run -m blending.blending</i></h3>
+</div>
+<div id="outline-container-org70302e1" class="outline-3">
+<h3 id="org70302e1">Use <a href="https://github.com/jf-parent/gen-art/blob/master/src/blending/rename.sh">rename.sh</a> if your images' name contains special characters.</h3>
+</div>
+<div id="outline-container-org5233b67" class="outline-3">
+<h3 id="org5233b67">The script randomly selects an image and a blending mode and adds it to the canvas. The settings are also randomly selected (<a href="http://quil.info/api/image/pixels#blend">Quil API Blend</a>)</h3>
+<div class="outline-text-3" id="text-org5233b67">
+<div class="org-src-container">
+<pre class="src src-Clojure"> (ns blending.blending
+  (:require [quil.core :as q]
+            [me.raynes.fs :as fs]))
+
+(defn setup []
+  (q/background 0 0 0)
+  (q/frame-rate 60)
+  (q/set-state! :images (fs/list-dir (str fs/*cwd* "/src/blending/images"))))
+
+(defn draw []
+  (let [modes [:blend :lightest :difference
+               :exclusion :multiply :overlay
+               :screen :soft-light]
+        images (q/state :images)
+        eff-image (q/load-image (fs/absolute (nth images (q/random (count images)))))
+        eff-mode (nth modes (q/random (count modes)))]
+    (q/blend
+     eff-image
+     (q/random 250)
+     (q/random 250)
+     (q/random (q/width))
+     (q/random (q/height))
+     (q/random 1000)
+     (q/random 1000)
+     (q/random 1000)
+     (q/random 1000)
+     eff-mode)))
+
+(q/defsketch Blending
+  :size [1800 1000]
+  :title "Blending"
+  :setup setup
+  :draw draw) 
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga8bb5c5" class="outline-3">
+<h3 id="orga8bb5c5">The result looks like this:</h3>
+<div class="outline-text-3" id="text-orga8bb5c5">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l-GJMq48JVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div id="outline-container-orga70c278" class="outline-3">
+<h3 id="orga70c278">Repo: <a href="https://github.com/jf-parent/gen-art">jf-parent/gen-art: Generative Art w/ Clojure Quil</a> // <a href="https://github.com/jf-parent/gen-art/blob/master/src/blending/blending.clj">Code</a></h3>
+</div>
+</div>
+<div id="outline-container-orgc696d76" class="outline-2">
+<h2 id="orgc696d76">[optional] Shuffle-merge</h2>
+<div class="outline-text-2" id="text-orgc696d76">
+</div>
+<div id="outline-container-org4ed9d56" class="outline-3">
+<h3 id="org4ed9d56">If you need some glitch in your video you can apply the shuffle-merge effect via vprocess.py</h3>
+<div class="outline-text-3" id="text-org4ed9d56">
+<div class="org-src-container">
+<pre class="src src-bash"># Inside video-processing
+./vprocess.py shuffle-merge --nb-chunk X --max-dur-subclip 1 --min-dur-subclip 0
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6cdbc2b" class="outline-2">
+<h2 id="org6cdbc2b">The Douglas Vasquez Effect</h2>
+<div class="outline-text-2" id="text-org6cdbc2b">
+</div>
+<div id="outline-container-org83b709b" class="outline-3">
+<h3 id="org83b709b">We call the function <i>the_douglas_vasquez_effect</i> with the foreground footage as <i>input_1</i> and the background footage (the quil blending we prepared earlier) with <i>input_2</i>.</h3>
+</div>
+<div id="outline-container-orgc229451" class="outline-3">
+<h3 id="orgc229451">Since this is a dirty script you need to tweak the code accordingly.</h3>
+<div class="outline-text-3" id="text-orgc229451">
+<div class="org-src-container">
+<pre class="src src-Python">def the_douglas_vasquez_effect(input_1, input_2):
+   clip1 = VideoFileClip(input_1) #.subclip(0, 50)
+
+   clip2 = VideoFileClip(input_2) #.subclip(380)
+   clip2 = clip2.resize((clip1.size[0], clip1.size[1]))
+
+   invertc_counter = 0
+   eff_img = None
+   eff_effect = None
+   counter = 0
+   imgs = []
+
+   def _f(gf, t):
+       nonlocal invertc_counter
+       nonlocal eff_img
+       nonlocal eff_effect
+       nonlocal counter
+       nonlocal imgs
+
+       counter -= 1
+
+       img1 = gf(t)
+       img2 = clip2.get_frame(t)
+
+       if counter &lt;= 0:
+           if not imgs:
+               imgs = ['img1', 'img2', 'img1+img2']
+
+           random.shuffle(imgs)
+           eff_img = imgs.pop()
+           eff_effect = random.choice(BLENDING_MODES)
+           counter = random.randint(25, 70)
+           if eff_img == 'img2':
+               counter += 30
+
+       if eff_img == 'img2':
+           return img2
+       elif eff_img == 'img1':
+           return img1
+       else:
+           invertc_counter -= 1
+
+           if invertc_counter &lt;= -50:
+               invertc_counter = 10
+           elif invertc_counter &gt;= 0:
+               img1 = e.effects.invert_color(img1)
+
+           opacity = random.randint(1, 10) * 0.1
+           return e.effects.blend_images(eff_effect, img1, img2, opacity=opacity)
+
+   clip1.fl(_f).write_videofile("output.mp4", audio=False) 
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee86962" class="outline-3">
+<h3 id="orgee86962">The result looks like this:</h3>
+<div class="outline-text-3" id="text-orgee86962">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nE-93VFEeYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div id="outline-container-org1ced2c2" class="outline-3">
+<h3 id="org1ced2c2">Repo: <a href="https://github.com/jf-parent/video_processing">jf-parent/video_processing: Vprocess BOUDOIR</a> // <a href="https://github.com/jf-parent/video_processing/blob/master/the_douglas_vasquez_effect/the_douglas_vasquez_effect.py">Code</a></h3>
+</div>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2019-12-22</span>
+        <span title="tags" class="post-info"><a href="/tags/quil/">Quil</a>, <a href="/tags/boudoir/">Boudoir</a>, <a href="/tags/idm/">IDM</a>, <a href="/tags/moviepy/">MoviePY</a></span>
+      </div>
+      <br />
+      <br />
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script async="" src="//www.google-analytics.com/analytics.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="/media/js/main.js"></script>
+      <style type="text/css">
+       /* Mathjax */
+       .MathJax_Display {
+         background: white !important;
+       }
+      </style>
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-Francois Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>
