@@ -1,3 +1,4 @@
+#+STARTUP: inlineimages
 #+TITLE:       How is divyacakṣus - the divine eye made?
 #+AUTHOR:      Jean-Francois Parent
 #+EMAIL:       jean-francoisparent@pyrat.local
@@ -10,7 +11,7 @@
 #+DESCRIPTION: <TODO: insert your description here>
 
 
+* Boudoir // divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LnvIsdfB8Y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
-
