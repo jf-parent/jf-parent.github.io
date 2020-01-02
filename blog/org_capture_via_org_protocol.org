@@ -66,4 +66,3 @@
 ** [[https://github.com/sprig/org-capture-extension][sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs]]
 ** [[https://addons.mozilla.org/en-US/firefox/addon/org-capture/][Org Capture – Get this Extension for Firefox (en-US)]]
 ** [[https://orgmode.org/worg/org-contrib/org-protocol.html][org-protocol.el – Intercept calls from emacsclient to trigger custom actions]]
-

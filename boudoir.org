@@ -19,7 +19,7 @@
 ** TODO Attribution: https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b
 * Spitzenkörper Tao
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkörper-tao.png" /></a>
+<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkorper-tao.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]]
