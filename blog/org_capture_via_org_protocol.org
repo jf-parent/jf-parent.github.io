@@ -1,0 +1,69 @@
+#+TITLE:       Org-Capture Links via Org-Protocol from Firefox
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-01-02 Thu
+#+URI:         /blog/%y/%m/%d/org-capture-links-via-org-protocol-from-firefox
+#+KEYWORDS:    org-mode,emacs
+#+TAGS:        org-mode,emacs
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+* Introduction
+** After reading [[https://blog.jethro.dev/posts/capturing_inbox/][Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan]], I had to try it out. Below is my current setup for OSX using Firefox to send webpage link to my inbox.org file.
+* Emacs deamon
+** Create the daemon application
+*** Open the Script Editor and paste the following:
+    #+begin_src applescript
+     tell application "Terminal"
+     do shell script "/usr/local/bin/emacs --daemon"
+     endtell
+    #+end_src
+*** *Note*: Run `which emacs` to find the path of your emacs, mine is /usr/local/bin/emacs.
+** Save this as an Application called "Emacs Daemon" in your Applications folder
+** Add as a login item
+*** Goto System Preferences > Accounts
+**** With your user name selected, click on the Login Items tab
+**** Click on the plus sign
+**** Browse to your applications folder and find "Emacs Daemon"
+**** Don't worry about the "hide" checkbox, since it the dock icon disappears naturally
+** Run the script now to start the Emacs Daemon unless you want to relogin.
+** Adapted from [[https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8][Setting up Emacs daemon on OS X]]
+* Emacs client
+** /brew cask install emacsclient/
+* Org-Capture Firefox Extension
+** Install [[https://addons.mozilla.org/en-US/firefox/addon/org-capture/][Org Capture – Get this Extension for Firefox (en-US)]]
+* Emacs config
+** Add this to your emacs config:
+   #+begin_src emacs lisp
+  (require 'org-protocol)
+
+  ;; Kill the frame if one was created for the capture
+  (defvar kk/delete-frame-after-capture 0 "Whether to delete the last frame after the current capture")
+
+  (defun kk/delete-frame-if-neccessary (&rest r)
+    (cond
+     ((= kk/delete-frame-after-capture 0) nil)
+     (t
+      (print "kk/delete-frame-after-capture")
+      (setq kk/delete-frame-after-capture 0)
+      (delete-frame))))
+
+  (advice-add 'org-capture-finalize :after 'kk/delete-frame-if-neccessary)
+  (advice-add 'org-capture-kill :after 'kk/delete-frame-if-neccessary)
+  (advice-add 'org-capture-refile :after 'kk/delete-frame-if-neccessary)
+
+  (custom-set-variables
+   '(org-capture-templates
+     '(
+       ("L" "Protocol Link" entry (file+headline "/PATH/to/your/inbox.org" "Inbox")
+        "** [[%:link][%:description]] %(progn (setq kk/delete-frame-after-capture 2) \"\")"))))
+  ;; :immediate-finish t
+   #+end_src
+* References
+** [[https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8][Setting up Emacs daemon on OS X]]
+** [[https://blog.jethro.dev/posts/capturing_inbox/][Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan]]
+** [[https://github.com/sprig/org-capture-extension][sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs]]
+** [[https://addons.mozilla.org/en-US/firefox/addon/org-capture/][Org Capture – Get this Extension for Firefox (en-US)]]
+** [[https://orgmode.org/worg/org-contrib/org-protocol.html][org-protocol.el – Intercept calls from emacsclient to trigger custom actions]]
+
