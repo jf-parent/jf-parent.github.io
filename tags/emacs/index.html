@@ -3,10 +3,7 @@
   <head>
     <title>Tag: emacs - Jean-François Parent&#39;s Blog</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
     <meta name="author" content="Jean-François Parent" />
-    <link rel="stylesheet" href="/media/css/style.css">
-    <link href="/media/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
     <script>
@@ -15,14 +12,34 @@
       gtag('js', new Date());
       gtag('config', 'UA-154154057-1');
     </script>
+    <script async src="http://code.jquery.com/jquery-latest.min.js" async></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async src="/media/js/main.js"></script>
+    <script async src="/media/highlight/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      document.querySelectorAll('pre.src').forEach((block) => {
+      hljs.highlightBlock(block);
+      });
+    </script>
+    <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+    <style type="text/css">
+      /* Mathjax */
+      .MathJax_Display {
+      background: white !important;
+      }
+    </style>
   </head>
   <body class="container">
     <nav class="main-nav">
       <a href="/">
         <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
       </a>
-      <a href="/blog">Archive</a>
-      <a href="/tags">Tag</a>
+      <a href="/tags">Tags</a>
       <a href="/about/">About</a>
       <a href="/boudoir/">Boudoir</a>
       <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
@@ -30,37 +47,9 @@
       <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
     </nav>
     <div>
-      <div class="post">
-        <h1>Tag: emacs</h1>
-        <ul class="org-ul">
-          <li><a href="/blog/2020/01/01/email-from-spacemacs-my-mu4e-org-msg-offlineimap-setup">Email from Spacemacs: my mu4e / org-msg / offlineimap setup</a></li>
-        </ul>
-      </div>
-    </div>
-    <div>
       <section id="wrapper">
         <br />
         <br />
-        <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script async="" src="//www.google-analytics.com/analytics.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="/media/js/main.js"></script>
-        <script src="/media/highlight/highlight.pack.js"></script>
-        <script>
-          hljs.initHighlightingOnLoad();
-          document.querySelectorAll('pre.src').forEach((block) => {
-          hljs.highlightBlock(block);
-          });
-        </script>
-        <style type="text/css">
-          /* Mathjax */
-          .MathJax_Display {
-          background: white !important;
-          }
-        </style>
         <div align="center">
           <footer id="footer">
             <p class="small">

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>Org-Capture Links via Org-Protocol from Firefox - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-François Parent" />
+    <meta name="description" content="&lt;TODO: insert your description here&gt;" />
+    <meta name="keywords" content="org-mode,emacs" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="http://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <a href="/about/">About</a>
+  <a href="/boudoir/">Boudoir</a>
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>Org-Capture Links via Org-Protocol from Firefox</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                
+<div id="outline-container-org6647be2" class="outline-2">
+<h2 id="org6647be2">Introduction</h2>
+<div class="outline-text-2" id="text-org6647be2">
+</div>
+<div id="outline-container-org89243f9" class="outline-3">
+<h3 id="org89243f9">After reading <a href="https://blog.jethro.dev/posts/capturing_inbox/">Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan</a>, I had to try it out. Below is my current setup for OSX using Firefox to send webpage link to my inbox.org file.</h3>
+</div>
+</div>
+<div id="outline-container-org5d614f4" class="outline-2">
+<h2 id="org5d614f4">Emacs deamon</h2>
+<div class="outline-text-2" id="text-org5d614f4">
+</div>
+<div id="outline-container-orgc8e470a" class="outline-3">
+<h3 id="orgc8e470a">Create the daemon application</h3>
+<div class="outline-text-3" id="text-orgc8e470a">
+</div>
+<div id="outline-container-org55c54ec" class="outline-4">
+<h4 id="org55c54ec">Open the Script Editor and paste the following:</h4>
+<div class="outline-text-4" id="text-org55c54ec">
+<div class="org-src-container">
+<pre class="src src-applescript">tell application "Terminal"
+do shell script "/usr/local/bin/emacs --daemon"
+endtell
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf6fb1b0" class="outline-4">
+<h4 id="orgf6fb1b0"><b>Note</b>: Run `which emacs` to find the path of your emacs, mine is /usr/local/bin/emacs.</h4>
+</div>
+</div>
+<div id="outline-container-org93e2ae7" class="outline-3">
+<h3 id="org93e2ae7">Save this as an Application called "Emacs Daemon" in your Applications folder</h3>
+</div>
+<div id="outline-container-org9e6b30d" class="outline-3">
+<h3 id="org9e6b30d">Add as a login item</h3>
+<div class="outline-text-3" id="text-org9e6b30d">
+</div>
+<div id="outline-container-org1c39433" class="outline-4">
+<h4 id="org1c39433">Goto System Preferences &gt; Accounts</h4>
+<div class="outline-text-4" id="text-org1c39433">
+</div>
+<ul class="org-ul">
+<li><a id="org3a768ab"></a>With your user name selected, click on the Login Items tab<br /></li>
+<li><a id="org232b87d"></a>Click on the plus sign<br /></li>
+<li><a id="orgeeec4c4"></a>Browse to your applications folder and find "Emacs Daemon"<br /></li>
+<li><a id="org242ebc6"></a>Don't worry about the "hide" checkbox, since it the dock icon disappears naturally<br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org71cd862" class="outline-3">
+<h3 id="org71cd862">Run the script now to start the Emacs Daemon unless you want to relogin.</h3>
+</div>
+<div id="outline-container-org07579bb" class="outline-3">
+<h3 id="org07579bb">Adapted from <a href="https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8">Setting up Emacs daemon on OS X</a></h3>
+</div>
+</div>
+<div id="outline-container-org73986f4" class="outline-2">
+<h2 id="org73986f4">Emacs client</h2>
+<div class="outline-text-2" id="text-org73986f4">
+</div>
+<div id="outline-container-org51ac68c" class="outline-3">
+<h3 id="org51ac68c"><i>brew cask install emacsclient</i></h3>
+</div>
+</div>
+<div id="outline-container-orgd68666d" class="outline-2">
+<h2 id="orgd68666d">Org-Capture Firefox Extension</h2>
+<div class="outline-text-2" id="text-orgd68666d">
+</div>
+<div id="outline-container-orga0fb67b" class="outline-3">
+<h3 id="orga0fb67b">Install <a href="https://addons.mozilla.org/en-US/firefox/addon/org-capture/">Org Capture – Get this Extension for Firefox (en-US)</a></h3>
+</div>
+</div>
+<div id="outline-container-org131c209" class="outline-2">
+<h2 id="org131c209">Emacs config</h2>
+<div class="outline-text-2" id="text-org131c209">
+</div>
+<div id="outline-container-orge7dca96" class="outline-3">
+<h3 id="orge7dca96">Add this to your emacs config:</h3>
+<div class="outline-text-3" id="text-orge7dca96">
+<div class="org-src-container">
+<pre class="src src-emacs">(require 'org-protocol)
+
+;; Kill the frame if one was created for the capture
+(defvar kk/delete-frame-after-capture 0 "Whether to delete the last frame after the current capture")
+
+(defun kk/delete-frame-if-neccessary (&amp;rest r)
+  (cond
+   ((= kk/delete-frame-after-capture 0) nil)
+   (t
+    (print "kk/delete-frame-after-capture")
+    (setq kk/delete-frame-after-capture 0)
+    (delete-frame))))
+
+(advice-add 'org-capture-finalize :after 'kk/delete-frame-if-neccessary)
+(advice-add 'org-capture-kill :after 'kk/delete-frame-if-neccessary)
+(advice-add 'org-capture-refile :after 'kk/delete-frame-if-neccessary)
+
+(custom-set-variables
+ '(org-capture-templates
+   '(
+     ("L" "Protocol Link" entry (file+headline "/PATH/to/your/inbox.org" "Inbox")
+      "** [[%:link][%:description]] %(progn (setq kk/delete-frame-after-capture 2) \"\")"))))
+;; :immediate-finish t
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd298585" class="outline-2">
+<h2 id="orgd298585">References</h2>
+<div class="outline-text-2" id="text-orgd298585">
+</div>
+<div id="outline-container-org38dd1ab" class="outline-3">
+<h3 id="org38dd1ab"><a href="https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8">Setting up Emacs daemon on OS X</a></h3>
+</div>
+<div id="outline-container-org3b24d7b" class="outline-3">
+<h3 id="org3b24d7b"><a href="https://blog.jethro.dev/posts/capturing_inbox/">Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan</a></h3>
+</div>
+<div id="outline-container-org7370ffc" class="outline-3">
+<h3 id="org7370ffc"><a href="https://github.com/sprig/org-capture-extension">sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs</a></h3>
+</div>
+<div id="outline-container-org0ddf19c" class="outline-3">
+<h3 id="org0ddf19c"><a href="https://addons.mozilla.org/en-US/firefox/addon/org-capture/">Org Capture – Get this Extension for Firefox (en-US)</a></h3>
+</div>
+<div id="outline-container-org650e973" class="outline-3">
+<h3 id="org650e973"><a href="https://orgmode.org/worg/org-contrib/org-protocol.html">org-protocol.el – Intercept calls from emacsclient to trigger custom actions</a></h3>
+</div>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2020-01-02</span>
+        <span title="tags" class="post-info"><a href="/tags/org-mode/">org-mode</a>, <a href="/tags/emacs/">emacs</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>

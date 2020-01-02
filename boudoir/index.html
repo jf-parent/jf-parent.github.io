@@ -3,11 +3,8 @@
   <head>
   <title>Boudoir - Jean-François Parent&#39;s Blog</title>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
   <meta name="author" content="Jean-François Parent" />
     <meta name="description" content="Boudoir - Electronic Music w/ Art Video" />
-  <link rel="stylesheet" href="/media/css/style.css">
-  <link href="/media/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
   <script>
@@ -17,6 +14,27 @@
 
    gtag('config', 'UA-154154057-1');
   </script>
+  <script async src="http://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
 </head>
 
   <body class="container">
@@ -24,8 +42,7 @@
   <a href="/">
     <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
   </a>
-  <a href="/blog">Archive</a>
-  <a href="/tags">Tag</a>
+  <a href="/tags">Tags</a>
   <a href="/about/">About</a>
   <a href="/boudoir/">Boudoir</a>
   <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
@@ -42,396 +59,396 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org5ccf3aa" class="outline-2">
-<h2 id="org5ccf3aa">divyacakṣus - the divine eye</h2>
-<div class="outline-text-2" id="text-org5ccf3aa">
+<div id="outline-container-orgf53ee3e" class="outline-2">
+<h2 id="orgf53ee3e">divyacakṣus - the divine eye</h2>
+<div class="outline-text-2" id="text-orgf53ee3e">
 <a href="https://www.youtube.com/watch?v=LnvIsdfB8Y0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
 </div>
-<div id="outline-container-org649f2e2" class="outline-3">
-<h3 id="org649f2e2">Specs</h3>
-<div class="outline-text-3" id="text-org649f2e2">
+<div id="outline-container-orgfe2d4ba" class="outline-3">
+<h3 id="orgfe2d4ba">Specs</h3>
+<div class="outline-text-3" id="text-orgfe2d4ba">
 </div>
-<div id="outline-container-org1b3a9cf" class="outline-4">
-<h4 id="org1b3a9cf">Software: Logic Pro X, Final Cut Pro, <a href="https://github.com/jf-parent/video_processing">vprocess</a>, <a href="https://github.com/jf-parent/gen-art">gen-art</a></h4>
+<div id="outline-container-orgab1773f" class="outline-4">
+<h4 id="orgab1773f">Software: Logic Pro X, Final Cut Pro, <a href="https://github.com/jf-parent/video_processing">vprocess</a>, <a href="https://github.com/jf-parent/gen-art">gen-art</a></h4>
 </div>
-<div id="outline-container-org763cc80" class="outline-4">
-<h4 id="org763cc80">Release date: Dec 21, 2019</h4>
+<div id="outline-container-org418e6ab" class="outline-4">
+<h4 id="org418e6ab">Release date: Dec 21, 2019</h4>
 </div>
-<div id="outline-container-org9db9e89" class="outline-4">
-<h4 id="org9db9e89">Production timeframe: ~65 hours</h4>
+<div id="outline-container-org410a48c" class="outline-4">
+<h4 id="org410a48c">Production timeframe: ~65 hours</h4>
 </div>
-<div id="outline-container-org47b5f74" class="outline-4">
-<h4 id="org47b5f74">Length: 7.26</h4>
+<div id="outline-container-org3b96e43" class="outline-4">
+<h4 id="org3b96e43">Length: 7.26</h4>
 </div>
-<div id="outline-container-org6ffce03" class="outline-4">
-<h4 id="org6ffce03">Audio only: <a href="https://drive.google.com/open?id=1cH4G6i2lK-lnPpO-2dX8JKjHo_z0yKZw">Link</a></h4>
-</div>
-</div>
-<div id="outline-container-org35ccc5c" class="outline-3">
-<h3 id="org35ccc5c"><span class="todo TODO">TODO</span> Attribution: <a href="https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b">https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b</a></h3>
+<div id="outline-container-org38bb8e1" class="outline-4">
+<h4 id="org38bb8e1">Audio only: <a href="https://drive.google.com/open?id=1cH4G6i2lK-lnPpO-2dX8JKjHo_z0yKZw">Link</a></h4>
 </div>
 </div>
-<div id="outline-container-org84835db" class="outline-2">
-<h2 id="org84835db">Spitzenkörper Tao</h2>
-<div class="outline-text-2" id="text-org84835db">
-<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkörper-tao.png" /></a>
-</div>
-<div id="outline-container-org87a5a21" class="outline-3">
-<h3 id="org87a5a21">Specs</h3>
-<div class="outline-text-3" id="text-org87a5a21">
-</div>
-<div id="outline-container-orgf58e63e" class="outline-4">
-<h4 id="orgf58e63e">Software: Logic Pro X, Final Cut Pro, <a href="https://github.com/jf-parent/video_processing">vprocess</a></h4>
-</div>
-<div id="outline-container-org5960da7" class="outline-4">
-<h4 id="org5960da7">Release date: Nov 27, 2019</h4>
-</div>
-<div id="outline-container-orgdb5e99a" class="outline-4">
-<h4 id="orgdb5e99a">Production timeframe: ~32 hours</h4>
-</div>
-<div id="outline-container-orgfad9b6c" class="outline-4">
-<h4 id="orgfad9b6c">Length: 8.20</h4>
-</div>
-<div id="outline-container-org4ffaf7f" class="outline-4">
-<h4 id="org4ffaf7f">Audio only: <a href="https://drive.google.com/open?id=1yExPeQyvncmUVVRVqpoG-dC1BQc4H2xR">Link</a></h4>
+<div id="outline-container-org328bbd8" class="outline-3">
+<h3 id="org328bbd8"><span class="todo TODO">TODO</span> Attribution: <a href="https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b">https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b</a></h3>
 </div>
 </div>
+<div id="outline-container-orgd2591de" class="outline-2">
+<h2 id="orgd2591de">Spitzenkörper Tao</h2>
+<div class="outline-text-2" id="text-orgd2591de">
+<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkorper-tao.png" /></a>
 </div>
-<div id="outline-container-org0e941b0" class="outline-2">
-<h2 id="org0e941b0">Molimina Karoshi</h2>
-<div class="outline-text-2" id="text-org0e941b0">
+<div id="outline-container-org77aefde" class="outline-3">
+<h3 id="org77aefde">Specs</h3>
+<div class="outline-text-3" id="text-org77aefde">
+</div>
+<div id="outline-container-orgcd5b837" class="outline-4">
+<h4 id="orgcd5b837">Software: Logic Pro X, Final Cut Pro, <a href="https://github.com/jf-parent/video_processing">vprocess</a></h4>
+</div>
+<div id="outline-container-org089635f" class="outline-4">
+<h4 id="org089635f">Release date: Nov 27, 2019</h4>
+</div>
+<div id="outline-container-org99648fd" class="outline-4">
+<h4 id="org99648fd">Production timeframe: ~32 hours</h4>
+</div>
+<div id="outline-container-orgd2df851" class="outline-4">
+<h4 id="orgd2df851">Length: 8.20</h4>
+</div>
+<div id="outline-container-orgd967040" class="outline-4">
+<h4 id="orgd967040">Audio only: <a href="https://drive.google.com/open?id=1yExPeQyvncmUVVRVqpoG-dC1BQc4H2xR">Link</a></h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgddba79b" class="outline-2">
+<h2 id="orgddba79b">Molimina Karoshi</h2>
+<div class="outline-text-2" id="text-orgddba79b">
 <a href="https://www.youtube.com/watch?v=Bfk4OiRatvc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_molimina-karoshi.png" /></a>
 </div>
-<div id="outline-container-org202fcfc" class="outline-3">
-<h3 id="org202fcfc">Specs</h3>
-<div class="outline-text-3" id="text-org202fcfc">
+<div id="outline-container-org10b58a5" class="outline-3">
+<h3 id="org10b58a5">Specs</h3>
+<div class="outline-text-3" id="text-org10b58a5">
 </div>
-<div id="outline-container-orgd13caaf" class="outline-4">
-<h4 id="orgd13caaf">Software: Logic Pro X, Final Cut Pro</h4>
+<div id="outline-container-org4dc3ae5" class="outline-4">
+<h4 id="org4dc3ae5">Software: Logic Pro X, Final Cut Pro</h4>
 </div>
-<div id="outline-container-org8adacb2" class="outline-4">
-<h4 id="org8adacb2">Release date: Nov 4, 2019</h4>
+<div id="outline-container-org2c04a52" class="outline-4">
+<h4 id="org2c04a52">Release date: Nov 4, 2019</h4>
 </div>
-<div id="outline-container-org240e1c3" class="outline-4">
-<h4 id="org240e1c3">Production timeframe: ~52 hours</h4>
+<div id="outline-container-orgb3675d1" class="outline-4">
+<h4 id="orgb3675d1">Production timeframe: ~52 hours</h4>
 </div>
-<div id="outline-container-org9a8e0c9" class="outline-4">
-<h4 id="org9a8e0c9">Length: 10.00</h4>
+<div id="outline-container-org220ea0f" class="outline-4">
+<h4 id="org220ea0f">Length: 10.00</h4>
 </div>
-<div id="outline-container-org713b627" class="outline-4">
-<h4 id="org713b627">Audio only: <a href="https://drive.google.com/open?id=18EHxxVYMZdikcNTCVGwqpSRnW0DKVx4o">Link</a></h4>
+<div id="outline-container-org5180648" class="outline-4">
+<h4 id="org5180648">Audio only: <a href="https://drive.google.com/open?id=18EHxxVYMZdikcNTCVGwqpSRnW0DKVx4o">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org83b2eb9" class="outline-2">
-<h2 id="org83b2eb9">Suffocation Aristocratique</h2>
-<div class="outline-text-2" id="text-org83b2eb9">
+<div id="outline-container-org66beffe" class="outline-2">
+<h2 id="org66beffe">Suffocation Aristocratique</h2>
+<div class="outline-text-2" id="text-org66beffe">
 <a href="https://www.youtube.com/watch?v=Tue-8tJtIvw" target="_blank"><img src="/media/images/boudoir_covers/boudoir_suffocation-aristocratique.png" /></a>
 </div>
-<div id="outline-container-org556800c" class="outline-3">
-<h3 id="org556800c">Specs</h3>
-<div class="outline-text-3" id="text-org556800c">
+<div id="outline-container-org798ef54" class="outline-3">
+<h3 id="org798ef54">Specs</h3>
+<div class="outline-text-3" id="text-org798ef54">
 </div>
-<div id="outline-container-org9e87724" class="outline-4">
-<h4 id="org9e87724">Software: Logic Pro X, Final Cut Pro</h4>
+<div id="outline-container-org30a4771" class="outline-4">
+<h4 id="org30a4771">Software: Logic Pro X, Final Cut Pro</h4>
 </div>
-<div id="outline-container-org799b16a" class="outline-4">
-<h4 id="org799b16a">Release date: Sep 12, 2019</h4>
+<div id="outline-container-org3779598" class="outline-4">
+<h4 id="org3779598">Release date: Sep 12, 2019</h4>
 </div>
-<div id="outline-container-orgec3d720" class="outline-4">
-<h4 id="orgec3d720">Production timeframe: ~24 hours</h4>
+<div id="outline-container-org45a95e0" class="outline-4">
+<h4 id="org45a95e0">Production timeframe: ~24 hours</h4>
 </div>
-<div id="outline-container-orgb64fa4d" class="outline-4">
-<h4 id="orgb64fa4d">Length: 9.00</h4>
+<div id="outline-container-orgf88ca13" class="outline-4">
+<h4 id="orgf88ca13">Length: 9.00</h4>
 </div>
-<div id="outline-container-org5b752c4" class="outline-4">
-<h4 id="org5b752c4">Audio only: <a href="https://drive.google.com/open?id=159n7rE2uLrls8R2GwELDElhUGJAKAJNH">Link</a></h4>
+<div id="outline-container-orgae9eb31" class="outline-4">
+<h4 id="orgae9eb31">Audio only: <a href="https://drive.google.com/open?id=159n7rE2uLrls8R2GwELDElhUGJAKAJNH">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org6e1b51c" class="outline-2">
-<h2 id="org6e1b51c">Parafoudre Prostitué</h2>
-<div class="outline-text-2" id="text-org6e1b51c">
+<div id="outline-container-orgc64aea3" class="outline-2">
+<h2 id="orgc64aea3">Parafoudre Prostitué</h2>
+<div class="outline-text-2" id="text-orgc64aea3">
 <a href="https://drive.google.com/open?id=1Bv6ksSHCjYtjJSwpFMubbs2uinSpd9_z" target="_blank"><img src="/media/images/boudoir_covers/boudoir_parafoudre-prostitue.png" /></a>
 </div>
-<div id="outline-container-orgf019a70" class="outline-3">
-<h3 id="orgf019a70">Specs</h3>
-<div class="outline-text-3" id="text-orgf019a70">
+<div id="outline-container-org4f672d1" class="outline-3">
+<h3 id="org4f672d1">Specs</h3>
+<div class="outline-text-3" id="text-org4f672d1">
 </div>
-<div id="outline-container-org76d04ab" class="outline-4">
-<h4 id="org76d04ab">Software: Logic Pro X, Final Cut Pro</h4>
+<div id="outline-container-org070ca78" class="outline-4">
+<h4 id="org070ca78">Software: Logic Pro X, Final Cut Pro</h4>
 </div>
-<div id="outline-container-orgf713f55" class="outline-4">
-<h4 id="orgf713f55">Release date: Jun 14, 2019</h4>
+<div id="outline-container-org549b11f" class="outline-4">
+<h4 id="org549b11f">Release date: Jun 14, 2019</h4>
 </div>
-<div id="outline-container-orgb3fe963" class="outline-4">
-<h4 id="orgb3fe963">Production timeframe: ~12 hours</h4>
+<div id="outline-container-org74ab2e0" class="outline-4">
+<h4 id="org74ab2e0">Production timeframe: ~12 hours</h4>
 </div>
-<div id="outline-container-org38fdbca" class="outline-4">
-<h4 id="org38fdbca">Length: 8.02</h4>
+<div id="outline-container-org8c4fcf9" class="outline-4">
+<h4 id="org8c4fcf9">Length: 8.02</h4>
 </div>
-<div id="outline-container-orgd7ff4cb" class="outline-4">
-<h4 id="orgd7ff4cb">Audio only: <a href="https://drive.google.com/open?id=1MovbYVUXgI7Uutu8b1-RrGs0Jkm-Gs9K">Link</a></h4>
+<div id="outline-container-orgcbf84f3" class="outline-4">
+<h4 id="orgcbf84f3">Audio only: <a href="https://drive.google.com/open?id=1MovbYVUXgI7Uutu8b1-RrGs0Jkm-Gs9K">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgab493b3" class="outline-2">
-<h2 id="orgab493b3">Faim de Dormir</h2>
-<div class="outline-text-2" id="text-orgab493b3">
+<div id="outline-container-orgf9d4daf" class="outline-2">
+<h2 id="orgf9d4daf">Faim de Dormir</h2>
+<div class="outline-text-2" id="text-orgf9d4daf">
 <a href="https://drive.google.com/open?id=1ibQN4gsqSJWIzVx1Xy8wqVJ6BhmGSF9I" target="_blank"><img src="/media/images/boudoir_covers/boudoir_faim-de-dormir.png" /></a>
 </div>
-<div id="outline-container-org159c310" class="outline-3">
-<h3 id="org159c310">Specs</h3>
-<div class="outline-text-3" id="text-org159c310">
+<div id="outline-container-org6325bf0" class="outline-3">
+<h3 id="org6325bf0">Specs</h3>
+<div class="outline-text-3" id="text-org6325bf0">
 </div>
-<div id="outline-container-orgaae37c5" class="outline-4">
-<h4 id="orgaae37c5">Software: Logic Pro X, Final Cut Pro</h4>
+<div id="outline-container-org60f29c7" class="outline-4">
+<h4 id="org60f29c7">Software: Logic Pro X, Final Cut Pro</h4>
 </div>
-<div id="outline-container-org4e221cf" class="outline-4">
-<h4 id="org4e221cf">Release date: Jun 1, 2019</h4>
+<div id="outline-container-org9ae39ab" class="outline-4">
+<h4 id="org9ae39ab">Release date: Jun 1, 2019</h4>
 </div>
-<div id="outline-container-org93683ee" class="outline-4">
-<h4 id="org93683ee">Production timeframe: ~12 hours</h4>
+<div id="outline-container-org6d1a358" class="outline-4">
+<h4 id="org6d1a358">Production timeframe: ~12 hours</h4>
 </div>
-<div id="outline-container-org8a20bf0" class="outline-4">
-<h4 id="org8a20bf0">Length: 8.43</h4>
+<div id="outline-container-orge32130b" class="outline-4">
+<h4 id="orge32130b">Length: 8.43</h4>
 </div>
-<div id="outline-container-orgb3521b8" class="outline-4">
-<h4 id="orgb3521b8">Audio only: <a href="https://drive.google.com/open?id=1ByNjbAMb74Ry7_wrwDM24UKyqj9E7HV1">Link</a></h4>
+<div id="outline-container-orgc22ddb6" class="outline-4">
+<h4 id="orgc22ddb6">Audio only: <a href="https://drive.google.com/open?id=1ByNjbAMb74Ry7_wrwDM24UKyqj9E7HV1">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd973c87" class="outline-2">
-<h2 id="orgd973c87">Colifichet de Dentelle</h2>
-<div class="outline-text-2" id="text-orgd973c87">
+<div id="outline-container-org5742b5d" class="outline-2">
+<h2 id="org5742b5d">Colifichet de Dentelle</h2>
+<div class="outline-text-2" id="text-org5742b5d">
 <a href="https://www.youtube.com/watch?v=7ymPYJ6D428" target="_blank"><img src="/media/images/boudoir_covers/boudoir_colifichet-de-dentelle.png" /></a>
 </div>
-<div id="outline-container-orgd5a7285" class="outline-3">
-<h3 id="orgd5a7285">Specs</h3>
-<div class="outline-text-3" id="text-orgd5a7285">
+<div id="outline-container-org890cd77" class="outline-3">
+<h3 id="org890cd77">Specs</h3>
+<div class="outline-text-3" id="text-org890cd77">
 </div>
-<div id="outline-container-org2a8fd5e" class="outline-4">
-<h4 id="org2a8fd5e">Software: Logic Pro X, Final Cut Pro</h4>
+<div id="outline-container-org6b4a90a" class="outline-4">
+<h4 id="org6b4a90a">Software: Logic Pro X, Final Cut Pro</h4>
 </div>
-<div id="outline-container-org91ea8ca" class="outline-4">
-<h4 id="org91ea8ca">Release date: May 20, 2019</h4>
+<div id="outline-container-org1eebfbc" class="outline-4">
+<h4 id="org1eebfbc">Release date: May 20, 2019</h4>
 </div>
-<div id="outline-container-org691ad78" class="outline-4">
-<h4 id="org691ad78">Production timeframe: ~12 hours</h4>
+<div id="outline-container-orgdcc8e14" class="outline-4">
+<h4 id="orgdcc8e14">Production timeframe: ~12 hours</h4>
 </div>
-<div id="outline-container-orgba97dea" class="outline-4">
-<h4 id="orgba97dea">Length: 8.16</h4>
+<div id="outline-container-org113ba12" class="outline-4">
+<h4 id="org113ba12">Length: 8.16</h4>
 </div>
-<div id="outline-container-orgf0e28f7" class="outline-4">
-<h4 id="orgf0e28f7">Audio only: <a href="https://drive.google.com/open?id=1EdniotOwiUOItlApbBJpaMtbMAlxy7tw">Link</a></h4>
+<div id="outline-container-orgcae694f" class="outline-4">
+<h4 id="orgcae694f">Audio only: <a href="https://drive.google.com/open?id=1EdniotOwiUOItlApbBJpaMtbMAlxy7tw">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org72ecfb6" class="outline-2">
-<h2 id="org72ecfb6">Privation volontaire du sommeil</h2>
-<div class="outline-text-2" id="text-org72ecfb6">
+<div id="outline-container-orgc4bbe2a" class="outline-2">
+<h2 id="orgc4bbe2a">Privation volontaire du sommeil</h2>
+<div class="outline-text-2" id="text-orgc4bbe2a">
 <a href="https://www.youtube.com/watch?v=zXazqdXDXs0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_privation-volontaire-du-sommeil.png" /></a>
 </div>
-<div id="outline-container-orga928fad" class="outline-3">
-<h3 id="orga928fad">Specs</h3>
-<div class="outline-text-3" id="text-orga928fad">
+<div id="outline-container-orgfe3a7c4" class="outline-3">
+<h3 id="orgfe3a7c4">Specs</h3>
+<div class="outline-text-3" id="text-orgfe3a7c4">
 </div>
-<div id="outline-container-orgf1963c3" class="outline-4">
-<h4 id="orgf1963c3">Software: Logic Pro X, Final Cut Pro</h4>
+<div id="outline-container-org6165b56" class="outline-4">
+<h4 id="org6165b56">Software: Logic Pro X, Final Cut Pro</h4>
 </div>
-<div id="outline-container-org17d857d" class="outline-4">
-<h4 id="org17d857d">Release date: May 8, 2019</h4>
+<div id="outline-container-org921714c" class="outline-4">
+<h4 id="org921714c">Release date: May 8, 2019</h4>
 </div>
-<div id="outline-container-orga5661d0" class="outline-4">
-<h4 id="orga5661d0">Production timeframe: ~8 hours</h4>
+<div id="outline-container-orgdbbf400" class="outline-4">
+<h4 id="orgdbbf400">Production timeframe: ~8 hours</h4>
 </div>
-<div id="outline-container-org43f2306" class="outline-4">
-<h4 id="org43f2306">Length: 8.44</h4>
+<div id="outline-container-orgd12379e" class="outline-4">
+<h4 id="orgd12379e">Length: 8.44</h4>
 </div>
-<div id="outline-container-orged5bfae" class="outline-4">
-<h4 id="orged5bfae">Audio only: <a href="https://drive.google.com/open?id=1gar1s6g_1fBWIanMiWsApYC3vl60OpWE">Link</a></h4>
+<div id="outline-container-org4368fa8" class="outline-4">
+<h4 id="org4368fa8">Audio only: <a href="https://drive.google.com/open?id=1gar1s6g_1fBWIanMiWsApYC3vl60OpWE">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org49fdd20" class="outline-2">
-<h2 id="org49fdd20">Frotter l’argenterie des femmes</h2>
-<div class="outline-text-2" id="text-org49fdd20">
+<div id="outline-container-org9067265" class="outline-2">
+<h2 id="org9067265">Frotter l’argenterie des femmes</h2>
+<div class="outline-text-2" id="text-org9067265">
 <a href="https://www.youtube.com/watch?v=m7ZLbhQBj3o" target="_blank"><img src="/media/images/boudoir_covers/boudoir_frotter-l-argenterie-des-femmes.png" /></a>
 </div>
-<div id="outline-container-orge17e041" class="outline-3">
-<h3 id="orge17e041">Specs</h3>
-<div class="outline-text-3" id="text-orge17e041">
+<div id="outline-container-org9baa682" class="outline-3">
+<h3 id="org9baa682">Specs</h3>
+<div class="outline-text-3" id="text-org9baa682">
 </div>
-<div id="outline-container-orgb5fe748" class="outline-4">
-<h4 id="orgb5fe748">Software: Logic Pro X, iMovie</h4>
+<div id="outline-container-org0ac534d" class="outline-4">
+<h4 id="org0ac534d">Software: Logic Pro X, iMovie</h4>
 </div>
-<div id="outline-container-orgbeb721b" class="outline-4">
-<h4 id="orgbeb721b">Release date: Apr 18, 2019</h4>
+<div id="outline-container-org815adcf" class="outline-4">
+<h4 id="org815adcf">Release date: Apr 18, 2019</h4>
 </div>
-<div id="outline-container-org966ad3b" class="outline-4">
-<h4 id="org966ad3b">Production timeframe: ~8 hours</h4>
+<div id="outline-container-orgafe25de" class="outline-4">
+<h4 id="orgafe25de">Production timeframe: ~8 hours</h4>
 </div>
-<div id="outline-container-org500b39e" class="outline-4">
-<h4 id="org500b39e">Length: 6.14</h4>
+<div id="outline-container-orgb134e2f" class="outline-4">
+<h4 id="orgb134e2f">Length: 6.14</h4>
 </div>
-<div id="outline-container-orgffc757c" class="outline-4">
-<h4 id="orgffc757c">Audio only: <a href="https://drive.google.com/open?id=1L3RUKrqQlEKhIDEh4nFmuqMSJpmiRDdG">Link</a></h4>
+<div id="outline-container-org16ec420" class="outline-4">
+<h4 id="org16ec420">Audio only: <a href="https://drive.google.com/open?id=1L3RUKrqQlEKhIDEh4nFmuqMSJpmiRDdG">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org10c9b59" class="outline-2">
-<h2 id="org10c9b59">Coulisse Herméneutique</h2>
-<div class="outline-text-2" id="text-org10c9b59">
+<div id="outline-container-org5a771ad" class="outline-2">
+<h2 id="org5a771ad">Coulisse Herméneutique</h2>
+<div class="outline-text-2" id="text-org5a771ad">
 <a href="https://www.youtube.com/watch?v=m7ZLbhQBj3o" target="_blank"><img src="/media/images/boudoir_covers/boudoir_coulisse-hermeneutique.png" /></a>
 </div>
-<div id="outline-container-org2ae51ec" class="outline-3">
-<h3 id="org2ae51ec">Specs</h3>
-<div class="outline-text-3" id="text-org2ae51ec">
+<div id="outline-container-orgcfc03c0" class="outline-3">
+<h3 id="orgcfc03c0">Specs</h3>
+<div class="outline-text-3" id="text-orgcfc03c0">
 </div>
-<div id="outline-container-org0a1c8d5" class="outline-4">
-<h4 id="org0a1c8d5">Software: Logic Pro X, iMovie</h4>
+<div id="outline-container-org4dab1b8" class="outline-4">
+<h4 id="org4dab1b8">Software: Logic Pro X, iMovie</h4>
 </div>
-<div id="outline-container-orgd733956" class="outline-4">
-<h4 id="orgd733956">Release date: Apr 7, 2019</h4>
+<div id="outline-container-orgcb2cffe" class="outline-4">
+<h4 id="orgcb2cffe">Release date: Apr 7, 2019</h4>
 </div>
-<div id="outline-container-orgbbb5bf2" class="outline-4">
-<h4 id="orgbbb5bf2">Production timeframe: ~8 hours</h4>
+<div id="outline-container-org255cad5" class="outline-4">
+<h4 id="org255cad5">Production timeframe: ~8 hours</h4>
 </div>
-<div id="outline-container-orgac046ac" class="outline-4">
-<h4 id="orgac046ac">Length: 6.40</h4>
+<div id="outline-container-org6bd7387" class="outline-4">
+<h4 id="org6bd7387">Length: 6.40</h4>
 </div>
-<div id="outline-container-orgad85b6e" class="outline-4">
-<h4 id="orgad85b6e">Audio only: <a href="https://drive.google.com/open?id=1T-9kwVhUDQFTUGkxK_UyduGkX24rowZc">Link</a></h4>
+<div id="outline-container-org3a0daf8" class="outline-4">
+<h4 id="org3a0daf8">Audio only: <a href="https://drive.google.com/open?id=1T-9kwVhUDQFTUGkxK_UyduGkX24rowZc">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org45d204b" class="outline-2">
-<h2 id="org45d204b">Psychopompe</h2>
-<div class="outline-text-2" id="text-org45d204b">
+<div id="outline-container-orgadc707a" class="outline-2">
+<h2 id="orgadc707a">Psychopompe</h2>
+<div class="outline-text-2" id="text-orgadc707a">
 <a href="https://www.youtube.com/watch?v=GC7mPYXeUTY" target="_blank"><img src="/media/images/boudoir_covers/boudoir_psychopompe.png" /></a>
 </div>
-<div id="outline-container-orgf07e8df" class="outline-3">
-<h3 id="orgf07e8df">Specs</h3>
-<div class="outline-text-3" id="text-orgf07e8df">
+<div id="outline-container-org91c43a6" class="outline-3">
+<h3 id="org91c43a6">Specs</h3>
+<div class="outline-text-3" id="text-org91c43a6">
 </div>
-<div id="outline-container-org5ea1734" class="outline-4">
-<h4 id="org5ea1734">Software: GarageBand, iMovie</h4>
+<div id="outline-container-org883341a" class="outline-4">
+<h4 id="org883341a">Software: GarageBand, iMovie</h4>
 </div>
-<div id="outline-container-orgb0b195f" class="outline-4">
-<h4 id="orgb0b195f">Release date: Mar 21, 2019</h4>
+<div id="outline-container-orgdc5b9b1" class="outline-4">
+<h4 id="orgdc5b9b1">Release date: Mar 21, 2019</h4>
 </div>
-<div id="outline-container-org035bf17" class="outline-4">
-<h4 id="org035bf17">Production timeframe: ~6 hours</h4>
+<div id="outline-container-orgd92cd84" class="outline-4">
+<h4 id="orgd92cd84">Production timeframe: ~6 hours</h4>
 </div>
-<div id="outline-container-orge3ca50c" class="outline-4">
-<h4 id="orge3ca50c">Length: 4.29</h4>
+<div id="outline-container-org7ee9e4e" class="outline-4">
+<h4 id="org7ee9e4e">Length: 4.29</h4>
 </div>
-<div id="outline-container-org4e651ea" class="outline-4">
-<h4 id="org4e651ea">Audio only: <a href="https://drive.google.com/open?id=1KIrvbRI1TzxfxLWC1-3-E23vYZPxAGJp">Link</a></h4>
+<div id="outline-container-org64141cf" class="outline-4">
+<h4 id="org64141cf">Audio only: <a href="https://drive.google.com/open?id=1KIrvbRI1TzxfxLWC1-3-E23vYZPxAGJp">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb56a066" class="outline-2">
-<h2 id="orgb56a066">Apothicaire du Roy</h2>
-<div class="outline-text-2" id="text-orgb56a066">
+<div id="outline-container-orgd1fae2a" class="outline-2">
+<h2 id="orgd1fae2a">Apothicaire du Roy</h2>
+<div class="outline-text-2" id="text-orgd1fae2a">
 <a href="https://www.youtube.com/watch?v=gEJVqfEhDyg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_apothicaire-du-roy.png" /></a>
 </div>
-<div id="outline-container-orgf57d499" class="outline-3">
-<h3 id="orgf57d499">Specs</h3>
-<div class="outline-text-3" id="text-orgf57d499">
+<div id="outline-container-org39c221b" class="outline-3">
+<h3 id="org39c221b">Specs</h3>
+<div class="outline-text-3" id="text-org39c221b">
 </div>
-<div id="outline-container-org334d571" class="outline-4">
-<h4 id="org334d571">Software: GarageBand, iMovie</h4>
+<div id="outline-container-org6115b5a" class="outline-4">
+<h4 id="org6115b5a">Software: GarageBand, iMovie</h4>
 </div>
-<div id="outline-container-org1110b15" class="outline-4">
-<h4 id="org1110b15">Release date: Feb 23, 2019</h4>
+<div id="outline-container-orgcc86d58" class="outline-4">
+<h4 id="orgcc86d58">Release date: Feb 23, 2019</h4>
 </div>
-<div id="outline-container-orgedfa90b" class="outline-4">
-<h4 id="orgedfa90b">Production timeframe: ~6 hours</h4>
+<div id="outline-container-orge849047" class="outline-4">
+<h4 id="orge849047">Production timeframe: ~6 hours</h4>
 </div>
-<div id="outline-container-orgf2e7961" class="outline-4">
-<h4 id="orgf2e7961">Length: 5.41</h4>
+<div id="outline-container-orgd380fb4" class="outline-4">
+<h4 id="orgd380fb4">Length: 5.41</h4>
 </div>
-<div id="outline-container-org74778cf" class="outline-4">
-<h4 id="org74778cf">Audio only: <a href="https://drive.google.com/open?id=1pnECEb7TK8vMOr3hEQJTbP3kokVhB6Da">Link</a></h4>
+<div id="outline-container-orgf636a83" class="outline-4">
+<h4 id="orgf636a83">Audio only: <a href="https://drive.google.com/open?id=1pnECEb7TK8vMOr3hEQJTbP3kokVhB6Da">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgbcd558b" class="outline-2">
-<h2 id="orgbcd558b">Eslévation Miraculeuse</h2>
-<div class="outline-text-2" id="text-orgbcd558b">
+<div id="outline-container-orgd8857e1" class="outline-2">
+<h2 id="orgd8857e1">Eslévation Miraculeuse</h2>
+<div class="outline-text-2" id="text-orgd8857e1">
 <a href="https://www.youtube.com/watch?v=aXYjeSPVwlg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_eslevation-miraculeuse.png" /></a>
 </div>
-<div id="outline-container-org3108d97" class="outline-3">
-<h3 id="org3108d97">Specs</h3>
-<div class="outline-text-3" id="text-org3108d97">
+<div id="outline-container-orgda886c1" class="outline-3">
+<h3 id="orgda886c1">Specs</h3>
+<div class="outline-text-3" id="text-orgda886c1">
 </div>
-<div id="outline-container-org0707760" class="outline-4">
-<h4 id="org0707760">Software: GarageBand, iMovie</h4>
+<div id="outline-container-org4201f99" class="outline-4">
+<h4 id="org4201f99">Software: GarageBand, iMovie</h4>
 </div>
-<div id="outline-container-org539bf41" class="outline-4">
-<h4 id="org539bf41">Release date: Feb 11, 2019</h4>
+<div id="outline-container-org70a29b0" class="outline-4">
+<h4 id="org70a29b0">Release date: Feb 11, 2019</h4>
 </div>
-<div id="outline-container-org43f6dd8" class="outline-4">
-<h4 id="org43f6dd8">Production timeframe: ~6 hours</h4>
+<div id="outline-container-org64b26c2" class="outline-4">
+<h4 id="org64b26c2">Production timeframe: ~6 hours</h4>
 </div>
-<div id="outline-container-orgbcd5844" class="outline-4">
-<h4 id="orgbcd5844">Length: 5.24</h4>
+<div id="outline-container-org1357b10" class="outline-4">
+<h4 id="org1357b10">Length: 5.24</h4>
 </div>
-<div id="outline-container-orgd04047c" class="outline-4">
-<h4 id="orgd04047c">Audio only: <a href="https://drive.google.com/open?id=1luRrDdRufB_Qptnl1mBzHCyedHUusZne">Link</a></h4>
+<div id="outline-container-org8302f34" class="outline-4">
+<h4 id="org8302f34">Audio only: <a href="https://drive.google.com/open?id=1luRrDdRufB_Qptnl1mBzHCyedHUusZne">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org19e580e" class="outline-2">
-<h2 id="org19e580e">La Voie du Trident</h2>
-<div class="outline-text-2" id="text-org19e580e">
+<div id="outline-container-orgd1c775a" class="outline-2">
+<h2 id="orgd1c775a">La Voie du Trident</h2>
+<div class="outline-text-2" id="text-orgd1c775a">
 <a href="https://www.youtube.com/watch?v=-vT4i_FTz7A" target="_blank"><img src="/media/images/boudoir_covers/boudoir_la-voie-du-trident.png" /></a>
 </div>
-<div id="outline-container-orga145c3b" class="outline-3">
-<h3 id="orga145c3b">Specs</h3>
-<div class="outline-text-3" id="text-orga145c3b">
+<div id="outline-container-org81cd3f2" class="outline-3">
+<h3 id="org81cd3f2">Specs</h3>
+<div class="outline-text-3" id="text-org81cd3f2">
 </div>
-<div id="outline-container-org6365b4b" class="outline-4">
-<h4 id="org6365b4b">Software: FoxDot, iMovie</h4>
+<div id="outline-container-orgf988769" class="outline-4">
+<h4 id="orgf988769">Software: FoxDot, iMovie</h4>
 </div>
-<div id="outline-container-org4048d67" class="outline-4">
-<h4 id="org4048d67">Release date: Dec 2, 2018</h4>
+<div id="outline-container-orgaa87fe5" class="outline-4">
+<h4 id="orgaa87fe5">Release date: Dec 2, 2018</h4>
 </div>
-<div id="outline-container-orged91a89" class="outline-4">
-<h4 id="orged91a89">Production timeframe: ~4 hours</h4>
+<div id="outline-container-orgf030829" class="outline-4">
+<h4 id="orgf030829">Production timeframe: ~4 hours</h4>
 </div>
-<div id="outline-container-org88ee37a" class="outline-4">
-<h4 id="org88ee37a">Length: 4.54</h4>
+<div id="outline-container-org2175eab" class="outline-4">
+<h4 id="org2175eab">Length: 4.54</h4>
 </div>
-<div id="outline-container-orgd1b69cc" class="outline-4">
-<h4 id="orgd1b69cc">FoxDot Code: <a href="https://gist.github.com/jf-parent/0dd1fdf3a54200283fc692605057c689">Link</a></h4>
+<div id="outline-container-org6c253a5" class="outline-4">
+<h4 id="org6c253a5">FoxDot Code: <a href="https://gist.github.com/jf-parent/0dd1fdf3a54200283fc692605057c689">Link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org9a57ab8" class="outline-2">
-<h2 id="org9a57ab8">Volonté de Puissance</h2>
-<div class="outline-text-2" id="text-org9a57ab8">
+<div id="outline-container-org61262b0" class="outline-2">
+<h2 id="org61262b0">Volonté de Puissance</h2>
+<div class="outline-text-2" id="text-org61262b0">
 <a href="https://www.youtube.com/watch?v=LO5vJ2VGvsE" target="_blank"><img src="/media/images/boudoir_covers/boudoir_volonte-de-puissance.png" /></a>
 </div>
-<div id="outline-container-org82079f1" class="outline-3">
-<h3 id="org82079f1">Specs</h3>
-<div class="outline-text-3" id="text-org82079f1">
+<div id="outline-container-orgb39d59a" class="outline-3">
+<h3 id="orgb39d59a">Specs</h3>
+<div class="outline-text-3" id="text-orgb39d59a">
 </div>
-<div id="outline-container-org54f6771" class="outline-4">
-<h4 id="org54f6771">Software: FoxDot, iMovie</h4>
+<div id="outline-container-org5cac296" class="outline-4">
+<h4 id="org5cac296">Software: FoxDot, iMovie</h4>
 </div>
-<div id="outline-container-org42244ea" class="outline-4">
-<h4 id="org42244ea">Release date: Oct 19, 2018</h4>
+<div id="outline-container-org1fc7378" class="outline-4">
+<h4 id="org1fc7378">Release date: Oct 19, 2018</h4>
 </div>
-<div id="outline-container-orgffd1d21" class="outline-4">
-<h4 id="orgffd1d21">Production timeframe: ~4 hours</h4>
+<div id="outline-container-orge27d7f6" class="outline-4">
+<h4 id="orge27d7f6">Production timeframe: ~4 hours</h4>
 </div>
-<div id="outline-container-org7edadda" class="outline-4">
-<h4 id="org7edadda">Length: 5.07</h4>
+<div id="outline-container-org87af2ff" class="outline-4">
+<h4 id="org87af2ff">Length: 5.07</h4>
 </div>
-<div id="outline-container-orgde50b03" class="outline-4">
-<h4 id="orgde50b03">FoxDot Code: <a href="https://gist.github.com/jf-parent/911571068aff0e61142ca847f0a62e19">Link</a></h4>
+<div id="outline-container-org97474ec" class="outline-4">
+<h4 id="org97474ec">FoxDot Code: <a href="https://gist.github.com/jf-parent/911571068aff0e61142ca847f0a62e19">Link</a></h4>
 </div>
 </div>
 </div>
@@ -443,31 +460,11 @@
         <div>
     <section id="wrapper">
       <div class="post-meta">
-        <span title="post date" class="post-info">2020-01-01</span>
+        <span title="post date" class="post-info">2020-01-02</span>
         <span title="tags" class="post-info">N/A</span>
       </div>
       <br />
       <br />
-      <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
-      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script async="" src="//www.google-analytics.com/analytics.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script src="/media/js/main.js"></script>
-      <script src="/media/highlight/highlight.pack.js"></script>
-      <script>
-        hljs.initHighlightingOnLoad();
-        document.querySelectorAll('pre.src').forEach((block) => {
-          hljs.highlightBlock(block);
-          });
-      </script>
-      <style type="text/css">
-       /* Mathjax */
-       .MathJax_Display {
-         background: white !important;
-       }
-      </style>
       <div align="center">
       <footer id="footer">
         <p class="small">
