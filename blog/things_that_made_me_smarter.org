@@ -12,100 +12,90 @@
 * Introduction
 ** I compiled this list of things that I feel made me smarter and sharper over the past couple years. This list is obviously highly subjective...
 * Things that made me smarter
-** Programming
-*** Switching to Emacs ([[https://www.spacemacs.org/][Spacemacs]])
-**** I was using Vim/tmux before I switched to Spacemacs (my conversion was fuelled by the fact that I could still use the ergonomic keybinding of Vim while taking advantage of all the extra features offered by the Emacs ecosystem. I also discovered emacs lisp and prefer it over Vimscript).
-**** I was using Wunderlist before switching to org-mode (when it got acquired by Microsoft I decided to look for alternative and org-mode seem like a future proof choice).
-**** I was using wikidot for my personal wiki and I switched to [[https://github.com/caiorss/org-wiki][org-wiki]] naturally.
-*** Learning some Lisp
-**** Out of curiosity and to increase my understanding of Emacs I started to learn some Lisp. Initially Emacs Lisp then Common Lisp to finally discover Clojure.
-**** I enjoy watching [[https://www.youtube.com/channel/UCMV8p6Lb-bd6UZtTc_QD4zA][Baggers]] videos.
-**** I am using Clojure to play with [[https://github.com/overtone/overtone][Overtone]] and [[http://quil.info/][Quil]].
-*** Programming problems
-**** [[https://app.codility.com/programmers/lessons/1-iterations/][Codility]]
-**** [[https://www.hackerrank.com/dashboard][HackerRank]]
-**** [[https://leetcode.com/][LeetCode]]
+** Switching to Emacs ([[https://www.spacemacs.org/][Spacemacs]])
+ * I was using Vim/tmux before I switched to Spacemacs (my conversion was fuelled by the fact that I could still use the ergonomic keybinding of Vim while taking advantage of all the extra features offered by the Emacs ecosystem. I also discovered emacs lisp and prefer it over Vimscript).
+ * I was using Wunderlist before switching to org-mode (when it got acquired by Microsoft I decided to look for alternative and org-mode seem like a future proof choice).
+ * I was using wikidot for my personal wiki and I switched to [[https://github.com/caiorss/org-wiki][org-wiki]] naturally.
+** Learning some Lisp
+ * Out of curiosity and to increase my understanding of Emacs I started to learn some Lisp. Initially Emacs Lisp then Common Lisp to finally discover Clojure.
+ * I enjoy watching [[https://www.youtube.com/channel/UCMV8p6Lb-bd6UZtTc_QD4zA][Baggers]] videos.
+ * I am using Clojure to play with [[https://github.com/overtone/overtone][Overtone]] and [[http://quil.info/][Quil]].
+** Programming problems
+ * [[https://app.codility.com/programmers/lessons/1-iterations/][Codility]]
+ * [[https://www.hackerrank.com/dashboard][HackerRank]]
+ * [[https://leetcode.com/][LeetCode]]
 ** Spaced repetition
-*** [[https://www.memrise.com/][Memrise]]
-*** [[https://mnemosyne-proj.org/][Mnemosyne]]
-*** [[https://apps.ankiweb.net/][Anki]]
+ * [[https://www.memrise.com/][Memrise]]
+ * [[https://mnemosyne-proj.org/][Mnemosyne]]
+ * [[https://apps.ankiweb.net/][Anki]]
 ** Games
-*** [[https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)][The Witness]]
-**** [[https://www.youtube.com/user/jblow888][Jonathan Blow]] (He has a lot of content about programming language design)
-*** Zachtronic
-**** [[https://en.wikipedia.org/wiki/Shenzhen_I/O][Shenzhen I/O]]
-**** [[https://en.wikipedia.org/wiki/Infinifactory][Infinifactory]]
-**** [[https://en.wikipedia.org/wiki/TIS-100][TIS-100]]
-**** [[https://en.wikipedia.org/wiki/Opus_Magnum_(video_game)][Opus Magnum]]
-*** [[https://en.wikipedia.org/wiki/Stephen%27s_Sausage_Roll][Stephen's Sausage Roll]] (don't be fool by the silly title, this is a very challenging puzzle game!)
-*** [[https://store.steampowered.com/app/652340/Flagsplosion/][Flagsplosion]]
-*** [[https://store.steampowered.com/app/328730/Letter_Quest_Grimms_Journey/][Letter Quest: Grimm's Journey]] (a word game)
-*** [[https://store.steampowered.com/app/497780/Recursed/][Recursed]]
-*** [[https://en.wikipedia.org/wiki/The_Talos_Principle][The Talos Principle - Wikipedia]]
-*** Chess
-**** [[https://www.youtube.com/user/chessbrah][chessbrah]]
-**** [[https://www.youtube.com/channel/UC6hOVYvNn79Sl1Fc1vx2mYA][John Bartholomew]]
-**** [[https://lichess.org/][lichess.org]]
-*** [[https://zty.pe/][ZType]] (improving your typing speed while having fun)
-*** Sudoku
-*** [[https://en.wikipedia.org/wiki/Mental_abacus][Anzan]]
-**** [[https://www.sorobanexam.org/anzan.html][Mental Calculation/Anzan software - Exercises for soroban examination]]
+ * [[https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)][The Witness]] [[https://www.youtube.com/user/jblow888][(Jonathan Blow]] has a lot of content about programming language design)
+ * [[https://en.wikipedia.org/wiki/Shenzhen_I/O][Shenzhen I/O]]
+ * [[https://en.wikipedia.org/wiki/Infinifactory][Infinifactory]]
+ * [[https://en.wikipedia.org/wiki/TIS-100][TIS-100]]
+ * [[https://en.wikipedia.org/wiki/Opus_Magnum_(video_game)][Opus Magnum]]
+ * [[https://en.wikipedia.org/wiki/Stephen%27s_Sausage_Roll][Stephen's Sausage Roll]] (don't be fool by the silly title, this is a very challenging puzzle game!)
+ * [[https://store.steampowered.com/app/652340/Flagsplosion/][Flagsplosion]]
+ * [[https://store.steampowered.com/app/328730/Letter_Quest_Grimms_Journey/][Letter Quest: Grimm's Journey]] (a word game)
+ * [[https://store.steampowered.com/app/497780/Recursed/][Recursed]]
+ * [[https://en.wikipedia.org/wiki/The_Talos_Principle][The Talos Principle]]
+ * [[https://zty.pe/][ZType]] (improving your typing speed while having fun)
+ * Sudoku
+ * [[https://en.wikipedia.org/wiki/Mental_abacus][Anzan]] ([[https://www.sorobanexam.org/anzan.html][Mental Calculation/Anzan software - Exercises for soroban examination]])
+** Chess
+ * [[https://www.youtube.com/user/chessbrah][chessbrah]]
+ * [[https://www.youtube.com/channel/UC6hOVYvNn79Sl1Fc1vx2mYA][John Bartholomew]]
+ * [[https://lichess.org/][lichess.org]]
 ** Mind Map
-*** I started to do some of my planning and brainstorming with [[https://mindnode.com/][Mind Map]]. Having my ideas represented visually allow me to think more effectively.
+ * I started to do some of my planning and brainstorming with [[https://mindnode.com/][Mind Map]]. Having my ideas represented visually allow me to think more effectively.
 ** Reading
-*** Everyday I read a few articles from Hacker News.
-*** I read a lot of articles from Wikipedia by chunking them by section (I can spend a few days on one article if it has a lot of sections so this reading methodology has some spaced repetition caracteristics).
-*** I organize my online reading through topical folders where I have 2 folders per topic (FOCUS and FUTURE). I dump every new items in the FUTURE folder and choose from it when I am finished with an article in the FOCUS folder. I try to limit the number of items in the FOCUS folder to less than 5. I have currently around 5-6 topical folders...
+ * Everyday I read a few articles from Hacker News.
+ * I read a lot of articles from Wikipedia by chunking them by section (I can spend a few days on one article if it has a lot of sections so this reading methodology has some spaced repetition caracteristics).
+ * I organize my online reading through topical folders where I have 2 folders per topic (FOCUS and FUTURE). I dump every new items in the FUTURE folder and choose from it when I am finished with an article in the FOCUS folder. I try to limit the number of items in the FOCUS folder to less than 5. I have currently around 5-6 topical folders...
 ** Feed
-*** I configured a newsletter subscriptions feed in my mailbox using a dedicated email address that get redirected to my main email address and filtered into a specific folder.
+ * I configured a newsletter subscriptions feed in my mailbox using a dedicated email address that get redirected to my main email address and filtered into a specific folder.
 ** Memorization
-*** [[https://en.wikipedia.org/wiki/Method_of_loci][Method of loci]]
-**** [[https://www.memrise.com/course/200582/vice-city-memory-palace/][Vice City Memory Palace - Memrise]]
-*** [[https://en.wikipedia.org/wiki/Dominic_system][Dominic system]]
-**** [[https://www.memrise.com/course/44981/paodominic-system-action-superhero-scifi/][PAO/Dominic System: Action, Superhero, … - Memrise]]
+ * [[https://en.wikipedia.org/wiki/Method_of_loci][Method of loci]] ([[https://www.memrise.com/course/200582/vice-city-memory-palace/][Vice City Memory Palace - Memrise]])
+ * [[https://en.wikipedia.org/wiki/Dominic_system][Dominic system]] ([[https://www.memrise.com/course/44981/paodominic-system-action-superhero-scifi/][PAO/Dominic System: Action, Superhero, … - Memrise]])
 ** Journaling
-*** I write a daily journal of the important stuffs that happen the day before. I then review these entries and organize them into my weekly journal. 
-*** I maintain a few other journals also (Gratitude Journal, Emotional Diary, Open Questions, Open Problems, Decision Journal, Forecast Journal and Error Log).
+ * I write a daily journal of the important stuffs that happen the day before. I then review these entries and organize them into my weekly journal. 
+ * I maintain a few other journals also (Gratitude Journal, Emotional Diary, Open Questions, Open Problems, Decision Journal, Forecast Journal and Error Log).
 ** Writing
-*** Distilling and organizing my thoughts decluster my mind and therefore make me more effective.
+ * Distilling and organizing my thoughts decluster my mind and therefore make me more effective.
 ** Thinking
-*** I try to do a deep thinking session every month where I either focus on solving a hard problem in my life or use something like the Cartesian doubt to get out of local minima...
+ * I try to do a deep thinking session every month where I either focus on solving a hard problem in my life or use something like the Cartesian doubt to get out of local minima...
 ** Languages
-*** I work on improving my Mandarin, French and English vocabularies daily (using mnemosyne flash cards).
+ * I work on improving my Mandarin, French and English vocabulary daily (using mnemosyne flash cards).
 ** Math
-*** [[https://brilliant.org/daily-problems/][Brilliant]]
-*** [[https://www.youtube.com/user/numberphile][Numberphile]]
-*** [[https://www.youtube.com/user/standupmaths][standupmaths]]
-*** [[https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg][Mathologer]]
+ * [[https://brilliant.org/daily-problems/][Brilliant]]
+ * [[https://www.youtube.com/user/numberphile][Numberphile]]
+ * [[https://www.youtube.com/user/standupmaths][standupmaths]]
+ * [[https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg][Mathologer]]
 ** Productivity tools
-*** I use a bunch of tools from this list ([[https://github.com/nikitavoloboev/my-mac-os][nikitavoloboev/my-mac-os: List of applications and tools that make my macOS experience even more amazing]]) Some of my favorites:
-**** [[https://www.alfredapp.com/][Alfred - Productivity App for macOS]]
-**** [[https://contexts.co/][Contexts - Radically simpler & faster window switcher for Mac]]
-**** [[https://www.macbartender.com/][Bartender 3 - Organize your menu bar icons on Mac]]
-**** [[https://kapeli.com/dash][Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli]]
+ * I use a bunch of tools from this list ([[https://github.com/nikitavoloboev/my-mac-os][nikitavoloboev/my-mac-os: List of applications and tools that make my macOS experience even more amazing]]).
 * Things that made me sharper
 ** Dual N-Back
-*** I use [[https://www.iqmindware.com/][IQ Mindware]] (I do Dual N-Back on and off; it's hard not to feel like you are not wasting your time while n-backing but it is fun from time to time).
+ * I use [[https://www.iqmindware.com/][IQ Mindware]] (I do Dual N-Back on and off; it's hard not to feel like you are not wasting your time while n-backing but it is fun from time to time).
 ** Training
-*** I train daily ([[https://www.artofmanliness.com/articles/the-prisoner-workout/][Prisoner workout]] if I am limited in time or space). My traning include a 20-30 minutes session of either martial art, [[https://www.maxwellsc.com/bjj-mobility.cfm][BJJ Mobility]], [[https://www.amazon.com/Steve-Maxwell-Encyclopedia-Joint-Mobility/dp/B0014JBJYW][Joint Mobility]], Wim Hof exercise routine, bodyweight training or [[https://extremekettlebells.com/][Kettlebells]] and I finish off with 10-20 minutes of stationary cycling.
+ * I train daily ([[https://www.artofmanliness.com/articles/the-prisoner-workout/][Prisoner workout]] if I am limited in time or space). My traning include a 20-30 minutes session of either martial art, [[https://www.maxwellsc.com/bjj-mobility.cfm][BJJ Mobility]], [[https://www.amazon.com/Steve-Maxwell-Encyclopedia-Joint-Mobility/dp/B0014JBJYW][Joint Mobility]], Wim Hof exercise routine, bodyweight training or [[https://extremekettlebells.com/][Kettlebells]] and I finish off with 10-20 minutes of stationary cycling.
 ** Nootropics / Supplements
-*** [[https://examine.com/supplements/caffeine/][Caffeine]] + [[https://examine.com/supplements/theanine/][L-Theanine]]
-*** [[https://examine.com/supplements/rhodiola-rosea/][Rhodiola Rosea]]
-*** Sencha green tea
-*** Coffee
-*** [[https://examine.com/supplements/creatine/][Creatine]]
-*** [[https://examine.com/supplements/vitamin-d/][Vitamin D]]
-*** [[https://examine.com/supplements/vitamin-b12/][Vitamin B₁₂]]
-*** [[https://examine.com/supplements/fish-oil/][Fish Oil]]
+ * [[https://examine.com/supplements/caffeine/][Caffeine]] + [[https://examine.com/supplements/theanine/][L-Theanine]]
+ * [[https://examine.com/supplements/rhodiola-rosea/][Rhodiola Rosea]]
+ * Sencha green tea
+ * Coffee
+ * [[https://examine.com/supplements/creatine/][Creatine]]
+ * [[https://examine.com/supplements/vitamin-d/][Vitamin D]]
+ * [[https://examine.com/supplements/vitamin-b12/][Vitamin B₁₂]]
+ * [[https://examine.com/supplements/fish-oil/][Fish Oil]]
 ** Contrast shower
-*** I finish my daily shower with a contrast shower.
+ * I finish my daily shower with a contrast shower.
 ** Meditation
-*** I meditate on Drone Music for about 20 minutes using [[https://en.wikipedia.org/wiki/Ekagrata][Ekagrata]] (focusing on one object).
+ * I meditate on Drone Music for about 20 minutes using [[https://en.wikipedia.org/wiki/Ekagrata][Ekagrata]] (focusing on one object).
 ** Respiration
-*** I do a respiration session after my daily meditation (I use a technique based on the Wim Hof Method).
+ * I do a respiration session after my daily meditation (I use a technique based on the Wim Hof Method).
 ** Sleeping hygiene
-*** I try to maximize my sleep quality with a good sleep hygiene.
-*** I take 300 mcg of Melatonin 30 minutes before bed.
+ * I try to maximize my sleep quality with a good sleep hygiene.
+ * I take 300 mcg of Melatonin 30 minutes before bed.
 ** Naping [22 minutes Max]
-*** I nap using a wooden pillow.
-*** I finish my nap with the [[https://www.maxwellsc.com/morning-routine.cfm][Steve Maxwell Morning Routine]].
+ * I nap using a wooden pillow.
+ * I finish my nap with the [[https://www.maxwellsc.com/morning-routine.cfm][Steve Maxwell Morning Routine]].
