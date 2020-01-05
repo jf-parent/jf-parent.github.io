@@ -17,7 +17,7 @@
 *** Production timeframe: ~65 hours 
 *** Length: 7.26
 *** Audio only: [[https://drive.google.com/open?id=1cH4G6i2lK-lnPpO-2dX8JKjHo_z0yKZw][Link]]
-** TODO Attribution: https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b
+*** Attribution: [[https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b][Link]]
 * Spitzenkörper Tao
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkorper-tao.png" /></a>
