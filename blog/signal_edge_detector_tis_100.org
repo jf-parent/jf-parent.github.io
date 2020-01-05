@@ -1,0 +1,18 @@
+#+TITLE:       Signal Edge Detector - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-01-05 Sun
+#+URI:         /blog/%y/%m/%d/signal-edge-detector---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Signal Edge Detector in TIS-100 (317/4/16):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/signal_edge_detector_tis_100.png" />
+#+END_EXPORT
+
+The task is to detect if the previous input has a difference of 10 or more with the current one. You have to implement an absolute function to deal with negative numbers (e.g.: 80 - 90 = -10;). Then you subtract 10 from the difference and see if it is less than 0, in which case you output a 0 otherwise a 1. Register are pretty limited in TIS-100 so I use the first node to store the number and fetch it twice. The /BAK/ register do not support /ADD/ or /SUB/ so it is not helping here. One thing I would like to try is to parallelize the code in 2 branches and reconcile the output in the last node with the /ANY/ opcode...
