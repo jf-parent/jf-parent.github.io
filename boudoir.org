@@ -9,7 +9,7 @@
 
 * divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=LnvIsdfB8Y0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
+<a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]], [[https://github.com/jf-parent/gen-art][gen-art]]
