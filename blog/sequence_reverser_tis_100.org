@@ -1,0 +1,19 @@
+#+TITLE:       Sequence Reverser - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-01-06 Mon
+#+URI:         /blog/%y/%m/%d/sequence-reverser---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Sequence Reverser in TIS-100 (407/4/15):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/sequence_reverser_tis_100.png" />
+#+END_EXPORT
+
+
+This one is fairly easy (the NO_MEMORY achievement is another story though!)... I add a zero first to simplify the code, then I stack all the values until I reach a zero. I then signal to another node that it is time to unstack and send the sequence in the reverse order. Once it has been done I signal the other node to move to the other sequence and process again...
