@@ -13,7 +13,7 @@
 
 * Boudoir // divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://youtu.be/9iyJuKp75gc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9iyJuKp75gc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
 * Quil Image Blending
 ** First, we need to add a bunch of images in the [[https://github.com/jf-parent/gen-art/tree/master/src/blending/images][images folder]].
