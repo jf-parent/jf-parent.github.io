@@ -1,7 +1,7 @@
 #+TITLE:       Sequence Reverser - TIS-100
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
-#+DATE:        2020-01-06 Mon
+#+DATE:        2020-01-13 Mon
 #+URI:         /blog/%y/%m/%d/sequence-reverser---tis-100
 #+KEYWORDS:    tis-100,zachtronics
 #+TAGS:        tis-100,zachtronics
