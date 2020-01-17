@@ -1,0 +1,19 @@
+#+TITLE:       Histogram Viewer - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-01-16 Mon
+#+URI:         /blog/%y/%m/%d/image-test-pattern-2---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Histogram Viewer in TIS-100 (4123/4/17):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/histogram_viewer.png" />
+#+END_EXPORT
+
+This is a fairly simple design. We add 18 to the negated Y and draw a white square until it is equal to zero. We then increment the X and continue.
+
