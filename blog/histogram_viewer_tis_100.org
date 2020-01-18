@@ -1,8 +1,8 @@
 #+TITLE:       Histogram Viewer - TIS-100
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
-#+DATE:        2020-01-16 Mon
-#+URI:         /blog/%y/%m/%d/image-test-pattern-2---tis-100
+#+DATE:        2020-01-16
+#+URI:         /blog/%y/%m/%d/histogram-viewer---tis-100
 #+KEYWORDS:    tis-100,zachtronics
 #+TAGS:        tis-100,zachtronics
 #+LANGUAGE:    en

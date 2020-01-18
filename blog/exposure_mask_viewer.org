@@ -1,0 +1,18 @@
+#+TITLE:       Exposure Mask Viewer - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-01-17
+#+URI:         /blog/%y/%m/%d/exposure-mask-viewer---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Exposure Mask Viewer in TIS-100 (1115/4/41):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/exposure_mask_viewer.png" />
+#+END_EXPORT
+
+This is a bit tricky since there is a need for 2 loops. I store the X in the second node, the Y and the Height in the third node and finally the Width in the fourth node. We need to send the same X for as long as the Height is greater than 0. We need to send the color code for white (3) as long as the Width is greater than 0. I add the height to the Y and decrement by 1 for every turn...
