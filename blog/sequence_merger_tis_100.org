@@ -1,0 +1,18 @@
+#+TITLE:       Sequence Merger - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-01-27 Mon
+#+URI:         /blog/%y/%m/%d/sequence-merger---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Sequence Merger in TIS-100 (610/6/44):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/sequence_merger.png" />
+#+END_EXPORT
+
+This one got me puzzle for longer than expected (I failed at using the stack on my first try so my current solution doesn't use it). I deal with 0 by transforming them in 999 (otherwise it will send the 0 before any other values). I check in the node that signal to OUT.S if the value is 999, if so I transform it back to 0. I loop in the nodes containing the left and the right value if their value was bigger than the other so that they resend it for another check; if the value is smaller I send it down...
