@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Mon, 27 Jan 2020 09:47:00 EST</pubDate>
-    <lastBuildDate>Mon, 27 Jan 2020 09:47:00 EST</lastBuildDate>
+    <pubDate>Thu, 30 Jan 2020 14:09:51 EST</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2020 14:09:51 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Subsequence Extractor - TIS-100</title>
+      <link>https://jf-parent.github.io/blog/2020/01/30/subsequence-extractor---tis-100</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2020-01-30</pubDate>
+      <guid>https://jf-parent.github.io/blog/2020/01/30/subsequence-extractor---tis-100</guid>
+    </item>
     <item>
       <title>Sequence Merger - TIS-100</title>
       <link>https://jf-parent.github.io/blog/2020/01/27/sequence-merger---tis-100</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-01-06</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/01/06/interrupt-handler---tis-100</guid>
-    </item>
-    <item>
-      <title>Signal Edge Detector - TIS-100</title>
-      <link>https://jf-parent.github.io/blog/2020/01/05/signal-edge-detector---tis-100</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2020-01-05</pubDate>
-      <guid>https://jf-parent.github.io/blog/2020/01/05/signal-edge-detector---tis-100</guid>
     </item>
   </channel>
 </rss>
