@@ -1,12 +1,22 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2019-12-20 Fri
+#+DATE:        2020-07-18 Sat
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* Anton–Babinski S.
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=OnNTh5zsr84" target="_blank"><img src="/media/images/boudoir_covers/boudoir_anton-babinski-s_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/gen-art][gen-art]]
+*** Release date: Jul 17, 2020
+*** Production timeframe: ~14 hours 
+*** Length: 3.16
+*** Audio only: [[Link][https://soundcloud.com/boudoir-psychopomp/boudoir-anton-babinski-s]]
 * divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
