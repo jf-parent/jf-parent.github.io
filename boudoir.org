@@ -16,7 +16,7 @@
 *** Release date: Jul 17, 2020
 *** Production timeframe: ~14 hours 
 *** Length: 3.16
-*** Audio only: [[Link][https://soundcloud.com/boudoir-psychopomp/boudoir-anton-babinski-s]]
+*** Audio only: https://soundcloud.com/boudoir-psychopomp/boudoir-anton-babinski-s
 * divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
