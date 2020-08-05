@@ -1,0 +1,48 @@
+#+TITLE:       Alliance Power and Light - Exapunks
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-08-05 Wed
+#+URI:         /blog/%y/%m/%d/alliance-power-and-light---exapunks
+#+KEYWORDS:    exapunks,zachtronics
+#+TAGS:        exapunks,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Alliance Power and Light (40, 28, 40)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/alliance_power_and_light.png" />
+#+END_EXPORT
+
+#+begin_src 
+GRAB 300
+COPY F X
+REPL GO
+COPY F X
+DROP
+MARK GO
+LINK 800
+COPY 800 T
+REPL SPLIT
+COPY 802 T
+REPL SPLIT
+MARK CHECK
+HOST T
+TEST T = X
+TJMP SHUTDOWN
+LINK 801
+JUMP CHECK
+MARK SPLIT
+LINK T
+REPL SPLIT
+JUMP CHECK
+HALT
+MARK SHUTDOWN
+@REP 4
+NOOP
+@END
+COPY 0 #POWR
+#+end_src
+
+The NOOPs at the end are one (poor) way to deal with synchronization between the two exa that will shutdown the power.
