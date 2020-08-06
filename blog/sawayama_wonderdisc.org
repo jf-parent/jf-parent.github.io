@@ -1,0 +1,73 @@
+#+TITLE:       Sawayama Wonderdisc (drive controller) - Exapunks
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-08-05 Wed
+#+URI:         /blog/%y/%m/%d/sawayama-wonderdisc---exapunks
+#+KEYWORDS:    exapunks,zachtronics
+#+TAGS:        exapunks,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Sawayama Wonderdisc (7565,54,122)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/sawayama_wonderdisc.png" />
+#+END_EXPORT
+
+#+begin_src 
+LINK 800
+COPY 8 #AUTH
+COPY 0 #AUTH
+COPY 3 #AUTH
+COPY 2 #AUTH
+COPY 7 #AUTH
+COPY 1 #AUTH
+COPY 0 #AUTH
+COPY 4 #AUTH
+COPY 9 #AUTH
+COPY 5 #AUTH
+COPY 1 #AUTH
+COPY 2 #AUTH
+COPY 5 #AUTH
+COPY 2 #AUTH
+COPY 6 #AUTH
+MARK LOOP
+REPL SSEA
+REPL READ
+JUMP DUPFILE
+MARK READ
+LINK 801
+GRAB M
+MARK READIN
+COPY F X
+COPY X M
+COPY X M
+JUMP READIN
+MARK SSEA
+LINK -1
+GRAB 300
+COPY F M
+HALT
+MARK DUPFILE
+COPY M X
+COPY #TRAK M
+MAKE
+MARK COPY
+NOOP
+TEST MRD
+FJMP TRANSFER
+TEST M > 0
+FJMP REPLACE
+COPY M F
+JUMP COPY
+MARK REPLACE
+COPY X F
+COPY M T
+JUMP COPY
+MARK TRANSFER
+LINK 800
+DROP
+LINK -1
+JUMP LOOP
+#+end_src
