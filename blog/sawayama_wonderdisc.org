@@ -1,7 +1,7 @@
 #+TITLE:       Sawayama Wonderdisc (drive controller) - Exapunks
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
-#+DATE:        2020-08-05 Wed
+#+DATE:        2020-08-06 Wed
 #+URI:         /blog/%y/%m/%d/sawayama-wonderdisc---exapunks
 #+KEYWORDS:    exapunks,zachtronics
 #+TAGS:        exapunks,zachtronics
