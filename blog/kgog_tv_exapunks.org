@@ -1,0 +1,107 @@
+#+TITLE:       Kgog TV - Exapunks
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-08-11
+#+URI:         /blog/%y/%m/%d/kgog-tv---exapunks
+#+KEYWORDS:    exapunks,zachtronics
+#+TAGS:        exapunks,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for KGOG TV (276,100,7)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/kgog_tv_exapunks.png" />
+#+END_EXPORT
+
+#+begin_src 
+GRAB 301
+LINK 800
+REPL FORK_KEY
+VOID F
+MARK ENCRYPT
+SUBI M 9999 X
+ADDI X F X
+TEST X < 0
+FJMP ADJUST
+ADDI X 9999 X
+MARK EMIT
+SEEK -1
+COPY X F
+TEST EOF
+FJMP ENCRYPT
+KILL
+LINK 799
+SEEK -999
+MARK SEND_DATA
+@REP 12
+COPY F #DATA
+@END
+TEST EOF
+FJMP SEND_DATA
+WIPE
+HALT
+MARK FORK_KEY
+GRAB 199
+MARK SEND_KEY
+COPY F M
+TEST EOF
+FJMP SEND_KEY
+SEEK -999
+JUMP SEND_KEY
+MARK ADJUST
+SUBI X 1 X
+JUMP EMIT
+#+end_src
+
+#+begin_src 
+GRAB 300
+LINK 800
+LINK 799
+SEEK 1
+COPY F X
+REPL AZIMUTH
+SEEK 1
+COPY F X
+SEEK 1
+COPY F T
+WIPE
+COPY T #FREQ
+LINK 801
+SUBI X #ELEV X
+JUMP DISPATCH
+MARK AZIMUTH
+LINK 800
+SUBI X #AZIM X
+MARK DISPATCH
+TEST X > 0
+FJMP ALIGNNEG
+MARK ALIGNPOS6
+TEST X > 6
+FJMP ALIGNPOS1
+@REP 6
+COPY 1 #MOTR
+@END
+SUBI X 6 X
+JUMP ALIGNPOS6
+MARK ALIGNPOS1
+COPY 1 #MOTR
+SUBI X 1 X
+TEST X = 0
+FJMP ALIGNPOS1
+HALT
+MARK ALIGNNEG
+TEST X < -6
+FJMP ALIGNNEG1
+@REP 6
+COPY -1 #MOTR
+@END
+ADDI X 6 X
+JUMP ALIGNNEG
+MARK ALIGNNEG1
+COPY -1 #MOTR
+ADDI X 1 X
+TEST X = 0
+FJMP ALIGNNEG
+#+end_src
