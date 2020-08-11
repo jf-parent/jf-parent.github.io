@@ -1,8 +1,8 @@
 #+TITLE:       Mitsuzen HDI-10 - Exapunks
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
-#+DATE:        2020-08-07 Wed
-#+URI:         /blog/%y/%m/%d/sawayama-wonderdisc---exapunks
+#+DATE:        2020-08-07
+#+URI:         /blog/%y/%m/%d/mitsuzen-hdi-10---exapunks
 #+KEYWORDS:    exapunks,zachtronics
 #+TAGS:        exapunks,zachtronics
 #+LANGUAGE:    en

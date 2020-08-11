@@ -1,0 +1,74 @@
+#+TITLE:       Xtreme League Baseball - Exapunks
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-08-10
+#+URI:         /blog/%y/%m/%d/xtreme-league-baseball---exapunks
+#+KEYWORDS:    exapunks,zachtronics
+#+TAGS:        exapunks,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Xtreme League Baseball (142,61,3)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/xtreme_league_baseball.png" />
+#+END_EXPORT
+
+#+begin_src 
+MAKE
+COPY -1 F
+MARK WRITE
+COPY M F
+JUMP WRITE
+#+end_src
+
+#+begin_src 
+LINK 800
+GRAB 199
+MARK READ
+COPY F X
+REPL STAT
+TEST EOF
+FJMP READ
+DROP
+@REP 12
+NOOP
+@END
+LINK -1
+KILL
+GRAB 400
+SEEK 1
+MARK FINDMAX
+TEST F > X
+TJMP MAX
+SEEK -1
+VOID F
+VOID F
+JUMP FINDMAX
+MARK MAX
+COPY F T
+SEEK -999
+COPY T F
+COPY F X
+SEEK -1
+VOID F
+VOID F
+JUMP FINDMAX
+MARK STAT
+GRAB X
+SEEK 1
+ADDI F F X
+ADDI F X X
+DIVI X 3 T
+MULI F F X
+DIVI X F X
+ADDI T X T
+SUBI F F X
+MULI X 20 X
+ADDI T X X
+SEEK -999
+COPY F T
+COPY X M
+COPY T M
+#+end_src
