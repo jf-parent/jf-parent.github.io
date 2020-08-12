@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Wed, 12 Aug 2020 08:26:09 EDT</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 08:26:09 EDT</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2020 19:17:02 EDT</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2020 19:17:02 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Equity First Bank San Francisco ATM offline - Exapunks</title>
+      <link>https://jf-parent.github.io/blog/2020/08/12/equity-first-bank-san-francisco-atm-offline---exapunks</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2020-08-12</pubDate>
+      <guid>https://jf-parent.github.io/blog/2020/08/12/equity-first-bank-san-francisco-atm-offline---exapunks</guid>
+    </item>
     <item>
       <title>Kgog TV - Exapunks</title>
       <link>https://jf-parent.github.io/blog/2020/08/11/kgog-tv---exapunks</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-01-30</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/01/30/subsequence-extractor---tis-100</guid>
-    </item>
-    <item>
-      <title>Sequence Merger - TIS-100</title>
-      <link>https://jf-parent.github.io/blog/2020/01/27/sequence-merger---tis-100</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2020-01-27</pubDate>
-      <guid>https://jf-parent.github.io/blog/2020/01/27/sequence-merger---tis-100</guid>
     </item>
   </channel>
 </rss>
