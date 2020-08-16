@@ -7,6 +7,16 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* She got all the tatoos to prove it
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/Zcj12W9Hlag" target="_blank"><img src="/media/images/boudoir_covers/boudoir_she-got-all-the-tatoos-to-prove-it_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/gen-art][gen-art]]
+*** Release date: Aug 14, 2020
+*** Production timeframe: ~8 hours 
+*** Length: 4.17
+*** Audio only: https://soundcloud.com/boudoir-psychopomp/boudoir-she-got-all-the-tatoos-to-prove-it
 * Anton–Babinski S.
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=OnNTh5zsr84" target="_blank"><img src="/media/images/boudoir_covers/boudoir_anton-babinski-s_cover.png" /></a>
