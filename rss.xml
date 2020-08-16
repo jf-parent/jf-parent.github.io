@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Wed, 12 Aug 2020 19:17:02 EDT</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 19:17:02 EDT</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2020 14:43:06 EDT</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2020 14:43:06 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Boudoir</title>
+      <link>https://jf-parent.github.io/boudoir</link>
+      <description><![CDATA[Boudoir - Electronic Music w/ Art Video]]></description>
+      <pubDate>2020-08-16</pubDate>
+      <guid>https://jf-parent.github.io/boudoir</guid>
+    </item>
     <item>
       <title>Equity First Bank San Francisco ATM offline - Exapunks</title>
       <link>https://jf-parent.github.io/blog/2020/08/12/equity-first-bank-san-francisco-atm-offline---exapunks</link>
@@ -49,13 +56,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-08-05</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/08/05/alliance-power-and-light---exapunks</guid>
-    </item>
-    <item>
-      <title>Boudoir</title>
-      <link>https://jf-parent.github.io/boudoir</link>
-      <description><![CDATA[Boudoir - Electronic Music w/ Art Video]]></description>
-      <pubDate>2020-07-18</pubDate>
-      <guid>https://jf-parent.github.io/boudoir</guid>
     </item>
     <item>
       <title>Signal Multiplier - TIS-100</title>
