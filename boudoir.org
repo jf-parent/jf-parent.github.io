@@ -7,6 +7,16 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* Pulmonaut
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/Vg4zAPpL3Ms" target="_blank"><img src="/media/images/boudoir_covers/boudoir_pulmonaut.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]], [[https://github.com/jf-parent/gen-art][gen-art]]
+*** Release date: Sep 05, 2020
+*** Production timeframe: ~16 hours 
+*** Length: 8.02
+*** Audio only: [[https://soundcloud.com/boudoir-psychopomp/boudoir-pulmonaut][Link]]
 * She got all the tatoos to prove it
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/Zcj12W9Hlag" target="_blank"><img src="/media/images/boudoir_covers/boudoir_she-got-all-the-tatoos-to-prove-it_cover.png" /></a>
@@ -16,7 +26,7 @@
 *** Release date: Aug 14, 2020
 *** Production timeframe: ~8 hours 
 *** Length: 4.17
-*** Audio only: https://soundcloud.com/boudoir-psychopomp/boudoir-she-got-all-the-tatoos-to-prove-it
+*** Audio only: [[https://soundcloud.com/boudoir-psychopomp/boudoir-she-got-all-the-tatoos-to-prove-it][Link]]
 * Anton–Babinski S.
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=OnNTh5zsr84" target="_blank"><img src="/media/images/boudoir_covers/boudoir_anton-babinski-s_cover.png" /></a>
@@ -26,7 +36,7 @@
 *** Release date: Jul 17, 2020
 *** Production timeframe: ~14 hours 
 *** Length: 3.16
-*** Audio only: https://soundcloud.com/boudoir-psychopomp/boudoir-anton-babinski-s
+*** Audio only: [[https://soundcloud.com/boudoir-psychopomp/boudoir-anton-babinski-s][Link]]
 * divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
