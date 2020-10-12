@@ -1,0 +1,35 @@
+#+TITLE:       Laser Tag Equipment - Shenzhen I/O
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-10-12
+#+URI:         /blog/%y/%m/%d/laser-tag-equipment---shenzhen
+#+KEYWORDS:    shenzhen,zachtronics
+#+TAGS:        shenzhen,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Laser Tag Equipment (¥7,502,14)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/laser_tag_equipment_score.png" />
+<img src="/media/images/laser_tag_equipment_layout.png" />
+<img src="/media/images/laser_tag_equipment_pin.png" />
+#+END_EXPORT
+
+#+begin_src 
+  mov 0 p1
+  teq x0 100
++ mov 100 dat
+  teq x0 10
++ mov 0 dat
+  mov dat p0
+  teq x3 10
++ mov x2 acc
+  teq x3 100
++ tgt acc 0
++ teq dat 100
++ sub 1
++ mov 100 p1
+  slp 1
+#+end_src
