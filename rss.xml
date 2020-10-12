@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Sun, 06 Sep 2020 15:12:38 EDT</pubDate>
-    <lastBuildDate>Sun, 06 Sep 2020 15:12:38 EDT</lastBuildDate>
+    <pubDate>Mon, 12 Oct 2020 10:26:48 EDT</pubDate>
+    <lastBuildDate>Mon, 12 Oct 2020 10:26:48 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Laser Tag Equipment - Shenzhen I/O</title>
+      <link>https://jf-parent.github.io/blog/2020/10/12/laser-tag-equipment---shenzhen</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2020-10-12</pubDate>
+      <guid>https://jf-parent.github.io/blog/2020/10/12/laser-tag-equipment---shenzhen</guid>
+    </item>
     <item>
       <title>Boudoir</title>
       <link>https://jf-parent.github.io/boudoir</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-01-30</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/01/30/signal-error-corrector---tis-100</guid>
-    </item>
-    <item>
-      <title>Subsequence Extractor - TIS-100</title>
-      <link>https://jf-parent.github.io/blog/2020/01/30/subsequence-extractor---tis-100</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2020-01-30</pubDate>
-      <guid>https://jf-parent.github.io/blog/2020/01/30/subsequence-extractor---tis-100</guid>
     </item>
   </channel>
 </rss>
