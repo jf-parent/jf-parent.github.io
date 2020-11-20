@@ -4,23 +4,23 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Mon, 12 Oct 2020 10:26:48 EDT</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2020 10:26:48 EDT</lastBuildDate>
+    <pubDate>Fri, 20 Nov 2020 11:08:09 EST</pubDate>
+    <lastBuildDate>Fri, 20 Nov 2020 11:08:09 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Boudoir</title>
+      <link>https://jf-parent.github.io/boudoir</link>
+      <description><![CDATA[Boudoir - Electronic Music w/ Art Video]]></description>
+      <pubDate>2020-11-20</pubDate>
+      <guid>https://jf-parent.github.io/boudoir</guid>
+    </item>
     <item>
       <title>Laser Tag Equipment - Shenzhen I/O</title>
       <link>https://jf-parent.github.io/blog/2020/10/12/laser-tag-equipment---shenzhen</link>
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-10-12</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/10/12/laser-tag-equipment---shenzhen</guid>
-    </item>
-    <item>
-      <title>Boudoir</title>
-      <link>https://jf-parent.github.io/boudoir</link>
-      <description><![CDATA[Boudoir - Electronic Music w/ Art Video]]></description>
-      <pubDate>2020-09-06</pubDate>
-      <guid>https://jf-parent.github.io/boudoir</guid>
     </item>
     <item>
       <title>Equity First Bank San Francisco ATM offline - Exapunks</title>
