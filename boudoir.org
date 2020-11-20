@@ -7,6 +7,17 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* Hypercoenesthesiopathy
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/PuBXjW9XpIU" target="_blank"><img src="/media/images/boudoir_covers/boudoir_hypercoenesthesiopathy_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]] [The Betty Richardson Effect], [[http://golly.sourceforge.net/][Golly]], [[https://xaos-project.github.io/][Xaos]]
+*** Footage: [[https://archive.org/details/CYBERNINJA_201812][VHS Vault - Cyber Ninja]]
+*** Release date: Nov 20, 2020
+*** Production timeframe: ~48 hours 
+*** Length: 8.05
+*** Audio only: [[https://soundcloud.com/boudoir-psychopomp/boudoir-hypercoenesthesiopathy][Link]]
 * Pulmonaut
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/Vg4zAPpL3Ms" target="_blank"><img src="/media/images/boudoir_covers/boudoir_pulmonaut.png" /></a>
