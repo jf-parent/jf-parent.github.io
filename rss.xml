@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Sat, 05 Dec 2020 20:46:58 EST</pubDate>
-    <lastBuildDate>Sat, 05 Dec 2020 20:46:58 EST</lastBuildDate>
+    <pubDate>Sun, 06 Dec 2020 19:39:29 EST</pubDate>
+    <lastBuildDate>Sun, 06 Dec 2020 19:39:29 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Sequence Generator - TIS-100</title>
+      <link>https://jf-parent.github.io/blog/2020/12/06/sequence-generator---tis-100</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2020-12-06</pubDate>
+      <guid>https://jf-parent.github.io/blog/2020/12/06/sequence-generator---tis-100</guid>
+    </item>
     <item>
       <title>Signal Multiplexer - TIS-100</title>
       <link>https://jf-parent.github.io/blog/2020/12/05/signal-multiplexer---tis-100</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-08-05</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/08/05/alliance-power-and-light---exapunks</guid>
-    </item>
-    <item>
-      <title>Signal Multiplier - TIS-100</title>
-      <link>https://jf-parent.github.io/blog/2020/02/01/signal-multiplier---tis-100</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2020-02-01</pubDate>
-      <guid>https://jf-parent.github.io/blog/2020/02/01/signal-multiplier---tis-100</guid>
     </item>
   </channel>
 </rss>
