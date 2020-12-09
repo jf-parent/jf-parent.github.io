@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  <title>About - Jean-François Parent&#39;s Blog</title>
+  <title>Interrupt Handler - TIS-100 - Jean-François Parent&#39;s Blog</title>
   <meta charset="utf-8" />
   <meta name="author" content="Jean-François Parent" />
-    <meta name="description" content="About" />
+    <meta name="description" content="&lt;TODO: insert your description here&gt;" />
+    <meta name="keywords" content="tis-100,zachtronics" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
   <script>
@@ -54,68 +55,26 @@
     <section id="wrapper">
         <article class="post">
             <header>
-                    <h1>About</h1>
+                    <h1>Interrupt Handler - TIS-100</h1>
             </header>
             <br />
             <section id="post-body">
-                
-<div id="outline-container-org1ee4831" class="outline-2">
-<h2 id="org1ee4831">Introduction</h2>
-<div class="outline-text-2" id="text-org1ee4831">
-<p>
-French-Canadian programmer (Python, Bash, C, Clojure, Common Lisp, Emacs Lisp, Javascript).
+                <p>
+Here is my solution for Interrupt Handler in TIS-100 [optimized for fast cycle] (201/9/46):
 </p>
 
-<p>
-Passionate about Emacs (Spacemacs) and Org-Mode.
-</p>
+<img src="/media/images/interrupt_handler_tis_100_code_fast_cycle.png" />
+<img src="/media/images/interrupt_handler_tis_100_scoreboard.png" />
 
 <p>
-Currently living on a hobby farm in South Quebec with his Wonder-Wifey.
+Here is my solution for Interrupt Handler in TIS-100 (318/9/47):
 </p>
+
+<img src="/media/images/interrupt_handler_tis_100_code.png" />
 
 <p>
-Slowly progressing towards a self-reliance lifestyle using no-tech, low-tech and high-tech solutions.
+This one is fairly straight forward to understand. The code in the top nodes is all the same with the exception of the signal "id" {1, 2, 3, 4}. We basically check if we get a 0 followed by a 1. We gather all the node output before sending the cycle signal.
 </p>
-
-<p>
-Computer Musician (IDM, Drone-Music and Electro-Acoustic).
-</p>
-</div>
-</div>
-
-<div id="outline-container-org39df91c" class="outline-2">
-<h2 id="org39df91c">Active Projects</h2>
-<div class="outline-text-2" id="text-org39df91c">
-</div>
-<div id="outline-container-orga191aa3" class="outline-3">
-<h3 id="orga191aa3">Agritech</h3>
-</div>
-<div id="outline-container-org25539ca" class="outline-3">
-<h3 id="org25539ca"><a href="https://github.com/jf-parent/gen-art">jf-parent/gen-art: Generative Art w/ Clojure Quil</a></h3>
-</div>
-<div id="outline-container-orgd8ff83a" class="outline-3">
-<h3 id="orgd8ff83a"><a href="https://github.com/jf-parent/video_processing">jf-parent/video_processing: Video Processing  BOUDOIR </a></h3>
-</div>
-<div id="outline-container-orgbd9739e" class="outline-3">
-<h3 id="orgbd9739e">Boudoir - Electronic Music + Artistic Video</h3>
-</div>
-</div>
-
-<div id="outline-container-orgc0b8c82" class="outline-2">
-<h2 id="orgc0b8c82">Previous Projects</h2>
-<div class="outline-text-2" id="text-orgc0b8c82">
-</div>
-<div id="outline-container-orgc183cf6" class="outline-3">
-<h3 id="orgc183cf6"><a href="https://github.com/jf-parent/brome">jf-parent/brome: Selenium Framework for Python 3.5</a></h3>
-</div>
-<div id="outline-container-orgfdbf88a" class="outline-3">
-<h3 id="orgfdbf88a"><a href="https://github.com/jf-parent/webbase">jf-parent/webbase: WebBase - Boilerplate for React-Redux-Router &amp; Aiohttp</a></h3>
-</div>
-<div id="outline-container-orgd4a5d86" class="outline-3">
-<h3 id="orgd4a5d86"><a href="https://github.com/jf-parent/artscripts">jf-parent/artscripts: Scripted Variation of Artwork</a></h3>
-</div>
-</div>
 
             </section>
     </section>
@@ -123,6 +82,10 @@ Computer Musician (IDM, Drone-Music and Electro-Acoustic).
 
         <div>
     <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2020-12-08</span>
+        <span title="tags" class="post-info"><a href="/tags/tis-100/">tis-100</a>, <a href="/tags/zachtronics/">zachtronics</a></span>
+      </div>
       <br />
       <br />
       <div align="center">
