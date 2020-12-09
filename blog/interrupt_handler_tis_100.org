@@ -1,13 +1,20 @@
 #+TITLE:       Interrupt Handler - TIS-100
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
-#+DATE:        2020-01-06 Mon
+#+DATE:        2020-12-08 Mon
 #+URI:         /blog/%y/%m/%d/interrupt-handler---tis-100
 #+KEYWORDS:    tis-100,zachtronics
 #+TAGS:        tis-100,zachtronics
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Interrupt Handler in TIS-100 [optimized for fast cycle] (201/9/46):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/interrupt_handler_tis_100_code_fast_cycle.png" />
+<img src="/media/images/interrupt_handler_tis_100_scoreboard.png" />
+#+END_EXPORT
 
 Here is my solution for Interrupt Handler in TIS-100 (318/9/47):
 
