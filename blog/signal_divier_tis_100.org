@@ -1,0 +1,17 @@
+#+TITLE:       Signal Divider - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2020-12-13
+#+URI:         /blog/%y/%m/%d/signal-divider---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Signal Divider in TIS-100 (6391/7/25):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/signal_divider_tis_100_code.png" />
+<img src="/media/images/signal_divider_tis_100_scoreboard.png" />
+#+END_EXPORT
