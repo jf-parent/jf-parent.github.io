@@ -9,6 +9,13 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: <TODO: insert your description here>
 
+Here is my solution for Signal Divider (doubled division and two division at a time after the first one) in TIS-100 (2441/8/84):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/signal_divider_doubled_division_parallel_code.png" />
+<img src="/media/images/signal_divider_doubled_division_parallel_scoreboard.png" />
+#+END_EXPORT
+
 Here is my solution for Signal Divider (two division at a time after the first one) in TIS-100 (4504/8/65):
 
 #+BEGIN_EXPORT html
