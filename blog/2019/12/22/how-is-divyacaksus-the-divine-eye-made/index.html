@@ -61,28 +61,28 @@
             <section id="post-body">
                 
 
-<div id="outline-container-org5a5642e" class="outline-2">
-<h2 id="org5a5642e">Boudoir // divyacakṣus - the divine eye</h2>
-<div class="outline-text-2" id="text-org5a5642e">
+<div id="outline-container-orge0a5a11" class="outline-2">
+<h2 id="orge0a5a11">Boudoir // divyacakṣus - the divine eye</h2>
+<div class="outline-text-2" id="text-orge0a5a11">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9iyJuKp75gc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-<div id="outline-container-org51dd989" class="outline-2">
-<h2 id="org51dd989">Quil Image Blending</h2>
-<div class="outline-text-2" id="text-org51dd989">
+<div id="outline-container-org29361f0" class="outline-2">
+<h2 id="org29361f0">Quil Image Blending</h2>
+<div class="outline-text-2" id="text-org29361f0">
 </div>
-<div id="outline-container-orgb188fb6" class="outline-3">
-<h3 id="orgb188fb6">First, we need to add a bunch of images in the <a href="https://github.com/jf-parent/gen-art/tree/master/src/blending/images">images folder</a>.</h3>
+<div id="outline-container-orgb594bf5" class="outline-3">
+<h3 id="orgb594bf5">First, we need to add a bunch of images in the <a href="https://github.com/jf-parent/gen-art/tree/master/src/blending/images">images folder</a>.</h3>
 </div>
-<div id="outline-container-orgb6fa142" class="outline-3">
-<h3 id="orgb6fa142">Then we call <i>lein run -m blending.blending</i></h3>
+<div id="outline-container-org6373502" class="outline-3">
+<h3 id="org6373502">Then we call <i>lein run -m blending.blending</i></h3>
 </div>
-<div id="outline-container-orgc911780" class="outline-3">
-<h3 id="orgc911780">Use <a href="https://github.com/jf-parent/gen-art/blob/master/src/blending/rename.sh">rename.sh</a> if your images' name contains special characters.</h3>
+<div id="outline-container-orgb6d705f" class="outline-3">
+<h3 id="orgb6d705f">Use <a href="https://github.com/jf-parent/gen-art/blob/master/src/blending/rename.sh">rename.sh</a> if your images' name contains special characters.</h3>
 </div>
-<div id="outline-container-org99ebbc5" class="outline-3">
-<h3 id="org99ebbc5">The script randomly selects an image and a blending mode and adds it to the canvas. The settings are also randomly selected (<a href="http://quil.info/api/image/pixels#blend">Quil API Blend</a>)</h3>
-<div class="outline-text-3" id="text-org99ebbc5">
+<div id="outline-container-org62a0ad0" class="outline-3">
+<h3 id="org62a0ad0">The script randomly selects an image and a blending mode and adds it to the canvas. The settings are also randomly selected (<a href="http://quil.info/api/image/pixels#blend">Quil API Blend</a>)</h3>
+<div class="outline-text-3" id="text-org62a0ad0">
 <div class="org-src-container">
 <pre class="src src-Clojure"> (ns blending.blending
   (:require [quil.core :as q]
@@ -123,23 +123,23 @@
 </div>
 </div>
 
-<div id="outline-container-org0ac4b67" class="outline-3">
-<h3 id="org0ac4b67">The result looks like this:</h3>
-<div class="outline-text-3" id="text-org0ac4b67">
+<div id="outline-container-org95d1c88" class="outline-3">
+<h3 id="org95d1c88">The result looks like this:</h3>
+<div class="outline-text-3" id="text-org95d1c88">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l-GJMq48JVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-<div id="outline-container-org2b98c52" class="outline-3">
-<h3 id="org2b98c52">Repo: <a href="https://github.com/jf-parent/gen-art">jf-parent/gen-art: Generative Art w/ Clojure Quil</a> // <a href="https://github.com/jf-parent/gen-art/blob/master/src/blending/blending.clj">Code</a></h3>
+<div id="outline-container-org4c5139f" class="outline-3">
+<h3 id="org4c5139f">Repo: <a href="https://github.com/jf-parent/gen-art">jf-parent/gen-art: Generative Art w/ Clojure Quil</a> // <a href="https://github.com/jf-parent/gen-art/blob/master/src/blending/blending.clj">Code</a></h3>
 </div>
 </div>
-<div id="outline-container-org5a697ef" class="outline-2">
-<h2 id="org5a697ef">[optional] Shuffle-merge</h2>
-<div class="outline-text-2" id="text-org5a697ef">
+<div id="outline-container-org2f0c509" class="outline-2">
+<h2 id="org2f0c509">[optional] Shuffle-merge</h2>
+<div class="outline-text-2" id="text-org2f0c509">
 </div>
-<div id="outline-container-org5b8c831" class="outline-3">
-<h3 id="org5b8c831">If you need some glitch in your video you can apply the shuffle-merge effect via vprocess.py</h3>
-<div class="outline-text-3" id="text-org5b8c831">
+<div id="outline-container-org5c5ad25" class="outline-3">
+<h3 id="org5c5ad25">If you need some glitch in your video you can apply the shuffle-merge effect via vprocess.py</h3>
+<div class="outline-text-3" id="text-org5c5ad25">
 <div class="org-src-container">
 <pre class="src src-bash"># Inside video-processing
 ./vprocess.py shuffle-merge --nb-chunk X --max-dur-subclip 1 --min-dur-subclip 0
@@ -148,16 +148,16 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orge831263" class="outline-2">
-<h2 id="orge831263">The Douglas Vasquez Effect</h2>
-<div class="outline-text-2" id="text-orge831263">
+<div id="outline-container-org673ad4a" class="outline-2">
+<h2 id="org673ad4a">The Douglas Vasquez Effect</h2>
+<div class="outline-text-2" id="text-org673ad4a">
 </div>
-<div id="outline-container-orgc9c4919" class="outline-3">
-<h3 id="orgc9c4919">We call the function <i>the_douglas_vasquez_effect</i> with the foreground footage as <i>input_1</i> and the background footage (the quil blending we prepared earlier) with <i>input_2</i>.</h3>
+<div id="outline-container-org13c56fd" class="outline-3">
+<h3 id="org13c56fd">We call the function <i>the_douglas_vasquez_effect</i> with the foreground footage as <i>input_1</i> and the background footage (the quil blending we prepared earlier) with <i>input_2</i>.</h3>
 </div>
-<div id="outline-container-org9e4acbe" class="outline-3">
-<h3 id="org9e4acbe">Since this is a dirty script you need to tweak the code accordingly.</h3>
-<div class="outline-text-3" id="text-org9e4acbe">
+<div id="outline-container-orgc0508c2" class="outline-3">
+<h3 id="orgc0508c2">Since this is a dirty script you need to tweak the code accordingly.</h3>
+<div class="outline-text-3" id="text-orgc0508c2">
 <div class="org-src-container">
 <pre class="src src-Python">def the_douglas_vasquez_effect(input_1, input_2):
    clip1 = VideoFileClip(input_1) #.subclip(0, 50)
@@ -214,14 +214,14 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgc17904b" class="outline-3">
-<h3 id="orgc17904b">The result looks like this:</h3>
-<div class="outline-text-3" id="text-orgc17904b">
+<div id="outline-container-org3aca505" class="outline-3">
+<h3 id="org3aca505">The result looks like this:</h3>
+<div class="outline-text-3" id="text-org3aca505">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nE-93VFEeYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-<div id="outline-container-org55d5fb5" class="outline-3">
-<h3 id="org55d5fb5">Repo: <a href="https://github.com/jf-parent/video_processing">jf-parent/video_processing: Vprocess BOUDOIR</a> // <a href="https://github.com/jf-parent/video_processing/blob/master/the_douglas_vasquez_effect/the_douglas_vasquez_effect.py">Code</a></h3>
+<div id="outline-container-org22be281" class="outline-3">
+<h3 id="org22be281">Repo: <a href="https://github.com/jf-parent/video_processing">jf-parent/video_processing: Vprocess BOUDOIR</a> // <a href="https://github.com/jf-parent/video_processing/blob/master/the_douglas_vasquez_effect/the_douglas_vasquez_effect.py">Code</a></h3>
 </div>
 </div>
 
