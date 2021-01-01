@@ -1,12 +1,30 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2020-07-18 Sat
+#+DATE:        2020-12-31
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* Hippopotomonstrosesquipedaliophobia
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/ZgeAoOuAQh0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_hippopotomonstrosesquipedaliophobia_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Audacity, Final Cut Pro, [[https://github.com/jf-parent/noise_cut_up][Noise cut-up]], [[https://github.com/jf-parent/gen-art/blob/master/src/geometric/mondriaan.clj][gen-art]]
+*** Release date: Dec 31, 2020
+*** Production timeframe: ~12hours 
+*** Length: 1.06.56
+* Astra Dharis - Keepers of weapons
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/hsTsvej06Zk" target="_blank"><img src="/media/images/boudoir_covers/boudoir_astra-dharis_keepers-of-weapons_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/gen-art/blob/master/src/geometric/duplicated_square.clj][gen-art]]
+*** Release date: Dec 31, 2020
+*** Production timeframe: ~8hours 
+*** Length: 1.22.52
 * Hypercoenesthesiopathy
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/PuBXjW9XpIU" target="_blank"><img src="/media/images/boudoir_covers/boudoir_hypercoenesthesiopathy_cover.png" /></a>
