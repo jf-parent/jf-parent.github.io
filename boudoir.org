@@ -12,7 +12,7 @@
 <a href="https://youtu.be/mf0Lmgwwbmo" target="_blank"><img src="/media/images/boudoir_covers/boudoir_everybody-can-dada_cover.png" /></a>
 #+END_EXPORT
 ** Specs
-*** Software: Logic Pro X, Final Cut Pro, vprocess
+*** Software: Logic Pro X, Final Cut Pro, Vprocess
 *** Release date: Jan 26, 2021
 *** Production timeframe: ~56hours 
 *** Length: 5.22
