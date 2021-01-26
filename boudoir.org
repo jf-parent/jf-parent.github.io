@@ -1,12 +1,21 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2020-12-31
+#+DATE:        2021-01-26
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Electronic Music w/ Art Video
 
+* Everybody can dada
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/mf0Lmgwwbmo" target="_blank"><img src="/media/images/boudoir_covers/boudoir_everybody-can-dada_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, vprocess
+*** Release date: Jan 26, 2021
+*** Production timeframe: ~56hours 
+*** Length: 5.22
 * Hippopotomonstrosesquipedaliophobia
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/ZgeAoOuAQh0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_hippopotomonstrosesquipedaliophobia_cover.png" /></a>
@@ -30,7 +39,7 @@
 <a href="https://youtu.be/PuBXjW9XpIU" target="_blank"><img src="/media/images/boudoir_covers/boudoir_hypercoenesthesiopathy_cover.png" /></a>
 #+END_EXPORT
 ** Specs
-*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]] [The Betty Richardson Effect], [[http://golly.sourceforge.net/][Golly]], [[https://xaos-project.github.io/][Xaos]]
+*** Software: Logic Pro X, Final Cut Pro, vprocess [The Betty Richardson Effect], [[http://golly.sourceforge.net/][Golly]], [[https://xaos-project.github.io/][Xaos]]
 *** Footage: [[https://archive.org/details/CYBERNINJA_201812][VHS Vault - Cyber Ninja]]
 *** Release date: Nov 20, 2020
 *** Production timeframe: ~48 hours 
@@ -41,7 +50,7 @@
 <a href="https://youtu.be/Vg4zAPpL3Ms" target="_blank"><img src="/media/images/boudoir_covers/boudoir_pulmonaut.png" /></a>
 #+END_EXPORT
 ** Specs
-*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]], [[https://github.com/jf-parent/gen-art][gen-art]]
+*** Software: Logic Pro X, Final Cut Pro, vprocess, [[https://github.com/jf-parent/gen-art][gen-art]]
 *** Release date: Sep 05, 2020
 *** Production timeframe: ~16 hours 
 *** Length: 8.02
@@ -71,7 +80,7 @@
 <a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
 #+END_EXPORT
 ** Specs
-*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]], [[https://github.com/jf-parent/gen-art][gen-art]]
+*** Software: Logic Pro X, Final Cut Pro, vprocess, gen-art
 *** Release date: Dec 21, 2019
 *** Production timeframe: ~65 hours 
 *** Length: 7.26
@@ -82,7 +91,7 @@
 <a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkorper-tao.png" /></a>
 #+END_EXPORT
 ** Specs
-*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/jf-parent/video_processing][vprocess]]
+*** Software: Logic Pro X, Final Cut Pro, vprocess
 *** Release date: Nov 27, 2019
 *** Production timeframe: ~32 hours
 *** Length: 8.20
