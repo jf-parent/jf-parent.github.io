@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  <title>About - Jean-François Parent&#39;s Blog</title>
+  <title>Anzan Web (clojurescript) - Jean-François Parent&#39;s Blog</title>
   <meta charset="utf-8" />
   <meta name="author" content="Jean-François Parent" />
-    <meta name="description" content="About" />
+    <meta name="description" content="&lt;TODO: insert your description here&gt;" />
+    <meta name="keywords" content="anzan,clojure,clojurescript" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
   <script>
@@ -54,68 +55,62 @@
     <section id="wrapper">
         <article class="post">
             <header>
-                    <h1>About</h1>
+                    <h1>Anzan Web (clojurescript)</h1>
             </header>
             <br />
             <section id="post-body">
-                
-<div id="outline-container-orge6ab993" class="outline-2">
-<h2 id="orge6ab993">Introduction</h2>
-<div class="outline-text-2" id="text-orge6ab993">
+                <p>
+<b>Anzan</b>: The abacus system of mental calculation is a system where users mentally visualize an abacus to carry out arithmetical calculations. No physical abacus is used; only the answers are written down. Calculations can be made at great speed in this way. <i>Source: <a href="https://www.wikiwand.com/en/Mental_abacus">Mental abacus - Wikiwand</a></i>
+</p>
+
+<img src="/media/images/anzan.png" />
+
 <p>
-French-Canadian programmer (Python, Bash, C, Clojure, Common Lisp, Emacs Lisp, Javascript).
+This webapp is written in clojurescript and have the following features:
+</p>
+
+<ul class="org-ul">
+<li>Config: number of rows and digits; time number is shown and timeout;</li>
+<li>Remember the last config used (local storage).</li>
+<li>Show calculation when the answer is wrong.</li>
+<li>Retry and skip.</li>
+<li>Press &lt;enter&gt; to start and skip.</li>
+</ul>
+
+<p>
+Limitations:
+</p>
+
+<ul class="org-ul">
+<li>No vocalization</li>
+<li>Addition only</li>
+</ul>
+
+<p>
+Installation:
 </p>
 
 <p>
-Passionate about Emacs (Spacemacs) and Org-Mode.
+Install <a href="https://leiningen.org/">Leiningen</a> first then execute these commands:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">$ git clone https://github.com/jf-parent/anzan-clojure
+$ cd anzan-clojure
+$ lein run -m anzan-clojure.server
+</pre>
+</div>
+
+<p>
+Source code: <a href="https://github.com/jf-parent/anzan-clojure">jf-parent/anzan-clojure: Anzan</a>
 </p>
 
 <p>
-Currently living on a hobby farm in South Quebec with his Wonder-Wifey.
+Suggested alternative:
 </p>
 
-<p>
-Slowly progressing towards a self-reliance lifestyle using no-tech, low-tech and high-tech solutions.
-</p>
-
-<p>
-Computer Musician (IDM, Drone-Music and Electro-Acoustic).
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgf1ae94c" class="outline-2">
-<h2 id="orgf1ae94c">Active Projects</h2>
-<div class="outline-text-2" id="text-orgf1ae94c">
-</div>
-<div id="outline-container-org6749482" class="outline-3">
-<h3 id="org6749482">Agritech</h3>
-</div>
-<div id="outline-container-orgad29b06" class="outline-3">
-<h3 id="orgad29b06"><a href="https://github.com/jf-parent/gen-art">jf-parent/gen-art: Generative Art w/ Clojure Quil</a></h3>
-</div>
-<div id="outline-container-org5120535" class="outline-3">
-<h3 id="org5120535"><a href="https://github.com/jf-parent/video_processing">jf-parent/video_processing: Video Processing  BOUDOIR </a></h3>
-</div>
-<div id="outline-container-orgb0639ea" class="outline-3">
-<h3 id="orgb0639ea">Boudoir - Electronic Music + Artistic Video</h3>
-</div>
-</div>
-
-<div id="outline-container-orgc46d122" class="outline-2">
-<h2 id="orgc46d122">Previous Projects</h2>
-<div class="outline-text-2" id="text-orgc46d122">
-</div>
-<div id="outline-container-org1bab809" class="outline-3">
-<h3 id="org1bab809"><a href="https://github.com/jf-parent/brome">jf-parent/brome: Selenium Framework for Python 3.5</a></h3>
-</div>
-<div id="outline-container-org38f122c" class="outline-3">
-<h3 id="org38f122c"><a href="https://github.com/jf-parent/webbase">jf-parent/webbase: WebBase - Boilerplate for React-Redux-Router &amp; Aiohttp</a></h3>
-</div>
-<div id="outline-container-orgdd66f49" class="outline-3">
-<h3 id="orgdd66f49"><a href="https://github.com/jf-parent/artscripts">jf-parent/artscripts: Scripted Variation of Artwork</a></h3>
-</div>
-</div>
+<ul class="org-ul">
+<li><a href="https://www.sorobanexam.org/anzan.html">Mental Calculation/Anzan software - Exercises for soroban examination</a></li>
+</ul>
 
             </section>
     </section>
@@ -123,6 +118,10 @@ Computer Musician (IDM, Drone-Music and Electro-Acoustic).
 
         <div>
     <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2021-02-20</span>
+        <span title="tags" class="post-info"><a href="/tags/anzan/">anzan</a>, <a href="/tags/clojure/">clojure</a>, <a href="/tags/clojurescript/">clojurescript</a></span>
+      </div>
       <br />
       <br />
       <div align="center">
