@@ -19,7 +19,7 @@ The abacus system of mental calculation is a system where users mentally visuali
 
 ** This webapp is written in clojurescript and have the following features:
 
-- Config: number of rows and digits; time number is shown and timeout;
+- Config: number of rows and digits; time for which the number is shown;
 - Remember the last config used (local storage).
 - Show calculation when the answer is wrong.
 - Retry and skip.
