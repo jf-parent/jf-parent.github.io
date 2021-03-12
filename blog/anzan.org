@@ -37,7 +37,7 @@ The abacus system of mental calculation is a system where users mentally visuali
 #+BEGIN_SRC bash
 $ git clone https://github.com/jf-parent/anzan-clojure
 $ cd anzan-clojure
-$ lein run -m anzan-clojure.server
+$ lein run -m anzan-clojure.server # http://localhost:3111/
 #+END_SRC
 
 ** Source code: [[https://github.com/jf-parent/anzan-clojure][jf-parent/anzan-clojure: Anzan]]

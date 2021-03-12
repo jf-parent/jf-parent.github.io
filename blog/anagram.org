@@ -1,0 +1,36 @@
+#+TITLE:       Anagram Web (clojurescript)
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2021-03-11 Thu
+#+URI:         /blog/%y/%m/%d/anagram-web-clojurescript
+#+KEYWORDS:    anagram,clojure,clojurescript
+#+TAGS:        anagram,clojure,clojurescript
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+* Anagram
+
+#+BEGIN_EXPORT html
+<img src="/media/images/anagram_gui.png" />
+#+END_EXPORT
+
+** This webapp is written in clojurescript and have the following features:
+
+- Shuffle dictionary word into anagram
+- Timer
+- List of possible answers
+- Link to wiktionary
+- History
+
+** Installation:
+   
+*** Install [[https://leiningen.org/][Leiningen]] first then execute these commands:
+   
+#+BEGIN_SRC bash
+$ git clone https://github.com/jf-parent/anagram-clojure
+$ cd anagram-clojure
+$ lein run -m anagram.server # http://localhost:3222/
+#+END_SRC
+
+** Source code: [[https://github.com/jf-parent/anagram-clojure][GitHub - jf-parent/anagram-clojure: Anagram]]
