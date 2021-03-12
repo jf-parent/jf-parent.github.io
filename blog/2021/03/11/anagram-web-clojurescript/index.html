@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  <title>Anzan Web (clojurescript) - Jean-François Parent&#39;s Blog</title>
+  <title>Anagram Web (clojurescript) - Jean-François Parent&#39;s Blog</title>
   <meta charset="utf-8" />
   <meta name="author" content="Jean-François Parent" />
     <meta name="description" content="&lt;TODO: insert your description here&gt;" />
-    <meta name="keywords" content="anzan,clojure,clojurescript" />
+    <meta name="keywords" content="anagram,clojure,clojurescript" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
   <script>
@@ -55,72 +55,49 @@
     <section id="wrapper">
         <article class="post">
             <header>
-                    <h1>Anzan Web (clojurescript)</h1>
+                    <h1>Anagram Web (clojurescript)</h1>
             </header>
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org2e3313d" class="outline-2">
-<h2 id="org2e3313d">Anzan</h2>
-<div class="outline-text-2" id="text-org2e3313d">
-<p>
-The abacus system of mental calculation is a system where users mentally visualize an abacus to carry out arithmetical calculations. No physical abacus is used; only the answers are written down. Calculations can be made at great speed in this way. <i>Source: <a href="https://www.wikiwand.com/en/Mental_abacus">Mental abacus - Wikiwand</a></i>
-</p>
-
-<img src="/media/images/anzan.png" />
+<div id="outline-container-orgd35ffed" class="outline-2">
+<h2 id="orgd35ffed">Anagram</h2>
+<div class="outline-text-2" id="text-orgd35ffed">
+<img src="/media/images/anagram_gui.png" />
 </div>
 
-<div id="outline-container-org323e732" class="outline-3">
-<h3 id="org323e732">This webapp is written in clojurescript and have the following features:</h3>
-<div class="outline-text-3" id="text-org323e732">
+<div id="outline-container-org4bbe221" class="outline-3">
+<h3 id="org4bbe221">This webapp is written in clojurescript and have the following features:</h3>
+<div class="outline-text-3" id="text-org4bbe221">
 <ul class="org-ul">
-<li>Config: number of rows and digits; time for which the number is shown;</li>
-<li>Remember the last config used (local storage).</li>
-<li>Show calculation when the answer is wrong.</li>
-<li>Retry and skip.</li>
-<li>Press &lt;enter&gt; to start and skip.</li>
+<li>Shuffle dictionary word into anagram</li>
+<li>Timer</li>
+<li>List of possible answers</li>
+<li>Link to wiktionary</li>
+<li>History</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8f8c0f2" class="outline-3">
-<h3 id="org8f8c0f2">Limitations:</h3>
-<div class="outline-text-3" id="text-org8f8c0f2">
-<ul class="org-ul">
-<li>No vocalization</li>
-<li>Addition only</li>
-</ul>
+<div id="outline-container-org26ed105" class="outline-3">
+<h3 id="org26ed105">Installation:</h3>
+<div class="outline-text-3" id="text-org26ed105">
 </div>
-</div>
-
-<div id="outline-container-orgcbaee5e" class="outline-3">
-<h3 id="orgcbaee5e">Installation:</h3>
-<div class="outline-text-3" id="text-orgcbaee5e">
-</div>
-<div id="outline-container-orga3b30ff" class="outline-4">
-<h4 id="orga3b30ff">Install <a href="https://leiningen.org/">Leiningen</a> first then execute these commands:</h4>
-<div class="outline-text-4" id="text-orga3b30ff">
+<div id="outline-container-org4fa5041" class="outline-4">
+<h4 id="org4fa5041">Install <a href="https://leiningen.org/">Leiningen</a> first then execute these commands:</h4>
+<div class="outline-text-4" id="text-org4fa5041">
 <div class="org-src-container">
-<pre class="src src-bash">$ git clone https://github.com/jf-parent/anzan-clojure
-$ cd anzan-clojure
-$ lein run -m anzan-clojure.server # http://localhost:3111/
+<pre class="src src-bash">$ git clone https://github.com/jf-parent/anagram-clojure
+$ cd anagram-clojure
+$ lein run -m anagram.server # http://localhost:3222/
 </pre>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org6bfccb3" class="outline-3">
-<h3 id="org6bfccb3">Source code: <a href="https://github.com/jf-parent/anzan-clojure">jf-parent/anzan-clojure: Anzan</a></h3>
-</div>
-
-<div id="outline-container-orgac0266b" class="outline-3">
-<h3 id="orgac0266b">Suggested alternative:</h3>
-<div class="outline-text-3" id="text-orgac0266b">
-<ul class="org-ul">
-<li><a href="https://www.sorobanexam.org/anzan.html">Mental Calculation/Anzan software - Exercises for soroban examination</a></li>
-</ul>
-</div>
+<div id="outline-container-org8140f90" class="outline-3">
+<h3 id="org8140f90">Source code: <a href="https://github.com/jf-parent/anagram-clojure">GitHub - jf-parent/anagram-clojure: Anagram</a></h3>
 </div>
 </div>
 
@@ -131,8 +108,8 @@ $ lein run -m anzan-clojure.server # http://localhost:3111/
         <div>
     <section id="wrapper">
       <div class="post-meta">
-        <span title="post date" class="post-info">2021-02-20</span>
-        <span title="tags" class="post-info"><a href="/tags/anzan/">anzan</a>, <a href="/tags/clojure/">clojure</a>, <a href="/tags/clojurescript/">clojurescript</a></span>
+        <span title="post date" class="post-info">2021-03-11</span>
+        <span title="tags" class="post-info"><a href="/tags/anagram/">anagram</a>, <a href="/tags/clojure/">clojure</a>, <a href="/tags/clojurescript/">clojurescript</a></span>
       </div>
       <br />
       <br />
