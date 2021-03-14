@@ -9,7 +9,7 @@
 
 * It is so bright outside we can see my inside
 #+BEGIN_EXPORT html
-<a href="https://youtu.be/jpo3gCLSnfs" target="_blank"><img src="/media/images/boudoir_covers/boudoir_it-is-so-bright-outside-we-can-see-my-inside_cover.png" /></a>
+<a href="https://youtu.be/jpo3gCLSnfs" target="_blank"><img src="/media/images/boudoir_covers/boudoir_it-is-so-bright-outside-we-can-see-my-inside_cover.jpg" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, Vprocess
