@@ -56,7 +56,7 @@
 *** Audio only: [[https://soundcloud.com/boudoir-psychopomp/boudoir-hypercoenesthesiopathy][Link]]
 * Pulmonaut
 #+BEGIN_EXPORT html
-<a href="https://youtu.be/Vg4zAPpL3Ms" target="_blank"><img src="/media/images/boudoir_covers/boudoir_pulmonaut.png" /></a>
+<a href="https://youtu.be/Vg4zAPpL3Ms" target="_blank"><img src="/media/images/boudoir_covers/boudoir_pulmonaut_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, vprocess, [[https://github.com/jf-parent/gen-art][gen-art]]
@@ -86,7 +86,7 @@
 *** Audio only: [[https://soundcloud.com/boudoir-psychopomp/boudoir-anton-babinski-s][Link]]
 * divyacakṣus - the divine eye
 #+BEGIN_EXPORT html
-<a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye.png" /></a>
+<a href="https://youtu.be/9iyJuKp75gc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_divyacaksus_the-divine-eye_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, vprocess, gen-art
@@ -97,7 +97,7 @@
 *** Attribution: [[https://gist.github.com/jf-parent/efea725a416ecb2c646a1d79ccfbf63b][Link]]
 * Spitzenkörper Tao
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkorper-tao.png" /></a>
+<a href="https://www.youtube.com/watch?v=Rzeg8KzJeLM" target="_blank"><img src="/media/images/boudoir_covers/boudoir_spitzenkorper-tao_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, vprocess
@@ -107,7 +107,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1yExPeQyvncmUVVRVqpoG-dC1BQc4H2xR][Link]]
 * Molimina Karoshi
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=Bfk4OiRatvc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_molimina-karoshi.png" /></a>
+<a href="https://www.youtube.com/watch?v=Bfk4OiRatvc" target="_blank"><img src="/media/images/boudoir_covers/boudoir_molimina-karoshi_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
@@ -117,7 +117,7 @@
 *** Audio only: [[https://drive.google.com/open?id=18EHxxVYMZdikcNTCVGwqpSRnW0DKVx4o][Link]]
 * Suffocation Aristocratique
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=Tue-8tJtIvw" target="_blank"><img src="/media/images/boudoir_covers/boudoir_suffocation-aristocratique.png" /></a>
+<a href="https://www.youtube.com/watch?v=Tue-8tJtIvw" target="_blank"><img src="/media/images/boudoir_covers/boudoir_suffocation-aristocratique_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
@@ -127,7 +127,7 @@
 *** Audio only: [[https://drive.google.com/open?id=159n7rE2uLrls8R2GwELDElhUGJAKAJNH][Link]]
 * Parafoudre Prostitué
 #+BEGIN_EXPORT html
-<a href="https://drive.google.com/open?id=1Bv6ksSHCjYtjJSwpFMubbs2uinSpd9_z" target="_blank"><img src="/media/images/boudoir_covers/boudoir_parafoudre-prostitue.png" /></a>
+<a href="https://drive.google.com/open?id=1Bv6ksSHCjYtjJSwpFMubbs2uinSpd9_z" target="_blank"><img src="/media/images/boudoir_covers/boudoir_parafoudre-prostitue_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
@@ -137,7 +137,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1MovbYVUXgI7Uutu8b1-RrGs0Jkm-Gs9K][Link]]
 * Faim de Dormir
 #+BEGIN_EXPORT html
-<a href="https://drive.google.com/open?id=1ibQN4gsqSJWIzVx1Xy8wqVJ6BhmGSF9I" target="_blank"><img src="/media/images/boudoir_covers/boudoir_faim-de-dormir.png" /></a>
+<a href="https://drive.google.com/open?id=1ibQN4gsqSJWIzVx1Xy8wqVJ6BhmGSF9I" target="_blank"><img src="/media/images/boudoir_covers/boudoir_faim-de-dormir_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
@@ -147,7 +147,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1ByNjbAMb74Ry7_wrwDM24UKyqj9E7HV1][Link]]
 * Colifichet de Dentelle
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=7ymPYJ6D428" target="_blank"><img src="/media/images/boudoir_covers/boudoir_colifichet-de-dentelle.png" /></a>
+<a href="https://www.youtube.com/watch?v=7ymPYJ6D428" target="_blank"><img src="/media/images/boudoir_covers/boudoir_colifichet-de-dentelle_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
@@ -157,7 +157,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1EdniotOwiUOItlApbBJpaMtbMAlxy7tw][Link]]
 * Privation volontaire du sommeil
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=zXazqdXDXs0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_privation-volontaire-du-sommeil.png" /></a>
+<a href="https://www.youtube.com/watch?v=zXazqdXDXs0" target="_blank"><img src="/media/images/boudoir_covers/boudoir_privation-volontaire-du-sommeil_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
@@ -167,7 +167,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1gar1s6g_1fBWIanMiWsApYC3vl60OpWE][Link]]
 * Frotter l’argenterie des femmes
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=m7ZLbhQBj3o" target="_blank"><img src="/media/images/boudoir_covers/boudoir_frotter-l-argenterie-des-femmes.png" /></a>
+<a href="https://www.youtube.com/watch?v=m7ZLbhQBj3o" target="_blank"><img src="/media/images/boudoir_covers/boudoir_frotter-l-argenterie-des-femmes_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, iMovie
@@ -177,7 +177,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1L3RUKrqQlEKhIDEh4nFmuqMSJpmiRDdG][Link]]
 * Coulisse Herméneutique
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=m7ZLbhQBj3o" target="_blank"><img src="/media/images/boudoir_covers/boudoir_coulisse-hermeneutique.png" /></a>
+<a href="https://www.youtube.com/watch?v=m7ZLbhQBj3o" target="_blank"><img src="/media/images/boudoir_covers/boudoir_coulisse-hermeneutique_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, iMovie
@@ -187,7 +187,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1T-9kwVhUDQFTUGkxK_UyduGkX24rowZc][Link]]
 * Psychopompe
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=GC7mPYXeUTY" target="_blank"><img src="/media/images/boudoir_covers/boudoir_psychopompe.png" /></a>
+<a href="https://www.youtube.com/watch?v=GC7mPYXeUTY" target="_blank"><img src="/media/images/boudoir_covers/boudoir_psychopompe_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: GarageBand, iMovie
@@ -197,7 +197,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1KIrvbRI1TzxfxLWC1-3-E23vYZPxAGJp][Link]]
 * Apothicaire du Roy
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=gEJVqfEhDyg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_apothicaire-du-roy.png" /></a>
+<a href="https://www.youtube.com/watch?v=gEJVqfEhDyg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_apothicaire-du-roy_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: GarageBand, iMovie
@@ -207,7 +207,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1pnECEb7TK8vMOr3hEQJTbP3kokVhB6Da][Link]]
 * Eslévation Miraculeuse
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=aXYjeSPVwlg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_eslevation-miraculeuse.png" /></a>
+<a href="https://www.youtube.com/watch?v=aXYjeSPVwlg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_eslevation-miraculeuse_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: GarageBand, iMovie
@@ -217,7 +217,7 @@
 *** Audio only: [[https://drive.google.com/open?id=1luRrDdRufB_Qptnl1mBzHCyedHUusZne][Link]]
 * La Voie du Trident
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=-vT4i_FTz7A" target="_blank"><img src="/media/images/boudoir_covers/boudoir_la-voie-du-trident.png" /></a>
+<a href="https://www.youtube.com/watch?v=-vT4i_FTz7A" target="_blank"><img src="/media/images/boudoir_covers/boudoir_la-voie-du-trident_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: FoxDot, iMovie
@@ -227,7 +227,7 @@
 *** FoxDot Code: [[https://gist.github.com/jf-parent/0dd1fdf3a54200283fc692605057c689][Link]]
 * Volonté de Puissance
 #+BEGIN_EXPORT html
-<a href="https://www.youtube.com/watch?v=LO5vJ2VGvsE" target="_blank"><img src="/media/images/boudoir_covers/boudoir_volonte-de-puissance.png" /></a>
+<a href="https://www.youtube.com/watch?v=LO5vJ2VGvsE" target="_blank"><img src="/media/images/boudoir_covers/boudoir_volonte-de-puissance_cover.png" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: FoxDot, iMovie
