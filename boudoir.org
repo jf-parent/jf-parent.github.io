@@ -1,7 +1,7 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2021-03-14
+#+DATE:        2021-04-01
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
