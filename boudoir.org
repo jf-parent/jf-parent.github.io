@@ -9,7 +9,7 @@
 
 * Esemplastic Shaktiman
 #+BEGIN_EXPORT html
-<a href="https://youtu.be/bREiCnyXyvg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_esemplastic-shaktiman_cover.png" /></a>
+<a href="https://youtu.be/bREiCnyXyvg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_esemplastic-shaktiman_cover.jpg" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro, Vprocess
