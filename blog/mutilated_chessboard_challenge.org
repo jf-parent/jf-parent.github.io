@@ -24,5 +24,5 @@
 * Reference (pdf)
 
 #+BEGIN_EXPORT html
-<a href="/media/files/L Tromino Tiling of Mutilated Chessboards.pdf" target="_blank" />
+<a href="/media/files/L Tromino Tiling of Mutilated Chessboards.pdf" target="_blank">L Tromino Tiling of Mutilated Chessboards</>
 #+END_EXPORT
