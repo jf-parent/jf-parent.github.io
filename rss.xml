@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Wed, 19 May 2021 14:02:03 EDT</pubDate>
-    <lastBuildDate>Wed, 19 May 2021 14:02:03 EDT</lastBuildDate>
+    <pubDate>Mon, 12 Jul 2021 09:08:12 EDT</pubDate>
+    <lastBuildDate>Mon, 12 Jul 2021 09:08:12 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Solution to Martin Gardner&#39;s Challenge to the Reader - L-Tromino Tiling of Mutilated Chessboards</title>
+      <link>https://jf-parent.github.io/blog/2021/07/12/mutilated-chessboard</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2021-07-12</pubDate>
+      <guid>https://jf-parent.github.io/blog/2021/07/12/mutilated-chessboard</guid>
+    </item>
     <item>
       <title>Boudoir</title>
       <link>https://jf-parent.github.io/boudoir</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-08-12</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/08/12/equity-first-bank-san-francisco-atm-offline---exapunks</guid>
-    </item>
-    <item>
-      <title>Kgog TV - Exapunks</title>
-      <link>https://jf-parent.github.io/blog/2020/08/11/kgog-tv---exapunks</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2020-08-12</pubDate>
-      <guid>https://jf-parent.github.io/blog/2020/08/11/kgog-tv---exapunks</guid>
     </item>
   </channel>
 </rss>
