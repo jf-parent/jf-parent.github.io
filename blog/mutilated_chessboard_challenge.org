@@ -9,21 +9,19 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: <TODO: insert your description here>
 
-* Solution to Martin Gardner's Challenge to the Reader - L-Tromino Tiling of Mutilated Chessboards
-  
-** Problem
+* Problem
    
 #+BEGIN_EXPORT html
 <img src="/media/images/trominoes_problem.png" />
 #+END_EXPORT
 
-** Solution
+* Solution
 
 #+BEGIN_EXPORT html
 <img src="/media/images/trominos_problem_solution.png" />
 #+END_EXPORT
 
-** Reference (pdf)
+* Reference (pdf)
 
 #+BEGIN_EXPORT html
 <a href="/media/files/L Tromino Tiling of Mutilated Chessboards.pdf" target="_blank" />
