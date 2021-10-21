@@ -1,0 +1,20 @@
+#+TITLE:       Spatial Path Viewer - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2021-10-21
+#+URI:         /blog/%y/%m/%d/spatial-path-viewer---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Spatial Path View in TIS-100 (1388/9/87):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/spatial_path_viewer_score.png" />
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<img src="/media/images/spatial_path_viewer_code.png" />
+#+END_EXPORT
