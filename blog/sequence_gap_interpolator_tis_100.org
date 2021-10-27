@@ -1,0 +1,22 @@
+#+TITLE:       Sequence Gap Interpolator - TIS-100
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2021-10-26
+#+URI:         /blog/%y/%m/%d/sequence-gap-interpolator---tis-100
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Sequence Gap Interpolator in TIS-100 (862/7/85):
+
+#+BEGIN_EXPORT html
+<img src="/media/images/sequence_gap_interpolator_score.png" />
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<img src="/media/images/sequence_gap_interpolator_code.png" />
+#+END_EXPORT
+
+This solution only work for sequence of 3 or 4 numbers (plenty good for this problem).
