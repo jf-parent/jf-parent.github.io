@@ -1,12 +1,22 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2021-05-19
+#+DATE:        2021-10-30
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Art Electronic Music Video
 
+* Visha Kanya - Poison Damsel
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/EEjvL__B0j4" target="_blank"><img src="/media/images/boudoir_covers/boudoir_visha-kanya_poison-damsel_cover.jpg" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, Vprocess
+*** Release date: Oct 28, 2021
+*** Production timeframe: ~60hours
+*** Audio only: [[https://boudoir-socket.bandcamp.com/track/visha-kanya-poison-damsel][bandcamp]]
+*** Length: 8.11
 * Esemplastic Shaktiman
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/bREiCnyXyvg" target="_blank"><img src="/media/images/boudoir_covers/boudoir_esemplastic-shaktiman_cover.jpg" /></a>
