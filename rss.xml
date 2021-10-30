@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Tue, 26 Oct 2021 20:10:23 EDT</pubDate>
-    <lastBuildDate>Tue, 26 Oct 2021 20:10:23 EDT</lastBuildDate>
+    <pubDate>Sat, 30 Oct 2021 13:59:05 EDT</pubDate>
+    <lastBuildDate>Sat, 30 Oct 2021 13:59:05 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Boudoir</title>
+      <link>https://jf-parent.github.io/boudoir</link>
+      <description><![CDATA[Boudoir - Art Electronic Music Video]]></description>
+      <pubDate>2021-10-30</pubDate>
+      <guid>https://jf-parent.github.io/boudoir</guid>
+    </item>
     <item>
       <title>Sequence Gap Interpolator - TIS-100</title>
       <link>https://jf-parent.github.io/blog/2021/10/26/sequence-gap-interpolator---tis-100</link>
@@ -35,13 +42,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2021-07-12</pubDate>
       <guid>https://jf-parent.github.io/blog/2021/07/12/mutilated-chessboard</guid>
-    </item>
-    <item>
-      <title>Boudoir</title>
-      <link>https://jf-parent.github.io/boudoir</link>
-      <description><![CDATA[Boudoir - Art Electronic Music Video]]></description>
-      <pubDate>2021-05-19</pubDate>
-      <guid>https://jf-parent.github.io/boudoir</guid>
     </item>
     <item>
       <title>Anagram Web (clojurescript)</title>
