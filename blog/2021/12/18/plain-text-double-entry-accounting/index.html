@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>Plain Text Double-Entry Accounting Using Beancount - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-Francois Parent" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="python,finance" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="http://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <a href="/about/">About</a>
+  <a href="/boudoir/">Boudoir</a>
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>Plain Text Double-Entry Accounting Using Beancount</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                
+<div id="outline-container-org1e2850a" class="outline-2">
+<h2 id="org1e2850a">Introduction</h2>
+<div class="outline-text-2" id="text-org1e2850a">
+</div>
+<div id="outline-container-orgfe194f0" class="outline-3">
+<h3 id="orgfe194f0">I discover Plain Text Double Entry Accounting on HackerNews earlier this year. After some experimentation, I decided to adopt it.</h3>
+</div>
+<div id="outline-container-orgc40a48f" class="outline-3">
+<h3 id="orgc40a48f">Below I will share some interesting resources and code samples.</h3>
+</div>
+<div id="outline-container-orgbb34126" class="outline-3">
+<h3 id="orgbb34126">The beancount documentation is very exhaustive and beginner friendly.</h3>
+</div>
+</div>
+<div id="outline-container-org8ae16b5" class="outline-2">
+<h2 id="org8ae16b5">Resources</h2>
+<div class="outline-text-2" id="text-org8ae16b5">
+</div>
+<div id="outline-container-org0d36c7f" class="outline-3">
+<h3 id="org0d36c7f"><a href="https://github.com/beancount/fava">beancount/fava: Fava - web interface for Beancount</a></h3>
+<div class="outline-text-3" id="text-org0d36c7f">
+<img src="/media/images/fava.png" />
+</div>
+</div>
+<div id="outline-container-orgf7d0624" class="outline-3">
+<h3 id="orgf7d0624"><a href="https://github.com/beancount/beancount-mode">beancount/beancount-mode: Emacs major-mode to work with Beancount ledger files</a></h3>
+</div>
+<div id="outline-container-org5196457" class="outline-3">
+<h3 id="org5196457"><a href="https://github.com/nathangrigg/vim-beancount">nathangrigg/vim-beancount: Vim ftplugin for beancount</a></h3>
+</div>
+<div id="outline-container-org7baf86a" class="outline-3">
+<h3 id="org7baf86a"><a href="https://github.com/csingley/ofxtools">csingley/ofxtools: Python OFX Library</a></h3>
+</div>
+<div id="outline-container-org8cb2345" class="outline-3">
+<h3 id="org8cb2345"><a href="https://plaintextaccounting.org/">Plain Text Accounting, a guide to Ledger and friends - plaintextaccounting.org</a></h3>
+</div>
+<div id="outline-container-org0804a3b" class="outline-3">
+<h3 id="org0804a3b"><a href="https://beancount.github.io/docs/the_double_entry_counting_method.html">The Double Entry Counting Method - Beancount Documentation</a></h3>
+</div>
+</div>
+<div id="outline-container-org66f1d63" class="outline-2">
+<h2 id="org66f1d63">Importer for qfx/ofx</h2>
+<div class="outline-text-2" id="text-org66f1d63">
+</div>
+<div id="outline-container-org35f5ca8" class="outline-3">
+<h3 id="org35f5ca8">Features</h3>
+<div class="outline-text-3" id="text-org35f5ca8">
+</div>
+<div id="outline-container-org4582be9" class="outline-4">
+<h4 id="org4582be9">Deduplication using transaction hash</h4>
+</div>
+<div id="outline-container-orgc75f015" class="outline-4">
+<h4 id="orgc75f015">Auto-resolve Payee (hardcoded hashmap)</h4>
+</div>
+<div id="outline-container-org1433961" class="outline-4">
+<h4 id="org1433961">Auto-categorize Posting (hardcoded hashmap)</h4>
+</div>
+</div>
+<div id="outline-container-orgc04092d" class="outline-3">
+<h3 id="orgc04092d">Code</h3>
+<div class="outline-text-3" id="text-orgc04092d">
+<div class="org-src-container">
+<pre class="src src-Python">from datetime import datetime, timedelta, date
+import os.path
+import sys
+import logging
+
+sys.path.append('.')
+
+# pip install beancount
+from beancount.core import data
+from beancount.loader import load_file
+from beancount.core.amount import Amount
+from beancount.ingest.importer import ImporterProtocol
+# pip install ofxtools
+from ofxtools.Parser import OFXTree
+
+# Just a python dictionary mapping a Transaction's narration to a Payee and Category
+from importers.resolver import categories, payees
+
+logging.basicConfig(level=logging.INFO)
+
+class QFXImporter(ImporterProtocol):
+    def __init__(self, account, account_id, beancount_file, current_year):
+        self.account = account
+        self.account_id = account_id
+        self.currency = 'CAD'
+        self.beancount_file = beancount_file
+
+        self.period_date_start = date(current_year, 1, 1)
+        self.period_date_end = date(current_year, 12, 31)
+        self.date_start = None
+        self.date_end = None
+
+        self.parser = OFXTree()
+
+        self.transactions_hash_set = self.index_beancount(self.beancount_file)
+
+        super().__init__()
+
+    def get_transaction_hash(self, t):
+        return f"{t.postings[0].account}|{t.date.isoformat()}|{t.narration}|{t.postings[0].units}"
+
+    def index_beancount(self, file_):
+        logging.info(f"Indexing: {file_}")
+        entries, _, _ = load_file(file_)
+
+        transactions_hash = []
+        for entry in entries:
+            if type(entry) == data.Transaction:
+                transactions_hash.append(self.get_transaction_hash(entry))
+
+        return set(transactions_hash)
+
+    def parse(self, file_):
+        with open(file_.name, 'rb') as f:
+            self.parser.parse(f)
+
+        return self.parser.convert()
+
+    def identify(self, file_):
+        ofx = self.parse(file_)
+
+        return ofx.statements[0].acctid == self.account_id
+
+    def extract(self, file_):
+        if not self.identify(file_):
+            return []
+
+        ofx = self.parse(file_)
+
+        entries = []
+        balance_amount = None
+        with open(file_.name) as fd:
+            lines = ofx.statements[0].banktranlist
+
+            self.date_start = ofx.statements[0].banktranlist.dtstart.date()
+            self.date_end = ofx.statements[0].banktranlist.dtend.date()
+
+            try:
+                balance_amount = Amount(ofx.statements[0].availbal.balamt, self.currency)
+            except AttributeError:
+                balance_amount = None
+
+            for i, line in enumerate(lines):
+                meta = data.new_metadata(file_.name, i)
+
+                amount = Amount(line.trnamt, self.currency)
+                date = line.dtposted.date()
+                description = line.name
+                category = categories.get(description) or "Unknown:TODO"
+                payee = payees.get(description) or "Unknown"
+
+                postings = [
+                    data.Posting(self.account, amount, None, None, None, None),
+                    data.Posting(category, None, None, None, None, None)
+                ]
+
+                new_transaction = data.Transaction(
+                        meta,
+                        date,
+                        self.FLAG,
+                        payee,
+                        description,
+                        data.EMPTY_SET,
+                        data.EMPTY_SET,
+                        postings
+                    )
+
+                transaction_hash = self.get_transaction_hash(new_transaction)
+
+                if date &lt; self.period_date_start or date &gt; self.period_date_end:
+                    logging.warning(f"Skipping =&gt; transaction before or after relevant period: {transaction_hash}")
+                    continue
+
+                if transaction_hash not in self.transactions_hash_set:
+                    logging.info(f"New transaction: {transaction_hash}")
+                    entries.append(new_transaction)
+                else:
+                    logging.warning(f"Skipping =&gt; {transaction_hash}")
+
+            meta = data.new_metadata(fd.name, 0)
+
+            if balance_amount:
+                entries.append(
+                    data.Balance(
+                        meta,
+                        self.date_end + timedelta(days=1),
+                        self.account,
+                        balance_amount,
+                        None,
+                        None
+                    )
+                )
+
+            return entries
+
+    def file_account(self, file_):
+        return self.account
+
+    def file_date(self, file_):
+        self.extract(file_)
+        return self.date_end
+
+    def file_name(self, file_):
+        _, extension = os.path.splitext(os.path.basename(file_.name))
+        return f'XXX{extension}'
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2021-12-18</span>
+        <span title="tags" class="post-info"><a href="/tags/python/">Python</a>, <a href="/tags/finance/">Finance</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-Francois Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>

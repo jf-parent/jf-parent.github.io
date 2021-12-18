@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Mon, 01 Nov 2021 15:34:59 EDT</pubDate>
-    <lastBuildDate>Mon, 01 Nov 2021 15:34:59 EDT</lastBuildDate>
+    <pubDate>Sat, 18 Dec 2021 11:12:26 EST</pubDate>
+    <lastBuildDate>Sat, 18 Dec 2021 11:12:26 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Plain Text Double-Entry Accounting Using Beancount</title>
+      <link>https://jf-parent.github.io/blog/2021/12/18/plain-text-double-entry-accounting</link>
+      <description><![CDATA[]]></description>
+      <pubDate>2021-12-18</pubDate>
+      <guid>https://jf-parent.github.io/blog/2021/12/18/plain-text-double-entry-accounting</guid>
+    </item>
     <item>
       <title>T20 Node Emulator - TIS-100</title>
       <link>https://jf-parent.github.io/blog/2021/11/01/t20-node-emulator---tis-100</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2020-12-17</pubDate>
       <guid>https://jf-parent.github.io/blog/2020/12/13/signal-divider---tis-100</guid>
-    </item>
-    <item>
-      <title>Interrupt Handler - TIS-100</title>
-      <link>https://jf-parent.github.io/blog/2020/12/08/interrupt-handler---tis-100</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2020-12-08</pubDate>
-      <guid>https://jf-parent.github.io/blog/2020/12/08/interrupt-handler---tis-100</guid>
     </item>
   </channel>
 </rss>
