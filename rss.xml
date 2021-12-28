@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Sat, 18 Dec 2021 11:12:26 EST</pubDate>
-    <lastBuildDate>Sat, 18 Dec 2021 11:12:26 EST</lastBuildDate>
+    <pubDate>Tue, 28 Dec 2021 18:18:22 EST</pubDate>
+    <lastBuildDate>Tue, 28 Dec 2021 18:18:22 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Boudoir</title>
+      <link>https://jf-parent.github.io/boudoir</link>
+      <description><![CDATA[Boudoir - Art Electronic Music Video]]></description>
+      <pubDate>2021-12-28</pubDate>
+      <guid>https://jf-parent.github.io/boudoir</guid>
+    </item>
     <item>
       <title>Plain Text Double-Entry Accounting Using Beancount</title>
       <link>https://jf-parent.github.io/blog/2021/12/18/plain-text-double-entry-accounting</link>
@@ -21,13 +28,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2021-11-01</pubDate>
       <guid>https://jf-parent.github.io/blog/2021/11/01/t20-node-emulator---tis-100</guid>
-    </item>
-    <item>
-      <title>Boudoir</title>
-      <link>https://jf-parent.github.io/boudoir</link>
-      <description><![CDATA[Boudoir - Art Electronic Music Video]]></description>
-      <pubDate>2021-10-30</pubDate>
-      <guid>https://jf-parent.github.io/boudoir</guid>
     </item>
     <item>
       <title>Sequence Gap Interpolator - TIS-100</title>
