@@ -7,6 +7,15 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Art Electronic Music Video
 
+* Lulu Amelu Phoresis
+#+BEGIN_EXPORT html
+<a href="https://www.youtube.com/watch?v=nyorIbQLbZE" target="_blank"><img src="/media/images/boudoir_covers/boudoir_lulu-amelu_phoresis_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, [[https://github.com/NVlabs/stylegan3][StyleGan3]], [[https://github.com/openai/CLIP][CLIP]]
+*** Release date: Dec 28, 2021
+*** Production timeframe: ~120hours
+*** Length: 4.23
 * Visha Kanya - Poison Damsel
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/EEjvL__B0j4" target="_blank"><img src="/media/images/boudoir_covers/boudoir_visha-kanya_poison-damsel_cover.jpg" /></a>
