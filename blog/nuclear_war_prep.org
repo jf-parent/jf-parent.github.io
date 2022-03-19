@@ -18,7 +18,7 @@
 *** 150 sandbags (UpNorth Sandbags 14" x 26") (~400$CAD on Amazon)
 **** 3 temporary walls, windows cover and temporary ceiling
 *** Expected Protection Factor (PF)
-**** Walls PF1000 (29.0 inch for sand)
+**** Walls PF1000 (29.0 inches for sand)
 **** Ceiling PF40 (sandbags + 4x concrete slabs)
 ***** If not enough, backup plan with table + sandbags
 *** 64 concrete slabs
@@ -28,9 +28,9 @@
 *** RADEX RD1503+ with Dosimeter (~220$CAD on Amazon)
 *** iOSAT Potassium Iodide Tablets, 130 Mg (14 Tablets) X 8 Packs (~150$CAD on Amazon)
 *** Hard copy books
-**** Nuclear War Survival Skills
-**** Armed Forces Nuclear, Biological And Chemical Survival Manual Everything You Need to Know to Protect Yourself and Your Family from the Growing Terrorist Threat
-**** Strategic Relocation
+**** [[https://www.goodreads.com/book/show/28878707-nuclear-war-survival-skills?ac=1&from_search=true&qid=swD9qRHjNo&rank=1][Nuclear War Survival Skills: Lifesaving Nuclear Facts and Self-Help Instructions by Cresson H. Kearny | Goodreads]]
+**** [[https://www.goodreads.com/book/show/877321.U_S_Armed_Forces_Nuclear_Biological_And_Chemical_Survival_Manual?ac=1&from_search=true&qid=bkOHCewveL&rank=2][U.S. Armed Forces Nuclear, Biological And Chemical Survival Manual by Dick Couch | Goodreads]]
+**** [[https://www.goodreads.com/book/show/10873066-strategic-relocation?ac=1&from_search=true&qid=bLy5wIPMFH&rank=1][Strategic Relocation: North American Guide to Safe Places by Joel Skousen | Goodreads]]
 *** MiraSafety CM-6M Tactical Gas Mask with NBC-77 SOF CBRN Gas Mask Filter
 *** MiraSafety Haz-suit protective cbrn hazmat suit
 *** Jackery 1500 (~2,200$CAD on Amazon)
