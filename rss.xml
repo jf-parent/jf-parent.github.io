@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Fri, 07 Jan 2022 12:17:01 EST</pubDate>
-    <lastBuildDate>Fri, 07 Jan 2022 12:17:01 EST</lastBuildDate>
+    <pubDate>Sat, 19 Mar 2022 18:41:26 EDT</pubDate>
+    <lastBuildDate>Sat, 19 Mar 2022 18:41:26 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Nuclear War Prep</title>
+      <link>https://jf-parent.github.io/blog/2022/03/19/bongardiq</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2022-03-19</pubDate>
+      <guid>https://jf-parent.github.io/blog/2022/03/19/bongardiq</guid>
+    </item>
     <item>
       <title>BongardIQ (alpha version)</title>
       <link>https://jf-parent.github.io/blog/2022/01/07/bongardiq</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2021-03-11</pubDate>
       <guid>https://jf-parent.github.io/blog/2021/03/11/anagram-web-clojurescript</guid>
-    </item>
-    <item>
-      <title>Anzan Web (clojurescript)</title>
-      <link>https://jf-parent.github.io/blog/2021/02/20/anzan-web-clojurescript</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2021-03-11</pubDate>
-      <guid>https://jf-parent.github.io/blog/2021/02/20/anzan-web-clojurescript</guid>
     </item>
   </channel>
 </rss>
