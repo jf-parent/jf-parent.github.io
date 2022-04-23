@@ -2,7 +2,7 @@
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
 #+DATE:        2022-03-19
-#+URI:         /blog/%y/%m/%d/bongardiq
+#+URI:         /blog/%y/%m/%d/nuclear-war
 #+KEYWORDS:    prepping
 #+TAGS:        prepping
 #+LANGUAGE:    en
