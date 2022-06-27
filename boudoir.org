@@ -1,12 +1,21 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2021-10-30
+#+DATE:        2022-06-27
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Art Electronic Music Video
 
+* Dukkha Dukkha
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/_EQ2oCChZO8" target="_blank"><img src="/media/images/boudoir_covers/boudoir_dukkha-dukkha_cover.png" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro
+*** Release date: Jun 26, 2022
+*** Production timeframe: ~16hours
+*** Length: 4.26
 * Lulu Amelu Phoresis
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=nyorIbQLbZE" target="_blank"><img src="/media/images/boudoir_covers/boudoir_lulu-amelu_phoresis_cover.png" /></a>
