@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>A=B - A one instruction esolang - My Solutions - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-François Parent" />
+    <meta name="description" content="&lt;TODO: insert your description here&gt;" />
+    <meta name="keywords" content="game,programming" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="http://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <a href="/about/">About</a>
+  <a href="/boudoir/">Boudoir</a>
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>A=B - A one instruction esolang - My Solutions</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7d93422">Game info</a></li>
+<li><a href="#orge2b530f">[1-1] A to B (1/1)</a></li>
+<li><a href="#org82b6819">[1-2] Uppercase (3/3)</a></li>
+<li><a href="#org1a2c9f5">[1-3] Singleton (3/3)</a></li>
+<li><a href="#org846e902">[1-4] Singleton 2 (3/3)</a></li>
+<li><a href="#orgdcacf69">[1-5] Sort (3/3)</a></li>
+<li><a href="#orgdc1f15d">[1-6] Compare (4/4)</a></li>
+<li><a href="#org0ac08aa">[2-1] Hello World (1/1)</a></li>
+<li><a href="#org3f0026c">[2-2] AAA (4/4)</a></li>
+<li><a href="#orge4ea2ac">[2-3] Exactly Three (5/5)</a></li>
+<li><a href="#orga3261f9">[2-4] Remainder (6/6)</a></li>
+<li><a href="#orgd2da30c">[2-5] Odd (10/10)</a></li>
+<li><a href="#org0eb7add">[2-6] The Only (TODO)</a></li>
+<li><a href="#orge268be2">[2-7] Ascend (13/8)</a></li>
+<li><a href="#org70c9b5e">[2-8] Most (11/11)</a></li>
+<li><a href="#org17c5ea2">[2-9] Least (17/9)</a></li>
+<li><a href="#org8c08081">[3-1] Remove (2/2)</a></li>
+<li><a href="#org89db239">[3-2] Spin (2/2)</a></li>
+<li><a href="#orgd9a157f">[3-3] A to B 2 (5/4)</a></li>
+<li><a href="#org6116008">[3-4] Swap (4/4)</a></li>
+<li><a href="#org9e99a75">[3-5] Match (7/7)</a></li>
+<li><a href="#org8213e6d">[3-6] Most 2 (24/11)</a></li>
+<li><a href="#orgbaf91b8">[3-7] Palindrome (13/8)</a></li>
+<li><a href="#orgb8030dd">[4-1] Hello 2 (1/1)</a></li>
+<li><a href="#orga1d265b">[4-2] Remove 2 (3/3)</a></li>
+<li><a href="#org9c6aa5c">[4-3] Cut (4/4)</a></li>
+<li><a href="#orgf7d49ff">[4-4] Remove 3 (5/5)</a></li>
+<li><a href="#orgaa02968">[4-5] Reverse (7/7)</a></li>
+<li><a href="#orgc8c99b1">[4-6] Reverse 2 (17/6)</a></li>
+<li><a href="#orgbcf3f91">[4-7] Cut 2 (8/7)</a></li>
+<li><a href="#org2db3338">[4-8] Clone (16/11)</a></li>
+<li><a href="#org1e04bc1">[4-9] A to B 3 (5/5)</a></li>
+<li><a href="#orgc3a42bd">[4-10] Half (8/8)</a></li>
+<li><a href="#org65e9a91">[4-11] Clone 2 (9/9)</a></li>
+<li><a href="#org1c5a358">[4-12] To B or not to B (7/9)</a></li>
+<li><a href="#org476ab94">[4-13] Center (10/10)</a></li>
+<li><a href="#org841ab2b">[4-14] Center 2 (20/15)</a></li>
+<li><a href="#org0098b19">[4-15] Expansion (16/13)</a></li>
+<li><a href="#org111e486">[4-16] Merge (19/9)</a></li>
+<li><a href="#orgbe1cbf0">[5-1] Count (11/7)</a></li>
+<li><a href="#org230fa05">[5-2] A+1 (4/4)</a></li>
+<li><a href="#org90111ff">[5-3] A+B (19/9)</a></li>
+<li><a href="#org6334baa">[5-4] A-B (22/8)</a></li>
+<li><a href="#org0261f4d">[5-5] A*B (TODO)</a></li>
+<li><a href="#org81ca706">[5-6] A/B (TODO)</a></li>
+<li><a href="#org256f2f0">[6-1] Hello again (4/4)</a></li>
+<li><a href="#org5fcbfeb">[6-2] Palindrome 2 (TODO)</a></li>
+<li><a href="#orgf170107">[6-3] To B or not to B 2 (TODO)</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d93422" class="outline-2">
+<h2 id="org7d93422">Game info</h2>
+<div class="outline-text-2" id="text-org7d93422">
+</div>
+<div id="outline-container-org3cc8619" class="outline-3">
+<h3 id="org3cc8619"><a href="https://store.steampowered.com/app/1720850/AB/">A=B on Steam</a></h3>
+</div>
+<div id="outline-container-org99fd13e" class="outline-3">
+<h3 id="org99fd13e">A=B is a programming puzzle game with only one instruction: A=B, which means replacing A with B.</h3>
+</div>
+</div>
+
+<div id="outline-container-orge2b530f" class="outline-2">
+<h2 id="orge2b530f">[1-1] A to B (1/1)</h2>
+<div class="outline-text-2" id="text-orge2b530f">
+<pre class="example">
+a=b
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org82b6819" class="outline-2">
+<h2 id="org82b6819">[1-2] Uppercase (3/3)</h2>
+<div class="outline-text-2" id="text-org82b6819">
+<pre class="example">
+a=A
+b=B
+c=C
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org1a2c9f5" class="outline-2">
+<h2 id="org1a2c9f5">[1-3] Singleton (3/3)</h2>
+<div class="outline-text-2" id="text-org1a2c9f5">
+<pre class="example">
+aa=a
+bb=b
+cc=c
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org846e902" class="outline-2">
+<h2 id="org846e902">[1-4] Singleton 2 (3/3)</h2>
+<div class="outline-text-2" id="text-org846e902">
+<pre class="example">
+aaa=aa
+aa=
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgdcacf69" class="outline-2">
+<h2 id="orgdcacf69">[1-5] Sort (3/3)</h2>
+<div class="outline-text-2" id="text-orgdcacf69">
+<pre class="example">
+cb=bc
+ca=ac
+ba=ab
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgdc1f15d" class="outline-2">
+<h2 id="orgdc1f15d">[1-6] Compare (4/4)</h2>
+<div class="outline-text-2" id="text-orgdc1f15d">
+<pre class="example">
+ba=ab
+ab=
+bb=b
+aa=a
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org0ac08aa" class="outline-2">
+<h2 id="org0ac08aa">[2-1] Hello World (1/1)</h2>
+<div class="outline-text-2" id="text-org0ac08aa">
+<pre class="example">
+=(return)helloworld
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org3f0026c" class="outline-2">
+<h2 id="org3f0026c">[2-2] AAA (4/4)</h2>
+<div class="outline-text-2" id="text-org3f0026c">
+<pre class="example">
+aaa=(return)true
+ab=a
+ac=a
+=(return)false
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge4ea2ac" class="outline-2">
+<h2 id="orge4ea2ac">[2-3] Exactly Three (5/5)</h2>
+<div class="outline-text-2" id="text-orge4ea2ac">
+<pre class="example">
+b=a
+c=a
+aaaa=(return)false
+aaa=(return)true
+=(return)false
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orga3261f9" class="outline-2">
+<h2 id="orga3261f9">[2-4] Remainder (6/6)</h2>
+<div class="outline-text-2" id="text-orga3261f9">
+<pre class="example">
+b=a
+c=a
+aaa=
+aa=(return)2
+a=(return)1
+=(return)0
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgd2da30c" class="outline-2">
+<h2 id="orgd2da30c">[2-5] Odd (10/10)</h2>
+<div class="outline-text-2" id="text-orgd2da30c">
+<pre class="example">
+ba=ab
+cb=bc
+ca=ac
+aaa=a
+bbb=b
+ccc=c
+aa=(return)false
+bb=(return)false
+cc=(return)false
+=(return)true
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org0eb7add" class="outline-2">
+<h2 id="org0eb7add">[2-6] The Only (TODO)</h2>
+</div>
+<div id="outline-container-orge268be2" class="outline-2">
+<h2 id="orge268be2">[2-7] Ascend (13/8)</h2>
+<div class="outline-text-2" id="text-orge268be2">
+<pre class="example">
+ba=ab
+ca=ac
+cb=bc
+ab=x
+ax=xa
+by=yb
+a=(return)false
+xc=(return)false
+x=b
+bc=y
+b=(return)false
+yc=(return)true
+=(return)false
+</pre>
+</div>
+</div>
+<div id="outline-container-org70c9b5e" class="outline-2">
+<h2 id="org70c9b5e">[2-8] Most (11/11)</h2>
+<div class="outline-text-2" id="text-org70c9b5e">
+<pre class="example">
+ba=ab
+ca=ac
+cb=bc
+aaaa=(return)a
+cccc=(return)c
+bbb=(return)b
+aaa=(return)a
+ccc=(return)c
+aa=(return)a
+bb=(return)b
+cc=(return)c
+</pre>
+</div>
+</div>
+<div id="outline-container-org17c5ea2" class="outline-2">
+<h2 id="org17c5ea2">[2-9] Least (17/9)</h2>
+<div class="outline-text-2" id="text-org17c5ea2">
+<pre class="example">
+ba=ab
+ca=ac
+cb=bc
+cc=C
+Cc=C
+aa=A
+Aa=A
+bb=B
+Bb=B
+Ab=bA
+AB=(return)c
+AC=(return)b
+BC=(return)a
+b=B
+a=A
+c=C
+BA=(return)c
+</pre>
+</div>
+</div>
+<div id="outline-container-org8c08081" class="outline-2">
+<h2 id="org8c08081">[3-1] Remove (2/2)</h2>
+<div class="outline-text-2" id="text-org8c08081">
+<pre class="example">
+(start)a=
+(end)a=
+</pre>
+</div>
+</div>
+<div id="outline-container-org89db239" class="outline-2">
+<h2 id="org89db239">[3-2] Spin (2/2)</h2>
+<div class="outline-text-2" id="text-org89db239">
+<pre class="example">
+(start)c=(end)c
+(start)b=(end)b
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd9a157f" class="outline-2">
+<h2 id="orgd9a157f">[3-3] A to B 2 (5/4)</h2>
+<div class="outline-text-2" id="text-orgd9a157f">
+<pre class="example">
+(start)a=x
+(end)a=x
+xa=xx
+ax=xx
+x=b
+</pre>
+</div>
+</div>
+<div id="outline-container-org6116008" class="outline-2">
+<h2 id="org6116008">[3-4] Swap (4/4)</h2>
+<div class="outline-text-2" id="text-org6116008">
+<pre class="example">
+(start)a=(end)A
+bA=(start)aB
+A=a
+B=b
+</pre>
+</div>
+</div>
+<div id="outline-container-org9e99a75" class="outline-2">
+<h2 id="org9e99a75">[3-5] Match (7/7)</h2>
+<div class="outline-text-2" id="text-org9e99a75">
+<pre class="example">
+(end)aA=(return)true
+(end)bB=(return)true
+(end)cC=(return)true
+(start)a=(end)A
+(start)b=(end)B
+(start)c=(end)C
+=(return)false
+</pre>
+</div>
+</div>
+<div id="outline-container-org8213e6d" class="outline-2">
+<h2 id="org8213e6d">[3-6] Most 2 (24/11)</h2>
+<div class="outline-text-2" id="text-org8213e6d">
+<pre class="example">
+ca=ac
+ba=ab
+cb=bc
+aaaaaaa=(return)aaaaaaa
+ccccccc=(return)ccccccc
+bbbbbbb=(return)bbbbbbb
+aaaaaa=(return)aaaaaa
+cccccc=(return)cccccc
+bbbbbb=(return)bbbbbb
+aaaaa=(return)aaaaa
+ccccc=(return)ccccc
+bbbbb=(return)bbbbb
+aaaa=(return)aaaa
+cccc=(return)cccc
+bbbb=(return)bbbb
+bbb=(return)bbb
+aaa=(return)aaa
+ccc=(return)ccc
+aa=(return)aa
+bb=(return)bb
+cc=(return)cc
+a=(return)a
+b=(return)b
+c=(return)c
+</pre>
+</div>
+</div>
+<div id="outline-container-orgbaf91b8" class="outline-2">
+<h2 id="orgbaf91b8">[3-7] Palindrome (13/8)</h2>
+<div class="outline-text-2" id="text-orgbaf91b8">
+<pre class="example">
+(end)aA=
+(end)bB=
+(end)cC=
+(end)bA=(return)false
+(end)cA=(return)false
+(end)aB=(return)false
+(end)cB=(return)false
+(end)aC=(return)false
+(end)bC=(return)false
+(start)a=(end)A
+(start)b=(end)B
+(start)c=(end)C
+=(return)true
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb8030dd" class="outline-2">
+<h2 id="orgb8030dd">[4-1] Hello 2 (1/1)</h2>
+<div class="outline-text-2" id="text-orgb8030dd">
+<pre class="example">
+(once)=(start)hello
+</pre>
+</div>
+</div>
+<div id="outline-container-orga1d265b" class="outline-2">
+<h2 id="orga1d265b">[4-2] Remove 2 (3/3)</h2>
+<div class="outline-text-2" id="text-orga1d265b">
+<pre class="example">
+(once)a=
+(once)a=
+(once)a=
+</pre>
+</div>
+</div>
+<div id="outline-container-org9c6aa5c" class="outline-2">
+<h2 id="org9c6aa5c">[4-3] Cut (4/4)</h2>
+<div class="outline-text-2" id="text-org9c6aa5c">
+<pre class="example">
+(once)=xxx
+xa=
+xb=
+xc=
+</pre>
+</div>
+</div>
+<div id="outline-container-orgf7d49ff" class="outline-2">
+<h2 id="orgf7d49ff">[4-4] Remove 3 (5/5)</h2>
+<div class="outline-text-2" id="text-orgf7d49ff">
+<pre class="example">
+(once)=(end)xxx
+ax=
+bx=xb
+cx=xc
+x=
+</pre>
+</div>
+</div>
+<div id="outline-container-orgaa02968" class="outline-2">
+<h2 id="orgaa02968">[4-5] Reverse (7/7)</h2>
+<div class="outline-text-2" id="text-orgaa02968">
+<pre class="example">
+(once)=(start)1
+1a=(end)2a
+1b=(end)2b
+1c=(end)2c
+a2=(start)a
+b2=(start)b
+c2=(start)c
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc8c99b1" class="outline-2">
+<h2 id="orgc8c99b1">[4-6] Reverse 2 (17/6)</h2>
+<div class="outline-text-2" id="text-orgc8c99b1">
+<pre class="example">
+(once)=(start)I
+AIa=aAI
+AIb=bAI
+AIc=cAI
+BIa=aBI
+BIb=bBI
+BIc=cBI
+CIa=aCI
+CIb=bCI
+CIc=cCI
+(start)Ia=IAI
+(start)Ib=IBI
+(start)Ic=ICI
+I=
+A=a
+B=b
+C=c
+</pre>
+</div>
+</div>
+<div id="outline-container-orgbcf3f91" class="outline-2">
+<h2 id="orgbcf3f91">[4-7] Cut 2 (8/7)</h2>
+<div class="outline-text-2" id="text-orgbcf3f91">
+<pre class="example">
+(once)=1
+1a=a2
+1b=b2
+1c=c2
+(once)2=1
+2a=
+2b=
+2c=
+</pre>
+</div>
+</div>
+<div id="outline-container-org2db3338" class="outline-2">
+<h2 id="org2db3338">[4-8] Clone (16/11)</h2>
+<div class="outline-text-2" id="text-org2db3338">
+<pre class="example">
+(once)=111
+1a=(end)aA
+1b=(end)bB
+1c=(end)cC
+Aa=aA
+Ab=bA
+Ac=cA
+Ba=aB
+Bb=bB
+Bc=cB
+Ca=aC
+Cb=bC
+Cc=cC
+(end)A=(start)a
+(end)B=(start)b
+(end)C=(start)c
+</pre>
+</div>
+</div>
+<div id="outline-container-org1e04bc1" class="outline-2">
+<h2 id="org1e04bc1">[4-9] A to B 3 (5/5)</h2>
+<div class="outline-text-2" id="text-org1e04bc1">
+<pre class="example">
+(once)=1
+1a=b1
+1b=a1
+1c=c1
+1=
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc3a42bd" class="outline-2">
+<h2 id="orgc3a42bd">[4-10] Half (8/8)</h2>
+<div class="outline-text-2" id="text-orgc3a42bd">
+<pre class="example">
+(once)=(start)x
+xxa=ax
+xxb=bx
+xxc=cx
+xa=xx
+xb=xx
+xc=xx
+x=
+</pre>
+</div>
+</div>
+<div id="outline-container-org65e9a91" class="outline-2">
+<h2 id="org65e9a91">[4-11] Clone 2 (9/9)</h2>
+<div class="outline-text-2" id="text-org65e9a91">
+<pre class="example">
+(once)=(end)/
+(once)=(start)I
+A=(end)a
+B=(end)b
+C=(end)c
+Ia=aAI
+Ib=bBI
+Ic=cCI
+I/=
+</pre>
+</div>
+</div>
+<div id="outline-container-org1c5a358" class="outline-2">
+<h2 id="org1c5a358">[4-12] To B or not to B (7/9)</h2>
+<div class="outline-text-2" id="text-org1c5a358">
+<pre class="example">
+(once)b=Bb
+(once)B=(start)B
+Bc=cB
+Bb=bB
+Ba=bB
+B=
+a=c
+</pre>
+</div>
+</div>
+<div id="outline-container-org476ab94" class="outline-2">
+<h2 id="org476ab94">[4-13] Center (10/10)</h2>
+<div class="outline-text-2" id="text-org476ab94">
+<pre class="example">
+(once)=1
+(end)1a=a
+(end)1b=b
+(end)1c=c
+1a=(end)2
+1b=(end)2
+1c=(end)2
+a2=(start)1
+b2=(start)1
+c2=(start)1
+</pre>
+</div>
+</div>
+<div id="outline-container-org841ab2b" class="outline-2">
+<h2 id="org841ab2b">[4-14] Center 2 (20/15)</h2>
+<div class="outline-text-2" id="text-org841ab2b">
+<pre class="example">
+(once)=(start)/
+(once)=(end)\
+/a\=
+/b\=
+/c\=
+/a?=
+/b?=
+/c?=
+a\=?a
+b\=?b
+c\=?c
+/a=a!
+/b=b!
+/c=c!
+(once)!=/
+(once)?=\
+(once)!=/
+(once)?=\
+(once)!=/
+(once)?=\
+</pre>
+</div>
+</div>
+<div id="outline-container-org0098b19" class="outline-2">
+<h2 id="org0098b19">[4-15] Expansion (16/13)</h2>
+<div class="outline-text-2" id="text-org0098b19">
+<pre class="example">
+(once)=(end)/
++/=/
+(start)++=(end)+
+(start)+a=(end)a
+(start)+b=(end)b
+(start)+c=(end)c
++a=aa
++b=bb
++c=cc
+(once)=+
+(once)=+++
+(once)=+++++
+(once)=+++++++
+(once)=+++++++++
+(once)=+++++++++++
+/=
+</pre>
+</div>
+</div>
+<div id="outline-container-org111e486" class="outline-2">
+<h2 id="org111e486">[4-16] Merge (19/9)</h2>
+<div class="outline-text-2" id="text-org111e486">
+<pre class="example">
+A=(start)X
+B=(start)Y
+C=(start)Z
+Xa=(end)QQ
+Xb=(end)WQ
+Xc=(end)EQ
+Ya=(end)QW
+Yb=(end)WW
+Yc=(end)EW
+Za=(end)QE
+Zb=(end)WE
+Zc=(end)EE
+,a=,A
+,b=,B
+,c=,C
+,=
+Q=a
+W=b
+E=c
+</pre>
+</div>
+</div>
+<div id="outline-container-orgbe1cbf0" class="outline-2">
+<h2 id="orgbe1cbf0">[5-1] Count (11/7)</h2>
+<div class="outline-text-2" id="text-orgbe1cbf0">
+<pre class="example">
+(once)=i/
+I/=/
+Ii=iiI
+A/=/
+Ai=iAa
+ai=ia
+a/=/a
+(end)0=(start)I
+(end)1=(start)IA
+i=
+/=
+</pre>
+</div>
+</div>
+<div id="outline-container-org230fa05" class="outline-2">
+<h2 id="org230fa05">[5-2] A+1 (4/4)</h2>
+<div class="outline-text-2" id="text-org230fa05">
+<pre class="example">
+(once)=(end)+
+(start)+=1
+1+=+0
+0+=1
+</pre>
+</div>
+</div>
+<div id="outline-container-org90111ff" class="outline-2">
+<h2 id="org90111ff">[5-3] A+B (19/9)</h2>
+<div class="outline-text-2" id="text-org90111ff">
+<pre class="example">
+(once)=/
+(start)C=(end)1X
+10A=(start)1
+01A=(start)1
+00A=(start)0
+11A=(start)C0
+1A=(start)1
+0A=(start)0
+11X=1X0
+01X=1
++1X=+1
+(end)/&lt;&gt;=
+/+=/&lt;&gt;
+1&gt;=(start)&gt;1
+0&gt;=(start)&gt;0
+&gt;=(end)&gt;
+1T=(end)1A
+0T=(end)0A
++=T+
+</pre>
+</div>
+</div>
+<div id="outline-container-org6334baa" class="outline-2">
+<h2 id="org6334baa">[5-4] A-B (22/8)</h2>
+<div class="outline-text-2" id="text-org6334baa">
+<pre class="example">
+(once)=(start)/
+(once)=(end)W
+1H=(start)1
+0C=C1
+1C=0
+01S=C1H
+00S=(start)0
+11S=(start)0
+10S=(start)1
+-W=T
+/T=
+00M=0M0
+10M=0M1
+01M=1M0
+11M=1M1
+-1M=1S-
+-0M=0S-
+W=MW
+1T=(start)T1
+0T=(start)T0
+(start)T=(end)T
+(start)0=
+</pre>
+</div>
+</div>
+<div id="outline-container-org0261f4d" class="outline-2">
+<h2 id="org0261f4d">[5-5] A*B (TODO)</h2>
+</div>
+<div id="outline-container-org81ca706" class="outline-2">
+<h2 id="org81ca706">[5-6] A/B (TODO)</h2>
+</div>
+<div id="outline-container-org256f2f0" class="outline-2">
+<h2 id="org256f2f0">[6-1] Hello again (4/4)</h2>
+<div class="outline-text-2" id="text-org256f2f0">
+<pre class="example">
+c=a
+b=a
+aa=a
+a=helloworld
+</pre>
+</div>
+</div>
+<div id="outline-container-org5fcbfeb" class="outline-2">
+<h2 id="org5fcbfeb">[6-2] Palindrome 2 (TODO)</h2>
+</div>
+<div id="outline-container-orgf170107" class="outline-2">
+<h2 id="orgf170107">[6-3] To B or not to B 2 (TODO)</h2>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2022-07-06</span>
+        <span title="tags" class="post-info"><a href="/tags/game/">game</a>, <a href="/tags/programming/">programming</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>

@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Mon, 27 Jun 2022 12:37:58 EDT</pubDate>
-    <lastBuildDate>Mon, 27 Jun 2022 12:37:58 EDT</lastBuildDate>
+    <pubDate>Wed, 06 Jul 2022 17:36:59 EDT</pubDate>
+    <lastBuildDate>Wed, 06 Jul 2022 17:36:59 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>A=B - A one instruction esolang - My Solutions</title>
+      <link>https://jf-parent.github.io/blog/2022/07/06/a_b_solutions</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2022-07-06</pubDate>
+      <guid>https://jf-parent.github.io/blog/2022/07/06/a_b_solutions</guid>
+    </item>
     <item>
       <title>Boudoir</title>
       <link>https://jf-parent.github.io/boudoir</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2021-07-12</pubDate>
       <guid>https://jf-parent.github.io/blog/2021/07/12/mutilated-chessboard</guid>
-    </item>
-    <item>
-      <title>Anagram Web (clojurescript)</title>
-      <link>https://jf-parent.github.io/blog/2021/03/11/anagram-web-clojurescript</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2021-03-11</pubDate>
-      <guid>https://jf-parent.github.io/blog/2021/03/11/anagram-web-clojurescript</guid>
     </item>
   </channel>
 </rss>
