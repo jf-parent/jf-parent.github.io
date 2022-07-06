@@ -1,0 +1,16 @@
+#+TITLE:       A=B - A one instruction esolang - My Solutions
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2022-07-06
+#+URI:         /blog/%y/%m/%d/a_b_solutions
+#+KEYWORDS:    game,programming
+#+TAGS:        game,programming
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+* 1-1 A to B (1/1)
+
+#+BEGIN_SRC
+  a=b
+#+END_SRC
