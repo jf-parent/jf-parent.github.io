@@ -9,8 +9,508 @@
 #+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: <TODO: insert your description here>
 
-* 1-1 A to B (1/1)
+* Game info
+** [[https://store.steampowered.com/app/1720850/AB/][A=B on Steam]]
+** A=B is a programming puzzle game with only one instruction: A=B, which means replacing A with B.
+
+* [1-1] A to B (1/1)
 
 #+BEGIN_SRC
   a=b
 #+END_SRC
+
+* [1-2] Uppercase (3/3)
+
+#+BEGIN_SRC
+  a=A
+  b=B
+  c=C
+#+END_SRC
+
+* [1-3] Singleton (3/3)
+
+#+BEGIN_SRC
+  aa=a
+  bb=b
+  cc=c
+#+END_SRC
+
+* [1-4] Singleton 2 (3/3)
+#+BEGIN_SRC
+  aaa=aa
+  aa=
+#+END_SRC
+
+* [1-5] Sort (3/3)
+#+BEGIN_SRC
+  cb=bc
+  ca=ac
+  ba=ab
+#+END_SRC
+
+* [1-6] Compare (4/4)
+#+BEGIN_SRC
+  ba=ab
+  ab=
+  bb=b
+  aa=a
+#+END_SRC
+
+* [2-1] Hello World (1/1)
+#+BEGIN_SRC
+  =(return)helloworld
+#+END_SRC
+
+* [2-2] AAA (4/4)
+#+BEGIN_SRC
+  aaa=(return)true
+  ab=a
+  ac=a
+  =(return)false
+#+END_SRC
+
+* [2-3] Exactly Three (5/5)
+#+BEGIN_SRC
+  b=a
+  c=a
+  aaaa=(return)false
+  aaa=(return)true
+  =(return)false
+#+END_SRC
+
+* [2-4] Remainder (6/6)
+#+BEGIN_SRC
+  b=a
+  c=a
+  aaa=
+  aa=(return)2
+  a=(return)1
+  =(return)0
+#+END_SRC
+
+* [2-5] Odd (10/10)
+#+BEGIN_SRC
+  ba=ab
+  cb=bc
+  ca=ac
+  aaa=a
+  bbb=b
+  ccc=c
+  aa=(return)false
+  bb=(return)false
+  cc=(return)false
+  =(return)true
+#+END_SRC
+
+* [2-6] The Only (TODO)
+* [2-7] Ascend (13/8)
+#+BEGIN_SRC
+  ba=ab
+  ca=ac
+  cb=bc
+  ab=x
+  ax=xa
+  by=yb
+  a=(return)false
+  xc=(return)false
+  x=b
+  bc=y
+  b=(return)false
+  yc=(return)true
+  =(return)false
+#+END_SRC
+* [2-8] Most (11/11)
+#+BEGIN_SRC
+  ba=ab
+  ca=ac
+  cb=bc
+  aaaa=(return)a
+  cccc=(return)c
+  bbb=(return)b
+  aaa=(return)a
+  ccc=(return)c
+  aa=(return)a
+  bb=(return)b
+  cc=(return)c
+#+END_SRC
+* [2-9] Least (17/9)
+#+BEGIN_SRC
+  ba=ab
+  ca=ac
+  cb=bc
+  cc=C
+  Cc=C
+  aa=A
+  Aa=A
+  bb=B
+  Bb=B
+  Ab=bA
+  AB=(return)c
+  AC=(return)b
+  BC=(return)a
+  b=B
+  a=A
+  c=C
+  BA=(return)c
+#+END_SRC
+* [3-1] Remove (2/2)
+#+BEGIN_SRC
+  (start)a=
+  (end)a=
+#+END_SRC
+* [3-2] Spin (2/2)
+#+BEGIN_SRC
+  (start)c=(end)c
+  (start)b=(end)b
+#+END_SRC
+* [3-3] A to B 2 (5/4)
+#+BEGIN_SRC
+  (start)a=x
+  (end)a=x
+  xa=xx
+  ax=xx
+  x=b
+#+END_SRC
+* [3-4] Swap (4/4)
+#+BEGIN_SRC
+  (start)a=(end)A
+  bA=(start)aB
+  A=a
+  B=b
+#+END_SRC
+* [3-5] Match (7/7)
+#+BEGIN_SRC
+  (end)aA=(return)true
+  (end)bB=(return)true
+  (end)cC=(return)true
+  (start)a=(end)A
+  (start)b=(end)B
+  (start)c=(end)C
+  =(return)false
+#+END_SRC
+* [3-6] Most 2 (24/11)
+#+BEGIN_SRC
+  ca=ac
+  ba=ab
+  cb=bc
+  aaaaaaa=(return)aaaaaaa
+  ccccccc=(return)ccccccc
+  bbbbbbb=(return)bbbbbbb
+  aaaaaa=(return)aaaaaa
+  cccccc=(return)cccccc
+  bbbbbb=(return)bbbbbb
+  aaaaa=(return)aaaaa
+  ccccc=(return)ccccc
+  bbbbb=(return)bbbbb
+  aaaa=(return)aaaa
+  cccc=(return)cccc
+  bbbb=(return)bbbb
+  bbb=(return)bbb
+  aaa=(return)aaa
+  ccc=(return)ccc
+  aa=(return)aa
+  bb=(return)bb
+  cc=(return)cc
+  a=(return)a
+  b=(return)b
+  c=(return)c
+#+END_SRC
+* [3-7] Palindrome (13/8)
+#+BEGIN_SRC
+  (end)aA=
+  (end)bB=
+  (end)cC=
+  (end)bA=(return)false
+  (end)cA=(return)false
+  (end)aB=(return)false
+  (end)cB=(return)false
+  (end)aC=(return)false
+  (end)bC=(return)false
+  (start)a=(end)A
+  (start)b=(end)B
+  (start)c=(end)C
+  =(return)true
+#+END_SRC
+* [4-1] Hello 2 (1/1)
+#+BEGIN_SRC
+  (once)=(start)hello
+#+END_SRC
+* [4-2] Remove 2 (3/3)
+#+BEGIN_SRC
+  (once)a=
+  (once)a=
+  (once)a=
+#+END_SRC
+* [4-3] Cut (4/4)
+#+BEGIN_SRC
+  (once)=xxx
+  xa=
+  xb=
+  xc=
+#+END_SRC
+* [4-4] Remove 3 (5/5)
+#+BEGIN_SRC
+  (once)=(end)xxx
+  ax=
+  bx=xb
+  cx=xc
+  x=
+#+END_SRC
+* [4-5] Reverse (7/7)
+#+BEGIN_SRC
+  (once)=(start)1
+  1a=(end)2a
+  1b=(end)2b
+  1c=(end)2c
+  a2=(start)a
+  b2=(start)b
+  c2=(start)c
+#+END_SRC
+* [4-6] Reverse 2 (17/6)
+#+BEGIN_SRC
+  (once)=(start)I
+  AIa=aAI
+  AIb=bAI
+  AIc=cAI
+  BIa=aBI
+  BIb=bBI
+  BIc=cBI
+  CIa=aCI
+  CIb=bCI
+  CIc=cCI
+  (start)Ia=IAI
+  (start)Ib=IBI
+  (start)Ic=ICI
+  I=
+  A=a
+  B=b
+  C=c
+#+END_SRC
+* [4-7] Cut 2 (8/7)
+#+BEGIN_SRC
+  (once)=1
+  1a=a2
+  1b=b2
+  1c=c2
+  (once)2=1
+  2a=
+  2b=
+  2c=
+#+END_SRC
+* [4-8] Clone (16/11)
+#+BEGIN_SRC
+  (once)=111
+  1a=(end)aA
+  1b=(end)bB
+  1c=(end)cC
+  Aa=aA
+  Ab=bA
+  Ac=cA
+  Ba=aB
+  Bb=bB
+  Bc=cB
+  Ca=aC
+  Cb=bC
+  Cc=cC
+  (end)A=(start)a
+  (end)B=(start)b
+  (end)C=(start)c
+#+END_SRC
+* [4-9] A to B 3 (5/5)
+#+BEGIN_SRC
+  (once)=1
+  1a=b1
+  1b=a1
+  1c=c1
+  1=
+#+END_SRC
+* [4-10] Half (8/8)
+#+BEGIN_SRC
+  (once)=(start)x
+  xxa=ax
+  xxb=bx
+  xxc=cx
+  xa=xx
+  xb=xx
+  xc=xx
+  x=
+#+END_SRC
+* [4-11] Clone 2 (9/9)
+#+BEGIN_SRC
+  (once)=(end)/
+  (once)=(start)I
+  A=(end)a
+  B=(end)b
+  C=(end)c
+  Ia=aAI
+  Ib=bBI
+  Ic=cCI
+  I/=
+#+END_SRC
+* [4-12] To B or not to B (7/9)
+#+BEGIN_SRC
+  (once)b=Bb
+  (once)B=(start)B
+  Bc=cB
+  Bb=bB
+  Ba=bB
+  B=
+  a=c
+#+END_SRC
+* [4-13] Center (10/10)
+#+BEGIN_SRC
+  (once)=1
+  (end)1a=a
+  (end)1b=b
+  (end)1c=c
+  1a=(end)2
+  1b=(end)2
+  1c=(end)2
+  a2=(start)1
+  b2=(start)1
+  c2=(start)1
+#+END_SRC
+* [4-14] Center 2 (20/15)
+#+BEGIN_SRC
+  (once)=(start)/
+  (once)=(end)\
+  /a\=
+  /b\=
+  /c\=
+  /a?=
+  /b?=
+  /c?=
+  a\=?a
+  b\=?b
+  c\=?c
+  /a=a!
+  /b=b!
+  /c=c!
+  (once)!=/
+  (once)?=\
+  (once)!=/
+  (once)?=\
+  (once)!=/
+  (once)?=\
+#+END_SRC
+* [4-15] Expansion (16/13)
+#+BEGIN_SRC
+  (once)=(end)/
+  +/=/
+  (start)++=(end)+
+  (start)+a=(end)a
+  (start)+b=(end)b
+  (start)+c=(end)c
+  +a=aa
+  +b=bb
+  +c=cc
+  (once)=+
+  (once)=+++
+  (once)=+++++
+  (once)=+++++++
+  (once)=+++++++++
+  (once)=+++++++++++
+  /=
+#+END_SRC
+* [4-16] Merge (19/9)
+#+BEGIN_SRC
+  A=(start)X
+  B=(start)Y
+  C=(start)Z
+  Xa=(end)QQ
+  Xb=(end)WQ
+  Xc=(end)EQ
+  Ya=(end)QW
+  Yb=(end)WW
+  Yc=(end)EW
+  Za=(end)QE
+  Zb=(end)WE
+  Zc=(end)EE
+  ,a=,A
+  ,b=,B
+  ,c=,C
+  ,=
+  Q=a
+  W=b
+  E=c
+#+END_SRC
+* [5-1] Count (11/7)
+#+BEGIN_SRC
+  (once)=i/
+  I/=/
+  Ii=iiI
+  A/=/
+  Ai=iAa
+  ai=ia
+  a/=/a
+  (end)0=(start)I
+  (end)1=(start)IA
+  i=
+  /=
+#+END_SRC
+* [5-2] A+1 (4/4)
+#+BEGIN_SRC
+  (once)=(end)+
+  (start)+=1
+  1+=+0
+  0+=1
+#+END_SRC
+* [5-3] A+B (19/9)
+#+BEGIN_SRC
+  (once)=/
+  (start)C=(end)1X
+  10A=(start)1
+  01A=(start)1
+  00A=(start)0
+  11A=(start)C0
+  1A=(start)1
+  0A=(start)0
+  11X=1X0
+  01X=1
+  +1X=+1
+  (end)/<>=
+  /+=/<>
+  1>=(start)>1
+  0>=(start)>0
+  >=(end)>
+  1T=(end)1A
+  0T=(end)0A
+  +=T+
+#+END_SRC
+* [5-4] A-B (22/8)
+#+BEGIN_SRC
+  (once)=(start)/
+  (once)=(end)W
+  1H=(start)1
+  0C=C1
+  1C=0
+  01S=C1H
+  00S=(start)0
+  11S=(start)0
+  10S=(start)1
+  -W=T
+  /T=
+  00M=0M0
+  10M=0M1
+  01M=1M0
+  11M=1M1
+  -1M=1S-
+  -0M=0S-
+  W=MW
+  1T=(start)T1
+  0T=(start)T0
+  (start)T=(end)T
+  (start)0=
+#+END_SRC
+* [5-5] A*B (TODO)
+* [5-6] A/B (TODO)
+* [6-1] Hello again (4/4)
+#+BEGIN_SRC
+  c=a
+  b=a
+  aa=a
+  a=helloworld
+#+END_SRC
+* [6-2] Palindrome 2 (TODO)
+* [6-3] To B or not to B 2 (TODO)
+
