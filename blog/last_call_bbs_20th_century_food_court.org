@@ -1,0 +1,16 @@
+#+TITLE:       20th Century Food Court - Last Call BBS
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2022-08-04
+#+URI:         /blog/%y/%m/%d/20th-century-food-court---last-call-bbs
+#+KEYWORDS:    last-call-bbs,zachtronics
+#+TAGS:        last-call-bbs,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: <TODO: insert your description here>
+
+Here is my solution for Sushi Yeah! (33, 321)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_SUSHI-YEAH_33_321.gif" />
+#+END_EXPORT
