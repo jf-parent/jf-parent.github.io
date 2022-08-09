@@ -9,7 +9,67 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: <TODO: insert your description here>
 
-Here is my solution for Sushi Yeah! (33, 321)
+
+* 2-TWELVE (8, 65)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_2-TWELVE_8_65.gif" />
+#+END_EXPORT
+
+* Original Hot Pocket Experience (9, 63)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_ORIGINAL-HOT-POCKET-EXPERIENCE_9_63.gif" />
+#+END_EXPORT
+
+* Wine O'Clock (8, 113) 
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_WINE-O-CLOCK_8_113.gif" />
+#+END_EXPORT
+
+* Mumbai Chaat (14, 147) & (19, 139)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_MUMBAI-CHAAT_14_147.gif" />
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_MUMBAI-CHAAT_19_139.gif" />
+#+END_EXPORT
+
+* Mr. Chilly (10, 69)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_MR-CHILLY_10_69.gif" />
+#+END_EXPORT
+
+* Kazan (28, 55)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_KAZAN_28_55.gif" />
+#+END_EXPORT
+
+* Soda Trench (18, 257)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_SODA-TRENCH_18_257.gif" />
+#+END_EXPORT
+
+* The Walrus (12, 100)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_THE-WALRUS_12_100.gif" />
+#+END_EXPORT
+
+* The Commissary (14, 172) 
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_THE-COMMISSARY_14_172.gif" />
+#+END_EXPORT
+
+
+* Sushi Yeah! (33, 321)
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_SUSHI-YEAH_33_321.gif" />
