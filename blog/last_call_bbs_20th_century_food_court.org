@@ -53,7 +53,7 @@
 * Soda Trench (15, 249)
 
 #+BEGIN_EXPORT html
-<img src="/media/images/20th-Century-Food-Court_SODA-TRENCH_15_249.gif" />
+<img src="/media/images/20th-Century-Food-Court _SODA-TRENCH_15_249.gif" />
 #+END_EXPORT
 
 * Cafe Triste (19, 194)
