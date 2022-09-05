@@ -7,7 +7,7 @@
 #+TAGS:        game,programming
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: <TODO: insert your description here>
+#+DESCRIPTION: My A=B Solutions
 
 * Game info
 ** [[https://store.steampowered.com/app/1720850/AB/][A=B on Steam]]
