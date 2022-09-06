@@ -62,6 +62,24 @@
 <img src="/media/images/20th-Century-Food-Court_CAFE-TRISTE_19_194.gif" />
 #+END_EXPORT
 
+* Half Caff Coffee (16, 193)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th_Century_Food-Court_HALF-CAFF-COFFEE_16_193.gif" />
+#+END_EXPORT
+
+* Mildred's Nook (15, 230)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_MILDREDS-NOOK_15_230.gif" />
+#+END_EXPORT
+
+* Sweet Heat BBQ (28, 145)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_145.gif" />
+#+END_EXPORT
+
 * The Walrus (12, 100)
 
 #+BEGIN_EXPORT html
