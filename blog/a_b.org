@@ -103,20 +103,17 @@
 #+END_SRC
 
 * [2-6] The Only (TODO)
-* [2-7] Ascend (13/8)
+* [2-7] Ascend (8/8)
 #+BEGIN_SRC
   ba=ab
-  ca=ac
   cb=bc
-  ab=x
-  ax=xa
-  by=yb
-  a=(return)false
-  xc=(return)false
-  x=b
-  bc=y
-  b=(return)false
-  yc=(return)true
+  ca=ac
+
+  bc=B
+  bB=Bb
+  aB=
+
+  Bc=(return)true
   =(return)false
 #+END_SRC
 * [2-8] Most (11/11)
