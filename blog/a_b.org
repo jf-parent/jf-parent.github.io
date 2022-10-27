@@ -160,13 +160,12 @@
   (start)c=(end)c
   (start)b=(end)b
 #+END_SRC
-* [3-3] A to B 2 (5/4)
+* [3-3] A to B 2 (4/4)
 #+BEGIN_SRC
-  (start)a=x
-  (end)a=x
-  xa=xx
-  ax=xx
-  x=b
+  (start)a=(end)B
+  B=(start)b
+  (end)a=(start)A
+  A=(end)b
 #+END_SRC
 * [3-4] Swap (4/4)
 #+BEGIN_SRC
