@@ -233,6 +233,18 @@
   (start)c=(end)C
   =(return)true
 #+END_SRC
+#+BEGIN_SRC
+  a{a}=
+  b{b}=
+  c{c}=
+
+  (start)a=(end){a}
+  (start)b=(end){b}
+  (start)c=(end){c}
+
+  }{=(return)false
+  =(return)true
+#+END_SRC
 * [4-1] Hello 2 (1/1)
 #+BEGIN_SRC
   (once)=(start)hello
