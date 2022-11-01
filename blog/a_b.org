@@ -307,7 +307,7 @@
   c>=(end)c
   >=
 #+END_SRC
-* [4-7] Cut 2 (8/7)
+* [4-7] Cut 2 (7/7)
 #+BEGIN_SRC
   (once)=1
   1a=a2
@@ -317,6 +317,15 @@
   2a=
   2b=
   2c=
+#+END_SRC
+#+BEGIN_SRC
+  (once)=(start)xxxxxxxxx
+  xxxa=ax
+  xxxb=bx
+  xxxc=cx
+  xa=
+  xb=
+  xc=
 #+END_SRC
 * [4-8] Clone (16/11)
 #+BEGIN_SRC
