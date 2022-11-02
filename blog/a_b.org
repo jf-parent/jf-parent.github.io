@@ -217,7 +217,7 @@
   b=(return)b
   c=(return)c
 #+END_SRC
-* [3-7] Palindrome (13/8)
+* [3-7] Palindrome (8/8)
 #+BEGIN_SRC
   (end)aA=
   (end)bB=
@@ -327,7 +327,7 @@
   xb=
   xc=
 #+END_SRC
-* [4-8] Clone (16/11)
+* [4-8] Clone (10/11)
 #+BEGIN_SRC
   (once)=111
   1a=(end)aA
@@ -345,6 +345,18 @@
   (end)A=(start)a
   (end)B=(start)b
   (end)C=(start)c
+#+END_SRC
+#+BEGIN_SRC
+  (once)=(start)x
+  (once)y=x
+  (once)y=x
+  A=(end)a
+  B=(end)b
+  C=(end)c
+  xa=Aay
+  xb=Bby
+  xc=Ccy
+  y=
 #+END_SRC
 * [4-9] A to B 3 (5/5)
 #+BEGIN_SRC
