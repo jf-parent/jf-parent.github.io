@@ -435,7 +435,7 @@
   (once)!=/
   (once)?=\
 #+END_SRC
-* [4-15] Expansion (16/13)
+* [4-15] Expansion (13/13)
 #+BEGIN_SRC
   (once)=(end)/
   +/=/
@@ -453,6 +453,25 @@
   (once)=+++++++++
   (once)=+++++++++++
   /=
+#+END_SRC
+#+BEGIN_SRC
+  (once)=++++++
+
+  ++++++a=+++++a++++++
+  ++++++b=+++++b++++++
+  ++++++c=+++++c++++++
+
+  (once)+++++=
+  (once)+++++=+
+  (once)+++++=++
+  (once)+++++=+++
+  (once)+++++=++++
+
+  +a=aa
+  +b=bb
+  +c=cc
+
+  +=
 #+END_SRC
 * [4-16] Merge (19/9)
 #+BEGIN_SRC
