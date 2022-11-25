@@ -473,7 +473,7 @@
 
   +=
 #+END_SRC
-* [4-16] Merge (19/9)
+* [4-16] Merge (9/9)
 #+BEGIN_SRC
   A=(start)X
   B=(start)Y
@@ -494,6 +494,21 @@
   Q=a
   W=b
   E=c
+#+END_SRC
+#+BEGIN_SRC
+  (once)=(end),
+
+  (end),=(start),
+
+  (start),a=(end)a
+  (start),b=(end)b
+  (start),c=(end)c
+
+  ,,a=(end)a,
+  ,,b=(end)b,
+  ,,c=(end)c,
+
+  ,=,,,
 #+END_SRC
 * [5-1] Count (11/7)
 #+BEGIN_SRC
