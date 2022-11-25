@@ -473,7 +473,7 @@
 
   +=
 #+END_SRC
-* [4-16] Merge (9/9)
+* [4-16] Merge (7/9)
 #+BEGIN_SRC
   A=(start)X
   B=(start)Y
@@ -507,6 +507,20 @@
   ,,a=(end)a,
   ,,b=(end)b,
   ,,c=(end)c,
+
+  ,=,,,
+#+END_SRC
+/There is no 'C' folk!!! Wild!/
+#+BEGIN_SRC
+  (once)=(end),
+
+  (end),=(start),
+
+  (start),a=(end)a
+  (start),b=(end)b
+
+  ,,a=(end)a,
+  ,,b=(end)b,
 
   ,=,,,
 #+END_SRC
