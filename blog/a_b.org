@@ -130,7 +130,7 @@
   bb=(return)b
   cc=(return)c
 #+END_SRC
-* [2-9] Least (17/9)
+* [2-9] Least (10/9)
 #+BEGIN_SRC
   ba=ab
   ca=ac
@@ -149,6 +149,19 @@
   a=A
   c=C
   BA=(return)c
+#+END_SRC
+#+BEGIN_SRC
+  abbc=b
+  abbbc=b
+  abbbbc=b
+  abc=
+  ba=ab
+  ca=ac
+  cb=bc
+
+  ac=(return)b
+  bc=(return)a
+  =(return)c
 #+END_SRC
 * [3-1] Remove (2/2)
 #+BEGIN_SRC
