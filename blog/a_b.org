@@ -203,7 +203,7 @@
   (start)c=(end)C
   =(return)false
 #+END_SRC
-* [3-6] Most 2 (24/11)
+* [3-6] Most 2 (13/11)
 #+BEGIN_SRC
   ca=ac
   ba=ab
@@ -229,6 +229,23 @@
   a=(return)a
   b=(return)b
   c=(return)c
+#+END_SRC
+#+BEGIN_SRC
+  ba=ab
+  ca=ac
+  cb=bc
+
+  aZ=(start)aa
+  ab=(end)X
+  ac=(end)Z
+
+  XZ=(start)aac
+  Z=c
+  aX=aa
+  X=b
+  bc=(end)Y
+  cY=(start)cc
+  Y=b
 #+END_SRC
 * [3-7] Palindrome (8/8)
 #+BEGIN_SRC
