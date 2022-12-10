@@ -554,7 +554,7 @@
 
   ,=,,,
 #+END_SRC
-* [5-1] Count (11/7)
+* [5-1] Count (7/7)
 #+BEGIN_SRC
   (once)=i/
   I/=/
@@ -567,6 +567,18 @@
   (end)1=(start)IA
   i=
   /=
+#+END_SRC
+#+BEGIN_SRC
+  (once)=(end)x
+
+  0x=xx0
+  1x=Xxx1
+
+  X=(start)a
+
+  x=
+  1=
+  0=
 #+END_SRC
 * [5-2] A+1 (4/4)
 #+BEGIN_SRC
