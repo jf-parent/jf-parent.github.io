@@ -587,7 +587,7 @@
   1+=+0
   0+=1
 #+END_SRC
-* [5-3] A+B (19/9)
+* [5-3] A+B (16/9)
 #+BEGIN_SRC
   (once)=/
   (start)C=(end)1X
@@ -608,6 +608,28 @@
   1T=(end)1A
   0T=(end)0A
   +=T+
+#+END_SRC
+#+BEGIN_SRC
+  (once)+=++++++
+  (once)=(start)/
+
+  +1^=+1
+  11^=1^0
+  01^=1
+
+  (end)11+=1^00+
+  (end)10+=(start)1
+  (end)00+=(start)0
+  (end)01+=(start)1
+
+  (end)1+=(start)1
+  (end)0+=(start)0
+
+  1+=(end)1+
+  0+=(end)0+
+  (end)+=
+  +=(end)0+
+  /=
 #+END_SRC
 * [5-4] A-B (22/8)
 #+BEGIN_SRC
