@@ -10,7 +10,7 @@
 #+DESCRIPTION: SuperSharp - Procedural IQ Test
 
 #+BEGIN_EXPORT html
-<a href"https://www.supersharp.quest/" target="blank"><img style="width: 50%" src="/media/images/supersharp_logo.png" /></a>
+<a href="https://www.supersharp.quest/" style="cursor: pointer;" target="_blank"><img style="width: 50%" src="/media/images/supersharp_logo.png" /></a>
 #+END_EXPORT
 
 
