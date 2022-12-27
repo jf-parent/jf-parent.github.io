@@ -10,7 +10,7 @@
 #+DESCRIPTION: SuperSharp - Procedural IQ Test
 
 #+BEGIN_EXPORT html
-<a href"https://www.supersharp.quest/" target="blank"><img width="500px" height="630px" src="/media/images/supersharp_logo.png" /></a>
+<a href"https://www.supersharp.quest/" target="blank"><img width="500px" src="/media/images/supersharp_logo.png" /></a>
 #+END_EXPORT
 
 
@@ -31,29 +31,29 @@ There will be all kind of differents tests but for now only 5 types are ready:
 ** Progressive Matrix Color & Shape
 
 #+BEGIN_EXPORT html
-<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_color_and_shape.png" />
+<img width="500px" src="/media/images/supersharp_progressive_matrix_color_and_shape.png" />
 #+END_EXPORT
 
 ** Progressive Matrix Grid Squares
 
 #+BEGIN_EXPORT html
-<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_grid_squares.png" />
+<img width="500px" src="/media/images/supersharp_progressive_matrix_grid_squares.png" />
 #+END_EXPORT
 
 ** Progressive Matrix Additive
 
 #+BEGIN_EXPORT html
-<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_additive.png" />
+<img width="500px" src="/media/images/supersharp_progressive_matrix_additive.png" />
 #+END_EXPORT
 
 ** Progressive Matrix Matchsticks
 
 #+BEGIN_EXPORT html
-<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_matchsticks.png" />
+<img width="500px" src="/media/images/supersharp_progressive_matrix_matchsticks.png" />
 #+END_EXPORT
 
 ** Glyph Mapping
 
 #+BEGIN_EXPORT html
-<img width="500px" height="630px" src="/media/images/supersharp_glyph_mapping.png" />
+<img width="500px" src="/media/images/supersharp_glyph_mapping.png" />
 #+END_EXPORT
