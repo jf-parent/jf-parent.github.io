@@ -1,0 +1,58 @@
+#+TITLE:       SuperSharp - Procedural IQ Test (alpha version)
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2022-12-26
+#+URI:         /blog/%y/%m/%d/super-sharp
+#+KEYWORDS:    iq,super-sharp
+#+TAGS:        iq,super-sharp
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: SuperSharp - Procedural IQ Test
+
+#+BEGIN_EXPORT html
+<a href"https://www.supersharp.quest/" target="blank"><img width="500px" height="630px" src="/media/images/supersharp_logo.png" /></a>
+#+END_EXPORT
+
+* [[https://www.supersharp.quest/][SuperSharp - Procedural IQ Test]]
+
+SuperSharp is a new project with the ambition of generating on demand puzzle sets inspired by IQ test question like [[https://www.wikiwand.com/en/Raven%27s_Progressive_Matrices][Raven's Progressive Matrices]] for example.
+
+Each question is generated procedurally.
+
+There's still a couple bugs here and there (they will get fixed slowly over time).
+
+The question pack is static (PDF) for now but a webapp will be in the making in the near future.
+
+Once the webapp is ready, [[https://www.wikiwand.com/en/Inspection_time][Inspection time]] test will be made available as well.
+
+There will be all kind of differents tests but for now only 5 types are ready:
+  
+** Progressive Matrix Color & Shape
+
+#+BEGIN_EXPORT html
+<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_color_and_shape.png" />
+#+END_EXPORT
+
+** Progressive Matrix Grid Squares
+
+#+BEGIN_EXPORT html
+<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_grid_squares.png" />
+#+END_EXPORT
+
+** Progressive Matrix Additive
+
+#+BEGIN_EXPORT html
+<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_additive.png" />
+#+END_EXPORT
+
+** Progressive Matrix Matchsticks
+
+#+BEGIN_EXPORT html
+<img width="500px" height="630px" src="/media/images/supersharp_progressive_matrix_matchsticks.png" />
+#+END_EXPORT
+
+** Glyph Mapping
+
+#+BEGIN_EXPORT html
+<img width="500px" height="630px" src="/media/images/supersharp_glyph_mapping.png" />
+#+END_EXPORT
