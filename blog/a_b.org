@@ -631,7 +631,7 @@
   +=(end)0+
   /=
 #+END_SRC
-* [5-4] A-B (22/8)
+* [5-4] A-B (8/8)
 #+BEGIN_SRC
   (once)=(start)/
   (once)=(end)W
@@ -654,6 +654,18 @@
   1T=(start)T1
   0T=(start)T0
   (start)T=(end)T
+  (start)0=
+#+END_SRC
+*Special thanks to `SoMall-dumpling` for the base algorithm!*
+#+BEGIN_SRC
+  -1=-_-
+  -0=--
+  _-=-__
+  -=
+
+  1__=0
+  0__=__1
+  __=
   (start)0=
 #+END_SRC
 * [5-5] A*B (TODO)
