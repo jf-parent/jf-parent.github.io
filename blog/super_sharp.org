@@ -13,6 +13,7 @@
 <a href"https://www.supersharp.quest/" target="blank"><img width="500px" height="630px" src="/media/images/supersharp_logo.png" /></a>
 #+END_EXPORT
 
+
 * [[https://www.supersharp.quest/][SuperSharp - Procedural IQ Test]]
 
 SuperSharp is a new project with the ambition of generating on demand puzzle sets inspired by IQ test question like [[https://www.wikiwand.com/en/Raven%27s_Progressive_Matrices][Raven's Progressive Matrices]] for example.
