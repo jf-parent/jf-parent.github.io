@@ -4,8 +4,8 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Mon, 26 Dec 2022 19:41:41 EST</pubDate>
-    <lastBuildDate>Mon, 26 Dec 2022 19:41:41 EST</lastBuildDate>
+    <pubDate>Mon, 26 Dec 2022 20:18:34 EST</pubDate>
+    <lastBuildDate>Mon, 26 Dec 2022 20:18:34 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -14,6 +14,13 @@
       <description><![CDATA[My A=B Solutions]]></description>
       <pubDate>2022-12-26</pubDate>
       <guid>https://jf-parent.github.io/blog/2022/07/06/a_b_solutions</guid>
+    </item>
+    <item>
+      <title>SuperSharp - Procedural IQ Test (alpha version)</title>
+      <link>https://jf-parent.github.io/blog/2022/12/26/super-sharp</link>
+      <description><![CDATA[SuperSharp - Procedural IQ Test]]></description>
+      <pubDate>2022-12-26</pubDate>
+      <guid>https://jf-parent.github.io/blog/2022/12/26/super-sharp</guid>
     </item>
     <item>
       <title>20th Century Food Court - Last Call BBS</title>
@@ -70,13 +77,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2021-10-21</pubDate>
       <guid>https://jf-parent.github.io/blog/2021/10/21/spatial-path-viewer---tis-100</guid>
-    </item>
-    <item>
-      <title>Clojuremacs [WIP]</title>
-      <link>https://jf-parent.github.io/blog/2021/07/13/clojuremacs</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2021-07-17</pubDate>
-      <guid>https://jf-parent.github.io/blog/2021/07/13/clojuremacs</guid>
     </item>
   </channel>
 </rss>
