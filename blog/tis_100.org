@@ -1,0 +1,25 @@
+#+TITLE:       TIS-100 - My Solutions
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2022-12-27
+#+URI:         /blog/%y/%m/%d/tis-100_solutions
+#+KEYWORDS:    tis-100,zachtronics
+#+TAGS:        tis-100,zachtronics
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: My tis-100 Solutions
+
+* Game info
+** [[https://store.steampowered.com/app/370360/TIS100/][TIS-100 on Steam]]
+** TIS-100 is an open-ended programming game in which you rewrite corrupted code segments to repair the TIS-100 and unlock its secrets.
+
+* Signal Comparator (278, 6, 20)
+
+#+BEGIN_EXPORT html
+<img style="width: 50%;" src="/media/images/tis-100_signal-comparator_code.png" />
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<img style="width: 50%" src="/media/images/tis-100_signal-comparator_scoreboard.png" />
+#+END_EXPORT
+
