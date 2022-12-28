@@ -1,12 +1,22 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2022-06-27
+#+DATE:        2022-12-28
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Art Electronic Music Video
 
+* Pūrvanivāsānusmṛti - Recollection of Former Abodes
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/2vhRS0xJkN4" target="_blank"><img src="/media/images/boudoir_covers/boudoir_Pūrvanivāsānusmṛti_cover.jpg" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro, Vprocess
+*** Release date: Dec 28, 2022
+*** Audio only: [[https://boudoir-socket.bandcamp.com/track/p-rvaniv-s-nusm-ti-recollection-of-former-abodes][bandcamp]]
+*** Production timeframe: ~200hours
+*** Length: 5.32
 * Dukkha Dukkha
 #+BEGIN_EXPORT html
 <a href="https://youtu.be/_EQ2oCChZO8" target="_blank"><img src="/media/images/boudoir_covers/boudoir_dukkha-dukkha_cover.png" /></a>
