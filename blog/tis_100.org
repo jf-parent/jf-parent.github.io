@@ -13,13 +13,44 @@
 ** [[https://store.steampowered.com/app/370360/TIS100/][TIS-100 on Steam]]
 ** TIS-100 is an open-ended programming game in which you rewrite corrupted code segments to repair the TIS-100 and unlock its secrets.
 
+* Self-test Diagnostic (83, 8, 8)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" /></a>
+#+END_EXPORT
+
+* Signal Amplifier (160, 4, 6)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code.png" /></a>
+#+END_EXPORT
+
+* Differential Converter (201, 6, 12)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" /></a>
+#+END_EXPORT
+
 * Signal Comparator (278, 6, 20)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_signal-comparator_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_signal-comparator_scoreboard.png" /></a>
+#+END_EXPORT
 
 #+BEGIN_EXPORT html
 <a href="/media/images/tis-100_signal-comparator_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_signal-comparator_code.png" /></a>
 #+END_EXPORT
 
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_signal-comparator_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_signal-comparator_scoreboard.png" /></a>
-#+END_EXPORT
 
