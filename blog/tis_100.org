@@ -53,4 +53,22 @@
 <a href="/media/images/tis-100_signal-comparator_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_signal-comparator_code.png" /></a>
 #+END_EXPORT
 
+* Signal Multiplexer - Fast (204 , 7, 21)
 
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" /></a>
+#+END_EXPORT
+
+* Signal Multiplexer - Lean (263, 5, 16)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" /></a>
+#+END_EXPORT
