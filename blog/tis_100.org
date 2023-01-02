@@ -100,3 +100,31 @@
 #+BEGIN_EXPORT html
 <a href="/media/files/30647.lean.txt" target="_blank">code file</a>
 #+END_EXPORT
+
+* Signal Edge Detector - Fast (210, 6, 29)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/32050.fast.txt" target="_blank">code file</a>
+#+END_EXPORT
+
+* Signal Edge Detector - Lean (289, 4, 16)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/32050.lean.txt" target="_blank">code file</a>
+#+END_EXPORT
