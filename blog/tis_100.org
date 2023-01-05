@@ -128,3 +128,17 @@
 #+BEGIN_EXPORT html
 <a href="/media/files/32050.lean.txt" target="_blank">code file</a>
 #+END_EXPORT
+
+* Interrupt Handler - Fast (201, 9, 46)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/33762.fast.txt" target="_blank">code file</a>
+#+END_EXPORT
