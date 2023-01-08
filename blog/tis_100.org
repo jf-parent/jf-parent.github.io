@@ -142,3 +142,17 @@
 #+BEGIN_EXPORT html
 <a href="/media/files/33762.fast.txt" target="_blank">code file</a>
 #+END_EXPORT
+
+* Signal Pattern Detector (176, 4, 16)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/40196.txt" target="_blank">code file</a>
+#+END_EXPORT
