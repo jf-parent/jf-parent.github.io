@@ -1,0 +1,43 @@
+@0
+
+
+@1
+^:MOV 0,ACC
+MOV 0,DOWN
+ADD UP
+JNZ ^
+MOV 0,DOWN
+ADD UP
+JNZ ^
+ADD UP
+JNZ V
+0:MOV 1,DOWN
+ADD UP
+JEZ 0
+V:MOV 0,DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP,DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV UP,RIGHT
+
+@9
+MOV LEFT,DOWN
+
+@10
