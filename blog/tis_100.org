@@ -156,3 +156,17 @@
 #+BEGIN_EXPORT html
 <a href="/media/files/40196.txt" target="_blank">code file</a>
 #+END_EXPORT
+
+* Sequence Reverser - Lean (399, 4, 14)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/42656.lean.txt" target="_blank">code file</a>
+#+END_EXPORT
