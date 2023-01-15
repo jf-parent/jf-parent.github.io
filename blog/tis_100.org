@@ -23,14 +23,34 @@
 <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" /></a>
 #+END_EXPORT
 
-* Signal Amplifier (160, 4, 6)
+* Signal Amplifier - Fast (98, 6, 30)
+
+** Unlock Steam Achievement 'PARALLELIZE' (Solve SIGNAL AMPLIFIER in fewer than 100 cycles)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard.png" /></a>
+<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" /></a>
 #+END_EXPORT
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code.png" /></a>
+<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/10981.fast.txt" target="_blank">code file</a>
+#+END_EXPORT
+
+* Signal Amplifier - Lean (160, 4, 6)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/10981.lean.txt" target="_blank">code file</a>
 #+END_EXPORT
 
 * Differential Converter (201, 6, 12)
