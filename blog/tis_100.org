@@ -238,3 +238,17 @@
 #+BEGIN_EXPORT html
 <a href="/media/files/50370.lean.txt" target="_blank">code file</a>
 #+END_EXPORT
+
+* Wave Collapse Supervisor - Lean (549, 6, 43)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/NEXUS.24.511.7.lean.txt" target="_blank">code file</a>
+#+END_EXPORT
