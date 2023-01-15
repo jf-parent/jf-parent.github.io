@@ -23,6 +23,22 @@
 <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" /></a>
 #+END_EXPORT
 
+* Self-test Diagnostic - Slow (100076, 8, 14)
+
+** Unlock Steam Achievement 'BUSY_LOOP' (Solve SELF-TEST DIAGNOSTIC in over 100,000 cycles)
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" /></a>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<a href="/media/files/00150.slow.txt" target="_blank">code file</a>
+#+END_EXPORT
+
 * Signal Amplifier - Fast (98, 6, 30)
 
 ** Unlock Steam Achievement 'PARALLELIZE' (Solve SIGNAL AMPLIFIER in fewer than 100 cycles)
