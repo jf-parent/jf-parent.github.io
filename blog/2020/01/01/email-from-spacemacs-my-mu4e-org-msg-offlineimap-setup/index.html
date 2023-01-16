@@ -60,24 +60,24 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org9f7eba3" class="outline-2">
-<h2 id="org9f7eba3">Introduction</h2>
-<div class="outline-text-2" id="text-org9f7eba3">
+<div id="outline-container-orgb4ed6ae" class="outline-2">
+<h2 id="orgb4ed6ae">Introduction</h2>
+<div class="outline-text-2" id="text-orgb4ed6ae">
 </div>
-<div id="outline-container-org44eeab3" class="outline-3">
-<h3 id="org44eeab3">I wanted to share my configuration for mu4e / org-msg / offlineimap for Spacemacs <i>OSX Catalina</i> using Gmail.</h3>
+<div id="outline-container-orgc3235f6" class="outline-3">
+<h3 id="orgc3235f6">I wanted to share my configuration for mu4e / org-msg / offlineimap for Spacemacs <i>OSX Catalina</i> using Gmail.</h3>
 </div>
-<div id="outline-container-org8a55ba8" class="outline-3">
-<h3 id="org8a55ba8">I am very satisfy with the end result (I would like to fix the image loading problem in the near future but for now I use the view in browser to deal with html heavy email). The interface of Mu4e is perfect for my workflow and org-msg make writing email awesome since I can leverage all my org-mode materials that is sitting in my org-wiki and use all the org-mode power goodies.</h3>
+<div id="outline-container-orgb442129" class="outline-3">
+<h3 id="orgb442129">I am very satisfy with the end result (I would like to fix the image loading problem in the near future but for now I use the view in browser to deal with html heavy email). The interface of Mu4e is perfect for my workflow and org-msg make writing email awesome since I can leverage all my org-mode materials that is sitting in my org-wiki and use all the org-mode power goodies.</h3>
 </div>
 </div>
-<div id="outline-container-org9fe8a60" class="outline-2">
-<h2 id="org9fe8a60">OfflineIMAP setup</h2>
-<div class="outline-text-2" id="text-org9fe8a60">
+<div id="outline-container-org847beda" class="outline-2">
+<h2 id="org847beda">OfflineIMAP setup</h2>
+<div class="outline-text-2" id="text-org847beda">
 </div>
-<div id="outline-container-org1b9824d" class="outline-3">
-<h3 id="org1b9824d"><b>Warning</b>: I had to fight with the security settings in my google account (see <a href="https://support.google.com/accounts/answer/6010255?hl=en">Less secure apps &amp; your Google Account - Google Account Help</a>). I had to click on email security warning sent by gmail also.</h3>
-<div class="outline-text-3" id="text-org1b9824d">
+<div id="outline-container-org7b5752f" class="outline-3">
+<h3 id="org7b5752f"><b>Warning</b>: I had to fight with the security settings in my google account (see <a href="https://support.google.com/accounts/answer/6010255?hl=en">Less secure apps &amp; your Google Account - Google Account Help</a>). I had to click on email security warning sent by gmail also.</h3>
+<div class="outline-text-3" id="text-org7b5752f">
 <div class="org-src-container">
 <pre class="src src-bash">brew install offlineimap
 brew services start offlineimap
@@ -118,16 +118,16 @@ folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
 </pre>
 </div>
 </div>
-<div id="outline-container-org9be7315" class="outline-3">
-<h3 id="org9be7315">Consult the master config for more options: <a href="https://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf">offlineimap/offlineimap.conf at master</a></h3>
+<div id="outline-container-orga989bf1" class="outline-3">
+<h3 id="orga989bf1">Consult the master config for more options: <a href="https://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf">offlineimap/offlineimap.conf at master</a></h3>
 </div>
-<div id="outline-container-org2adb8fd" class="outline-3">
-<h3 id="org2adb8fd"><b>Warning</b>: offlineimap will obviously download all of the targeted messages so that might result in a lot of data usage...</h3>
+<div id="outline-container-org6e0b4f1" class="outline-3">
+<h3 id="org6e0b4f1"><b>Warning</b>: offlineimap will obviously download all of the targeted messages so that might result in a lot of data usage...</h3>
 </div>
 </div>
-<div id="outline-container-org964ca6f" class="outline-2">
-<h2 id="org964ca6f">Spacemacs Configuration</h2>
-<div class="outline-text-2" id="text-org964ca6f">
+<div id="outline-container-org0e125f5" class="outline-2">
+<h2 id="org0e125f5">Spacemacs Configuration</h2>
+<div class="outline-text-2" id="text-org0e125f5">
 <p>
 ~/.spacemacs
 </p>
@@ -210,9 +210,9 @@ folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
 <img src='/media/images/mu4e_message_view.png' />
 </div>
 </div>
-<div id="outline-container-orga12f1d7" class="outline-2">
-<h2 id="orga12f1d7">Org-Msg Configuration</h2>
-<div class="outline-text-2" id="text-orga12f1d7">
+<div id="outline-container-orgaba99c5" class="outline-2">
+<h2 id="orgaba99c5">Org-Msg Configuration</h2>
+<div class="outline-text-2" id="text-orgaba99c5">
 <p>
 ~/.spacemacs
 </p>
@@ -238,114 +238,114 @@ folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
 </div>
 <img src='/media/images/org-msg-compose.png' />
 </div>
-<div id="outline-container-org34559ad" class="outline-3">
-<h3 id="org34559ad">It is possible to change the org-msg style via `org-msg-enforce-css`. The default style look like this:</h3>
-<div class="outline-text-3" id="text-org34559ad">
+<div id="outline-container-orga55eb50" class="outline-3">
+<h3 id="orga55eb50">It is possible to change the org-msg style via `org-msg-enforce-css`. The default style look like this:</h3>
+<div class="outline-text-3" id="text-orga55eb50">
 <img src='/media/images/org-msg-email.png' />
 </div>
 </div>
 </div>
-<div id="outline-container-orgb75210d" class="outline-2">
-<h2 id="orgb75210d">Usage</h2>
-<div class="outline-text-2" id="text-orgb75210d">
+<div id="outline-container-org841dffd" class="outline-2">
+<h2 id="org841dffd">Usage</h2>
+<div class="outline-text-2" id="text-org841dffd">
 </div>
-<div id="outline-container-org606f660" class="outline-3">
-<h3 id="org606f660">To start mu4e from spacemacs: &lt;space&gt;aM</h3>
+<div id="outline-container-org2900228" class="outline-3">
+<h3 id="org2900228">To start mu4e from spacemacs: &lt;space&gt;aM</h3>
 </div>
-<div id="outline-container-org2d67de8" class="outline-3">
-<h3 id="org2d67de8">Some commands that I use a lot in header view:</h3>
-<div class="outline-text-3" id="text-org2d67de8">
+<div id="outline-container-org80fd6dd" class="outline-3">
+<h3 id="org80fd6dd">Some commands that I use a lot in header view:</h3>
+<div class="outline-text-3" id="text-org80fd6dd">
 </div>
-<div id="outline-container-org337e805" class="outline-4">
-<h4 id="org337e805"><i>m</i> =&gt; move</h4>
+<div id="outline-container-orgb9224c5" class="outline-4">
+<h4 id="orgb9224c5"><i>m</i> =&gt; move</h4>
 </div>
-<div id="outline-container-org0d1f453" class="outline-4">
-<h4 id="org0d1f453"><i>d</i> =&gt; delete</h4>
+<div id="outline-container-org894eedf" class="outline-4">
+<h4 id="org894eedf"><i>d</i> =&gt; delete</h4>
 </div>
-<div id="outline-container-orge4d411c" class="outline-4">
-<h4 id="orge4d411c"><i>?</i> =&gt; unread</h4>
+<div id="outline-container-orgceead7b" class="outline-4">
+<h4 id="orgceead7b"><i>?</i> =&gt; unread</h4>
 </div>
-<div id="outline-container-org065f655" class="outline-4">
-<h4 id="org065f655"><i>!</i> =&gt; read</h4>
-</div>
-</div>
-<div id="outline-container-orga501bc2" class="outline-3">
-<h3 id="orga501bc2">Some commands that I use a lot in editor view:</h3>
-<div class="outline-text-3" id="text-orga501bc2">
-</div>
-<div id="outline-container-org34535af" class="outline-4">
-<h4 id="org34535af"><i>aV</i> =&gt; view in browser</h4>
-</div>
-<div id="outline-container-org3cab185" class="outline-4">
-<h4 id="org3cab185"><i>C-c/C-c</i> =&gt; send email</h4>
-</div>
-<div id="outline-container-org99139ec" class="outline-4">
-<h4 id="org99139ec"><i>C-c C-k</i> =&gt; kill email</h4>
-</div>
-<div id="outline-container-org905c2b8" class="outline-4">
-<h4 id="org905c2b8"><i>C-c C-a</i> =&gt; add attachment</h4>
+<div id="outline-container-orge375ac8" class="outline-4">
+<h4 id="orge375ac8"><i>!</i> =&gt; read</h4>
 </div>
 </div>
+<div id="outline-container-org755307c" class="outline-3">
+<h3 id="org755307c">Some commands that I use a lot in editor view:</h3>
+<div class="outline-text-3" id="text-org755307c">
 </div>
-<div id="outline-container-org786fe12" class="outline-2">
-<h2 id="org786fe12">Resources</h2>
-<div class="outline-text-2" id="text-org786fe12">
+<div id="outline-container-org9a3b75d" class="outline-4">
+<h4 id="org9a3b75d"><i>aV</i> =&gt; view in browser</h4>
 </div>
-<div id="outline-container-orgeded3b9" class="outline-3">
-<h3 id="orgeded3b9"><a href="https://www.reddit.com/r/emacs/comments/ebite6/mu4e_vs_gnus_vs_notmuch_for_emacs_email/">Mu4e vs. Gnus vs. NotMuch for emacs email : emacs</a></h3>
+<div id="outline-container-org2d70e5a" class="outline-4">
+<h4 id="org2d70e5a"><i>C-c/C-c</i> =&gt; send email</h4>
 </div>
-<div id="outline-container-orgb4c5798" class="outline-3">
-<h3 id="orgb4c5798"><code>==OfflineIMAP==</code></h3>
-<div class="outline-text-3" id="text-orgb4c5798">
+<div id="outline-container-org4c8acfa" class="outline-4">
+<h4 id="org4c8acfa"><i>C-c C-k</i> =&gt; kill email</h4>
 </div>
-<div id="outline-container-org49cb591" class="outline-4">
-<h4 id="org49cb591"><a href="https://www.offlineimap.org/">OfflineIMAP community's website</a></h4>
-</div>
-<div id="outline-container-org663a6d9" class="outline-4">
-<h4 id="org663a6d9"><a href="https://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf">offlineimap/offlineimap.conf at master · OfflineIMAP/offlineimap</a></h4>
+<div id="outline-container-org3ad255c" class="outline-4">
+<h4 id="org3ad255c"><i>C-c C-a</i> =&gt; add attachment</h4>
 </div>
 </div>
-<div id="outline-container-orgeeeb600" class="outline-3">
-<h3 id="orgeeeb600"><code>==Mu4e==</code></h3>
-<div class="outline-text-3" id="text-orgeeeb600">
 </div>
-<div id="outline-container-orgfa7af61" class="outline-4">
-<h4 id="orgfa7af61"><a href="https://www.djcbsoftware.nl/code/mu/mu4e/">Top (Mu4e 1.2.0 user manual)</a></h4>
+<div id="outline-container-org821a8df" class="outline-2">
+<h2 id="org821a8df">Resources</h2>
+<div class="outline-text-2" id="text-org821a8df">
 </div>
-<div id="outline-container-org2bdd917" class="outline-4">
-<h4 id="org2bdd917"><a href="https://www.djcbsoftware.nl/code/mu/mu4e/Gmail-configuration.html">Gmail configuration (Mu4e 1.2.0 user manual)</a></h4>
+<div id="outline-container-org7f5ea7a" class="outline-3">
+<h3 id="org7f5ea7a"><a href="https://www.reddit.com/r/emacs/comments/ebite6/mu4e_vs_gnus_vs_notmuch_for_emacs_email/">Mu4e vs. Gnus vs. NotMuch for emacs email : emacs</a></h3>
 </div>
-<div id="outline-container-org5e87c13" class="outline-4">
-<h4 id="org5e87c13"><a href="https://cestlaz.github.io/posts/using-emacs-39-mu4e/">Using Emacs 39 - mu4e</a></h4>
+<div id="outline-container-org4a4cc65" class="outline-3">
+<h3 id="org4a4cc65"><code>==OfflineIMAP==</code></h3>
+<div class="outline-text-3" id="text-org4a4cc65">
 </div>
-<div id="outline-container-org7f29109" class="outline-4">
-<h4 id="org7f29109"><a href="https://www.youtube.com/watch?v=newRHXKm4H4">Using Emacs 39 - mu4e - YouTube</a></h4>
+<div id="outline-container-org931e51d" class="outline-4">
+<h4 id="org931e51d"><a href="https://www.offlineimap.org/">OfflineIMAP community's website</a></h4>
 </div>
-<div id="outline-container-org368000a" class="outline-4">
-<h4 id="org368000a"><a href="https://medium.com/@kirang89/emacs-as-email-client-with-offlineimap-and-mu4e-on-os-x-3ba55adc78b6">Emacs as email client with offlineimap and mu4e on OS X</a></h4>
-</div>
-<div id="outline-container-org05cd8b1" class="outline-4">
-<h4 id="org05cd8b1"><a href="http://pragmaticemacs.com/mu4e-tutorials/">mu4e tutorials | Pragmatic Emacs</a></h4>
-</div>
-<div id="outline-container-org821609f" class="outline-4">
-<h4 id="org821609f"><a href="https://www.macs.hw.ac.uk/%7Ers46/posts/2014-01-13-mu4e-email-client.html">Drowning in Email; mu4e to the Rescue.</a></h4>
-</div>
-<div id="outline-container-orgdb89edd" class="outline-4">
-<h4 id="orgdb89edd"><a href="https://www.baty.net/2016/better-mu4e-message-rendering/">Better Mu4e Message Rendering - Jack Baty's weblog</a></h4>
-</div>
-<div id="outline-container-org24421f4" class="outline-4">
-<h4 id="org24421f4"><a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bemail/mu4e">spacemacs/layers/+email/mu4e at master · syl20bnr/spacemacs</a></h4>
+<div id="outline-container-org982c2e6" class="outline-4">
+<h4 id="org982c2e6"><a href="https://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf">offlineimap/offlineimap.conf at master · OfflineIMAP/offlineimap</a></h4>
 </div>
 </div>
-<div id="outline-container-org194dbfe" class="outline-3">
-<h3 id="org194dbfe"><code>==Org-msg==</code></h3>
-<div class="outline-text-3" id="text-org194dbfe">
+<div id="outline-container-orgf6aa178" class="outline-3">
+<h3 id="orgf6aa178"><code>==Mu4e==</code></h3>
+<div class="outline-text-3" id="text-orgf6aa178">
 </div>
-<div id="outline-container-orge81b9e3" class="outline-4">
-<h4 id="orge81b9e3"><a href="https://github.com/jeremy-compostella/org-msg">jeremy-compostella/org-msg: OrgMsg is a GNU/Emacs global minor mode mixing up Org mode and Message mode to compose and reply to emails in a Outlook HTML friendly style.</a></h4>
+<div id="outline-container-org8076d2a" class="outline-4">
+<h4 id="org8076d2a"><a href="https://www.djcbsoftware.nl/code/mu/mu4e/">Top (Mu4e 1.2.0 user manual)</a></h4>
 </div>
-<div id="outline-container-org941df65" class="outline-4">
-<h4 id="org941df65"><a href="https://www.youtube.com/watch?v=cPZe0AGOUJU&amp;feature=em-uploademail">Using Emacs Episode 61 - org-msg - YouTube</a></h4>
+<div id="outline-container-org9a7a1ab" class="outline-4">
+<h4 id="org9a7a1ab"><a href="https://www.djcbsoftware.nl/code/mu/mu4e/Gmail-configuration.html">Gmail configuration (Mu4e 1.2.0 user manual)</a></h4>
+</div>
+<div id="outline-container-org6b8a19a" class="outline-4">
+<h4 id="org6b8a19a"><a href="https://cestlaz.github.io/posts/using-emacs-39-mu4e/">Using Emacs 39 - mu4e</a></h4>
+</div>
+<div id="outline-container-org0c0cac8" class="outline-4">
+<h4 id="org0c0cac8"><a href="https://www.youtube.com/watch?v=newRHXKm4H4">Using Emacs 39 - mu4e - YouTube</a></h4>
+</div>
+<div id="outline-container-orgba9e30e" class="outline-4">
+<h4 id="orgba9e30e"><a href="https://medium.com/@kirang89/emacs-as-email-client-with-offlineimap-and-mu4e-on-os-x-3ba55adc78b6">Emacs as email client with offlineimap and mu4e on OS X</a></h4>
+</div>
+<div id="outline-container-orgb3f0491" class="outline-4">
+<h4 id="orgb3f0491"><a href="http://pragmaticemacs.com/mu4e-tutorials/">mu4e tutorials | Pragmatic Emacs</a></h4>
+</div>
+<div id="outline-container-org7851481" class="outline-4">
+<h4 id="org7851481"><a href="https://www.macs.hw.ac.uk/%7Ers46/posts/2014-01-13-mu4e-email-client.html">Drowning in Email; mu4e to the Rescue.</a></h4>
+</div>
+<div id="outline-container-orge01b8bb" class="outline-4">
+<h4 id="orge01b8bb"><a href="https://www.baty.net/2016/better-mu4e-message-rendering/">Better Mu4e Message Rendering - Jack Baty's weblog</a></h4>
+</div>
+<div id="outline-container-orgc814aa3" class="outline-4">
+<h4 id="orgc814aa3"><a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bemail/mu4e">spacemacs/layers/+email/mu4e at master · syl20bnr/spacemacs</a></h4>
+</div>
+</div>
+<div id="outline-container-org229d3d9" class="outline-3">
+<h3 id="org229d3d9"><code>==Org-msg==</code></h3>
+<div class="outline-text-3" id="text-org229d3d9">
+</div>
+<div id="outline-container-orgb3010fd" class="outline-4">
+<h4 id="orgb3010fd"><a href="https://github.com/jeremy-compostella/org-msg">jeremy-compostella/org-msg: OrgMsg is a GNU/Emacs global minor mode mixing up Org mode and Message mode to compose and reply to emails in a Outlook HTML friendly style.</a></h4>
+</div>
+<div id="outline-container-orge7b0a1f" class="outline-4">
+<h4 id="orge7b0a1f"><a href="https://www.youtube.com/watch?v=cPZe0AGOUJU&amp;feature=em-uploademail">Using Emacs Episode 61 - org-msg - YouTube</a></h4>
 </div>
 </div>
 </div>
