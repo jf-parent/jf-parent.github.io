@@ -649,3 +649,87 @@ article {
   background: #fff;
   font-weight: bold;
 }
+
+/* ACCORDION
+ * Ref: https://codeconvey.com/html-expand-collapse-text-without-javascript/
+ * */
+
+.accordion > input[name="collapse"] {
+  display: none;
+  
+  /*position: absolute;
+  left: -100vw;*/
+}
+
+.accordion label,
+.accordion .content{
+  max-width: 620px;
+}
+
+.accordion .content {
+  background: #fff;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: 380px;
+  transition: height 0.5s;
+}
+
+.accordion label {
+  display: block;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 620px){
+	.accordion > input[name="collapse"]:checked ~ .content {
+	}
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  border-top: 0;
+  transition: 0.3s;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 16px;
+}
+
+.accordion label {
+  color: #fff;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 10px;
+  background: black;
+  user-select: none;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #252525;
+}
+
+.accordion .handle label:before {
+  content: "➩";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  transition: 0.4s;
+}
+
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.4s;
+}
+/* END - ACCORDION */

@@ -63,249 +63,621 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge4f1f67">Game info</a></li>
-<li><a href="#org87efdbb">Self-test Diagnostic (83, 8, 8)</a></li>
-<li><a href="#orgc4e31a5">Self-test Diagnostic - Slow (100076, 8, 14)</a></li>
-<li><a href="#org7489128">Signal Amplifier - Fast (98, 6, 30)</a></li>
-<li><a href="#org2f816e0">Signal Amplifier - Lean (160, 4, 6)</a></li>
-<li><a href="#orgb8cebf7">Differential Converter (201, 6, 12)</a></li>
-<li><a href="#org1333e72">Signal Comparator (278, 6, 20)</a></li>
-<li><a href="#orgceddeb9">Signal Multiplexer - Fast (159, 9, 56)</a></li>
-<li><a href="#orgf9b76fe">Signal Multiplexer - Lean (263, 5, 16)</a></li>
-<li><a href="#orgd53ae96">Sequence Generator - Fast (108, 5, 35)</a></li>
-<li><a href="#org1de8eb1">Sequence Generator - Lean (156, 4, 17)</a></li>
-<li><a href="#orgbbb5c37">Signal Edge Detector - Fast (210, 6, 29)</a></li>
-<li><a href="#org2037c96">Signal Edge Detector - Lean (289, 4, 16)</a></li>
-<li><a href="#orga74ec9e">Interrupt Handler - Fast (201, 9, 46)</a></li>
-<li><a href="#orga19a9c9">Signal Pattern Detector (176, 4, 16)</a></li>
-<li><a href="#org302605d">Sequence Reverser - Lean (399, 4, 14)</a></li>
-<li><a href="#orgaff8ec9">Image Test Pattern 1 - Fast (1310, 2, 21)</a></li>
-<li><a href="#orgdb9444a">Image Test Pattern 1 - Lean (2334, 1, 10)</a></li>
-<li><a href="#org6905aa9">Stored Image Decoder - Lean (3937, 5, 21)</a></li>
-<li><a href="#org6e65a25">Wave Collapse Supervisor - Lean (549, 6, 43)</a></li>
+<li><a href="#orgcc2ffdd">Game info</a></li>
+<li><a href="#orgdfaf515">Self-test Diagnostic (83, 8, 8)</a></li>
+<li><a href="#org91fcd2d">Self-test Diagnostic - Slow (100076, 8, 14)</a></li>
+<li><a href="#orgd1e91cc">Signal Amplifier - Fast (98, 6, 30)</a></li>
+<li><a href="#orgb17eb7d">Signal Amplifier - Lean (160, 4, 6)</a></li>
+<li><a href="#orga105ff9">Differential Converter (201, 6, 12)</a></li>
+<li><a href="#orge6702a9">Signal Comparator (278, 6, 20)</a></li>
+<li><a href="#org21633d4">Signal Multiplexer - Fast (159, 9, 56)</a></li>
+<li><a href="#org7c362ff">Signal Multiplexer - Lean (263, 5, 16)</a></li>
+<li><a href="#orge667a7f">Sequence Generator - Fast (108, 5, 35)</a></li>
+<li><a href="#orgb868152">Sequence Generator - Lean (156, 4, 17)</a></li>
+<li><a href="#org16801c3">Signal Edge Detector - Fast (210, 6, 29)</a></li>
+<li><a href="#org3282268">Signal Edge Detector - Lean (289, 4, 16)</a></li>
+<li><a href="#org66cb7e7">Interrupt Handler - Fast (201, 9, 46)</a></li>
+<li><a href="#orgbfa2d6e">Signal Pattern Detector (176, 4, 16)</a></li>
+<li><a href="#org5e580ef">Sequence Reverser - Lean (399, 4, 14)</a></li>
+<li><a href="#org18270fb">Image Test Pattern 1 - Fast (1310, 2, 21)</a></li>
+<li><a href="#orgac3ddb5">Image Test Pattern 1 - Lean (2334, 1, 10)</a></li>
+<li><a href="#org7aee83b">Stored Image Decoder - Lean (3937, 5, 21)</a></li>
+<li><a href="#orgc593386">Wave Collapse Supervisor - Lean (549, 6, 43)</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge4f1f67" class="outline-2">
-<h2 id="orge4f1f67">Game info</h2>
-<div class="outline-text-2" id="text-orge4f1f67">
+<div id="outline-container-orgcc2ffdd" class="outline-2">
+<h2 id="orgcc2ffdd">Game info</h2>
+<div class="outline-text-2" id="text-orgcc2ffdd">
 </div>
-<div id="outline-container-org317c359" class="outline-3">
-<h3 id="org317c359"><a href="https://store.steampowered.com/app/370360/TIS100/">TIS-100 on Steam</a></h3>
+<div id="outline-container-org3910550" class="outline-3">
+<h3 id="org3910550"><a href="https://store.steampowered.com/app/370360/TIS100/">TIS-100 on Steam</a></h3>
 </div>
-<div id="outline-container-org851456c" class="outline-3">
-<h3 id="org851456c">TIS-100 is an open-ended programming game in which you rewrite corrupted code segments to repair the TIS-100 and unlock its secrets.</h3>
-</div>
-</div>
-
-<div id="outline-container-org87efdbb" class="outline-2">
-<h2 id="org87efdbb">Self-test Diagnostic (83, 8, 8)</h2>
-<div class="outline-text-2" id="text-org87efdbb">
-<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" /></a>
-
-<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" /></a>
+<div id="outline-container-org7e7f794" class="outline-3">
+<h3 id="org7e7f794">TIS-100 is an open-ended programming game in which you rewrite corrupted code segments to repair the TIS-100 and unlock its secrets.</h3>
 </div>
 </div>
 
-<div id="outline-container-orgc4e31a5" class="outline-2">
-<h2 id="orgc4e31a5">Self-test Diagnostic - Slow (100076, 8, 14)</h2>
-<div class="outline-text-2" id="text-orgc4e31a5">
-</div>
-<div id="outline-container-org7526d08" class="outline-3">
-<h3 id="org7526d08">Unlock Steam Achievement 'BUSY_LOOP' (Solve SELF-TEST DIAGNOSTIC in over 100,000 cycles)</h3>
-<div class="outline-text-3" id="text-org7526d08">
-<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" /></a>
-
-<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" /></a>
-
-<a href="/media/files/00150.slow.txt" target="_blank">code file</a>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org7489128" class="outline-2">
-<h2 id="org7489128">Signal Amplifier - Fast (98, 6, 30)</h2>
-<div class="outline-text-2" id="text-org7489128">
-</div>
-<div id="outline-container-org97771c9" class="outline-3">
-<h3 id="org97771c9">Unlock Steam Achievement 'PARALLELIZE' (Solve SIGNAL AMPLIFIER in fewer than 100 cycles)</h3>
-<div class="outline-text-3" id="text-org97771c9">
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" /></a>
-
-<a href="/media/files/10981.fast.txt" target="_blank">code file</a>
-</div>
+<div id="outline-container-orgdfaf515" class="outline-2">
+<h2 id="orgdfaf515">Self-test Diagnostic (83, 8, 8)</h2>
+<div class="outline-text-2" id="text-orgdfaf515">
+<section class="accordion">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_2">
+  <h2 class="handle">
+    <label for="handle_1_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" />
+    </a>
+  </div>
+</section>
 </div>
 </div>
 
-<div id="outline-container-org2f816e0" class="outline-2">
-<h2 id="org2f816e0">Signal Amplifier - Lean (160, 4, 6)</h2>
-<div class="outline-text-2" id="text-org2f816e0">
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" /></a>
-
-<a href="/media/files/10981.lean.txt" target="_blank">code file</a>
+<div id="outline-container-org91fcd2d" class="outline-2">
+<h2 id="org91fcd2d">Self-test Diagnostic - Slow (100076, 8, 14)</h2>
+<div class="outline-text-2" id="text-org91fcd2d">
+</div>
+<div id="outline-container-org638aa69" class="outline-3">
+<h3 id="org638aa69">Unlock Steam Achievement 'BUSY_LOOP' (Solve SELF-TEST DIAGNOSTIC in over 100,000 cycles)</h3>
+<div class="outline-text-3" id="text-org638aa69">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_self_test_diagnostic_slow_1">
+  <h2 class="handle">
+    <label for="handle_self_test_diagnostic_slow_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_self_test_diagnostic_slow_2">
+  <h2 class="handle">
+    <label for="handle_self_test_diagnostic_slow_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/00150.slow.txt" target="_blank">code file</a>
+</section>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd1e91cc" class="outline-2">
+<h2 id="orgd1e91cc">Signal Amplifier - Fast (98, 6, 30)</h2>
+<div class="outline-text-2" id="text-orgd1e91cc">
+</div>
+<div id="outline-container-orgfda5996" class="outline-3">
+<h3 id="orgfda5996">Unlock Steam Achievement 'PARALLELIZE' (Solve SIGNAL AMPLIFIER in fewer than 100 cycles)</h3>
+<div class="outline-text-3" id="text-orgfda5996">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/10981.fast.txt" target="_blank">code file</a>
+</section>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb17eb7d" class="outline-2">
+<h2 id="orgb17eb7d">Signal Amplifier - Lean (160, 4, 6)</h2>
+<div class="outline-text-2" id="text-orgb17eb7d">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/10981.lean.txt" target="_blank">code file</a>
+</section>
+</div>
+</div>
+<div id="outline-container-orga105ff9" class="outline-2">
+<h2 id="orga105ff9">Differential Converter (201, 6, 12)</h2>
+<div class="outline-text-2" id="text-orga105ff9">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_differential_converter_1">
+  <h2 class="handle">
+    <label for="handle_differential_converter_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_differential_converter_2">
+  <h2 class="handle">
+    <label for="handle_differential_converter_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" />
+    </a>
+  </div>
+</section>
+</div>
+</div>
+<div id="outline-container-orge6702a9" class="outline-2">
+<h2 id="orge6702a9">Signal Comparator (278, 6, 20)</h2>
+<div class="outline-text-2" id="text-orge6702a9">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_comparator_1">
+  <h2 class="handle">
+    <label for="handle_signal_comparator_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_signal-comparator_scoreboard.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_signal-comparator_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_comparator_2">
+  <h2 class="handle">
+    <label for="handle_signal_comparator_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_signal-comparator_code.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_signal-comparator_code.png" />
+    </a>
+  </div>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orgb8cebf7" class="outline-2">
-<h2 id="orgb8cebf7">Differential Converter (201, 6, 12)</h2>
-<div class="outline-text-2" id="text-orgb8cebf7">
-<a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" /></a>
-
-<a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" /></a>
-</div>
-</div>
-
-<div id="outline-container-org1333e72" class="outline-2">
-<h2 id="org1333e72">Signal Comparator (278, 6, 20)</h2>
-<div class="outline-text-2" id="text-org1333e72">
-<a href="/media/images/tis-100_signal-comparator_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_signal-comparator_scoreboard.png" /></a>
-
-<a href="/media/images/tis-100_signal-comparator_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_signal-comparator_code.png" /></a>
-</div>
-</div>
-
-<div id="outline-container-orgceddeb9" class="outline-2">
-<h2 id="orgceddeb9">Signal Multiplexer - Fast (159, 9, 56)</h2>
-<div class="outline-text-2" id="text-orgceddeb9">
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" /></a>
-
+<div id="outline-container-org21633d4" class="outline-2">
+<h2 id="org21633d4">Signal Multiplexer - Fast (159, 9, 56)</h2>
+<div class="outline-text-2" id="text-org21633d4">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/22280.fast.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orgf9b76fe" class="outline-2">
-<h2 id="orgf9b76fe">Signal Multiplexer - Lean (263, 5, 16)</h2>
-<div class="outline-text-2" id="text-orgf9b76fe">
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" /></a>
+<div id="outline-container-org7c362ff" class="outline-2">
+<h2 id="org7c362ff">Signal Multiplexer - Lean (263, 5, 16)</h2>
+<div class="outline-text-2" id="text-org7c362ff">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" />
+    </a>
+  </div>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orgd53ae96" class="outline-2">
-<h2 id="orgd53ae96">Sequence Generator - Fast (108, 5, 35)</h2>
-<div class="outline-text-2" id="text-orgd53ae96">
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" /></a>
-
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" /></a>
-
+<div id="outline-container-orge667a7f" class="outline-2">
+<h2 id="orge667a7f">Sequence Generator - Fast (108, 5, 35)</h2>
+<div class="outline-text-2" id="text-orge667a7f">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_fast_1">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_fast_2">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/30647.fast.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-org1de8eb1" class="outline-2">
-<h2 id="org1de8eb1">Sequence Generator - Lean (156, 4, 17)</h2>
-<div class="outline-text-2" id="text-org1de8eb1">
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" /></a>
-
+<div id="outline-container-orgb868152" class="outline-2">
+<h2 id="orgb868152">Sequence Generator - Lean (156, 4, 17)</h2>
+<div class="outline-text-2" id="text-orgb868152">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_lean_1">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_lean_2">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/30647.lean.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orgbbb5c37" class="outline-2">
-<h2 id="orgbbb5c37">Signal Edge Detector - Fast (210, 6, 29)</h2>
-<div class="outline-text-2" id="text-orgbbb5c37">
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" /></a>
-
+<div id="outline-container-org16801c3" class="outline-2">
+<h2 id="org16801c3">Signal Edge Detector - Fast (210, 6, 29)</h2>
+<div class="outline-text-2" id="text-org16801c3">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/32050.fast.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-org2037c96" class="outline-2">
-<h2 id="org2037c96">Signal Edge Detector - Lean (289, 4, 16)</h2>
-<div class="outline-text-2" id="text-org2037c96">
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" /></a>
-
+<div id="outline-container-org3282268" class="outline-2">
+<h2 id="org3282268">Signal Edge Detector - Lean (289, 4, 16)</h2>
+<div class="outline-text-2" id="text-org3282268">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/32050.lean.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orga74ec9e" class="outline-2">
-<h2 id="orga74ec9e">Interrupt Handler - Fast (201, 9, 46)</h2>
-<div class="outline-text-2" id="text-orga74ec9e">
-<a href="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" /></a>
-
-<a href="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" /></a>
-
+<div id="outline-container-org66cb7e7" class="outline-2">
+<h2 id="org66cb7e7">Interrupt Handler - Fast (201, 9, 46)</h2>
+<div class="outline-text-2" id="text-org66cb7e7">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_interrupt_handler_1">
+  <h2 class="handle">
+    <label for="handle_interrupt_handler_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_interrupt_handler_2">
+  <h2 class="handle">
+    <label for="handle_interrupt_handler_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/33762.fast.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orga19a9c9" class="outline-2">
-<h2 id="orga19a9c9">Signal Pattern Detector (176, 4, 16)</h2>
-<div class="outline-text-2" id="text-orga19a9c9">
-<a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" /></a>
-
-<a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" /></a>
-
+<div id="outline-container-orgbfa2d6e" class="outline-2">
+<h2 id="orgbfa2d6e">Signal Pattern Detector (176, 4, 16)</h2>
+<div class="outline-text-2" id="text-orgbfa2d6e">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_pattern_detector_1">
+  <h2 class="handle">
+    <label for="handle_signal_pattern_detector_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_pattern_detector_2">
+  <h2 class="handle">
+    <label for="handle_signal_pattern_detector_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/40196.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-org302605d" class="outline-2">
-<h2 id="org302605d">Sequence Reverser - Lean (399, 4, 14)</h2>
-<div class="outline-text-2" id="text-org302605d">
-<a href="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" /></a>
-
+<div id="outline-container-org5e580ef" class="outline-2">
+<h2 id="org5e580ef">Sequence Reverser - Lean (399, 4, 14)</h2>
+<div class="outline-text-2" id="text-org5e580ef">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_reverser_lean_1">
+  <h2 class="handle">
+    <label for="handle_sequence_reverser_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_reverser_lean_2">
+  <h2 class="handle">
+    <label for="handle_sequence_reverser_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/42656.lean.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orgaff8ec9" class="outline-2">
-<h2 id="orgaff8ec9">Image Test Pattern 1 - Fast (1310, 2, 21)</h2>
-<div class="outline-text-2" id="text-orgaff8ec9">
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" /></a>
-
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" /></a>
-
+<div id="outline-container-org18270fb" class="outline-2">
+<h2 id="org18270fb">Image Test Pattern 1 - Fast (1310, 2, 21)</h2>
+<div class="outline-text-2" id="text-org18270fb">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_fast_1">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_fast_2">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/50370.fast.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-orgdb9444a" class="outline-2">
-<h2 id="orgdb9444a">Image Test Pattern 1 - Lean (2334, 1, 10)</h2>
-<div class="outline-text-2" id="text-orgdb9444a">
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" /></a>
-
-<a href="/media/files/50370.lean.txt" target="_blank">code file</a>
+<div id="outline-container-orgac3ddb5" class="outline-2">
+<h2 id="orgac3ddb5">Image Test Pattern 1 - Lean (2334, 1, 10)</h2>
+<div class="outline-text-2" id="text-orgac3ddb5">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_lean_1">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_lean_2">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/50370.lean.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
-<div id="outline-container-org6905aa9" class="outline-2">
-<h2 id="org6905aa9">Stored Image Decoder - Lean (3937, 5, 21)</h2>
-<div class="outline-text-2" id="text-org6905aa9">
-<a href="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" /></a>
-
-<a href="/media/files/70601.lean.txt" target="_blank">code file</a>
+<div id="outline-container-org7aee83b" class="outline-2">
+<h2 id="org7aee83b">Stored Image Decoder - Lean (3937, 5, 21)</h2>
+<div class="outline-text-2" id="text-org7aee83b">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_stored_image_decoder_1">
+  <h2 class="handle">
+    <label for="handle_stored_image_decoder_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_stored_image_decoder_2">
+  <h2 class="handle">
+    <label for="handle_stored_image_decoder_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/70601.lean.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
-<div id="outline-container-org6e65a25" class="outline-2">
-<h2 id="org6e65a25">Wave Collapse Supervisor - Lean (549, 6, 43)</h2>
-<div class="outline-text-2" id="text-org6e65a25">
-<a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" /></a>
-
-<a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" /></a>
-
-<a href="/media/files/NEXUS.24.511.7.lean.txt" target="_blank">code file</a>
+<div id="outline-container-orgc593386" class="outline-2">
+<h2 id="orgc593386">Wave Collapse Supervisor - Lean (549, 6, 43)</h2>
+<div class="outline-text-2" id="text-orgc593386">
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_wave_collapse_supervisor_1">
+  <h2 class="handle">
+    <label for="handle_wave_collapse_supervisor_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_wave_collapse_supervisor_2">
+  <h2 class="handle">
+    <label for="handle_wave_collapse_supervisor_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.24.511.7.lean.txt" target="_blank">code file</a>
+</section>
 </div>
 </div>
 
