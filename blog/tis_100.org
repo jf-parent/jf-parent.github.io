@@ -17,21 +17,25 @@
 
 #+BEGIN_EXPORT html
 <section class="accordion">
-  <input type="checkbox" name="collapse" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
   <h2 class="handle">
     <label for="handle_1_1">Scoreboard</label>
   </h2>
   <div class="content">
-    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" /></a>
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard.png" />
+    </a>
   </div>
 </section>
 <section class="accordion">
-  <input type="checkbox" name="collapse" id="handle_1_2">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_2">
   <h2 class="handle">
     <label for="handle_1_2">Code</label>
   </h2>
   <div class="content">
-    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" /></a>
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code.png" />
+    </a>
   </div>
 </section>
 #+END_EXPORT
@@ -41,240 +45,526 @@
 ** Unlock Steam Achievement 'BUSY_LOOP' (Solve SELF-TEST DIAGNOSTIC in over 100,000 cycles)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" /></a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_self_test_diagnostic_slow_1">
+  <h2 class="handle">
+    <label for="handle_self_test_diagnostic_slow_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_scoreboard_slow.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_self_test_diagnostic_slow_2">
+  <h2 class="handle">
+    <label for="handle_self_test_diagnostic_slow_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/00150.slow.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SELF-TEST DIAGNOSTIC_code_slow.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/files/00150.slow.txt" target="_blank">code file</a>
-#+END_EXPORT
-
 * Signal Amplifier - Fast (98, 6, 30)
 
 ** Unlock Steam Achievement 'PARALLELIZE' (Solve SIGNAL AMPLIFIER in fewer than 100 cycles)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" /></a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/10981.fast.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/files/10981.fast.txt" target="_blank">code file</a>
-#+END_EXPORT
-
 * Signal Amplifier - Lean (160, 4, 6)
-
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" /></a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SIGNAL AMPLIFIER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_amplifier_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_amplifier_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/10981.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL AMPLIFIER_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/files/10981.lean.txt" target="_blank">code file</a>
-#+END_EXPORT
-
 * Differential Converter (201, 6, 12)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" /></a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_differential_converter_1">
+  <h2 class="handle">
+    <label for="handle_differential_converter_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_differential_converter_2">
+  <h2 class="handle">
+    <label for="handle_differential_converter_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" />
+    </a>
+  </div>
+</section>
 #+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_DIFFERENTIAL CONVERTER_code.png" /></a>
-#+END_EXPORT
-
 * Signal Comparator (278, 6, 20)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_signal-comparator_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_signal-comparator_scoreboard.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_signal-comparator_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_signal-comparator_code.png" /></a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_comparator_1">
+  <h2 class="handle">
+    <label for="handle_signal_comparator_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_signal-comparator_scoreboard.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_signal-comparator_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_comparator_2">
+  <h2 class="handle">
+    <label for="handle_signal_comparator_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_signal-comparator_code.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_signal-comparator_code.png" />
+    </a>
+  </div>
+</section>
 #+END_EXPORT
 
 * Signal Multiplexer - Fast (159, 9, 56)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/22280.fast.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Signal Multiplexer - Lean (263, 5, 16)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" /></a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_multiplexer_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_multiplexer_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL MULTIPLEXER_code_lean.png" />
+    </a>
+  </div>
+</section>
 #+END_EXPORT
 
 * Sequence Generator - Fast (108, 5, 35)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_fast_1">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_fast_2">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/30647.fast.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Sequence Generator - Lean (156, 4, 17)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_lean_1">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_generator_lean_2">
+  <h2 class="handle">
+    <label for="handle_sequence_generator_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE GENERATOR_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/30647.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Signal Edge Detector - Fast (210, 6, 29)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/32050.fast.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Signal Edge Detector - Lean (289, 4, 16)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_edge_detector_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_edge_detector_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL EDGE DETECTOR_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/32050.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Interrupt Handler - Fast (201, 9, 46)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_interrupt_handler_1">
+  <h2 class="handle">
+    <label for="handle_interrupt_handler_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_INTERRUPT HANDLER_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_interrupt_handler_2">
+  <h2 class="handle">
+    <label for="handle_interrupt_handler_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_INTERRUPT HANDLER_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/33762.fast.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Signal Pattern Detector (176, 4, 16)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_pattern_detector_1">
+  <h2 class="handle">
+    <label for="handle_signal_pattern_detector_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_scoreboard.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_pattern_detector_2">
+  <h2 class="handle">
+    <label for="handle_signal_pattern_detector_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL PATTERN DETECTOR_code.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/40196.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Sequence Reverser - Lean (399, 4, 14)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_reverser_lean_1">
+  <h2 class="handle">
+    <label for="handle_sequence_reverser_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE REVERSER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_reverser_lean_2">
+  <h2 class="handle">
+    <label for="handle_sequence_reverser_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE REVERSER_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/42656.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Image Test Pattern 1 - Fast (1310, 2, 21)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_fast_1">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_fast.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_fast_2">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_fast.png" />
+    </a>
+  </div>
+</section>
+<section>
 <a href="/media/files/50370.fast.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Image Test Pattern 1 - Lean (2334, 1, 10)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/files/50370.lean.txt" target="_blank">code file</a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_lean_1">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_image_test_pattern_1_lean_2">
+  <h2 class="handle">
+    <label for="handle_image_test_pattern_1_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_IMAGE TEST PATTERN 1_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/50370.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 
 * Stored Image Decoder - Lean (3937, 5, 21)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/files/70601.lean.txt" target="_blank">code file</a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_stored_image_decoder_1">
+  <h2 class="handle">
+    <label for="handle_stored_image_decoder_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_STORED IMAGE DECODER_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_stored_image_decoder_2">
+  <h2 class="handle">
+    <label for="handle_stored_image_decoder_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_STORED IMAGE DECODER_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/70601.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
 * Wave Collapse Supervisor - Lean (549, 6, 43)
 
 #+BEGIN_EXPORT html
-<a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" target="_blank"><img style="width: 50%" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" target="_blank"><img style="width: 50%;" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" /></a>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<a href="/media/files/NEXUS.24.511.7.lean.txt" target="_blank">code file</a>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_wave_collapse_supervisor_1">
+  <h2 class="handle">
+    <label for="handle_wave_collapse_supervisor_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_scoreboard_lean.png" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_wave_collapse_supervisor_2">
+  <h2 class="handle">
+    <label for="handle_wave_collapse_supervisor_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_WAVE COLLAPSE SUPERVISOR_code_lean.png" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.24.511.7.lean.txt" target="_blank">code file</a>
+</section>
 #+END_EXPORT
