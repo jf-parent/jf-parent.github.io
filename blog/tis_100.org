@@ -539,6 +539,35 @@
   <a href="/media/files/70601.lean.txt" target="_blank">code file</a>
 </section>
 #+END_EXPORT
+* Sequence Merger (463, 6, 33)
+
+#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_merger_1">
+  <h2 class="handle">
+    <label for="handle_sequence_merger_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE MERGER_scoreboard.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SEQUENCE MERGER_scoreboard.jpg" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_sequence_merger_2">
+  <h2 class="handle">
+    <label for="handle_sequence_merger_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SEQUENCE MERGER_code.jpg" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SEQUENCE MERGER_code.jpg" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.00.526.6.2.txt" target="_blank">code file</a>
+</section>
+#+END_EXPORT
 * Sequence Mode Calculator - Fast (1513, 7, 83)
 
 #+BEGIN_EXPORT html
