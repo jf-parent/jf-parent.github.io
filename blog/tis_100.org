@@ -568,6 +568,64 @@
   <a href="/media/files/NEXUS.00.526.6.2.txt" target="_blank">code file</a>
 </section>
 #+END_EXPORT
+* Integer Series Calculator - Fast (612, 9, 103)
+
+#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_integer_series_calculator_fast_1">
+  <h2 class="handle">
+    <label for="handle_integer_series_calculator_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTEGER SERIES CALCULATOR_scoreboard_fast.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_INTEGER SERIES CALCULATOR_scoreboard_fast.jpg" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_integer_series_calculator_fast_2">
+  <h2 class="handle">
+    <label for="handle_integer_series_calculator_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTEGER SERIES CALCULATOR_code_fast.jpg" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_INTEGER SERIES CALCULATOR_code_fast.jpg" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.01.874.8.fast.txt" target="_blank">code file</a>
+</section>
+#+END_EXPORT
+* Integer Series Calculator - Lean (6035, 3, 12)
+
+#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_integer_series_calculator_lean_1">
+  <h2 class="handle">
+    <label for="handle_integer_series_calculator_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTEGER SERIES CALCULATOR_scoreboard_lean.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_INTEGER SERIES CALCULATOR_scoreboard_lean.jpg" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_integer_series_calculator_lean_2">
+  <h2 class="handle">
+    <label for="handle_integer_series_calculator_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_INTEGER SERIES CALCULATOR_code_lean.jpg" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_INTEGER SERIES CALCULATOR_code_lean.jpg" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.01.874.8.lean.txt" target="_blank">code file</a>
+</section>
+#+END_EXPORT
 * Sequence Mode Calculator - Fast (1513, 7, 83)
 
 #+BEGIN_EXPORT html
