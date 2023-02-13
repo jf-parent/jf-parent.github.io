@@ -626,6 +626,64 @@
   <a href="/media/files/NEXUS.01.874.8.lean.txt" target="_blank">code file</a>
 </section>
 #+END_EXPORT
+* Signal Error Corrector - Fast (198, 6, 66)
+
+#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_error_corrector_fast_1">
+  <h2 class="handle">
+    <label for="handle_signal_error_corrector_fast_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL ERROR CORRECTOR_scoreboard_fast.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL ERROR CORRECTOR_scoreboard_fast.jpg" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_error_corrector_fast_2">
+  <h2 class="handle">
+    <label for="handle_signal_error_corrector_fast_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL ERROR CORRECTOR_code_fast.jpg" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SIGNAL ERROR CORRECTOR_code_fast.jpg" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.03.176.9.fast.txt" target="_blank">code file</a>
+</section>
+#+END_EXPORT
+* Signal Error Corrector - Lean (409, 5, 19)
+
+#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_error_corrector_lean_1">
+  <h2 class="handle">
+    <label for="handle_signal_error_corrector_lean_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL ERROR CORRECTOR_scoreboard_lean.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_SIGNAL ERROR CORRECTOR_scoreboard_lean.jpg" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_signal_error_corrector_lean_2">
+  <h2 class="handle">
+    <label for="handle_signal_error_corrector_lean_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_SIGNAL ERROR CORRECTOR_code_lean.jpg" target="_blank">
+      <img style="height: 100%;" src="/media/images/tis-100_SIGNAL ERROR CORRECTOR_code_lean.jpg" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/NEXUS.03.176.9.lean.txt" target="_blank">code file</a>
+</section>
+#+END_EXPORT
 * Sequence Mode Calculator - Fast (1513, 7, 83)
 
 #+BEGIN_EXPORT html
