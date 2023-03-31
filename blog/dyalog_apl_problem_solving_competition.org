@@ -1,0 +1,89 @@
+#+TITLE:       Dyalog APL Problem Solving Competition - My Solutions
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2023-03-31
+#+URI:         /blog/%y/%m/%d/apl_solutions
+#+KEYWORDS:    apl,programming
+#+TAGS:        apl,programming
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Dyalog APL Problem Solving Competition - My Solutions
+
+* [[https://contest.dyalog.com/?goto=P11][2023 p1: Elimination - APL Competition]]
+#+begin_src apl
+  {(⍵=⌈\⍵)/⍵}
+#+end_src
+* [[https://contest.dyalog.com/?goto=P13][2023 p3: Caesar Salad - APL Competition]]
+#+begin_src apl
+  {(⍺⌽⎕A,' ')[⎕A⍳⍵]}
+#+end_src
+* [[https://contest.dyalog.com/?goto=P14][2023 p4: Like a Version - APL Competition]]
+#+begin_src apl
+  {×+/(⍺(×-)⍵)× ⌽10*⍳3}
+#+end_src
+* [[https://contest.dyalog.com/?goto=P15][2023 p5: Risky Business - APL Competition]]
+#+begin_src apl
+  {n ← (≢⍺)⌊(≢⍵) ⋄ s←+/(n↑⍺)≤(n↑⍵) ⋄ s,n-s}
+#+end_src
+* [[https://contest.dyalog.com/?goto=P16][2023 p6: Key:Value - APL Competition]]
+#+begin_src apl
+  {p←{(⍺≠⍵)⊆⍵} ⋄ ↑⊢(2⊃⍺)p¨(⊃⍺)p ⍵}
+  {p←≠⊆⊢ ⋄ ↑⊢(2⊃⍺)p¨(⊃⍺)p ⍵}
+#+end_src
+* [[https://problems.tryapl.org/psets/2022.html?goto=P1_Counting_DNA][2022 P1: Counting DNA Nucleotides? - APL Practice Problems]]
+#+begin_src apl
+  {{(≢⍵)-1}⌸'ACGT',⍵}
+#+end_src
+* [[https://problems.tryapl.org/psets/2022.html?goto=P2_Mutations][2022 P2: Attack of the Mutations! - APL Practice Problems]]
+#+begin_src apl
+  {+/⍺≠⍵}
+  ⍝ or
+  (+/⊣≠⊢)
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P1_Seems_a_Bit_Odd_To_Me][2013 P1: Seems a Bit Odd To Me - APL Practice Problems]]
+#+begin_src apl
+  {⎕IO ← 0 ⋄ run←⍳⍵×2 ⋄ (2|run)/run}
+  {run←⍳2×⍵ ⋄ (2|run)/run}
+  {⍸2|⍳2×⍵}
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P2_Making_The_Grade][2013 P2: Making The Grade - APL Practice Problems]]
+#+begin_src apl
+  {100×(+/65≤⍵)÷≢⍵}
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P3_What_Is_In_a_Word][2013 P3: What Is In a Word - APL Practice Problems]]
+#+begin_src apl
+  {≢(' '≠⍵)⊆'',⍵}
+  {≢(' '≠⍵)⊆,⍵}
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P4_Keeping_Things_In_Balance][2013 P4: Keeping Things In Balance - APL Practice Problems]]
+#+begin_src apl
+  {m ← (1 ¯1 0)[('()'⍳' ',⍵)] ⋄ ∧/0=(+/⊃¯1={ ⍺, ⍺ + ⍵}/m)(+/m)}
+  
+  {m ← (1 ¯1 0)['()'⍳' ',⍵] ⋄ ∧/0=(+/¯1=+\m)(+/m)}
+
+  {m ← (1 ¯1 0)['()'⍳' ',⍵] ⋄ ^/(0≤+\m)∧(0=+/m)}
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P5_Identity_Crisis][2013 P5: Identity Crisis - APL Practice Problems]]
+#+begin_src apl
+  ∘.=⍨⍳
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P6_Home_On_The_Range][2013 P6: Home On The Range - APL Practice Problems]]
+#+begin_src apl
+  {⌈/,⍵-⌊/,⍵}
+  
+  (⌈/-⌊/),
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P7_Float_Your_Boat][2013 P7: Float Your Boat - APL Practice Problems]]
+#+begin_src apl
+  {(0≠1|⍵)/⍵}
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P8_Go_Forth_And_Multiply][2013 P8: Go Forth And Multiply - APL Practice Problems]]
+#+begin_src apl
+  ∘.×⍨⍳
+#+end_src
+* [[https://problems.tryapl.org/psets/2013.html?goto=P9_It_Is_a_Moving_Experience][2013 P9: It Is a Moving Experience - APL Practice Problems]]
+#+begin_src apl
+  {r←,{⍬(⊣⍣(⊃⍺≠0))(+/⍵÷≢⍵)}⌺⍺⊢⍵ ⋄ (r≠0)/r}
+#+end_src
+* Resources
+** [[https://www.youtube.com/playlist?list=PLYKQVqyrAEj9wDIUyLDGtDAFTKY38BUMN][APL Quest - YouTube]]
