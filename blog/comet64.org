@@ -18,11 +18,37 @@
 reg = input * 0.8;
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_launch-discount.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_launch-discount.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Why so Negative (2/30)
 #+BEGIN_SRC
 int = input * -1;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_2">
+  <h2 class="handle">
+    <label for="handle_1_2">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_why-so-negative.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_why-so-negative.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** BMI Guest (5/50)
 #+BEGIN_SRC
 int = input;
@@ -31,17 +57,56 @@ reg = reg * reg;
 reg = int / reg;
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_3">
+  <h2 class="handle">
+    <label for="handle_1_3">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_bmi-guest.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_bmi-guest.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** What Goes Up (2/200)
 #+BEGIN_SRC
 int = int + 1;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_4">
+  <h2 class="handle">
+    <label for="handle_1_4">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_what-goes-up.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_what-goes-up.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Must Come Down (3/302)
 #+BEGIN_SRC
 int = 100 - reg;
 output = int;
 reg = reg + 1;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_5">
+  <h2 class="handle">
+    <label for="handle_1_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_must-come-down.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_must-come-down.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Compare the Pair (7/64)
 #+BEGIN_SRC
 reg = input;
@@ -52,6 +117,19 @@ int = reg;
 emit:
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_6">
+  <h2 class="handle">
+    <label for="handle_1_6">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_compare-the-pair.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_compare-the-pair.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** The Doppelgänger (6/91)
 #+BEGIN_SRC
 loop:
@@ -61,6 +139,19 @@ reg = int;
 jump if false: loop;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_7">
+  <h2 class="handle">
+    <label for="handle_1_7">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_the-doppelganger.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_the-doppelganger.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Sum'bitch (7/110)
 #+BEGIN_SRC
 loop:
@@ -71,11 +162,37 @@ jump if true: loop;
 output = int;
 int = 0;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_8">
+  <h2 class="handle">
+    <label for="handle_1_8">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_sum-bitch.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_sum-bitch.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Round About (2/30)
 #+BEGIN_SRC
 int = input + 0.5;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_9">
+  <h2 class="handle">
+    <label for="handle_1_9">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_round-about.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_round-about.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Just Around (4/60)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -84,6 +201,19 @@ int = reg + 0.5;
 int = int * 10;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_10">
+  <h2 class="handle">
+    <label for="handle_1_10">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk1_just-around.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk1_just-around.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Disk2
 ** Any Leftovers? (5/75)
 #+BEGIN_SRC
@@ -93,6 +223,19 @@ int = int * 4;
 reg = reg - int;
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_1">
+  <h2 class="handle">
+    <label for="handle_2_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_any-leftovers.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_any-leftovers.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Some Leftovers (9/89)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -106,6 +249,19 @@ jump if false: loop;
 int = int + 3;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_2">
+  <h2 class="handle">
+    <label for="handle_2_2">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_some-leftovers.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_some-leftovers.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Differentiator (4/40)
 #+BEGIN_SRC
 int = input - input;
@@ -113,6 +269,19 @@ int = int * int;
 check int > 31.1337;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_3">
+  <h2 class="handle">
+    <label for="handle_2_3">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_differentiator.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_differentiator.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Reverse Integeering (8/120)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -125,11 +294,37 @@ int = int / 10;
 reg = reg + int;
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_4">
+  <h2 class="handle">
+    <label for="handle_2_4">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_reverse-integeering.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_reverse-integeering.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Doppelganger 2 (2/20)
 #+BEGIN_SRC
 check input = input;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_5">
+  <h2 class="handle">
+    <label for="handle_2_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_doppelganger-2.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_doppelganger-2.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** TODO Heads & Tails (/)
 #+BEGIN_SRC
 #+END_SRC
@@ -148,6 +343,19 @@ int = reg;
 emit:
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_7">
+  <h2 class="handle">
+    <label for="handle_2_7">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_big-brother.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_big-brother.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Middle Brother (21/182)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -173,6 +381,19 @@ reg  = int;
 emit:
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_8">
+  <h2 class="handle">
+    <label for="handle_2_8">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_middle-brother.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_middle-brother.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** TODO Greatest of Brothers (/)
 #+BEGIN_SRC
 #+END_SRC
@@ -188,6 +409,19 @@ reg = int - 1;
 int = int * reg;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_1">
+  <h2 class="handle">
+    <label for="handle_3_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_easier-than-it-looks.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_easier-than-it-looks.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Harder Than It Looks (5/100)
 #+BEGIN_SRC
 int = input * 10;
@@ -196,6 +430,19 @@ reg = int * reg;
 reg = reg / 100;
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_2">
+  <h2 class="handle">
+    <label for="handle_3_2">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_harder-than-it-looks.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_harder-than-it-looks.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Give me a Ballpark (7/52)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -207,6 +454,19 @@ jump if false: loop;
 reg = reg / int;
 output = reg;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_3">
+  <h2 class="handle">
+    <label for="handle_3_3">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_give-me-a-ballpark.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_give-me-a-ballpark.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Black Jack (11/255)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -222,12 +482,38 @@ emit:
 output = reg;
 reg = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_4">
+  <h2 class="handle">
+    <label for="handle_3_4">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_black-jack.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_black-jack.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Initial Impression (3/60)
 #+BEGIN_SRC
 str = input;
 char = str[0];
 output = char;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_5">
+  <h2 class="handle">
+    <label for="handle_3_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_initial-impression.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_initial-impression.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Lasting Impression (4/80)
 #+BEGIN_SRC
 str = input;
@@ -235,6 +521,19 @@ int = str.length - 1;
 char = str[int];
 output = char;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_6">
+  <h2 class="handle">
+    <label for="handle_3_6">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_lasting-impression.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_lasting-impression.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** thelongeststring (13/155)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -252,7 +551,20 @@ emit:
 switch str;
 output = str;
 #+END_SRC
-** 64temoc (15/553)
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_7">
+  <h2 class="handle">
+    <label for="handle_3_7">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_thelongeststring.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_thelongeststring.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** 46temoc (15/553)
 *** TODO Optimize
 #+BEGIN_SRC
 str = input;
@@ -271,6 +583,19 @@ check reg > int;
 jump if false: cont;
 output = str;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_8">
+  <h2 class="handle">
+    <label for="handle_3_8">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_46temoc.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_46temoc.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** TODO 46cemot (/)
 #+BEGIN_SRC
 #+END_SRC
@@ -284,6 +609,19 @@ reg = input;
 int = input;
 output = reg, int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_1">
+  <h2 class="handle">
+    <label for="handle_4_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_coordinate-pairs.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_coordinate-pairs.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Secret Message (13/796)
 #+BEGIN_SRC
 str = input;
@@ -300,6 +638,19 @@ check int > 0;
 jump if true: loop;
 output = str;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_2">
+  <h2 class="handle">
+    <label for="handle_4_2">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_secret-message.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_secret-message.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Root Input (/)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -352,6 +703,19 @@ cleanup:
 check input = 0;
 jump if false: cleanup;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_4">
+  <h2 class="handle">
+    <label for="handle_4_4">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_negative-initiative.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_negative-initiative.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** As Easy as 01 10 11 (17/880)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -373,6 +737,19 @@ emit:
 output = str;
 str = ;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_5">
+  <h2 class="handle">
+    <label for="handle_4_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_as-easy-as-01-10-11.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_as-easy-as-01-10-11.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** TODO Binary Transition (/)
 #+BEGIN_SRC
 #+END_SRC
@@ -385,6 +762,19 @@ jump if false: loop;
 int = int - 45;
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_7">
+  <h2 class="handle">
+    <label for="handle_4_7">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_no-duplicates.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_no-duplicates.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** No Duplicates (52/55)
 *** TODO Optimize
 #+BEGIN_SRC
@@ -441,6 +831,19 @@ int = char;
 emit:
 output = int;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_8">
+  <h2 class="handle">
+    <label for="handle_4_8">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_no-duplicates2.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_no-duplicates2.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** TODO Let's Settle This (/)
 #+BEGIN_SRC
 #+END_SRC
@@ -449,23 +852,75 @@ output = int;
 #+BEGIN_SRC
 output = true;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_1">
+  <h2 class="handle">
+    <label for="handle_5_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_full_on.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_full_on.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** one_on (3/95)
 #+BEGIN_SRC
 check int = 0;
 output = bool;
 int++;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_2">
+  <h2 class="handle">
+    <label for="handle_5_2">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_one_on.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_one_on.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** one_off (3/95)
 #+BEGIN_SRC
 check int < 31;
 output = bool;
 int++;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_3">
+  <h2 class="handle">
+    <label for="handle_5_3">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_one_off.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_one_off.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** striped_vertical (2/32)
 #+BEGIN_SRC
 output = true;
 output = false;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_4">
+  <h2 class="handle">
+    <label for="handle_5_4">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_striped_vertical.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_striped_vertical.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** striped_horizontal (5/160)
 #+BEGIN_SRC
 str = ttttffffttttffffttttffffttttffff;
@@ -474,6 +929,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_5">
+  <h2 class="handle">
+    <label for="handle_5_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_striped_horizontal.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_striped_horizontal.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** outer_circle (5/160)
 #+BEGIN_SRC
 str = tttttffttffttffttffttffttffttttt;
@@ -482,6 +950,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_6">
+  <h2 class="handle">
+    <label for="handle_5_6">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_outer_circle.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_outer_circle.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** inner_circle (5/160)
 #+BEGIN_SRC
 str = fffffffffttffttffttffttfffffffff;
@@ -490,6 +971,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_7">
+  <h2 class="handle">
+    <label for="handle_5_7">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_inner_circle.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_inner_circle.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** forward_slash (5/160)
 #+BEGIN_SRC
 str = ffftfftfftfftfffffftfftfftfftfff;
@@ -498,6 +992,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_8">
+  <h2 class="handle">
+    <label for="handle_5_8">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_forward_slash.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_forward_slash.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** back_slash (5/160)
 #+BEGIN_SRC
 str = tfffftfffftffffttfffftfffftfffft;
@@ -506,6 +1013,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_5_9">
+  <h2 class="handle">
+    <label for="handle_5_9">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diska_back_slash.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diska_back_slash.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * [B]
 ** output_bool (3/96)
 #+BEGIN_SRC
@@ -513,6 +1033,19 @@ int++;
 check int > 13;
 output= bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_1">
+  <h2 class="handle">
+    <label for="handle_6_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_output_bool.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_output_bool.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** checker_board (5/160)
 #+BEGIN_SRC
 str = tftfftfttftfftfttftfftfttftfftft;
@@ -521,6 +1054,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_2">
+  <h2 class="handle">
+    <label for="handle_6_2">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_checker_board.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_checker_board.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** ascending_order (5/160)
 #+BEGIN_SRC
 str = tftfftffftfffftffffftfffffftffff;
@@ -529,6 +1075,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_3">
+  <h2 class="handle">
+    <label for="handle_6_3">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_ascending_order.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_ascending_order.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** middle_path (5/160)
 #+BEGIN_SRC
 str = fttfffffttfffffttfffffttfffffttf;
@@ -537,6 +1096,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_4">
+  <h2 class="handle">
+    <label for="handle_6_4">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_middle_path.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_middle_path.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** criss_cross (5/160)
 #+BEGIN_SRC
 str = fftfftfftfffftfffftfffftfftfftff;
@@ -545,12 +1117,38 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_5">
+  <h2 class="handle">
+    <label for="handle_6_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_criss_cross.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_criss_cross.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** shooting_stars (3/32)
 #+BEGIN_SRC
 output = false;
 output = false;
 output = true;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_6">
+  <h2 class="handle">
+    <label for="handle_6_6">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_shooting_stars.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_shooting_stars.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** upper_right (5/160)
 #+BEGIN_SRC
 str = ttttftttffttffftttttftttffttffft;
@@ -559,6 +1157,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_7">
+  <h2 class="handle">
+    <label for="handle_6_7">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_upper_right.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_upper_right.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** play_button (5/160)
 #+BEGIN_SRC
 str = tfffttfftttftttttttttttfttfftfff;
@@ -567,6 +1178,19 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_8">
+  <h2 class="handle">
+    <label for="handle_6_8">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_play_button.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_play_button.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** hiroshima (5/160)
 #+BEGIN_SRC
 str = tfttfftttfffttttfffftttttffffftt;
@@ -575,3 +1199,16 @@ int++;
 check char = t;
 output = bool;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_6_9">
+  <h2 class="handle">
+    <label for="handle_6_9">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_diskb_hiroshima.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_diskb_hiroshima.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
