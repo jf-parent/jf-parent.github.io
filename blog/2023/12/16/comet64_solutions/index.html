@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>Comet64 - My Solutions - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-François Parent" />
+    <meta name="description" content="My Comet64 Solutions" />
+    <meta name="keywords" content="game,programming" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="https://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <a href="/about/">About</a>
+  <a href="/boudoir/">Boudoir</a>
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>Comet64 - My Solutions</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org5e0c714">Game info</a></li>
+<li><a href="#org7dd87c6">Disk1</a></li>
+<li><a href="#org947633d">Disk2</a></li>
+<li><a href="#org7eabcee">Disk3</a></li>
+<li><a href="#org5c9c6e7">Disk4</a></li>
+<li><a href="#org50faf42">[A]</a></li>
+<li><a href="#orgd1da4e0">[B]</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e0c714" class="outline-2">
+<h2 id="org5e0c714">Game info</h2>
+<div class="outline-text-2" id="text-org5e0c714">
+</div>
+<div id="outline-container-org2d24522" class="outline-3">
+<h3 id="org2d24522"><a href="https://store.steampowered.com/app/1397290/Comet_64/">Comet 64 on Steam</a></h3>
+</div>
+<div id="outline-container-org1cc8deb" class="outline-3">
+<h3 id="org1cc8deb">Comet 64 is a programming puzzle game. The year is 1984. All you got is a Comet 64 home computer and the operator's manual it came with.</h3>
+</div>
+</div>
+<div id="outline-container-org7dd87c6" class="outline-2">
+<h2 id="org7dd87c6">Disk1</h2>
+<div class="outline-text-2" id="text-org7dd87c6">
+</div>
+<div id="outline-container-org912b436" class="outline-3">
+<h3 id="org912b436">Launch Discount (2/30)</h3>
+<div class="outline-text-3" id="text-org912b436">
+<pre class="example">
+reg = input * 0.8;
+output = reg;
+</pre>
+</div>
+</div>
+<div id="outline-container-org15503ff" class="outline-3">
+<h3 id="org15503ff">Why so Negative (2/30)</h3>
+<div class="outline-text-3" id="text-org15503ff">
+<pre class="example">
+int = input * -1;
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgdbf21e0" class="outline-3">
+<h3 id="orgdbf21e0">BMI Guest (5/50)</h3>
+<div class="outline-text-3" id="text-orgdbf21e0">
+<pre class="example">
+int = input;
+reg = input;
+reg = reg * reg;
+reg = int / reg;
+output = reg;
+</pre>
+</div>
+</div>
+<div id="outline-container-org5bb7b90" class="outline-3">
+<h3 id="org5bb7b90">What Goes Up (2/200)</h3>
+<div class="outline-text-3" id="text-org5bb7b90">
+<pre class="example">
+int = int + 1;
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-org97bff8d" class="outline-3">
+<h3 id="org97bff8d">Must Come Down (3/302)</h3>
+<div class="outline-text-3" id="text-org97bff8d">
+<pre class="example">
+int = 100 - reg;
+output = int;
+reg = reg + 1;
+</pre>
+</div>
+</div>
+<div id="outline-container-org7dba1d3" class="outline-3">
+<h3 id="org7dba1d3">Compare the Pair (7/64)</h3>
+<div class="outline-text-3" id="text-org7dba1d3">
+<pre class="example">
+reg = input;
+int = input;
+check reg &gt; int;
+jump if false: emit;
+int = reg;
+emit:
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgaf92fa2" class="outline-3">
+<h3 id="orgaf92fa2">The Doppelgänger (6/91)</h3>
+<div class="outline-text-3" id="text-orgaf92fa2">
+<pre class="example">
+loop:
+int = input;
+check int = reg;
+reg = int;
+jump if false: loop;
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-org89cb919" class="outline-3">
+<h3 id="org89cb919">Sum'bitch (7/110)</h3>
+<div class="outline-text-3" id="text-org89cb919">
+<pre class="example">
+loop:
+reg = input;
+int = int + reg;
+check reg &gt; 0;
+jump if true: loop;
+output = int;
+int = 0;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd52dc53" class="outline-3">
+<h3 id="orgd52dc53">Round About (2/30)</h3>
+<div class="outline-text-3" id="text-orgd52dc53">
+<pre class="example">
+int = input + 0.5;
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgabd5d5e" class="outline-3">
+<h3 id="orgabd5d5e">Just Around (4/60)</h3>
+<div class="outline-text-3" id="text-orgabd5d5e">
+</div>
+<div id="outline-container-orge4459e5" class="outline-4">
+<h4 id="orge4459e5"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-orge4459e5">
+<pre class="example">
+reg = input / 10;
+int = reg + 0.5;
+int = int * 10;
+output = int;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org947633d" class="outline-2">
+<h2 id="org947633d">Disk2</h2>
+<div class="outline-text-2" id="text-org947633d">
+</div>
+<div id="outline-container-org93a3361" class="outline-3">
+<h3 id="org93a3361">Any Leftovers? (5/75)</h3>
+<div class="outline-text-3" id="text-org93a3361">
+<pre class="example">
+reg = input;
+int = reg / 4;
+int = int * 4;
+reg = reg - int;
+output = reg;
+</pre>
+</div>
+</div>
+<div id="outline-container-org43eadca" class="outline-3">
+<h3 id="org43eadca">Some Leftovers (9/89)</h3>
+<div class="outline-text-3" id="text-org43eadca">
+</div>
+<div id="outline-container-org37fcd39" class="outline-4">
+<h4 id="org37fcd39"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org37fcd39">
+<pre class="example">
+loop:
+reg = input;
+int = reg / 4;
+int = int * 4;
+reg = reg - int;
+check reg = 3;
+jump if false: loop;
+int = int + 3;
+output = int;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf6353bf" class="outline-3">
+<h3 id="orgf6353bf">Differentiator (4/40)</h3>
+<div class="outline-text-3" id="text-orgf6353bf">
+<pre class="example">
+int = input - input;
+int = int * int;
+check int &gt; 31.1337;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd89cbec" class="outline-3">
+<h3 id="orgd89cbec">Reverse Integeering (8/120)</h3>
+<div class="outline-text-3" id="text-orgd89cbec">
+</div>
+<div id="outline-container-orgbc24556" class="outline-4">
+<h4 id="orgbc24556"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-orgbc24556">
+<pre class="example">
+reg = input;
+int = reg / 10;
+int = int * 10;
+reg = reg - int;
+reg = reg * 10;
+int = int / 10;
+reg = reg + int;
+output = reg;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeaaf7b3" class="outline-3">
+<h3 id="orgeaaf7b3">Doppelganger 2 (2/20)</h3>
+<div class="outline-text-3" id="text-orgeaaf7b3">
+<pre class="example">
+check input = input;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-org153ef33" class="outline-3">
+<h3 id="org153ef33"><span class="todo TODO">TODO</span> Heads &amp; Tails (/)</h3>
+<div class="outline-text-3" id="text-org153ef33">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+<div id="outline-container-orgf9f4861" class="outline-3">
+<h3 id="orgf9f4861">Big Brother (12/108)</h3>
+<div class="outline-text-3" id="text-orgf9f4861">
+<pre class="example">
+int = input;
+reg = input;
+check int &lt; reg;
+jump if false: next;
+int = reg;
+next:
+reg = input;
+check int &lt; reg;
+jump if false: emit;
+int = reg;
+emit:
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-org64e26f5" class="outline-3">
+<h3 id="org64e26f5">Middle Brother (21/182)</h3>
+<div class="outline-text-3" id="text-org64e26f5">
+</div>
+<div id="outline-container-orgae0fad9" class="outline-4">
+<h4 id="orgae0fad9"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-orgae0fad9">
+<pre class="example">
+reg = input;
+int = input;
+check reg &lt; int;
+jump if true: maxint;
+switch int;
+int = reg;
+switch reg;
+maxint:
+switch int;
+int = reg;
+reg = input;
+check reg &lt; int;
+jump if false: candreg;
+reg = int;
+candreg:
+switch int;
+check reg &lt; int;
+jump if true: emit;
+reg  = int;
+emit:
+output = reg;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc2cc16d" class="outline-3">
+<h3 id="orgc2cc16d"><span class="todo TODO">TODO</span> Greatest of Brothers (/)</h3>
+<div class="outline-text-3" id="text-orgc2cc16d">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+<div id="outline-container-org33401c8" class="outline-3">
+<h3 id="org33401c8"><span class="todo TODO">TODO</span> Golden Spiral (/)</h3>
+<div class="outline-text-3" id="text-org33401c8">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7eabcee" class="outline-2">
+<h2 id="org7eabcee">Disk3</h2>
+<div class="outline-text-2" id="text-org7eabcee">
+</div>
+<div id="outline-container-orgf0164cb" class="outline-3">
+<h3 id="orgf0164cb">Easier Than It Looks (4/80)</h3>
+<div class="outline-text-3" id="text-orgf0164cb">
+</div>
+<div id="outline-container-orgf1ea125" class="outline-4">
+<h4 id="orgf1ea125"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-orgf1ea125">
+<pre class="example">
+int = input;
+reg = int - 1;
+int = int * reg;
+output = int;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org9eef77b" class="outline-3">
+<h3 id="org9eef77b">Harder Than It Looks (5/100)</h3>
+<div class="outline-text-3" id="text-org9eef77b">
+<pre class="example">
+int = input * 10;
+reg = int - 10;
+reg = int * reg;
+reg = reg / 100;
+output = reg;
+</pre>
+</div>
+</div>
+<div id="outline-container-org13dcb69" class="outline-3">
+<h3 id="org13dcb69">Give me a Ballpark (7/52)</h3>
+<div class="outline-text-3" id="text-org13dcb69">
+</div>
+<div id="outline-container-orgce1c4ad" class="outline-4">
+<h4 id="orgce1c4ad"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-orgce1c4ad">
+<pre class="example">
+loop:
+reg = reg + input;
+int++;
+check input = null;
+jump if false: loop;
+reg = reg / int;
+output = reg;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org1572b70" class="outline-3">
+<h3 id="org1572b70">Black Jack (11/255)</h3>
+<div class="outline-text-3" id="text-org1572b70">
+</div>
+<div id="outline-container-org3050b4f" class="outline-4">
+<h4 id="org3050b4f"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org3050b4f">
+<pre class="example">
+loop:
+check input = null;
+jump if true: emit;
+int = input;
+reg = reg + int;
+check reg &lt; 22;
+jump if true: loop;
+reg = reg - int;
+emit:
+output = reg;
+reg = int;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8b26dac" class="outline-3">
+<h3 id="org8b26dac">Initial Impression (3/60)</h3>
+<div class="outline-text-3" id="text-org8b26dac">
+<pre class="example">
+str = input;
+char = str[0];
+output = char;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgbe27156" class="outline-3">
+<h3 id="orgbe27156">Lasting Impression (4/80)</h3>
+<div class="outline-text-3" id="text-orgbe27156">
+<pre class="example">
+str = input;
+int = str.length - 1;
+char = str[int];
+output = char;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgf75f63e" class="outline-3">
+<h3 id="orgf75f63e">thelongeststring (13/155)</h3>
+<div class="outline-text-3" id="text-orgf75f63e">
+</div>
+<div id="outline-container-orgdc37d26" class="outline-4">
+<h4 id="orgdc37d26"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-orgdc37d26">
+<pre class="example">
+loop:
+check input = null;
+jump if true:emit;
+str = input;
+int = str.length;
+check int &gt; reg;
+jump if false: loop;
+reg = int;
+switch str;
+jump to: loop;
+emit:
+switch str;
+output = str;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5494768" class="outline-3">
+<h3 id="org5494768">64temoc (15/553)</h3>
+<div class="outline-text-3" id="text-org5494768">
+</div>
+<div id="outline-container-org9a59a01" class="outline-4">
+<h4 id="org9a59a01"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org9a59a01">
+<pre class="example">
+str = input;
+int = str.length - 1;
+reg = 0;
+cont:
+char = str[reg];
+switch char;
+char = str[int];
+str[reg] = char;
+switch char;
+str[int] = char;
+reg++;
+int--;
+check reg &gt; int;
+jump if false: cont;
+output = str;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc8565d4" class="outline-3">
+<h3 id="orgc8565d4"><span class="todo TODO">TODO</span> 46cemot (/)</h3>
+<div class="outline-text-3" id="text-orgc8565d4">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc888277" class="outline-3">
+<h3 id="orgc888277"><span class="todo TODO">TODO</span> Comet LXVI (/)</h3>
+<div class="outline-text-3" id="text-orgc888277">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5c9c6e7" class="outline-2">
+<h2 id="org5c9c6e7">Disk4</h2>
+<div class="outline-text-2" id="text-org5c9c6e7">
+</div>
+<div id="outline-container-orgb07bfe5" class="outline-3">
+<h3 id="orgb07bfe5">Coordinate Pairs (3/30)</h3>
+<div class="outline-text-3" id="text-orgb07bfe5">
+<pre class="example">
+reg = input;
+int = input;
+output = reg, int;
+</pre>
+</div>
+</div>
+<div id="outline-container-org4fb20aa" class="outline-3">
+<h3 id="org4fb20aa">Secret Message (13/796)</h3>
+<div class="outline-text-3" id="text-org4fb20aa">
+<pre class="example">
+str = input;
+int = str.length;
+loop:
+int--;
+char = str[int];
+check char = g;
+jump if false: nxt;
+char = e;
+str[int] = char;
+nxt:
+check int &gt; 0;
+jump if true: loop;
+output = str;
+</pre>
+</div>
+</div>
+<div id="outline-container-org8b41b70" class="outline-3">
+<h3 id="org8b41b70">Root Input (/)</h3>
+<div class="outline-text-3" id="text-org8b41b70">
+</div>
+<div id="outline-container-org2e9d6dd" class="outline-4">
+<h4 id="org2e9d6dd"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org2e9d6dd">
+<pre class="example">
+
+</pre>
+<pre class="example">
+int = 0;
+int = input;
+check int = 1;
+reg = 1;
+jump if true: emit;
+check int = 4;
+reg = 2;
+jump if true: emit;
+check int = 9;
+reg = 3;
+jump if true: emit;
+check int = 16;
+reg = 4;
+jump if true: emit;
+check int = 25;
+reg = 5;
+jump if true: emit;
+check int = 36;
+reg = 6;
+jump if true: emit;
+check int = 49;
+reg = 7;
+jump if true: emit;
+check int = 64;
+reg = 8;
+jump if true: emit;
+check int = 81;
+reg = 9;
+jump if true: emit;
+reg = 10;
+emit:
+output = reg;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdf5fb67" class="outline-3">
+<h3 id="orgdf5fb67">Negative Initiative (10/167)</h3>
+<div class="outline-text-3" id="text-orgdf5fb67">
+</div>
+<div id="outline-container-org6c2bd78" class="outline-4">
+<h4 id="org6c2bd78"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org6c2bd78">
+<pre class="example">
+loop:
+int = input;
+check int &lt; 1;
+jump if false: loop;
+output = int;
+check int = 0;
+jump if true: loop;
+cleanup:
+check input = 0;
+jump if false: cleanup;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org925349a" class="outline-3">
+<h3 id="org925349a">As Easy as 01 10 11 (17/880)</h3>
+<div class="outline-text-3" id="text-org925349a">
+</div>
+<div id="outline-container-org922fd6d" class="outline-4">
+<h4 id="org922fd6d"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org922fd6d">
+<pre class="example">
+reg = input + 1;
+int = 16;
+loop:
+check int &lt; 2;
+jump if true: emit;
+int = int / 2;
+check int &lt; reg;
+jump if true: one;
+str = str + 0;
+jump to: loop;
+one:
+reg = reg - int;
+str = str + 1;
+jump to: loop;
+emit:
+output = str;
+str = ;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org108b128" class="outline-3">
+<h3 id="org108b128"><span class="todo TODO">TODO</span> Binary Transition (/)</h3>
+<div class="outline-text-3" id="text-org108b128">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+<div id="outline-container-org1b7f7b4" class="outline-3">
+<h3 id="org1b7f7b4">No Duplicates! (6/46)</h3>
+<div class="outline-text-3" id="text-org1b7f7b4">
+<pre class="example">
+loop:
+int = int + input;
+check input = null;
+jump if false: loop;
+int = int - 45;
+output = int;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgbd775c2" class="outline-3">
+<h3 id="orgbd775c2">No Duplicates (52/55)</h3>
+<div class="outline-text-3" id="text-orgbd775c2">
+</div>
+<div id="outline-container-org752255f" class="outline-4">
+<h4 id="org752255f"><span class="todo TODO">TODO</span> Optimize</h4>
+<div class="outline-text-4" id="text-org752255f">
+<pre class="example">
+loop:
+int = input;
+char = int;
+str = str + char;
+check input = null;
+jump if false: loop;
+char = str[0];
+int = char;
+char = str[1];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[2];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[3];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[4];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[1];
+int = char;
+char = str[2];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[3];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[4];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[2];
+int = char;
+char = str[3];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[4];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[3];
+int = char;
+emit:
+output = int;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org43c6292" class="outline-3">
+<h3 id="org43c6292"><span class="todo TODO">TODO</span> Let's Settle This (/)</h3>
+<div class="outline-text-3" id="text-org43c6292">
+<pre class="example">
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org50faf42" class="outline-2">
+<h2 id="org50faf42">[A]</h2>
+<div class="outline-text-2" id="text-org50faf42">
+</div>
+<div id="outline-container-org7832fe8" class="outline-3">
+<h3 id="org7832fe8">full_on (1/32)</h3>
+<div class="outline-text-3" id="text-org7832fe8">
+<pre class="example">
+output = true;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgfd88091" class="outline-3">
+<h3 id="orgfd88091">one_on (3/95)</h3>
+<div class="outline-text-3" id="text-orgfd88091">
+<pre class="example">
+check int = 0;
+output = bool;
+int++;
+</pre>
+</div>
+</div>
+<div id="outline-container-org4d8e9cf" class="outline-3">
+<h3 id="org4d8e9cf">one_off (3/95)</h3>
+<div class="outline-text-3" id="text-org4d8e9cf">
+<pre class="example">
+check int &lt; 31;
+output = bool;
+int++;
+</pre>
+</div>
+</div>
+<div id="outline-container-org19b8aa1" class="outline-3">
+<h3 id="org19b8aa1">striped_vertical (2/32)</h3>
+<div class="outline-text-3" id="text-org19b8aa1">
+<pre class="example">
+output = true;
+output = false;
+</pre>
+</div>
+</div>
+<div id="outline-container-org3c10e17" class="outline-3">
+<h3 id="org3c10e17">striped_horizontal (5/160)</h3>
+<div class="outline-text-3" id="text-org3c10e17">
+<pre class="example">
+str = ttttffffttttffffttttffffttttffff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-org5e8c6de" class="outline-3">
+<h3 id="org5e8c6de">outer_circle (5/160)</h3>
+<div class="outline-text-3" id="text-org5e8c6de">
+<pre class="example">
+str = tttttffttffttffttffttffttffttttt;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb472992" class="outline-3">
+<h3 id="orgb472992">inner_circle (5/160)</h3>
+<div class="outline-text-3" id="text-orgb472992">
+<pre class="example">
+str = fffffffffttffttffttffttfffffffff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd006acc" class="outline-3">
+<h3 id="orgd006acc">forward_slash (5/160)</h3>
+<div class="outline-text-3" id="text-orgd006acc">
+<pre class="example">
+str = ffftfftfftfftfffffftfftfftfftfff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-org048ddbe" class="outline-3">
+<h3 id="org048ddbe">back_slash (5/160)</h3>
+<div class="outline-text-3" id="text-org048ddbe">
+<pre class="example">
+str = tfffftfffftffffttfffftfffftfffft;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd1da4e0" class="outline-2">
+<h2 id="orgd1da4e0">[B]</h2>
+<div class="outline-text-2" id="text-orgd1da4e0">
+</div>
+<div id="outline-container-orga1fee69" class="outline-3">
+<h3 id="orga1fee69">output_bool (3/96)</h3>
+<div class="outline-text-3" id="text-orga1fee69">
+<pre class="example">
+int++;
+check int &gt; 13;
+output= bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgfa66964" class="outline-3">
+<h3 id="orgfa66964">checker_board (5/160)</h3>
+<div class="outline-text-3" id="text-orgfa66964">
+<pre class="example">
+str = tftfftfttftfftfttftfftfttftfftft;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-org63b2668" class="outline-3">
+<h3 id="org63b2668">ascending_order (5/160)</h3>
+<div class="outline-text-3" id="text-org63b2668">
+<pre class="example">
+str = tftfftffftfffftffffftfffffftffff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-org830b841" class="outline-3">
+<h3 id="org830b841">middle_path (5/160)</h3>
+<div class="outline-text-3" id="text-org830b841">
+<pre class="example">
+str = fttfffffttfffffttfffffttfffffttf;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-org1e56cc8" class="outline-3">
+<h3 id="org1e56cc8">criss_cross (5/160)</h3>
+<div class="outline-text-3" id="text-org1e56cc8">
+<pre class="example">
+str = fftfftfftfffftfffftfffftfftfftff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgaf527e3" class="outline-3">
+<h3 id="orgaf527e3">shooting_stars (3/32)</h3>
+<div class="outline-text-3" id="text-orgaf527e3">
+<pre class="example">
+output = false;
+output = false;
+output = true;
+</pre>
+</div>
+</div>
+<div id="outline-container-org0d23995" class="outline-3">
+<h3 id="org0d23995">upper_right (5/160)</h3>
+<div class="outline-text-3" id="text-org0d23995">
+<pre class="example">
+str = ttttftttffttffftttttftttffttffft;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd5add1c" class="outline-3">
+<h3 id="orgd5add1c">play_button (5/160)</h3>
+<div class="outline-text-3" id="text-orgd5add1c">
+<pre class="example">
+str = tfffttfftttftttttttttttfttfftfff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd9bd7bf" class="outline-3">
+<h3 id="orgd9bd7bf">hiroshima (5/160)</h3>
+<div class="outline-text-3" id="text-orgd9bd7bf">
+<pre class="example">
+str = tfttfftttfffttttfffftttttffffftt;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+</pre>
+</div>
+</div>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2023-12-16</span>
+        <span title="tags" class="post-info"><a href="/tags/game/">game</a>, <a href="/tags/programming/">programming</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>
