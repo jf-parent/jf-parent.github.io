@@ -1,0 +1,577 @@
+#+TITLE:       Comet64 - My Solutions
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2023-12-16
+#+URI:         /blog/%y/%m/%d/comet64_solutions
+#+KEYWORDS:    game,programming
+#+TAGS:        game,programming
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: My Comet64 Solutions
+
+* Game info
+** [[https://store.steampowered.com/app/1397290/Comet_64/][Comet 64 on Steam]]
+** Comet 64 is a programming puzzle game. The year is 1984. All you got is a Comet 64 home computer and the operator's manual it came with. 
+* Disk1
+** Launch Discount (2/30)
+#+BEGIN_SRC
+reg = input * 0.8;
+output = reg;
+#+END_SRC
+** Why so Negative (2/30)
+#+BEGIN_SRC
+int = input * -1;
+output = int;
+#+END_SRC
+** BMI Guest (5/50)
+#+BEGIN_SRC
+int = input;
+reg = input;
+reg = reg * reg;
+reg = int / reg;
+output = reg;
+#+END_SRC
+** What Goes Up (2/200)
+#+BEGIN_SRC
+int = int + 1;
+output = int;
+#+END_SRC
+** Must Come Down (3/302)
+#+BEGIN_SRC
+int = 100 - reg;
+output = int;
+reg = reg + 1;
+#+END_SRC
+** Compare the Pair (7/64)
+#+BEGIN_SRC
+reg = input;
+int = input;
+check reg > int;
+jump if false: emit;
+int = reg;
+emit:
+output = int;
+#+END_SRC
+** The Doppelgänger (6/91)
+#+BEGIN_SRC
+loop:
+int = input;
+check int = reg;
+reg = int;
+jump if false: loop;
+output = int;
+#+END_SRC
+** Sum'bitch (7/110)
+#+BEGIN_SRC
+loop:
+reg = input;
+int = int + reg;
+check reg > 0;
+jump if true: loop;
+output = int;
+int = 0;
+#+END_SRC
+** Round About (2/30)
+#+BEGIN_SRC
+int = input + 0.5;
+output = int;
+#+END_SRC
+** Just Around (4/60)
+*** TODO Optimize
+#+BEGIN_SRC
+reg = input / 10;
+int = reg + 0.5;
+int = int * 10;
+output = int;
+#+END_SRC
+* Disk2
+** Any Leftovers? (5/75)
+#+BEGIN_SRC
+reg = input;
+int = reg / 4;
+int = int * 4;
+reg = reg - int;
+output = reg;
+#+END_SRC
+** Some Leftovers (9/89)
+*** TODO Optimize
+#+BEGIN_SRC
+loop:
+reg = input;
+int = reg / 4;
+int = int * 4;
+reg = reg - int;
+check reg = 3;
+jump if false: loop;
+int = int + 3;
+output = int;
+#+END_SRC
+** Differentiator (4/40)
+#+BEGIN_SRC
+int = input - input;
+int = int * int;
+check int > 31.1337;
+output = bool;
+#+END_SRC
+** Reverse Integeering (8/120)
+*** TODO Optimize
+#+BEGIN_SRC
+reg = input;
+int = reg / 10;
+int = int * 10;
+reg = reg - int;
+reg = reg * 10;
+int = int / 10;
+reg = reg + int;
+output = reg;
+#+END_SRC
+** Doppelganger 2 (2/20)
+#+BEGIN_SRC
+check input = input;
+output = bool;
+#+END_SRC
+** TODO Heads & Tails (/)
+#+BEGIN_SRC
+#+END_SRC
+** Big Brother (12/108)
+#+BEGIN_SRC
+int = input;
+reg = input;
+check int < reg;
+jump if false: next;
+int = reg;
+next:
+reg = input;
+check int < reg;
+jump if false: emit;
+int = reg;
+emit:
+output = int;
+#+END_SRC
+** Middle Brother (21/182)
+*** TODO Optimize
+#+BEGIN_SRC
+reg = input;
+int = input;
+check reg < int;
+jump if true: maxint;
+switch int;
+int = reg;
+switch reg;
+maxint:
+switch int;
+int = reg;
+reg = input;
+check reg < int;
+jump if false: candreg;
+reg = int;
+candreg:
+switch int;
+check reg < int;
+jump if true: emit;
+reg  = int;
+emit:
+output = reg;
+#+END_SRC
+** TODO Greatest of Brothers (/)
+#+BEGIN_SRC
+#+END_SRC
+** TODO Golden Spiral (/)
+#+BEGIN_SRC
+#+END_SRC
+* Disk3
+** Easier Than It Looks (4/80)
+*** TODO Optimize
+#+BEGIN_SRC
+int = input;
+reg = int - 1;
+int = int * reg;
+output = int;
+#+END_SRC
+** Harder Than It Looks (5/100)
+#+BEGIN_SRC
+int = input * 10;
+reg = int - 10;
+reg = int * reg;
+reg = reg / 100;
+output = reg;
+#+END_SRC
+** Give me a Ballpark (7/52)
+*** TODO Optimize
+#+BEGIN_SRC
+loop:
+reg = reg + input;
+int++;
+check input = null;
+jump if false: loop;
+reg = reg / int;
+output = reg;
+#+END_SRC
+** Black Jack (11/255)
+*** TODO Optimize
+#+BEGIN_SRC
+loop:
+check input = null;
+jump if true: emit;
+int = input;
+reg = reg + int;
+check reg < 22;
+jump if true: loop;
+reg = reg - int;
+emit:
+output = reg;
+reg = int;
+#+END_SRC
+** Initial Impression (3/60)
+#+BEGIN_SRC
+str = input;
+char = str[0];
+output = char;
+#+END_SRC
+** Lasting Impression (4/80)
+#+BEGIN_SRC
+str = input;
+int = str.length - 1;
+char = str[int];
+output = char;
+#+END_SRC
+** thelongeststring (13/155)
+*** TODO Optimize
+#+BEGIN_SRC
+loop:
+check input = null;
+jump if true:emit;
+str = input;
+int = str.length;
+check int > reg;
+jump if false: loop;
+reg = int;
+switch str;
+jump to: loop;
+emit:
+switch str;
+output = str;
+#+END_SRC
+** 64temoc (15/553)
+*** TODO Optimize
+#+BEGIN_SRC
+str = input;
+int = str.length - 1;
+reg = 0;
+cont:
+char = str[reg];
+switch char;
+char = str[int];
+str[reg] = char;
+switch char;
+str[int] = char;
+reg++;
+int--;
+check reg > int;
+jump if false: cont;
+output = str;
+#+END_SRC
+** TODO 46cemot (/)
+#+BEGIN_SRC
+#+END_SRC
+** TODO Comet LXVI (/)
+#+BEGIN_SRC
+#+END_SRC
+* Disk4
+** Coordinate Pairs (3/30)
+#+BEGIN_SRC
+reg = input;
+int = input;
+output = reg, int;
+#+END_SRC
+** Secret Message (13/796)
+#+BEGIN_SRC
+str = input;
+int = str.length;
+loop:
+int--;
+char = str[int];
+check char = g;
+jump if false: nxt;
+char = e;
+str[int] = char;
+nxt:
+check int > 0;
+jump if true: loop;
+output = str;
+#+END_SRC
+** Root Input (/)
+*** TODO Optimize
+#+BEGIN_SRC
+#+END_SRC
+#+BEGIN_SRC
+int = 0;
+int = input;
+check int = 1;
+reg = 1;
+jump if true: emit;
+check int = 4;
+reg = 2;
+jump if true: emit;
+check int = 9;
+reg = 3;
+jump if true: emit;
+check int = 16;
+reg = 4;
+jump if true: emit;
+check int = 25;
+reg = 5;
+jump if true: emit;
+check int = 36;
+reg = 6;
+jump if true: emit;
+check int = 49;
+reg = 7;
+jump if true: emit;
+check int = 64;
+reg = 8;
+jump if true: emit;
+check int = 81;
+reg = 9;
+jump if true: emit;
+reg = 10;
+emit:
+output = reg;
+#+END_SRC
+** Negative Initiative (10/167)
+*** TODO Optimize
+#+BEGIN_SRC
+loop:
+int = input;
+check int < 1;
+jump if false: loop;
+output = int;
+check int = 0;
+jump if true: loop;
+cleanup:
+check input = 0;
+jump if false: cleanup;
+#+END_SRC
+** As Easy as 01 10 11 (17/880)
+*** TODO Optimize
+#+BEGIN_SRC
+reg = input + 1;
+int = 16;
+loop:
+check int < 2;
+jump if true: emit;
+int = int / 2;
+check int < reg;
+jump if true: one;
+str = str + 0;
+jump to: loop;
+one:
+reg = reg - int;
+str = str + 1;
+jump to: loop;
+emit:
+output = str;
+str = ;
+#+END_SRC
+** TODO Binary Transition (/)
+#+BEGIN_SRC
+#+END_SRC
+** No Duplicates! (6/46)
+#+BEGIN_SRC
+loop:
+int = int + input;
+check input = null;
+jump if false: loop;
+int = int - 45;
+output = int;
+#+END_SRC
+** No Duplicates (52/55)
+*** TODO Optimize
+#+BEGIN_SRC
+loop:
+int = input;
+char = int;
+str = str + char;
+check input = null;
+jump if false: loop;
+char = str[0];
+int = char;
+char = str[1];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[2];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[3];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[4];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[1];
+int = char;
+char = str[2];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[3];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[4];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[2];
+int = char;
+char = str[3];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[4];
+reg = char;
+check reg = int;
+jump if true: emit;
+char = str[3];
+int = char;
+emit:
+output = int;
+#+END_SRC
+** TODO Let's Settle This (/)
+#+BEGIN_SRC
+#+END_SRC
+* [A]
+** full_on (1/32)
+#+BEGIN_SRC
+output = true;
+#+END_SRC
+** one_on (3/95)
+#+BEGIN_SRC
+check int = 0;
+output = bool;
+int++;
+#+END_SRC
+** one_off (3/95)
+#+BEGIN_SRC
+check int < 31;
+output = bool;
+int++;
+#+END_SRC
+** striped_vertical (2/32)
+#+BEGIN_SRC
+output = true;
+output = false;
+#+END_SRC
+** striped_horizontal (5/160)
+#+BEGIN_SRC
+str = ttttffffttttffffttttffffttttffff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** outer_circle (5/160)
+#+BEGIN_SRC
+str = tttttffttffttffttffttffttffttttt;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** inner_circle (5/160)
+#+BEGIN_SRC
+str = fffffffffttffttffttffttfffffffff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** forward_slash (5/160)
+#+BEGIN_SRC
+str = ffftfftfftfftfffffftfftfftfftfff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** back_slash (5/160)
+#+BEGIN_SRC
+str = tfffftfffftffffttfffftfffftfffft;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+* [B]
+** output_bool (3/96)
+#+BEGIN_SRC
+int++;
+check int > 13;
+output= bool;
+#+END_SRC
+** checker_board (5/160)
+#+BEGIN_SRC
+str = tftfftfttftfftfttftfftfttftfftft;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** ascending_order (5/160)
+#+BEGIN_SRC
+str = tftfftffftfffftffffftfffffftffff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** middle_path (5/160)
+#+BEGIN_SRC
+str = fttfffffttfffffttfffffttfffffttf;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** criss_cross (5/160)
+#+BEGIN_SRC
+str = fftfftfftfffftfffftfffftfftfftff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** shooting_stars (3/32)
+#+BEGIN_SRC
+output = false;
+output = false;
+output = true;
+#+END_SRC
+** upper_right (5/160)
+#+BEGIN_SRC
+str = ttttftttffttffftttttftttffttffft;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** play_button (5/160)
+#+BEGIN_SRC
+str = tfffttfftttftttttttttttfttfftfff;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
+** hiroshima (5/160)
+#+BEGIN_SRC
+str = tfttfftttfffttttfffftttttffffftt;
+char = str[int];
+int++;
+check char = t;
+output = bool;
+#+END_SRC
