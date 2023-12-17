@@ -596,9 +596,52 @@ output = str;
   </div>
 </section>
 #+END_EXPORT
-** TODO 46cemot (/)
+** 46cemot (27/2850)
+*** TODO Optimize
 #+BEGIN_SRC
+str = input;
+int = str.length - 1;
+
+loop:
+check int = 0;
+jump if true: emit;
+char = str[int];
+reg = char;
+int--;
+char = str[int];
+switch int;
+int = char;
+check int > reg;
+jump if true: swap;
+switch int;
+jump to: loop;
+swap:
+switch int;
+char = reg;
+str[int] = char;
+int++;
+switch reg;
+char = reg;
+str[int] = char;
+int = str.length - 1;
+jump to: loop;
+
+emit:
+output = str;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_3_9">
+  <h2 class="handle">
+    <label for="handle_3_9">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk3_46cemot.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk3_46cemot.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** TODO Comet LXVI (/)
 #+BEGIN_SRC
 #+END_SRC
