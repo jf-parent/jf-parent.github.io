@@ -394,12 +394,63 @@ output = reg;
   </div>
 </section>
 #+END_EXPORT
-** TODO Greatest of Brothers (/)
+** Greatest of Brothers (10/207)
 #+BEGIN_SRC
+int = input;
+
+loop:
+reg = input;
+check reg > int;
+jump if false: nxt;
+int = reg;
+nxt:
+check input = null;
+jump if false: loop;
+
+output = int;
 #+END_SRC
-** TODO Golden Spiral (/)
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_9">
+  <h2 class="handle">
+    <label for="handle_2_9">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_greatest-of-brothers.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_greatest-of-brothers.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Golden Spiral (13/614)
 #+BEGIN_SRC
+int = input + 1;
+switch int;
+int = 0;
+reg = 1;
+output = reg;
+loop:
+output = reg;
+int = reg - int;
+reg = int + reg;
+switch int;
+check reg < int;
+switch int;
+jump if true: loop;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_10">
+  <h2 class="handle">
+    <label for="handle_2_10">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_golden-spiral.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_golden-spiral.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Disk3
 ** Easier Than It Looks (4/80)
 *** TODO Optimize
