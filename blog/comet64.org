@@ -938,9 +938,43 @@ output = int;
   </div>
 </section>
 #+END_EXPORT
-** TODO Let's Settle This (/)
+** Let's Settle This (14/112)
 #+BEGIN_SRC
+// paper + rock = paper (len:9)
+// rock + scissors = rock (len:12)
+// paper + scissors = scissors (len:13)
+str = input + input;
+int = str.length;
+
+str = paper;
+check int = 9;
+jump if true: emit;
+
+str = rock;
+check int = 12;
+jump if true: emit;
+
+str = scissors;
+check int = 13;
+jump if true: emit;
+
+str = draw;
+emit:
+output = str;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_9">
+  <h2 class="handle">
+    <label for="handle_4_9">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_lets-settle-this.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_lets-settle-this.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * [A]
 ** full_on (1/32)
 #+BEGIN_SRC
