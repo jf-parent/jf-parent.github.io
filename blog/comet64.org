@@ -325,9 +325,38 @@ output = bool;
   </div>
 </section>
 #+END_EXPORT
-** TODO Heads & Tails (/)
+** Heads & Tails (16/657)
 #+BEGIN_SRC
+top:
+check input = heads;
+jump if false: nxt;
+int++;
+nxt:
+check input = null;
+jump if false: top;
+str = draw;
+check int = 50;
+jump if true: emit;
+str = tails;
+check int < 50;
+jump if true: emit;
+str = heads;
+emit:
+output = str;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_2_6">
+  <h2 class="handle">
+    <label for="handle_2_6">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk2_heads-and-tails.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk2_heads-and-tails.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Big Brother (12/108)
 #+BEGIN_SRC
 int = input;
