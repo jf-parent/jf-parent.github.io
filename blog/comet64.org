@@ -194,7 +194,6 @@ output = int;
 </section>
 #+END_EXPORT
 ** Just Around (4/60)
-*** TODO Optimize
 #+BEGIN_SRC
 reg = input / 10;
 int = reg + 0.5;
@@ -282,15 +281,12 @@ output = bool;
   </div>
 </section>
 #+END_EXPORT
-** Reverse Integeering (8/120)
-*** TODO Optimize
+** Reverse Integeering (6/90)
 #+BEGIN_SRC
-reg = input;
-int = reg / 10;
-int = int * 10;
+reg = input / 10;
+int = reg;
 reg = reg - int;
-reg = reg * 10;
-int = int / 10;
+reg = reg * 100;
 reg = reg + int;
 output = reg;
 #+END_SRC
