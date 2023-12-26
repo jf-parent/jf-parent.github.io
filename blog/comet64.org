@@ -478,7 +478,6 @@ jump if true: loop;
 #+END_EXPORT
 * Disk3
 ** Easier Than It Looks (4/80)
-*** TODO Optimize
 #+BEGIN_SRC
 int = input;
 reg = int - 1;
@@ -641,7 +640,6 @@ output = str;
 </section>
 #+END_EXPORT
 ** 46temoc (15/553)
-*** TODO Optimize
 #+BEGIN_SRC
 str = input;
 int = str.length - 1;
@@ -770,44 +768,36 @@ output = str;
   </div>
 </section>
 #+END_EXPORT
-** Root Input (/)
-*** TODO Optimize
+** Root Input (14/1010)
 #+BEGIN_SRC
-#+END_SRC
-#+BEGIN_SRC
-int = 0;
-int = input;
-check int = 1;
-reg = 1;
+reg = input;
+nxt:
+int = char;
+int = int * int;
+check reg = int;
 jump if true: emit;
-check int = 4;
-reg = 2;
-jump if true: emit;
-check int = 9;
-reg = 3;
-jump if true: emit;
-check int = 16;
-reg = 4;
-jump if true: emit;
-check int = 25;
-reg = 5;
-jump if true: emit;
-check int = 36;
-reg = 6;
-jump if true: emit;
-check int = 49;
-reg = 7;
-jump if true: emit;
-check int = 64;
-reg = 8;
-jump if true: emit;
-check int = 81;
-reg = 9;
-jump if true: emit;
-reg = 10;
+int = char;
+int++;
+char = int;
+jump to: nxt;
 emit:
-output = reg;
+int = char;
+output = int;
+char = a;
 #+END_SRC
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_4_5">
+  <h2 class="handle">
+    <label for="handle_4_5">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/comet64/comet64_disk4_root-input.jpeg" target="_blank">
+      <img style="height: 100%;" src="/media/images/comet64/comet64_disk4_root-input.jpeg" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 ** Negative Initiative (10/167)
 *** TODO Optimize
 #+BEGIN_SRC
