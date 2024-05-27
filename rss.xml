@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Tue, 26 Dec 2023 18:41:55 EST</pubDate>
-    <lastBuildDate>Tue, 26 Dec 2023 18:41:55 EST</lastBuildDate>
+    <pubDate>Mon, 27 May 2024 15:07:39 EDT</pubDate>
+    <lastBuildDate>Mon, 27 May 2024 15:07:39 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Bongard Test</title>
+      <link>https://jf-parent.github.io/blog/2024/05/27/bongard</link>
+      <description><![CDATA[Bongard Test]]></description>
+      <pubDate>2024-05-27</pubDate>
+      <guid>https://jf-parent.github.io/blog/2024/05/27/bongard</guid>
+    </item>
     <item>
       <title>Comet64 - My Solutions</title>
       <link>https://jf-parent.github.io/blog/2023/12/16/comet64_solutions</link>
@@ -63,13 +70,6 @@
       <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2022-04-23</pubDate>
       <guid>https://jf-parent.github.io/blog/2022/03/19/nuclear-war</guid>
-    </item>
-    <item>
-      <title>BongardIQ (alpha version)</title>
-      <link>https://jf-parent.github.io/blog/2022/01/07/bongardiq</link>
-      <description><![CDATA[<TODO: insert your description here>]]></description>
-      <pubDate>2022-01-07</pubDate>
-      <guid>https://jf-parent.github.io/blog/2022/01/07/bongardiq</guid>
     </item>
     <item>
       <title>Plain Text Double-Entry Accounting Using Beancount</title>
