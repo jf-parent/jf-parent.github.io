@@ -1,12 +1,22 @@
 #+STARTUP: inlineimages
 #+TITLE:       Boudoir
 #+AUTHOR:      Jean-François Parent
-#+DATE:        2023-08-25
+#+DATE:        2024-07-21
 #+URI:         /boudoir
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Boudoir - Art Electronic Music Video
 
+* Mamba Batchoy
+#+BEGIN_EXPORT html
+<a href="https://youtu.be/0TJlVFLNj_U" target="_blank"><img src="/media/images/boudoir_covers/boudoir_mamba-batchoy_cover.jpg" /></a>
+#+END_EXPORT
+** Specs
+*** Software: Logic Pro X, Final Cut Pro
+*** Release date: Jul 21, 2024
+*** Audio only: [[https://boudoir-socket.bandcamp.com/track/mamba-batchoy][bandcamp]]
+*** Production timeframe: ~20hours
+*** Length: 3.03
 * Esurient Grandes Dames
 #+BEGIN_EXPORT html
 <a href="https://www.youtube.com/watch?v=6U6-UWc7UJs" target="_blank"><img src="/media/images/boudoir_covers/Boudoir_Esurient-Grandes-Dames_cover.jpg" /></a>
