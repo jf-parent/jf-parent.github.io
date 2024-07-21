@@ -9,7 +9,7 @@
 
 * Mamba Batchoy
 #+BEGIN_EXPORT html
-<a href="https://youtu.be/0TJlVFLNj_U" target="_blank"><img src="/media/images/boudoir_covers/boudoir_mamba-batchoy_cover.jpg" /></a>
+<a href="https://youtu.be/0TJlVFLNj_U" target="_blank"><img src="/media/images/boudoir_covers/boudoir_mamba-batchoy_cover.jpeg" /></a>
 #+END_EXPORT
 ** Specs
 *** Software: Logic Pro X, Final Cut Pro
