@@ -44,7 +44,7 @@
     <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
   </a>
   <a href="/tags">Tags</a>
-  <a href="/about/">About</a>
+  <!--<a href="/about/">About</a>-->
   <!--<a href="/boudoir/">Boudoir</a>-->
   <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
   <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
@@ -60,67 +60,67 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org25ac8b0" class="outline-2">
-<h2 id="org25ac8b0">Introduction</h2>
-<div class="outline-text-2" id="text-org25ac8b0">
+<div id="outline-container-orga691715" class="outline-2">
+<h2 id="orga691715">Introduction</h2>
+<div class="outline-text-2" id="text-orga691715">
 </div>
-<div id="outline-container-org6592346" class="outline-3">
-<h3 id="org6592346">I discover Plain Text Double Entry Accounting on HackerNews earlier this year. After some experimentation, I decided to adopt it.</h3>
+<div id="outline-container-org432260c" class="outline-3">
+<h3 id="org432260c">I discover Plain Text Double Entry Accounting on HackerNews earlier this year. After some experimentation, I decided to adopt it.</h3>
 </div>
-<div id="outline-container-org5f87c6d" class="outline-3">
-<h3 id="org5f87c6d">Below I will share some interesting resources and code samples.</h3>
+<div id="outline-container-orga907233" class="outline-3">
+<h3 id="orga907233">Below I will share some interesting resources and code samples.</h3>
 </div>
-<div id="outline-container-orgc7ccc97" class="outline-3">
-<h3 id="orgc7ccc97">The beancount documentation is very exhaustive and beginner friendly.</h3>
+<div id="outline-container-org73a8097" class="outline-3">
+<h3 id="org73a8097">The beancount documentation is very exhaustive and beginner friendly.</h3>
 </div>
 </div>
-<div id="outline-container-orgaf5b58e" class="outline-2">
-<h2 id="orgaf5b58e">Resources</h2>
-<div class="outline-text-2" id="text-orgaf5b58e">
+<div id="outline-container-org9eae6b5" class="outline-2">
+<h2 id="org9eae6b5">Resources</h2>
+<div class="outline-text-2" id="text-org9eae6b5">
 </div>
-<div id="outline-container-orgdc8faa6" class="outline-3">
-<h3 id="orgdc8faa6"><a href="https://github.com/beancount/fava">beancount/fava: Fava - web interface for Beancount</a></h3>
-<div class="outline-text-3" id="text-orgdc8faa6">
+<div id="outline-container-org5cd6e55" class="outline-3">
+<h3 id="org5cd6e55"><a href="https://github.com/beancount/fava">beancount/fava: Fava - web interface for Beancount</a></h3>
+<div class="outline-text-3" id="text-org5cd6e55">
 <img src="/media/images/fava.png" />
 </div>
 </div>
-<div id="outline-container-org583d675" class="outline-3">
-<h3 id="org583d675"><a href="https://github.com/beancount/beancount-mode">beancount/beancount-mode: Emacs major-mode to work with Beancount ledger files</a></h3>
+<div id="outline-container-org2ce28fa" class="outline-3">
+<h3 id="org2ce28fa"><a href="https://github.com/beancount/beancount-mode">beancount/beancount-mode: Emacs major-mode to work with Beancount ledger files</a></h3>
 </div>
-<div id="outline-container-orgd8dfad7" class="outline-3">
-<h3 id="orgd8dfad7"><a href="https://github.com/nathangrigg/vim-beancount">nathangrigg/vim-beancount: Vim ftplugin for beancount</a></h3>
+<div id="outline-container-org57f77b4" class="outline-3">
+<h3 id="org57f77b4"><a href="https://github.com/nathangrigg/vim-beancount">nathangrigg/vim-beancount: Vim ftplugin for beancount</a></h3>
 </div>
-<div id="outline-container-org5e0bc0d" class="outline-3">
-<h3 id="org5e0bc0d"><a href="https://github.com/csingley/ofxtools">csingley/ofxtools: Python OFX Library</a></h3>
+<div id="outline-container-orgf7b150a" class="outline-3">
+<h3 id="orgf7b150a"><a href="https://github.com/csingley/ofxtools">csingley/ofxtools: Python OFX Library</a></h3>
 </div>
-<div id="outline-container-org1880325" class="outline-3">
-<h3 id="org1880325"><a href="https://plaintextaccounting.org/">Plain Text Accounting, a guide to Ledger and friends - plaintextaccounting.org</a></h3>
+<div id="outline-container-orge0c16af" class="outline-3">
+<h3 id="orge0c16af"><a href="https://plaintextaccounting.org/">Plain Text Accounting, a guide to Ledger and friends - plaintextaccounting.org</a></h3>
 </div>
-<div id="outline-container-orgcb920df" class="outline-3">
-<h3 id="orgcb920df"><a href="https://beancount.github.io/docs/the_double_entry_counting_method.html">The Double Entry Counting Method - Beancount Documentation</a></h3>
-</div>
-</div>
-<div id="outline-container-org52a9a0e" class="outline-2">
-<h2 id="org52a9a0e">Importer for qfx/ofx</h2>
-<div class="outline-text-2" id="text-org52a9a0e">
-</div>
-<div id="outline-container-org506b95c" class="outline-3">
-<h3 id="org506b95c">Features</h3>
-<div class="outline-text-3" id="text-org506b95c">
-</div>
-<div id="outline-container-org9e8005a" class="outline-4">
-<h4 id="org9e8005a">Deduplication using transaction hash</h4>
-</div>
-<div id="outline-container-org67e84f8" class="outline-4">
-<h4 id="org67e84f8">Auto-resolve Payee (hardcoded hashmap)</h4>
-</div>
-<div id="outline-container-orgfe53cb6" class="outline-4">
-<h4 id="orgfe53cb6">Auto-categorize Posting (hardcoded hashmap)</h4>
+<div id="outline-container-orgc09fb1e" class="outline-3">
+<h3 id="orgc09fb1e"><a href="https://beancount.github.io/docs/the_double_entry_counting_method.html">The Double Entry Counting Method - Beancount Documentation</a></h3>
 </div>
 </div>
-<div id="outline-container-orgbeaf7af" class="outline-3">
-<h3 id="orgbeaf7af">Code</h3>
-<div class="outline-text-3" id="text-orgbeaf7af">
+<div id="outline-container-org1f8ed68" class="outline-2">
+<h2 id="org1f8ed68">Importer for qfx/ofx</h2>
+<div class="outline-text-2" id="text-org1f8ed68">
+</div>
+<div id="outline-container-org7b1287e" class="outline-3">
+<h3 id="org7b1287e">Features</h3>
+<div class="outline-text-3" id="text-org7b1287e">
+</div>
+<div id="outline-container-org0371f86" class="outline-4">
+<h4 id="org0371f86">Deduplication using transaction hash</h4>
+</div>
+<div id="outline-container-org1dcf229" class="outline-4">
+<h4 id="org1dcf229">Auto-resolve Payee (hardcoded hashmap)</h4>
+</div>
+<div id="outline-container-orgb72456a" class="outline-4">
+<h4 id="orgb72456a">Auto-categorize Posting (hardcoded hashmap)</h4>
+</div>
+</div>
+<div id="outline-container-org434800f" class="outline-3">
+<h3 id="org434800f">Code</h3>
+<div class="outline-text-3" id="text-org434800f">
 <div class="org-src-container">
 <pre class="src src-Python">from datetime import datetime, timedelta, date
 import os.path
