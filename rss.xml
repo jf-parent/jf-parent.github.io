@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Fri, 20 Dec 2024 09:37:53 EST</pubDate>
-    <lastBuildDate>Fri, 20 Dec 2024 09:37:53 EST</lastBuildDate>
+    <pubDate>Sat, 21 Dec 2024 09:40:10 EST</pubDate>
+    <lastBuildDate>Sat, 21 Dec 2024 09:40:10 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>TIS-100 - My Solutions</title>
+      <link>https://jf-parent.github.io/blog/2022/12/27/tis-100_solutions</link>
+      <description><![CDATA[My tis-100 Solutions]]></description>
+      <pubDate>2024-12-21</pubDate>
+      <guid>https://jf-parent.github.io/blog/2022/12/27/tis-100_solutions</guid>
+    </item>
     <item>
       <title>Bongard Test</title>
       <link>https://jf-parent.github.io/blog/2024/05/27/bongard</link>
@@ -35,13 +42,6 @@
       <description><![CDATA[Dyalog APL Problem Solving Competition - My Solutions]]></description>
       <pubDate>2023-03-31</pubDate>
       <guid>https://jf-parent.github.io/blog/2023/03/31/apl_solutions</guid>
-    </item>
-    <item>
-      <title>TIS-100 - My Solutions</title>
-      <link>https://jf-parent.github.io/blog/2022/12/27/tis-100_solutions</link>
-      <description><![CDATA[My tis-100 Solutions]]></description>
-      <pubDate>2023-02-12</pubDate>
-      <guid>https://jf-parent.github.io/blog/2022/12/27/tis-100_solutions</guid>
     </item>
     <item>
       <title>A=B - A one instruction esolang - My Solutions</title>
