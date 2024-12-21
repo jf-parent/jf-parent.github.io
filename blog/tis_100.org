@@ -450,7 +450,7 @@
 </section>
 #+END_EXPORT
 
-* Image Test Pattern 1 - Fast (1310, 2, 21)
+* Image Test Pattern 1 - Fast (1256, 2, 18)
 
 #+BEGIN_EXPORT html
 <section class="accordion">
