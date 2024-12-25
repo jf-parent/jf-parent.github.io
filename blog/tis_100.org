@@ -569,6 +569,36 @@
 </section>
 #+END_EXPORT
 
+* Exposure Mask Viewer (674, 4, 38)
+
+#+BEGIN_EXPORT html
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_exposure_mask_viewer_1">
+  <h2 class="handle">
+    <label for="handle_exposure_mask_viewer_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_EXPOSURE MASK VIEWER_scoreboard.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_EXPOSURE MASK VIEWER_scoreboard.jpg" />
+    </a>
+  </div>
+</section>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle_exposure_mask_viewer_2">
+  <h2 class="handle">
+    <label for="handle_exposure_mask_viewer_2">Code</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/tis-100_EXPOSURE MASK VIEWER_code.jpg" target="_blank">
+      <img style="height: 100%" src="/media/images/tis-100_EXPOSURE MASK VIEWER_code.jpg" />
+    </a>
+  </div>
+</section>
+<section>
+  <a href="/media/files/52544.txt" target="_blank">code file</a>
+</section>
+#+END_EXPORT
+
 * Stored Image Decoder - Lean (3937, 5, 21)
 
 #+BEGIN_EXPORT html
