@@ -1,7 +1,7 @@
 #+TITLE:       20th Century Food Court - Last Call BBS
 #+AUTHOR:      Jean-François Parent
 #+EMAIL:       parent.j.f@gmail.com
-#+DATE:        2022-08-04
+#+DATE:        2025-01-16
 #+URI:         /blog/%y/%m/%d/20th-century-food-court---last-call-bbs
 #+KEYWORDS:    last-call-bbs,zachtronics
 #+TAGS:        last-call-bbs,zachtronics
@@ -64,6 +64,12 @@
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_ROSIES-DOUGHNUTS_36_165.gif" />
+#+END_EXPORT
+
+* On The Fried Side (18, 195)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_ON-THE-FRIED-SIDE_18_195.gif" />
 #+END_EXPORT
 
 * Cafe Triste (19, 194)
