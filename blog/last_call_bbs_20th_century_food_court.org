@@ -72,6 +72,16 @@
 <img src="/media/images/20th-Century-Food-Court_ON-THE-FRIED-SIDE_18_195.gif" />
 #+END_EXPORT
 
+* Sweet Heat BBQ (28, 145) & (28, 122)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_145.gif" />
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_122.gif" />
+#+END_EXPORT
+
 * Cafe Triste (19, 194)
 
 #+BEGIN_EXPORT html
@@ -88,12 +98,6 @@
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_MILDREDS-NOOK_15_230.gif" />
-#+END_EXPORT
-
-* Sweet Heat BBQ (28, 145)
-
-#+BEGIN_EXPORT html
-<img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_145.gif" />
 #+END_EXPORT
 
 * The Walrus (12, 100)
