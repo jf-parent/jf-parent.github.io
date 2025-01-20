@@ -82,6 +82,12 @@
 <img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_122.gif" />
 #+END_EXPORT
 
+* The Walrus (12, 90)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_THE-WALRUS_12_90.gif" />
+#+END_EXPORT
+
 * Cafe Triste (19, 194)
 
 #+BEGIN_EXPORT html
@@ -98,12 +104,6 @@
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_MILDREDS-NOOK_15_230.gif" />
-#+END_EXPORT
-
-* The Walrus (12, 100)
-
-#+BEGIN_EXPORT html
-<img src="/media/images/20th-Century-Food-Court_THE-WALRUS_12_100.gif" />
 #+END_EXPORT
 
 * The Commissary (14, 172) 
