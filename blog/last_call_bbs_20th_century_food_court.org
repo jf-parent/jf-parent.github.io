@@ -72,7 +72,7 @@
 <img src="/media/images/20th-Century-Food-Court_ON-THE-FRIED-SIDE_18_195.gif" />
 #+END_EXPORT
 
-* Sweet Heat BBQ (28, 145) & (28, 122)
+* Sweet Heat BBQ (28, 145) & (28, 122) & (17, 154)
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_145.gif" />
@@ -80,6 +80,10 @@
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_28_122.gif" />
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_17_154.gif" />
 #+END_EXPORT
 
 * The Walrus (12, 90)
