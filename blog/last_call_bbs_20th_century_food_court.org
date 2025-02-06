@@ -86,7 +86,6 @@
 <img src="/media/images/20th-Century-Food-Court_SWEET-HEAT-BBQ_17_154.gif" />
 #+END_EXPORT
 
-
 * The Walrus (12, 90)
 
 #+BEGIN_EXPORT html
@@ -97,6 +96,12 @@
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th-Century-Food-Court_CAFE-TRISTE_19_194.gif" />
+#+END_EXPORT
+
+* Da Wings (38,207)
+
+#+BEGIN_EXPORT html
+<img src="/media/images/20th-Century-Food-Court_DA-WINGS_38_207.gif" />
 #+END_EXPORT
 
 * Half Caff Coffee (16, 193)
