@@ -98,10 +98,10 @@
 <img src="/media/images/20th-Century-Food-Court_CAFE-TRISTE_19_194.gif" />
 #+END_EXPORT
 
-* Da Wings (38,202)
+* Da Wings (38,198)
 
 #+BEGIN_EXPORT html
-<img src="/media/images/20th-Century-Food-Court_DA-WINGS_38_202.gif" />
+<img src="/media/images/20th-Century-Food-Court_DA-WINGS_38_198.gif" />
 #+END_EXPORT
 
 * Half Caff Coffee (16, 193)
