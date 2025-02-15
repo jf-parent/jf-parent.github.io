@@ -84,6 +84,7 @@
 * [[https://problems.tryapl.org/psets/2013.html?goto=P9_It_Is_a_Moving_Experience][2013 P9: It Is a Moving Experience - APL Practice Problems]]
 #+begin_src apl
   {r←,{⍬(⊣⍣(⊃⍺≠0))(+/⍵÷≢⍵)}⌺⍺⊢⍵ ⋄ (r≠0)/r}
+  {avgs←{0=⍺:(+/÷≢)⍵ ⋄ -1}⌺⍺⊢⍵ ⋄ avgs/⍨avgs≠¯1}
 #+end_src
 * Resources
 ** [[https://www.youtube.com/playlist?list=PLYKQVqyrAEj9wDIUyLDGtDAFTKY38BUMN][APL Quest - YouTube]]
