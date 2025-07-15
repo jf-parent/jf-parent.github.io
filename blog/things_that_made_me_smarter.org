@@ -29,12 +29,20 @@
  * [[https://mnemosyne-proj.org/][Mnemosyne]]
  * [[https://apps.ankiweb.net/][Anki]]
 ** Games
+ * [[https://store.steampowered.com/app/1720850/AB/][A=B]]
  * [[https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)][The Witness]] [[https://www.youtube.com/user/jblow888][(Jonathan Blow]] has a lot of content about programming language design)
+ * [[https://store.steampowered.com/app/721390/Pipe_Push_Paradise/][Pipe Push Paradise]]
+ * [[https://store.steampowered.com/app/1147890/Bonfire_Peaks/][Bonfire Peaks]]
+ * [[https://store.steampowered.com/app/950140/Hiding_Spot/][Hiding Spot]]
+ * [[https://store.steampowered.com/app/1706090/Bean_and_Nothingness/][Bean and Nothingness]]
+ * [[https://store.steampowered.com/app/1511780/Last_Call_BBS/][Last Call BBS]]
  * [[https://en.wikipedia.org/wiki/Shenzhen_I/O][Shenzhen I/O]]
  * [[https://en.wikipedia.org/wiki/Infinifactory][Infinifactory]]
  * [[https://en.wikipedia.org/wiki/TIS-100][TIS-100]]
+ * [[https://store.steampowered.com/app/1168880/MOLEKSYNTEZ/][MOLEK-SYNTEZ]]
  * [[https://en.wikipedia.org/wiki/Opus_Magnum_(video_game)][Opus Magnum]]
  * [[https://en.wikipedia.org/wiki/Stephen%27s_Sausage_Roll][Stephen's Sausage Roll]] (don't be fool by the silly title, this is a very challenging puzzle game!)
+ * [[https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/][Sid Meier’s Civilization® VI]]
  * [[https://store.steampowered.com/app/652340/Flagsplosion/][Flagsplosion]]
  * [[https://store.steampowered.com/app/328730/Letter_Quest_Grimms_Journey/][Letter Quest: Grimm's Journey]] (a word game)
  * [[https://store.steampowered.com/app/497780/Recursed/][Recursed]]
