@@ -92,7 +92,7 @@
 <img src="/media/images/20th-Century-Food-Court_THE-WALRUS_12_90.gif" />
 #+END_EXPORT
 
-* Meat+3
+* Meat+3 (13, 113)
 
 #+BEGIN_EXPORT html
 <img src="/media/images/20th Century Food Court - MEAT+3 (13, 113, 2025-10-23-07-53-48).gif" />
