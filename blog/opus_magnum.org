@@ -13,7 +13,7 @@
 ** [[https://store.steampowered.com/app/558990/Opus_Magnum/][Opus Magnum on Steam]]
 ** Design and build machines that assemble potions, poisons, and more using the alchemical engineer’s most advanced tool: the transmutation engine!
 * Prologue
-** Stabilized Water (180G, 23, 15)
+** Stabilized Water (180G, 23, 15) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
   <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
@@ -39,7 +39,232 @@
 </section>
 #+END_EXPORT
 * Chapter I
+** Refined Gold (120G, 74, 9) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Refined Gold (120G, 74, 9, 2025-11-04-20-01-16).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Refined Gold (120G, 74, 9, 2025-11-04-20-01-16).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Refined Gold (120G, 74, 9, 2025-11-04-20-01-16).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Refined Gold (120G, 74, 9, 2025-11-04-20-01-16).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Face Powder (100G, 37, 15) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Face Powder (100G, 37, 15, 2025-11-04-20-09-23).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Face Powder (100G, 37, 15, 2025-11-04-20-09-23).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Face Powder (100G, 37, 15, 2025-11-04-20-09-23).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Face Powder (100G, 37, 15, 2025-11-04-20-09-23).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Waterproof Sealant (130G, 26, 14) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Waterproof Sealant (130G, 26, 14, 2025-11-04-20-10-05).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Waterproof Sealant (130G, 26, 14, 2025-11-04-20-10-05).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Waterproof Sealant (130G, 26, 14, 2025-11-04-20-10-05).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Waterproof Sealant (130G, 26, 14, 2025-11-04-20-10-05).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Hangover Cure (120G, 39, 25) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Hangover Cure (120G, 39, 25, 2025-11-04-20-10-39).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Hangover Cure (120G, 39, 25, 2025-11-04-20-10-39).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Hangover Cure (120G, 39, 25, 2025-11-04-20-10-39).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Hangover Cure (120G, 39, 25, 2025-11-04-20-10-39).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Airship Fuel (250G, 36, 29) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Airship Fuel (250G, 36, 29, 2025-11-04-20-27-12).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Airship Fuel (250G, 36, 29, 2025-11-04-20-27-12).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Airship Fuel (250G, 36, 29, 2025-11-04-20-27-12).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Airship Fuel (250G, 36, 29, 2025-11-04-20-27-12).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Precision Machine Oil (180G, 43, 25) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Precision Machine Oil (180G, 43, 25, 2025-11-04-20-34-12).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Precision Machine Oil (180G, 43, 25, 2025-11-04-20-34-12).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Precision Machine Oil (180G, 43, 25, 2025-11-04-20-34-12).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Precision Machine Oil (180G, 43, 25, 2025-11-04-20-34-12).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Health Tonic (110G, 32, 32) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Health Tonic (110G, 32, 32, 2025-11-04-20-34-52).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Health Tonic (110G, 32, 32, 2025-11-04-20-34-52).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Health Tonic (110G, 32, 32, 2025-11-04-20-34-52).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Health Tonic (110G, 32, 32, 2025-11-04-20-34-52).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Stamina Potion (190G, 49, 68) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stamina Potion (190G, 49, 68, 2025-11-05-19-57-23).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stamina Potion (190G, 49, 68, 2025-11-05-19-57-23).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stamina Potion (190G, 49, 68, 2025-11-05-19-57-23).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stamina Potion (190G, 49, 68, 2025-11-05-19-57-23).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Chapter II
+** Hair Product (140G, 51, 19) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Hair Product (140G, 51, 19, 2025-11-05-20-20-17).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Hair Product (140G, 51, 19, 2025-11-05-20-20-17).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Hair Product (140G, 51, 19, 2025-11-05-20-20-17).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Hair Product (140G, 51, 19, 2025-11-05-20-20-17).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Chapter III
 * Chapter IV
 * Chapter V
