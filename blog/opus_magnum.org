@@ -1,0 +1,46 @@
+#+TITLE:       Opus Magnum - My Solutions
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2025-11-06
+#+URI:         /blog/%y/%m/%d/opus_magnum_solutions
+#+KEYWORDS:    game,puzzle
+#+TAGS:        game,puzzle
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: My Opus Magnum Solutions
+
+* Game info
+** [[https://store.steampowered.com/app/558990/Opus_Magnum/][Opus Magnum on Steam]]
+** Opus Magnum is the latest open-ended puzzle game from Zachtronics, the creators of SpaceChem, Infinifactory, and SHENZHEN I/O. Design and build machines that assemble potions, poisons, and more using the alchemical engineer’s most advanced tool: the transmutation engine!
+* Prologue
+** Stabilized Water (180G, 23, 15)
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+* Chapter I
+* Chapter II
+* Chapter III
+* Chapter IV
+* Chapter V
+* Appendix
