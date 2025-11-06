@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>Opus Magnum - My Solutions - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-François Parent" />
+    <meta name="description" content="My Opus Magnum Solutions" />
+    <meta name="keywords" content="game,puzzle" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="https://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <!--<a href="/about/">About</a>-->
+  <!--<a href="/boudoir/">Boudoir</a>-->
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>Opus Magnum - My Solutions</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0d3db1d">Game info</a></li>
+<li><a href="#org3955ec8">Prologue</a></li>
+<li><a href="#orga8262b8">Chapter I</a></li>
+<li><a href="#org5320877">Chapter II</a></li>
+<li><a href="#org5c933a9">Chapter III</a></li>
+<li><a href="#org62b758d">Chapter IV</a></li>
+<li><a href="#org054fbd3">Chapter V</a></li>
+<li><a href="#orgb315bc7">Appendix</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0d3db1d" class="outline-2">
+<h2 id="org0d3db1d">Game info</h2>
+<div class="outline-text-2" id="text-org0d3db1d">
+</div>
+<div id="outline-container-org2bf2235" class="outline-3">
+<h3 id="org2bf2235"><a href="https://store.steampowered.com/app/558990/Opus_Magnum/">Opus Magnum on Steam</a></h3>
+</div>
+<div id="outline-container-orga703ed7" class="outline-3">
+<h3 id="orga703ed7">Opus Magnum is the latest open-ended puzzle game from Zachtronics, the creators of SpaceChem, Infinifactory, and SHENZHEN I/O. Design and build machines that assemble potions, poisons, and more using the alchemical engineer’s most advanced tool: the transmutation engine!</h3>
+</div>
+</div>
+<div id="outline-container-org3955ec8" class="outline-2">
+<h2 id="org3955ec8">Prologue</h2>
+<div class="outline-text-2" id="text-org3955ec8">
+</div>
+<div id="outline-container-org1562328" class="outline-3">
+<h3 id="org1562328">Stabilized Water (180G, 23, 15)</h3>
+<div class="outline-text-3" id="text-org1562328">
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <h2 class="handle">
+    <label for="handle_1_1">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).gif" />
+    </a>
+  </div>
+</section>
+</div>
+</div>
+</div>
+<div id="outline-container-orga8262b8" class="outline-2">
+<h2 id="orga8262b8">Chapter I</h2>
+</div>
+<div id="outline-container-org5320877" class="outline-2">
+<h2 id="org5320877">Chapter II</h2>
+</div>
+<div id="outline-container-org5c933a9" class="outline-2">
+<h2 id="org5c933a9">Chapter III</h2>
+</div>
+<div id="outline-container-org62b758d" class="outline-2">
+<h2 id="org62b758d">Chapter IV</h2>
+</div>
+<div id="outline-container-org054fbd3" class="outline-2">
+<h2 id="org054fbd3">Chapter V</h2>
+</div>
+<div id="outline-container-orgb315bc7" class="outline-2">
+<h2 id="orgb315bc7">Appendix</h2>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2025-11-06</span>
+        <span title="tags" class="post-info"><a href="/tags/game/">game</a>, <a href="/tags/puzzle/">puzzle</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>

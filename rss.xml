@@ -4,10 +4,17 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Thu, 23 Oct 2025 08:04:11 EDT</pubDate>
-    <lastBuildDate>Thu, 23 Oct 2025 08:04:11 EDT</lastBuildDate>
+    <pubDate>Thu, 06 Nov 2025 15:24:56 EST</pubDate>
+    <lastBuildDate>Thu, 06 Nov 2025 15:24:56 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Opus Magnum - My Solutions</title>
+      <link>https://jf-parent.github.io/blog/2025/11/06/opus_magnum_solutions</link>
+      <description><![CDATA[My Opus Magnum Solutions]]></description>
+      <pubDate>2025-11-06</pubDate>
+      <guid>https://jf-parent.github.io/blog/2025/11/06/opus_magnum_solutions</guid>
+    </item>
     <item>
       <title>20th Century Food Court - Last Call BBS - My Solutions</title>
       <link>https://jf-parent.github.io/blog/2025/01/16/20th-century-food-court---last-call-bbs</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[My A=B Solutions]]></description>
       <pubDate>2022-12-26</pubDate>
       <guid>https://jf-parent.github.io/blog/2022/07/06/a_b_solutions</guid>
-    </item>
-    <item>
-      <title>Plain Text Double-Entry Accounting Using Beancount</title>
-      <link>https://jf-parent.github.io/blog/2021/12/18/plain-text-double-entry-accounting</link>
-      <description><![CDATA[]]></description>
-      <pubDate>2021-12-18</pubDate>
-      <guid>https://jf-parent.github.io/blog/2021/12/18/plain-text-double-entry-accounting</guid>
     </item>
   </channel>
 </rss>
