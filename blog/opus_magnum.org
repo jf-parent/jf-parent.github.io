@@ -16,7 +16,7 @@
 ** Stabilized Water (180G, 23, 15) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_1_1">
   <h2 class="handle">
     <label for="handle_1_1">Scoreboard</label>
   </h2>
@@ -27,7 +27,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_1_1">
   <h2 class="handle">
     <label for="handle_1_1">Solution</label>
   </h2>
@@ -42,9 +42,9 @@
 ** Refined Gold (120G, 74, 9) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_2_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_2_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Refined Gold (120G, 74, 9, 2025-11-04-20-01-16).png" target="_blank">
@@ -53,9 +53,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_2_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_2_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Refined Gold (120G, 74, 9, 2025-11-04-20-01-16).gif" target="_blank">
@@ -67,9 +67,9 @@
 ** Face Powder (100G, 37, 15) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_3_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_3_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Face Powder (100G, 37, 15, 2025-11-04-20-09-23).png" target="_blank">
@@ -78,9 +78,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_3_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_3_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Face Powder (100G, 37, 15, 2025-11-04-20-09-23).gif" target="_blank">
@@ -92,9 +92,9 @@
 ** Waterproof Sealant (130G, 26, 14) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_4_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_4_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Waterproof Sealant (130G, 26, 14, 2025-11-04-20-10-05).png" target="_blank">
@@ -103,9 +103,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_4_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_4_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Waterproof Sealant (130G, 26, 14, 2025-11-04-20-10-05).gif" target="_blank">
@@ -117,9 +117,9 @@
 ** Hangover Cure (120G, 39, 25) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_5_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_5_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Hangover Cure (120G, 39, 25, 2025-11-04-20-10-39).png" target="_blank">
@@ -128,9 +128,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_5_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_5_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Hangover Cure (120G, 39, 25, 2025-11-04-20-10-39).gif" target="_blank">
@@ -142,9 +142,9 @@
 ** Airship Fuel (250G, 36, 29) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_6_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_6_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Airship Fuel (250G, 36, 29, 2025-11-04-20-27-12).png" target="_blank">
@@ -153,9 +153,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_6_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_6_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Airship Fuel (250G, 36, 29, 2025-11-04-20-27-12).gif" target="_blank">
@@ -167,9 +167,9 @@
 ** Precision Machine Oil (180G, 43, 25) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_7_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_7_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Precision Machine Oil (180G, 43, 25, 2025-11-04-20-34-12).png" target="_blank">
@@ -178,9 +178,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_7_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_7_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Precision Machine Oil (180G, 43, 25, 2025-11-04-20-34-12).gif" target="_blank">
@@ -192,9 +192,9 @@
 ** Health Tonic (110G, 32, 32) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_8_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_8_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Health Tonic (110G, 32, 32, 2025-11-04-20-34-52).png" target="_blank">
@@ -203,9 +203,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_8_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_8_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Health Tonic (110G, 32, 32, 2025-11-04-20-34-52).gif" target="_blank">
@@ -217,9 +217,9 @@
 ** Stamina Potion (190G, 49, 68) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_9_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_9_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Stamina Potion (190G, 49, 68, 2025-11-05-19-57-23).png" target="_blank">
@@ -228,9 +228,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_9_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_9_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Stamina Potion (190G, 49, 68, 2025-11-05-19-57-23).gif" target="_blank">
@@ -243,9 +243,9 @@
 ** Hair Product (140G, 51, 19) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_10_1">
   <h2 class="handle">
-    <label for="handle_1_1">Scoreboard</label>
+    <label for="handle_10_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Hair Product (140G, 51, 19, 2025-11-05-20-20-17).png" target="_blank">
@@ -254,9 +254,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="cheched" id="handle_1_1">
+  <input type="checkbox" name="collapse" checked="checked" id="handle_10_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_10_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Hair Product (140G, 51, 19, 2025-11-05-20-20-17).gif" target="_blank">
