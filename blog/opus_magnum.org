@@ -16,7 +16,7 @@
 ** Stabilized Water (180G, 23, 15) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_1_1">
+  <input type="checkbox" name="collapse" id="handle_1_1">
   <h2 class="handle">
     <label for="handle_1_1">Scoreboard</label>
   </h2>
@@ -27,9 +27,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_1_1">
+  <input type="checkbox" name="collapse" id="handle_1_2">
   <h2 class="handle">
-    <label for="handle_1_1">Solution</label>
+    <label for="handle_1_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Stabilized Water (180G, 23, 15, 2025-11-03-20-50-41).gif" target="_blank">
@@ -42,7 +42,7 @@
 ** Refined Gold (120G, 74, 9) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_2_1">
+  <input type="checkbox" name="collapse" id="handle_2_1">
   <h2 class="handle">
     <label for="handle_2_1">Scoreboard</label>
   </h2>
@@ -53,7 +53,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_2_2">
+  <input type="checkbox" name="collapse" id="handle_2_2">
   <h2 class="handle">
     <label for="handle_2_2">Solution</label>
   </h2>
@@ -67,7 +67,7 @@
 ** Face Powder (100G, 37, 15) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_3_1">
+  <input type="checkbox" name="collapse" id="handle_3_1">
   <h2 class="handle">
     <label for="handle_3_1">Scoreboard</label>
   </h2>
@@ -78,7 +78,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_3_2">
+  <input type="checkbox" name="collapse" id="handle_3_2">
   <h2 class="handle">
     <label for="handle_3_2">Solution</label>
   </h2>
@@ -92,7 +92,7 @@
 ** Waterproof Sealant (130G, 26, 14) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_4_1">
+  <input type="checkbox" name="collapse" id="handle_4_1">
   <h2 class="handle">
     <label for="handle_4_1">Scoreboard</label>
   </h2>
@@ -103,7 +103,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_4_2">
+  <input type="checkbox" name="collapse" id="handle_4_2">
   <h2 class="handle">
     <label for="handle_4_2">Solution</label>
   </h2>
@@ -117,7 +117,7 @@
 ** Hangover Cure (120G, 39, 25) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_5_1">
+  <input type="checkbox" name="collapse" id="handle_5_1">
   <h2 class="handle">
     <label for="handle_5_1">Scoreboard</label>
   </h2>
@@ -128,7 +128,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_5_2">
+  <input type="checkbox" name="collapse" id="handle_5_2">
   <h2 class="handle">
     <label for="handle_5_2">Solution</label>
   </h2>
@@ -142,7 +142,7 @@
 ** Airship Fuel (250G, 36, 29) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_6_1">
+  <input type="checkbox" name="collapse" id="handle_6_1">
   <h2 class="handle">
     <label for="handle_6_1">Scoreboard</label>
   </h2>
@@ -153,7 +153,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_6_2">
+  <input type="checkbox" name="collapse" id="handle_6_2">
   <h2 class="handle">
     <label for="handle_6_2">Solution</label>
   </h2>
@@ -167,7 +167,7 @@
 ** Precision Machine Oil (180G, 43, 25) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_7_1">
+  <input type="checkbox" name="collapse" id="handle_7_1">
   <h2 class="handle">
     <label for="handle_7_1">Scoreboard</label>
   </h2>
@@ -178,7 +178,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_7_2">
+  <input type="checkbox" name="collapse" id="handle_7_2">
   <h2 class="handle">
     <label for="handle_7_2">Solution</label>
   </h2>
@@ -192,7 +192,7 @@
 ** Health Tonic (110G, 32, 32) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_8_1">
+  <input type="checkbox" name="collapse" id="handle_8_1">
   <h2 class="handle">
     <label for="handle_8_1">Scoreboard</label>
   </h2>
@@ -203,7 +203,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_8_2">
+  <input type="checkbox" name="collapse" id="handle_8_2">
   <h2 class="handle">
     <label for="handle_8_2">Solution</label>
   </h2>
@@ -217,7 +217,7 @@
 ** Stamina Potion (190G, 49, 68) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_9_1">
+  <input type="checkbox" name="collapse" id="handle_9_1">
   <h2 class="handle">
     <label for="handle_9_1">Scoreboard</label>
   </h2>
@@ -228,7 +228,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_9_2">
+  <input type="checkbox" name="collapse" id="handle_9_2">
   <h2 class="handle">
     <label for="handle_9_2">Solution</label>
   </h2>
@@ -243,7 +243,7 @@
 ** Hair Product (140G, 51, 19) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_10_1">
+  <input type="checkbox" name="collapse" id="handle_10_1">
   <h2 class="handle">
     <label for="handle_10_1">Scoreboard</label>
   </h2>
@@ -254,7 +254,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_10_2">
+  <input type="checkbox" name="collapse" id="handle_10_2">
   <h2 class="handle">
     <label for="handle_10_2">Solution</label>
   </h2>
