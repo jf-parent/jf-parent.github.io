@@ -265,7 +265,357 @@
   </div>
 </section>
 #+END_EXPORT
+** Rocket Propellant (270G, 67, 36) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_10_1">
+  <h2 class="handle">
+    <label for="handle_10_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Rocket Propellant (270G, 67, 36, 2025-11-06-20-32-53).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Rocket Propellant (270G, 67, 36, 2025-11-06-20-32-53).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_10_2">
+  <h2 class="handle">
+    <label for="handle_10_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Rocket Propellant (270G, 67, 36, 2025-11-06-20-32-53).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Rocket Propellant (270G, 67, 36, 2025-11-06-20-32-53).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Mist of Incapacitation (210G, 48, 18) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_11_1">
+  <h2 class="handle">
+    <label for="handle_11_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Mist of Incapacitation (210G, 48, 18, 2025-11-06-20-39-06).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Mist of Incapacitation (210G, 48, 18, 2025-11-06-20-39-06).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_11_2">
+  <h2 class="handle">
+    <label for="handle_11_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Mist of Incapacitation (210G, 48, 18, 2025-11-06-20-39-06).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Mist of Incapacitation (210G, 48, 18, 2025-11-06-20-39-06).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Explosive Phial (190G, 43, 23) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_12_1">
+  <h2 class="handle">
+    <label for="handle_12_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Explosive Phial (190G, 43, 23, 2025-11-07-20-50-14).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Explosive Phial (190G, 43, 23, 2025-11-07-20-50-14).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_12_2">
+  <h2 class="handle">
+    <label for="handle_12_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Explosive Phial (190G, 43, 23, 2025-11-07-20-50-14).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Explosive Phial (190G, 43, 23, 2025-11-07-20-50-14).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Armor Filament (180G, 68, 25) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_13_1">
+  <h2 class="handle">
+    <label for="handle_13_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Armor Filament (180G, 68, 25, 2025-11-07-20-54-40).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Armor Filament (180G, 68, 25, 2025-11-07-20-54-40).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_13_2">
+  <h2 class="handle">
+    <label for="handle_13_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Armor Filament (180G, 68, 25, 2025-11-07-20-54-40).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Armor Filament (180G, 68, 25, 2025-11-07-20-54-40).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Courage Potion (190G, 47, 29) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_14_1">
+  <h2 class="handle">
+    <label for="handle_14_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Courage Potion (190G, 47, 29, 2025-11-08-20-17-31).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Courage Potion (190G, 47, 29, 2025-11-08-20-17-31).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_14_2">
+  <h2 class="handle">
+    <label for="handle_14_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Courage Potion (190G, 47, 29, 2025-11-08-20-17-31).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Courage Potion (190G, 47, 29, 2025-11-08-20-17-31).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Surrender Flare (160G, 54, 45) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_15_1">
+  <h2 class="handle">
+    <label for="handle_15_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Surrender Flare (160G, 54, 45, 2025-11-08-20-56-22).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Surrender Flare (160G, 54, 45, 2025-11-08-20-56-22).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_15_2">
+  <h2 class="handle">
+    <label for="handle_15_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Surrender Flare (160G, 54, 45, 2025-11-08-20-56-22).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Surrender Flare (160G, 54, 45, 2025-11-08-20-56-22).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Chapter III
+** Alcohol Separation (320G, 38, 31) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_16_1">
+  <h2 class="handle">
+    <label for="handle_16_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Alcohol Separation (320G, 38, 31, 2025-11-10-19-36-07).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Alcohol Separation (320G, 38, 31, 2025-11-10-19-36-07).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_16_2">
+  <h2 class="handle">
+    <label for="handle_16_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Alcohol Separation (320G, 38, 31, 2025-11-10-19-36-07).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Alcohol Separation (320G, 38, 31, 2025-11-10-19-36-07).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Water Purifier (170G, 101, 36) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_17_1">
+  <h2 class="handle">
+    <label for="handle_17_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Water Purifier (170G, 101, 36, 2025-11-10-20-00-51).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Water Purifier (170G, 101, 36, 2025-11-10-20-00-51).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_17_2">
+  <h2 class="handle">
+    <label for="handle_17_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Water Purifier (170G, 101, 36, 2025-11-10-20-00-51).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Water Purifier (170G, 101, 36, 2025-11-10-20-00-51).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Seal Solvent (280G, 65, 43) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_18_1">
+  <h2 class="handle">
+    <label for="handle_18_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Seal Solvent (280G, 65, 43, 2025-11-10-20-01-46).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Seal Solvent (280G, 65, 43, 2025-11-10-20-01-46).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_18_2">
+  <h2 class="handle">
+    <label for="handle_18_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Seal Solvent (280G, 65, 43, 2025-11-10-20-01-46).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Seal Solvent (280G, 65, 43, 2025-11-10-20-01-46).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Climbing Rope Fiber (200G, 106, 57) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_19_1">
+  <h2 class="handle">
+    <label for="handle_19_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Climbing Rope Fiber (200G, 106, 57, 2025-11-10-20-09-02).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Climbing Rope Fiber (200G, 106, 57, 2025-11-10-20-09-02).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_19_2">
+  <h2 class="handle">
+    <label for="handle_19_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Climbing Rope Fiber (200G, 106, 57, 2025-11-10-20-09-02).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Climbing Rope Fiber (200G, 106, 57, 2025-11-10-20-09-02).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Warming Tonic (290G, 49, 45) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_20_1">
+  <h2 class="handle">
+    <label for="handle_20_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Warming Tonic (290G, 49, 45, 2025-11-11-20-13-42).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Warming Tonic (290G, 49, 45, 2025-11-11-20-13-42).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_20_2">
+  <h2 class="handle">
+    <label for="handle_20_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Warming Tonic (290G, 49, 45, 2025-11-11-20-13-42).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Warming Tonic (290G, 49, 45, 2025-11-11-20-13-42).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Life-Sensing Potion (440G, 89, 66) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_21_1">
+  <h2 class="handle">
+    <label for="handle_21_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Life-Sensing Potion (440G, 89, 66, 2025-11-12-21-00-49).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Life-Sensing Potion (440G, 89, 66, 2025-11-12-21-00-49).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_21_2">
+  <h2 class="handle">
+    <label for="handle_21_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Life-Sensing Potion (440G, 89, 66, 2025-11-12-21-00-49).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Life-Sensing Potion (440G, 89, 66, 2025-11-12-21-00-49).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Very Dark Thread (380G, 86, 66) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_22_1">
+  <h2 class="handle">
+    <label for="handle_22_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Very Dark Thread (380G, 86, 66, 2025-11-13-21-02-14).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Very Dark Thread (380G, 86, 66, 2025-11-13-21-02-14).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_22_2">
+  <h2 class="handle">
+    <label for="handle_22_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Very Dark Thread (380G, 86, 66, 2025-11-13-21-02-14).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Very Dark Thread (380G, 86, 66, 2025-11-13-21-02-14).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Chapter IV
+** Litharge Separation (170G, 89, 32) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_23_1">
+  <h2 class="handle">
+    <label for="handle_23_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Litharge Separation (170G, 89, 32, 2025-11-14-20-45-56).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Litharge Separation (170G, 89, 32, 2025-11-14-20-45-56).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_23_2">
+  <h2 class="handle">
+    <label for="handle_23_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Litharge Separation (170G, 89, 32, 2025-11-14-20-45-56).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Litharge Separation (170G, 89, 32, 2025-11-14-20-45-56).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Chapter V
 * Appendix
