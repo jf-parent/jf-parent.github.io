@@ -268,9 +268,9 @@
 ** Rocket Propellant (270G, 67, 36) - Fast
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" id="handle_10_1">
+  <input type="checkbox" name="collapse" id="handle_105_1">
   <h2 class="handle">
-    <label for="handle_10_1">Scoreboard</label>
+    <label for="handle_105_1">Scoreboard</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Rocket Propellant (270G, 67, 36, 2025-11-06-20-32-53).png" target="_blank">
@@ -279,9 +279,9 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" id="handle_10_2">
+  <input type="checkbox" name="collapse" id="handle_105_2">
   <h2 class="handle">
-    <label for="handle_10_2">Solution</label>
+    <label for="handle_105_2">Solution</label>
   </h2>
   <div class="content">
     <a href="/media/images/opus_magnum/Opus Magnum - Rocket Propellant (270G, 67, 36, 2025-11-06-20-32-53).gif" target="_blank">
