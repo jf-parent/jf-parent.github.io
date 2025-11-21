@@ -617,5 +617,255 @@
   </div>
 </section>
 #+END_EXPORT
+** Stain Remover (390G, 82, 55) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_24_1">
+  <h2 class="handle">
+    <label for="handle_24_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stain Remover (390G, 82, 55, 2025-11-21-10-33-41).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stain Remover (390G, 82, 55, 2025-11-21-10-33-41).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_24_2">
+  <h2 class="handle">
+    <label for="handle_24_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Stain Remover (390G, 82, 55, 2025-11-21-10-33-41).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Stain Remover (390G, 82, 55, 2025-11-21-10-33-41).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Sword Alloy (365G, 119, 92) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_25_1">
+  <h2 class="handle">
+    <label for="handle_25_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Sword Alloy (365G, 119, 92, 2025-11-15-20-33-16).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Sword Alloy (365G, 119, 92, 2025-11-15-20-33-16).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_25_2">
+  <h2 class="handle">
+    <label for="handle_25_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Sword Alloy (365G, 119, 92, 2025-11-15-20-33-16).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Sword Alloy (365G, 119, 92, 2025-11-15-20-33-16).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Invisible Ink (540G, 57, 56) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_26_1">
+  <h2 class="handle">
+    <label for="handle_26_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Invisible Ink (540G, 57, 56, 2025-11-15-20-58-00).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Invisible Ink (540G, 57, 56, 2025-11-15-20-58-00).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_26_2">
+  <h2 class="handle">
+    <label for="handle_26_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Invisible Ink (540G, 57, 56, 2025-11-15-20-58-00).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Invisible Ink (540G, 57, 56, 2025-11-15-20-58-00).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Purified Gold (680G, 112, 59) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_27_1">
+  <h2 class="handle">
+    <label for="handle_27_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Purified Gold (680G, 112, 59, 2025-11-16-20-53-44).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Purified Gold (680G, 112, 59, 2025-11-16-20-53-44).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_27_2">
+  <h2 class="handle">
+    <label for="handle_27_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Purified Gold (680G, 112, 59, 2025-11-16-20-53-44).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Purified Gold (680G, 112, 59, 2025-11-16-20-53-44).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Alchemical Jewel (330G, 151, 49) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_28_1">
+  <h2 class="handle">
+    <label for="handle_28_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Alchemical Jewel (330G, 151, 49, 2025-11-17-21-00-09).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Alchemical Jewel (330G, 151, 49, 2025-11-17-21-00-09).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_28_2">
+  <h2 class="handle">
+    <label for="handle_28_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Alchemical Jewel (330G, 151, 49, 2025-11-17-21-00-09).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Alchemical Jewel (330G, 151, 49, 2025-11-17-21-00-09).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Golden Thread (440G, 85, 91) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_29_1">
+  <h2 class="handle">
+    <label for="handle_29_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Golden Thread (440G, 85, 91, 2025-11-18-20-54-11).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Golden Thread (440G, 85, 91, 2025-11-18-20-54-11).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_29_2">
+  <h2 class="handle">
+    <label for="handle_29_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Golden Thread (440G, 85, 91, 2025-11-18-20-54-11).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Golden Thread (440G, 85, 91, 2025-11-18-20-54-11).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Chapter V
+** Mist of Hallucination (400G, 68, 39) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_30_1">
+  <h2 class="handle">
+    <label for="handle_30_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Mist of Hallucination (400G, 68, 39, 2025-11-19-20-16-42).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Mist of Hallucination (400G, 68, 39, 2025-11-19-20-16-42).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_30_2">
+  <h2 class="handle">
+    <label for="handle_30_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Mist of Hallucination (400G, 68, 39, 2025-11-19-20-16-42).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Mist of Hallucination (400G, 68, 39, 2025-11-19-20-16-42).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Timing Crystal (245G, 241, 91) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_31_1">
+  <h2 class="handle">
+    <label for="handle_31_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Timing Crystal (245G, 241, 91, 2025-11-19-20-59-06).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Timing Crystal (245G, 241, 91, 2025-11-19-20-59-06).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_31_2">
+  <h2 class="handle">
+    <label for="handle_31_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Timing Crystal (245G, 241, 91, 2025-11-19-20-59-06).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Timing Crystal (245G, 241, 91, 2025-11-19-20-59-06).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Voltaic Coil (460G, 79, 86) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_32_1">
+  <h2 class="handle">
+    <label for="handle_32_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Voltaic Coil (460G, 79, 86, 2025-11-20-20-11-37).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Voltaic Coil (460G, 79, 86, 2025-11-20-20-11-37).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_32_2">
+  <h2 class="handle">
+    <label for="handle_32_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Voltaic Coil (460G, 79, 86, 2025-11-20-20-11-37).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Voltaic Coil (460G, 79, 86, 2025-11-20-20-11-37).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Unstable Compound (375G, 184, 95) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_33_1">
+  <h2 class="handle">
+    <label for="handle_33_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Unstable Compound (375G, 184, 95, 2025-11-20-20-45-51).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Unstable Compound (375G, 184, 95, 2025-11-20-20-45-51).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_33_2">
+  <h2 class="handle">
+    <label for="handle_33_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Unstable Compound (375G, 184, 95, 2025-11-20-20-45-51).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Unstable Compound (375G, 184, 95, 2025-11-20-20-45-51).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Appendix
