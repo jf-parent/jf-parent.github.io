@@ -60,25 +60,25 @@
             <br />
             <section id="post-body">
                 
-<div id="outline-container-org4b17223" class="outline-2">
-<h2 id="org4b17223">Introduction</h2>
-<div class="outline-text-2" id="text-org4b17223">
+<div id="outline-container-orgd9457e3" class="outline-2">
+<h2 id="orgd9457e3">Introduction</h2>
+<div class="outline-text-2" id="text-orgd9457e3">
 </div>
-<div id="outline-container-org3c4b7ec" class="outline-3">
-<h3 id="org3c4b7ec">After reading <a href="https://blog.jethro.dev/posts/capturing_inbox/">Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan</a>, I had to try it out. Below is my current setup for OSX using Firefox to send webpage link to my inbox.org file.</h3>
+<div id="outline-container-orgd2ee366" class="outline-3">
+<h3 id="orgd2ee366">After reading <a href="https://blog.jethro.dev/posts/capturing_inbox/">Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan</a>, I had to try it out. Below is my current setup for OSX using Firefox to send webpage link to my inbox.org file.</h3>
 </div>
 </div>
-<div id="outline-container-org07bff1e" class="outline-2">
-<h2 id="org07bff1e">Emacs deamon</h2>
-<div class="outline-text-2" id="text-org07bff1e">
+<div id="outline-container-org5217f9d" class="outline-2">
+<h2 id="org5217f9d">Emacs deamon</h2>
+<div class="outline-text-2" id="text-org5217f9d">
 </div>
-<div id="outline-container-orgc149c09" class="outline-3">
-<h3 id="orgc149c09">Create the daemon application</h3>
-<div class="outline-text-3" id="text-orgc149c09">
+<div id="outline-container-org640b8df" class="outline-3">
+<h3 id="org640b8df">Create the daemon application</h3>
+<div class="outline-text-3" id="text-org640b8df">
 </div>
-<div id="outline-container-org80e79a6" class="outline-4">
-<h4 id="org80e79a6">Open the Script Editor and paste the following:</h4>
-<div class="outline-text-4" id="text-org80e79a6">
+<div id="outline-container-orgdb3b49b" class="outline-4">
+<h4 id="orgdb3b49b">Open the Script Editor and paste the following:</h4>
+<div class="outline-text-4" id="text-orgdb3b49b">
 <div class="org-src-container">
 <pre class="src src-applescript">tell application "Terminal"
 do shell script "/usr/local/bin/emacs --daemon"
@@ -87,59 +87,59 @@ endtell
 </div>
 </div>
 </div>
-<div id="outline-container-org7ecea93" class="outline-4">
-<h4 id="org7ecea93"><b>Note</b>: Run `which emacs` to find the path of your emacs, mine is /usr/local/bin/emacs.</h4>
+<div id="outline-container-org3a5d795" class="outline-4">
+<h4 id="org3a5d795"><b>Note</b>: Run `which emacs` to find the path of your emacs, mine is /usr/local/bin/emacs.</h4>
 </div>
 </div>
-<div id="outline-container-org2915077" class="outline-3">
-<h3 id="org2915077">Save this as an Application called "Emacs Daemon" in your Applications folder</h3>
+<div id="outline-container-org2cd10ab" class="outline-3">
+<h3 id="org2cd10ab">Save this as an Application called "Emacs Daemon" in your Applications folder</h3>
 </div>
-<div id="outline-container-org143f7d5" class="outline-3">
-<h3 id="org143f7d5">Add as a login item</h3>
-<div class="outline-text-3" id="text-org143f7d5">
+<div id="outline-container-org93286fe" class="outline-3">
+<h3 id="org93286fe">Add as a login item</h3>
+<div class="outline-text-3" id="text-org93286fe">
 </div>
-<div id="outline-container-orgcb1d504" class="outline-4">
-<h4 id="orgcb1d504">Goto System Preferences &gt; Accounts</h4>
-<div class="outline-text-4" id="text-orgcb1d504">
+<div id="outline-container-org7d46419" class="outline-4">
+<h4 id="org7d46419">Goto System Preferences &gt; Accounts</h4>
+<div class="outline-text-4" id="text-org7d46419">
 </div>
 <ul class="org-ul">
-<li><a id="org80efd52"></a>With your user name selected, click on the Login Items tab<br /></li>
-<li><a id="org5f31049"></a>Click on the plus sign<br /></li>
-<li><a id="org15cab14"></a>Browse to your applications folder and find "Emacs Daemon"<br /></li>
-<li><a id="org281a512"></a>Don't worry about the "hide" checkbox, since it the dock icon disappears naturally<br /></li>
+<li><a id="org3762c24"></a>With your user name selected, click on the Login Items tab<br /></li>
+<li><a id="org6ca3fb6"></a>Click on the plus sign<br /></li>
+<li><a id="org703019e"></a>Browse to your applications folder and find "Emacs Daemon"<br /></li>
+<li><a id="org6a84367"></a>Don't worry about the "hide" checkbox, since it the dock icon disappears naturally<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org06c3c47" class="outline-3">
-<h3 id="org06c3c47">Run the script now to start the Emacs Daemon unless you want to relogin.</h3>
+<div id="outline-container-org0cd5f26" class="outline-3">
+<h3 id="org0cd5f26">Run the script now to start the Emacs Daemon unless you want to relogin.</h3>
 </div>
-<div id="outline-container-org251391a" class="outline-3">
-<h3 id="org251391a">Adapted from <a href="https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8">Setting up Emacs daemon on OS X</a></h3>
-</div>
-</div>
-<div id="outline-container-org669c147" class="outline-2">
-<h2 id="org669c147">Emacs client</h2>
-<div class="outline-text-2" id="text-org669c147">
-</div>
-<div id="outline-container-org2aa9d98" class="outline-3">
-<h3 id="org2aa9d98"><i>brew cask install emacsclient</i></h3>
+<div id="outline-container-org0af1c13" class="outline-3">
+<h3 id="org0af1c13">Adapted from <a href="https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8">Setting up Emacs daemon on OS X</a></h3>
 </div>
 </div>
-<div id="outline-container-org065d6af" class="outline-2">
-<h2 id="org065d6af">Org-Capture Firefox Extension</h2>
-<div class="outline-text-2" id="text-org065d6af">
+<div id="outline-container-org9ccb35c" class="outline-2">
+<h2 id="org9ccb35c">Emacs client</h2>
+<div class="outline-text-2" id="text-org9ccb35c">
 </div>
-<div id="outline-container-org2c2adba" class="outline-3">
-<h3 id="org2c2adba">Install <a href="https://addons.mozilla.org/en-US/firefox/addon/org-capture/">Org Capture – Get this Extension for Firefox (en-US)</a></h3>
+<div id="outline-container-org98ee3d1" class="outline-3">
+<h3 id="org98ee3d1"><i>brew cask install emacsclient</i></h3>
 </div>
 </div>
-<div id="outline-container-org64b44ea" class="outline-2">
-<h2 id="org64b44ea">Emacs config</h2>
-<div class="outline-text-2" id="text-org64b44ea">
+<div id="outline-container-org81029c8" class="outline-2">
+<h2 id="org81029c8">Org-Capture Firefox Extension</h2>
+<div class="outline-text-2" id="text-org81029c8">
 </div>
-<div id="outline-container-org023bec1" class="outline-3">
-<h3 id="org023bec1">Add this to your emacs config:</h3>
-<div class="outline-text-3" id="text-org023bec1">
+<div id="outline-container-org87fc8ec" class="outline-3">
+<h3 id="org87fc8ec">Install <a href="https://addons.mozilla.org/en-US/firefox/addon/org-capture/">Org Capture – Get this Extension for Firefox (en-US)</a></h3>
+</div>
+</div>
+<div id="outline-container-orge46c4cc" class="outline-2">
+<h2 id="orge46c4cc">Emacs config</h2>
+<div class="outline-text-2" id="text-orge46c4cc">
+</div>
+<div id="outline-container-orge191f09" class="outline-3">
+<h3 id="orge191f09">Add this to your emacs config:</h3>
+<div class="outline-text-3" id="text-orge191f09">
 <div class="org-src-container">
 <pre class="src src-emacs">(require 'org-protocol)
 
@@ -169,24 +169,24 @@ endtell
 </div>
 </div>
 </div>
-<div id="outline-container-org85c208f" class="outline-2">
-<h2 id="org85c208f">References</h2>
-<div class="outline-text-2" id="text-org85c208f">
+<div id="outline-container-org3795e6a" class="outline-2">
+<h2 id="org3795e6a">References</h2>
+<div class="outline-text-2" id="text-org3795e6a">
 </div>
-<div id="outline-container-org5e4ea52" class="outline-3">
-<h3 id="org5e4ea52"><a href="https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8">Setting up Emacs daemon on OS X</a></h3>
+<div id="outline-container-orgdd99d70" class="outline-3">
+<h3 id="orgdd99d70"><a href="https://gist.github.com/redinger/1394910/c0dc6877c158a13760212dbe10b4abb32ae3c4f8">Setting up Emacs daemon on OS X</a></h3>
 </div>
-<div id="outline-container-org14d5256" class="outline-3">
-<h3 id="org14d5256"><a href="https://blog.jethro.dev/posts/capturing_inbox/">Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan</a></h3>
+<div id="outline-container-org473bd55" class="outline-3">
+<h3 id="org473bd55"><a href="https://blog.jethro.dev/posts/capturing_inbox/">Org-mode Workflow Part 1: Capturing in the Inbox - Jethro Kuan</a></h3>
 </div>
-<div id="outline-container-org5cb56ba" class="outline-3">
-<h3 id="org5cb56ba"><a href="https://github.com/sprig/org-capture-extension">sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs</a></h3>
+<div id="outline-container-orgaeea624" class="outline-3">
+<h3 id="orgaeea624"><a href="https://github.com/sprig/org-capture-extension">sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs</a></h3>
 </div>
-<div id="outline-container-org7608681" class="outline-3">
-<h3 id="org7608681"><a href="https://addons.mozilla.org/en-US/firefox/addon/org-capture/">Org Capture – Get this Extension for Firefox (en-US)</a></h3>
+<div id="outline-container-org36caf40" class="outline-3">
+<h3 id="org36caf40"><a href="https://addons.mozilla.org/en-US/firefox/addon/org-capture/">Org Capture – Get this Extension for Firefox (en-US)</a></h3>
 </div>
-<div id="outline-container-orgdfe51d1" class="outline-3">
-<h3 id="orgdfe51d1"><a href="https://orgmode.org/worg/org-contrib/org-protocol.html">org-protocol.el – Intercept calls from emacsclient to trigger custom actions</a></h3>
+<div id="outline-container-org1f5dc83" class="outline-3">
+<h3 id="org1f5dc83"><a href="https://orgmode.org/worg/org-contrib/org-protocol.html">org-protocol.el – Intercept calls from emacsclient to trigger custom actions</a></h3>
 </div>
 </div>
 
