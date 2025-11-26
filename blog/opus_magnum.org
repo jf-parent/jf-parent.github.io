@@ -868,4 +868,155 @@
   </div>
 </section>
 #+END_EXPORT
+** Curious Lipstick (555G, 193, 142) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_34_1">
+  <h2 class="handle">
+    <label for="handle_34_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Curious Lipstick (555G, 193, 142, 2025-11-21-21-01-05).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Curious Lipstick (555G, 193, 142, 2025-11-21-21-01-05).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_34_2">
+  <h2 class="handle">
+    <label for="handle_34_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Curious Lipstick (555G, 193, 142, 2025-11-21-21-01-05).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Curious Lipstick (555G, 193, 142, 2025-11-21-21-01-05).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Universal Solvent (680G, 264, 135) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_35_1">
+  <h2 class="handle">
+    <label for="handle_35_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Universal Solvent (680G, 264, 135, 2025-11-23-20-21-00).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Universal Solvent (680G, 264, 135, 2025-11-23-20-21-00).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_35_2">
+  <h2 class="handle">
+    <label for="handle_35_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Universal Solvent (680G, 264, 135, 2025-11-23-20-21-00).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Universal Solvent (680G, 264, 135, 2025-11-23-20-21-00).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
 * Appendix
+** Silver Paint (330G, 338, 165) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_36_1">
+  <h2 class="handle">
+    <label for="handle_36_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Silver Paint (330G, 338, 165, 2025-11-23-20-27-43).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Silver Paint (330G, 338, 165, 2025-11-23-20-27-43).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_36_2">
+  <h2 class="handle">
+    <label for="handle_36_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Silver Paint (330G, 338, 165, 2025-11-23-20-27-43).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Silver Paint (330G, 338, 165, 2025-11-23-20-27-43).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+
+** Viscous Sludge (270G, 172, 128) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_37_1">
+  <h2 class="handle">
+    <label for="handle_37_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Viscous Sludge (270G, 172, 128, 2025-11-25-21-12-34).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Viscous Sludge (270G, 172, 128, 2025-11-25-21-12-34).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_37_2">
+  <h2 class="handle">
+    <label for="handle_37_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Viscous Sludge (270G, 172, 128, 2025-11-25-21-12-34).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Viscous Sludge (270G, 172, 128, 2025-11-25-21-12-34).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Fragrant Powders (240G, 367, 135) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_38_1">
+  <h2 class="handle">
+    <label for="handle_38_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Fragrant Powders (240G, 367, 135, 2025-11-23-20-44-52).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Fragrant Powders (240G, 367, 135, 2025-11-23-20-44-52).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_38_2">
+  <h2 class="handle">
+    <label for="handle_38_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Fragrant Powders (240G, 367, 135, 2025-11-23-20-44-52).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Fragrant Powders (240G, 367, 135, 2025-11-23-20-44-52).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
+** Rat Poison (400G, 303, 149) - Fast
+#+BEGIN_EXPORT html
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_39_1">
+  <h2 class="handle">
+    <label for="handle_39_1">Scoreboard</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Rat Poison (400G, 303, 149, 2025-11-24-20-39-25).png" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Rat Poison (400G, 303, 149, 2025-11-24-20-39-25).png" />
+    </a>
+  </div>
+</section>
+<section class="accordion" style="margin: 1em">
+  <input type="checkbox" name="collapse" id="handle_39_2">
+  <h2 class="handle">
+    <label for="handle_39_2">Solution</label>
+  </h2>
+  <div class="content">
+    <a href="/media/images/opus_magnum/Opus Magnum - Rat Poison (400G, 303, 149, 2025-11-24-20-39-25).gif" target="_blank">
+      <img style="height: 100%;" src="/media/images/opus_magnum/Opus Magnum - Rat Poison (400G, 303, 149, 2025-11-24-20-39-25).gif" />
+    </a>
+  </div>
+</section>
+#+END_EXPORT
