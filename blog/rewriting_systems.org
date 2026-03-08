@@ -1,0 +1,448 @@
+#+TITLE:       Rewriting Systems
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2026-03-08
+#+URI:         /blog/%y/%m/%d/rewriting_system
+#+KEYWORDS:    rewriting_system
+#+TAGS:        rewriting_system
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: About rewriting systems
+
+Every program you've ever written is a rewriting system. You just didn't know it.
+
+Consider this:
+
+#+begin_src clojure
+(defn square [x] (* x x))
+#+end_src
+
+You wrote a rule: ~(square x) → (* x x)~. The runtime applies it. The
+expression ~(square 5)~ becomes ~(* 5 5)~, which becomes ~25~. Nothing
+is computed in the way you imagine. Symbols are matched, replaced, and
+the process repeats until nothing left can change. That is the entire
+mechanism. Everything else is detail.
+
+This idea is simpler than it looks, more universal than you'd expect,
+and stranger than you're ready for.
+
+* Rewriting Is Computation
+
+** Peano Axioms
+
+Arithmetic feels fundamental. It isn't. It's rewriting.
+
+The Peano construction defines natural numbers with two symbols: ~0~
+and ~S~ (successor). The number 3 is ~S(S(S(0)))~. Three applications
+of a rule to zero. No magnitude, no quantity. Just structure.
+
+Addition needs only two rewrite rules:
+
+#+begin_example
+Rule 1:  add(0, y)    → y
+Rule 2:  add(S(x), y) → S(add(x, y))
+#+end_example
+
+Watch ~add(S(S(0)), S(0))~ — that is, 2 + 1:
+
+#+begin_example
+  add(S(S(0)), S(0))
+→ S(add(S(0), S(0)))      [Rule 2]
+→ S(S(add(0, S(0))))      [Rule 2]
+→ S(S(S(0)))              [Rule 1]
+#+end_example
+
+Three. No arithmetic was performed. Symbols were shuffled according to
+two rules until they stopped moving. The result was always there,
+folded into the structure of the expression.
+
+In Clojure:
+
+#+begin_src clojure
+(defn peano-add [x y]
+  (if (zero? x)
+    y
+    (inc (peano-add (dec x) y))))
+#+end_src
+
+Every recursive function is a rewriting system in disguise. The base
+case is the rule that stops the rewriting. The recursive case is the
+rule that keeps it going. You didn't compute anything. You rewrote
+symbols until they stopped changing.
+
+** A=B
+
+There is a puzzle game on Steam called [[https://store.steampowered.com/app/1720850/AB/][A=B]]. You are given a set of
+rewrite rules and a starting string. Your goal: reach a target string
+by applying the rules.
+
+A level might look like this:
+
+#+begin_example
+Rules:
+  ab → b
+  bb → a
+
+Start:  aabb
+Goal:   a
+#+end_example
+
+Try it:
+
+#+begin_example
+  aabb
+→ abb     [ab → b, applied at position 1]
+→ bb      [ab → b, applied at position 1]
+→ a       [bb → a]
+#+end_example
+
+That's the whole game. Pick a rule, pick where to apply it, watch the
+string transform. It feels like a word puzzle. It is a word puzzle. It
+is also a proof.
+
+Each step is a valid deduction. The chain from start to goal is a
+derivation. You are doing equational reasoning, the same process that
+drives theorem provers and compilers. Every level is a proof. You just
+don't notice because it feels like play.
+
+The game gets hard. Some levels require dozens of steps. Some rules
+interact in unexpected ways. Some strings look close to the goal but
+are dead ends. This is not an accident. The difficulty comes from a
+real mathematical property: deciding whether a target is reachable
+from a source is, in general, undecidable. The game designers are
+handing you carefully curated instances of an impossible problem.
+
+** Knuth-Bendix Completion
+
+Rewrite rules can conflict. Given these equations:
+
+#+begin_example
+x * 1 = x
+x * inv(x) = 1
+(x * y) * z = x * (y * z)
+#+end_example
+
+Turned into left-to-right rewrite rules, they work — sometimes. But
+what happens when two rules apply to overlapping parts of the same
+term?
+
+Take ~inv(x) * (x * y)~. You could:
+- Rewrite ~inv(x) * x~ to ~1~ using rule 2, getting ~1 * y~, then ~y~.
+- Rewrite ~(inv(x) * x) * y~ using rule 3 first, associating differently.
+
+If both paths don't reach the same result, the system is broken. This
+is called a /critical pair/: two rules claiming the same piece of a
+term.
+
+#+begin_example
+         inv(x) * (x * y)
+            /           \
+           /             \
+     1 * y            inv(x) * (x * y)
+       |              [associativity]
+       y          (inv(x) * x) * y
+                       |
+                     1 * y
+                       |
+                       y
+#+end_example
+
+The diamond closes. Both paths reach ~y~. This pair is fine. But when
+a diamond doesn't close, you need a new rule to force it shut.
+
+The Knuth-Bendix algorithm automates this. It finds all critical
+pairs, checks if they converge, and when they don't, adds new rules to
+make them converge. It feeds the new rules back in and repeats.
+
+#+begin_src clojure
+(defn knuth-bendix [rules]
+  (loop [rs rules]
+    (let [pairs   (critical-pairs rs)
+          failing (remove #(confluent? rs %) pairs)]
+      (if (empty? failing)
+        rs
+        (recur (into rs (map new-rule failing)))))))
+#+end_src
+
+The algorithm doesn't always terminate. Some equation systems have no
+finite confluent rewriting system. But when it works, it produces
+something remarkable: a decision procedure generated mechanically from
+raw equations. An algorithm that writes its own rules.
+
+* Everything Is Pattern Matching
+
+** Maude
+
+What happens when you take rewriting systems completely seriously and
+build a programming language around them?
+
+You get [[https://maude.cs.illinois.edu/][Maude]].
+
+In Maude, there is no control flow. No loops, no if-else chains, no
+sequence of statements. A program is a set of equations and rewrite
+rules. Execution is rewriting. Here is a sorting algorithm:
+
+#+begin_src maude
+fmod SORTING is
+  sort IntList .
+  subsort Int < IntList .
+  op nil : -> IntList .
+  op _,_ : IntList IntList -> IntList [assoc id: nil] .
+
+  vars X Y : Int .
+  var L : IntList .
+
+  eq X, Y, L = Y, X, L [owise] .
+  ceq X, Y, L = X, Y, L if X <= Y .
+endfm
+#+end_src
+
+That's it. Two equations. If ~X <= Y~, leave them alone. Otherwise,
+swap them. Maude applies these rules everywhere it can, repeatedly,
+until the list stops changing. The list is sorted.
+
+#+begin_example
+  3, 1, 4, 1, 5
+→ 1, 3, 4, 1, 5
+→ 1, 3, 1, 4, 5
+→ 1, 1, 3, 4, 5
+#+end_example
+
+No loop counter. No index variable. No swap function. The sorted
+order emerges from the rules the way heat flows from hot to cold: not
+because anything directs it, but because the rules make every other
+configuration unstable. No loops. No branches. Just rules firing
+until nothing matches.
+
+** Wolfram Language
+
+Mathematica's surface looks like a calculator. Underneath, it is a
+rewriting engine.
+
+Symbolic differentiation in four rules:
+
+#+begin_src wolfram
+D[x_, x_] := 1
+D[c_, x_] := 0 /; FreeQ[c, x]
+D[f_ + g_, x_] := D[f, x] + D[g, x]
+D[f_ * g_, x_] := f * D[g, x] + g * D[f, x]
+#+end_src
+
+Feed it ~D[x^2 + 3*x, x]~ and watch the rules fire:
+
+#+begin_example
+  D[x^2 + 3*x, x]
+→ D[x^2, x] + D[3*x, x]           [sum rule]
+→ (2*x*D[x,x]) + (3*D[x,x])      [product rule]
+→ (2*x*1) + (3*1)                  [identity rule]
+→ 2*x + 3
+#+end_example
+
+No algorithm for differentiation exists in the code. The rules /are/
+the algorithm. Each one matches a pattern and emits a replacement.
+Calculus is string manipulation.
+
+It goes further. A cellular automaton is a rewriting system on a
+string of bits:
+
+#+begin_src wolfram
+rule110[{1,1,1}] = 0
+rule110[{1,1,0}] = 1
+rule110[{1,0,1}] = 1
+rule110[{1,0,0}] = 0
+rule110[{0,1,1}] = 1
+rule110[{0,1,0}] = 1
+rule110[{0,0,1}] = 1
+rule110[{0,0,0}] = 0
+#+end_src
+
+#+begin_example
+Generation 0:  0 0 0 0 0 0 1 0 0 0 0 0 0
+Generation 1:  0 0 0 0 0 1 1 0 0 0 0 0 0
+Generation 2:  0 0 0 0 1 1 1 0 0 0 0 0 0
+Generation 3:  0 0 0 1 1 0 1 0 0 0 0 0 0
+Generation 4:  0 0 1 1 1 1 1 0 0 0 0 0 0
+Generation 5:  0 1 1 0 0 0 1 0 0 0 0 0 0
+Generation 6:  1 1 1 0 0 1 1 0 0 0 0 0 0
+#+end_example
+
+Eight rewrite rules on triples of bits. That's all Rule 110 is. It is
+also Turing-complete — capable of simulating any computation.
+Mathematica isn't a calculator. It's a rewriting engine with good
+marketing.
+
+** Church-Rosser
+
+All of this only works cleanly under one condition: /confluence/.
+
+A rewriting system is confluent if, no matter what order you apply the
+rules, you always reach the same final result. The Church-Rosser
+theorem states that the lambda calculus has this property: every term
+that can be reduced to a normal form will reach the same normal form
+regardless of reduction strategy.
+
+#+begin_example
+          a
+         / \
+        /   \
+       b     c
+        \   /
+         \ /
+          d
+#+end_example
+
+That diamond is the promise. Two different paths from ~a~ — maybe you
+reduced the left subexpression first, maybe the right — and they
+converge at ~d~. If every divergence closes like this, order is
+irrelevant. You can be lazy or eager, left-to-right or right-to-left.
+Same answer.
+
+This is why Haskell can use lazy evaluation. The Church-Rosser
+property guarantees that delaying a reduction won't change the result
+(when a result exists). It is why optimizing compilers can reorder
+operations. It is why parallel reduction works.
+
+But most interesting rewriting systems are /not/ confluent. Add
+non-determinism, side effects, or rules that overlap without
+resolution, and the diamond shatters. Order starts to matter.
+Evaluation strategy becomes a design decision with consequences.
+
+Church-Rosser tells you when you can stop worrying. The catch is, you
+usually can't.
+
+* Simple Rules, Alien Consequences
+
+** L-Systems
+
+In 1968, the biologist Aristid Lindenmayer invented a formalism to
+model plant growth. It was a rewriting system. Two rules:
+
+#+begin_example
+A → AB
+B → A
+#+end_example
+
+Start with ~A~. Apply both rules simultaneously to every symbol in
+the string, each generation:
+
+#+begin_example
+Gen 0:  A
+Gen 1:  AB
+Gen 2:  ABA
+Gen 3:  ABAAB
+Gen 4:  ABAABABA
+Gen 5:  ABAABABAABAAB
+Gen 6:  ABAABABAABAABABAABABA
+#+end_example
+
+Count the lengths: 1, 2, 3, 5, 8, 13, 21. The Fibonacci sequence.
+Nobody asked for it. Nobody encoded it. Two replacement rules on two
+symbols, and Fibonacci falls out as a structural inevitability.
+
+Now interpret the symbols as drawing instructions. ~A~: draw forward.
+~B~: draw forward. Add a bracket notation: ~[~ saves position and
+angle, ~]~ restores them. Add ~+~ and ~-~ for turning. A different
+L-system:
+
+#+begin_example
+Axiom:  F
+Rule:   F → F[+F]F[-F]F
+Angle:  25.7°
+#+end_example
+
+After 4 generations:
+
+#+begin_example
+         |
+        /|\
+       / | \
+      |  |  |
+     /|  | /|\
+    / | /|/ | \
+   |  |/ |  |  |
+   | /|  | /|
+   |/ |  |/ |
+   |  |  |  |
+   |  |  |  |
+      |
+      |
+#+end_example
+
+One rule. A tree. Add more rules, adjust the angle, and you get
+grasses, ferns, entire forests. Lindenmayer wasn't programming these
+structures. He was setting initial conditions and letting rewriting do
+the rest.
+
+#+begin_src python
+def l_system(axiom, rules, n):
+    s = axiom
+    for _ in range(n):
+        s = ''.join(rules.get(c, c) for c in s)
+    return s
+
+# Fibonacci system
+print(l_system('A', {'A': 'AB', 'B': 'A'}, 6))
+# ABAABABAABAABABAABABA
+
+# Tree system
+print(l_system('F', {'F': 'F[+F]F[-F]F'}, 3))
+#+end_src
+
+The Python is almost embarrassingly simple. The function is seven
+lines. The output is a forest. One rule. No intelligence. A forest.
+
+** The Edge
+
+Here is where rewriting systems stop being elegant and start being
+alarming.
+
+The /word problem/ for rewriting systems asks: given a set of rules
+and two strings, can one be rewritten into the other? In general, this
+is undecidable. No algorithm can solve it for all cases. This was
+proven independently by Post and Markov in 1947 — four years before
+anyone had a programmable computer to worry about.
+
+Knuth-Bendix completion doesn't always terminate. Some equation
+systems have no finite set of rewrite rules that makes them confluent.
+You can run the algorithm forever, generating new rules, and it will
+never finish. Not because the implementation is bad, but because the
+mathematics doesn't allow it.
+
+Church-Rosser guarantees confluence for the lambda calculus, but not
+for arbitrary systems. Most rewriting systems in the wild are not
+confluent, not terminating, or both.
+
+And then there is Rule 110. Eight rules on triples of bits. It is
+Turing-complete. A one-dimensional rewriting system — the simplest
+possible kind — can simulate any computation that any computer can
+perform. This means it also inherits every impossibility: the halting
+problem, Rice's theorem, Gödel's incompleteness. All of it, from
+eight pattern-matching rules.
+
+The simplest possible rules. The hardest possible questions. That's
+the deal.
+
+-----
+
+Your compiler is a rewriting system. Your regex engine is a rewriting
+system. The spreadsheet formula that computes your quarterly revenue is
+a rewriting system. The muscle memory you use to type these words was
+learned through a process that looks, if you squint, like rewriting
+rules being added and refined until the system converges.
+
+It was rewriting the whole time.
+
+* References and Resources
+
+- Ehrig, H., Mahr, B. /Fundamentals of Algebraic Specification I:
+  Equations and Initial Semantics/. EATCS Monographs on Theoretical
+  Computer Science, Vol. 14. Springer-Verlag, 1985.
+- Baader, F., Nipkow, T. /Term Rewriting and All That/. Cambridge
+  University Press, 1998.
+- Dershowitz, N., Jouannaud, J.-P. "Rewrite Systems." In /Handbook of
+  Theoretical Computer Science/, Vol. B, Elsevier, 1990.
+- Prusinkiewicz, P., Lindenmayer, A. /The Algorithmic Beauty of
+  Plants/. Springer-Verlag, 1990.
+- Clavel, M., et al. /All About Maude/. Springer, 2007.
+- Wolfram, S. /A New Kind of Science/. Wolfram Media, 2002.
+- [[https://store.steampowered.com/app/1720850/AB/][A=B on Steam]]
