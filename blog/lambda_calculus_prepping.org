@@ -1,0 +1,378 @@
+#+TITLE:       How Lambda Calculus Explains Why My Prepping Strategy Is Wrong
+#+AUTHOR:      Jean-François Parent
+#+EMAIL:       parent.j.f@gmail.com
+#+DATE:        2026-03-08
+#+URI:         /blog/%y/%m/%d/lambda_calculus_prepping
+#+KEYWORDS:    lambda_calculus, prepping, functional_programming, survival
+#+TAGS:        lambda_calculus, prepping
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:1 \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: A cross-domain structural analysis of why prepping is a lookup table when it should be a lambda abstraction
+
+I have spent years building a prepping knowledge base. Fallout shelter
+ventilation specs. Sandbag protection factors. Potassium iodide dosing
+charts. An inventory of Faraday cages, dosimeters, water filters, and
+night vision optics. I have lists of lists, contingencies for
+contingencies, and backup plans for backup plans.
+
+I have also spent years studying lambda calculus, rewriting systems, and
+functional programming. And one evening, while reviewing my prepping
+notes and my lambda calculus notes in adjacent Emacs buffers, I realized
+something uncomfortable: *my prepping strategy has the same structural
+flaw as the programming paradigm that lambda calculus was invented to
+replace.*
+
+My prepping is a lookup table. It should be a function.
+
+* The Extensional Prepper
+
+In mathematical logic, there are two ways to define a function.
+
+The *extensional* definition lists every input-output pair. The function
+"double" on the set {1, 2, 3} is defined as: {(1, 2), (2, 4), (3, 6)}.
+You enumerate every case. If someone gives you an input you didn't list,
+you have no answer.
+
+The *intensional* definition gives a rule: /λx. x × 2/. It doesn't care
+what you hand it. Give it 1, give it 10000, give it a number you just
+invented --- it knows what to do, because it encodes the *transformation*,
+not the *cases*.
+
+My prepping strategy is extensional. It looks like this:
+
+| Threat          | Response                              |
+|-----------------+---------------------------------------|
+| Nuclear fallout | Shelter, KI tablets, dosimeter        |
+| EMP             | Faraday cage, manual tools, cash      |
+| Pandemic        | N95 masks, antibiotics, isolation     |
+| Grid failure    | Jackery 1500, bike generator, candles |
+| Economic crash  | Gold, barter goods, food stores       |
+
+For every threat I can imagine, I have prepared a specific response. I
+have essentially written a giant =case= statement over disaster
+scenarios:
+
+#+begin_src scheme
+(define (survive threat)
+  (case threat
+    [(nuclear)   (shelter + ki-tablets + dosimeter)]
+    [(emp)       (faraday-cage + manual-tools + cash)]
+    [(pandemic)  (masks + antibiotics + isolation)]
+    [(grid-down) (jackery + bike-gen + candles)]
+    [(economic)  (gold + barter + food-stores)]
+    [else        ???]))
+#+end_src
+
+That =else= clause is the problem. The universe is not obligated to
+attack me with a scenario I enumerated. And history confirms that the
+disasters which actually kill people are almost never the ones they
+prepared for. The Fukushima engineers prepared for earthquakes /and/
+tsunamis --- but not for both at once knocking out the backup generators.
+COVID didn't look like any pandemic scenario the preppers had gamed.
+
+My lookup table has finite entries. The threat space is unbounded.
+
+* Lambda Abstraction as Survival Strategy
+
+Lambda calculus doesn't enumerate. It /abstracts/. The power of /λx.
+body/ is that =x= is a variable --- it stands for anything. The function
+doesn't know what it will receive, and it doesn't need to. It knows what
+to /do with/ whatever arrives.
+
+What would an intensional prepping strategy look like? Not a table of
+threat-response pairs, but a set of *composable transformation rules*
+that can be applied to any situation:
+
+#+begin_src scheme
+;; Instead of case-matching on threats,
+;; compose general capabilities:
+
+(define assess    (λ (situation) → prioritized-needs))
+(define improvise (λ (need resource-set) → solution))
+(define adapt     (λ (solution feedback) → better-solution))
+
+(define survive
+  (λ (situation)
+    (fix (λ (state)
+           (adapt (improvise (assess state)
+                             (available-resources state))
+                  (observe state))))))
+#+end_src
+
+The =fix= there is deliberate. We'll come back to it.
+
+The key shift: instead of stockpiling *specific responses to specific
+threats*, build *general-purpose transformation capabilities*. Not "I
+have potassium iodide for nuclear fallout," but "I can assess a
+biochemical situation, identify what my body needs, and find or
+synthesize it from available materials."
+
+This isn't just abstract philosophy. It has concrete implications for
+what I should be spending my time on:
+
+| Extensional (stockpile)  | Intensional (capability)                    |
+|--------------------------+---------------------------------------------|
+| 600 lbs of sandbags      | Understanding of radiation physics           |
+| Specific antibiotics     | EMT-level medical assessment skill           |
+| Faraday cage for radio   | Electrical engineering fundamentals          |
+| 6 months of stored food  | Ability to grow, forage, hunt, preserve food |
+| Night vision goggles     | Situational awareness training               |
+| Pre-planned bug-out route | Navigation by map, compass, stars           |
+
+The left column is a lookup table. It works exactly when the threat
+matches the key. The right column is a lambda abstraction. It works on
+inputs I haven't imagined yet.
+
+* Church Encoding: Everything from Almost Nothing
+
+Alonzo Church proved something astonishing in the 1930s. Starting with
+/nothing but function abstraction and application/, you can build:
+
+- Booleans: =TRUE = λx.λy.x=, =FALSE = λx.λy.y=
+- Numbers: =0 = λf.λx.x=, =1 = λf.λx.f x=, =2 = λf.λx.f(f x)=
+- Pairs, lists, conditionals, recursion --- everything
+
+You don't need built-in data types. You don't need a separate
+representation for numbers versus booleans versus lists. *Pure
+transformation rules, composed correctly, generate all the structure you
+need.*
+
+This is a direct rebuke to the prepper mindset of "I need the right
+gear." Church encoding says: you don't need /stuff/. You need /composable
+operations/. With a small set of powerful primitives, you can construct
+whatever you need at the point of need.
+
+What are the Church encodings of survival? What are the minimal
+primitives from which everything else can be composed?
+
+I think they look something like:
+
+1. *Thermoregulation* --- the ability to maintain body temperature in any
+   environment (the survival "Rule of 3" starts here: 3 hours without
+   shelter in harsh conditions)
+2. *Water acquisition* --- finding, purifying, and storing water from any
+   source (3 days without water)
+3. *Caloric intake* --- identifying, acquiring, and processing food from
+   the environment (3 weeks without food)
+4. *Medical assessment* --- recognizing what is wrong with a body and
+   what it needs
+5. *Mechanical reasoning* --- understanding how physical systems work
+   well enough to repair, repurpose, or build them
+
+Five primitives. Like Church's =λ= and application, these compose to
+generate solutions to problems I can't enumerate in advance. I don't
+need a Faraday cage if I understand electromagnetic shielding well enough
+to build one from a filing cabinet and aluminum tape. I don't need a
+pre-stocked medical kit if I can assess symptoms and find medicinal
+plants or synthesize rehydration solutions from salt and sugar.
+
+* Confluence and the Church-Rosser Theorem
+
+Here is where the structural parallel gets interesting.
+
+The Church-Rosser theorem says: if a lambda expression can be reduced by
+two different paths, and both paths terminate, they arrive at the *same
+normal form*.
+
+#+begin_example
+        (λx. x + x) ((λy. y × 3) 2)
+              /                    \
+             /                      \
+   (λx. x + x) 6            ((λy. y × 3) 2) + ((λy. y × 3) 2)
+            \                      /
+             \                    /
+              6 + 6 = 12 = 12
+#+end_example
+
+Both reduction orders yield 12. The system is *confluent*: it doesn't
+matter which step you take first.
+
+This is an extraordinarily desirable property in a survival strategy. A
+confluent prepping strategy means: *regardless of which crisis hits
+first, regardless of which capability you deploy first, you converge on
+the same outcome --- survival.*
+
+My current strategy is not confluent. If I use my nuclear-specific
+supplies for a non-nuclear event, they're wasted. If I use my economic
+prep (gold) to solve a medical problem, I get a bad exchange rate on the
+conversion. Every item in my lookup table is optimized for one specific
+reduction path. There is no guarantee that alternate paths converge.
+
+A capability-based strategy is naturally more confluent. Medical
+assessment skill works whether the injury came from radiation, a
+pandemic, a societal collapse, or a farming accident. Mechanical
+reasoning applies whether I'm repairing a generator, building a water
+filter, or constructing a shelter. The "reduction paths" are different
+(different crises, different resource constraints), but the primitives
+compose to reach the same normal form: sustained life.
+
+* The Y Combinator and Self-Sustaining Systems
+
+The Y combinator is one of the most beautiful constructions in all of
+computer science:
+
+#+begin_src scheme
+Y = λf. (λx. f (x x)) (λx. f (x x))
+#+end_src
+
+It creates *recursion from non-recursive components*. No function in the
+definition calls itself. Yet when you apply =Y= to any function =g=, you
+get =g(g(g(g(...))))= --- infinite self-application. Recursion emerges
+from the /structure of the composition/, not from any component's
+self-referentiality.
+
+This is exactly what a self-sustaining homestead needs to be. No single
+element of the system sustains itself:
+
+- Chickens don't sustain themselves (they need feed, water, shelter)
+- A garden doesn't sustain itself (it needs compost, water, weeding)
+- A compost pile doesn't sustain itself (it needs organic input, turning)
+- A water collection system doesn't sustain itself (it needs
+  maintenance, filtration)
+
+But composed correctly:
+
+#+begin_example
+Garden → food → human energy → maintenance →  Garden
+  ↓                                              ↑
+scraps → Compost → soil amendment ─────────────────┘
+  ↓
+feed → Chickens → eggs → human energy
+         ↓
+       manure → Compost
+#+end_example
+
+Like the Y combinator, no component is self-referential. The recursion
+--- the self-sustaining loop --- is a property of the *composition*, not
+of any individual part.
+
+My prepping strategy has been focused on the components: /what/ to
+stockpile, /which/ chickens to buy, /how much/ water to store. Lambda
+calculus teaches me that the components are less important than the
+*composition*. The right composition can create self-sustaining recursion
+from non-self-sustaining parts. The wrong composition, no matter how
+high-quality the parts, produces a system that eventually halts.
+
+* Beta Reduction as Resource Transformation
+
+In lambda calculus, computation is /β-reduction/: applying a function to
+an argument and substituting.
+
+#+begin_src text
+(λx. x + 1) 5  →β  5 + 1  →  6
+#+end_src
+
+Every survival situation is a chain of β-reductions. You have a
+situation (the argument) and capabilities (the functions), and you apply
+one to the other to transform the situation into something more
+survivable:
+
+#+begin_src text
+(assess nuclear-fallout) →β priority-list: [shelter, water-purity, radiation-monitoring]
+(improvise shelter available-materials) →β basement-with-earth-shielding
+(improvise water-purity available-materials) →β charcoal-sand-filter
+(adapt monitoring observation) →β adjusted-exposure-schedule
+#+end_src
+
+The question isn't whether you have the /right answer/ pre-computed in a
+lookup table. The question is whether your *reduction rules are powerful
+enough* to transform any input into a survivable normal form.
+
+And here is the deepest lesson from lambda calculus: *a small, powerful
+set of reduction rules is strictly more powerful than a large lookup
+table*. Church and Turing proved that lambda calculus, with only
+abstraction and application, is /Turing-complete/ --- it can compute
+anything that is computable. My lookup table, no matter how large, can
+only handle the cases I listed.
+
+* The Halting Problem and Unknowable Futures
+
+Turing's most famous result: there is no general algorithm that can
+decide, for every program and input, whether the program will halt.
+
+Translated to prepping: *there is no preparation strategy that
+guarantees survival against all possible futures*. Some scenarios are
+non-survivable regardless of preparation. Some situations are
+undecidable --- you cannot know in advance whether your strategy will
+"halt" (succeed) or loop forever (fail slowly).
+
+The extensional prepper responds to the halting problem with denial: "If
+I just prepare for /enough/ scenarios, I'll cover everything." This is
+like claiming you can solve the halting problem by testing more inputs.
+It is mathematically impossible.
+
+The intensional prepper responds differently: "I cannot prepare for every
+scenario. But I can build transformation capabilities that maximize the
+/class/ of survivable inputs." This is the lambda calculus response --- not
+claiming to decide every case, but building the most general possible
+reduction rules so that the largest possible class of inputs reaches a
+normal form.
+
+Some expressions in lambda calculus have no normal form. =(λx. x x)(λx.
+x x)= reduces to itself forever. Some disaster scenarios have no
+survival solution. The honest prepper acknowledges this. The strategic
+prepper then asks: for the situations that /are/ survivable, is my
+system confluent and my reduction strategy powerful enough to find the
+normal form?
+
+* What I Am Changing
+
+I am not throwing away my sandbags. Physical supplies have value ---
+they're pre-computed answers that save reduction steps when the threat
+matches the key. A lookup table with a cache is faster than pure
+computation when you get a cache hit.
+
+But I am restructuring my prepping strategy around the lambda calculus
+insight:
+
+1. *Prioritize capabilities over stockpiles.* Every hour spent learning
+   emergency medicine, mechanical repair, foraging, or radio
+   communication is an investment in general-purpose reduction rules.
+   Every dollar spent on single-purpose gear is a cache entry that might
+   never be hit.
+
+2. *Design for confluence.* When I acquire a skill or tool, I now ask:
+   "Does this converge with my other capabilities, or does it only work
+   on one reduction path?" A generator only works when fuel is available.
+   Understanding thermodynamics works in all situations involving heat
+   and energy.
+
+3. *Build Y-combinator loops.* Self-sustaining cycles are more valuable
+   than stockpiles. A garden that feeds the compost that feeds the garden
+   is recursive. A fuel reserve that gets consumed and never regenerated
+   is a straight-line computation heading for termination.
+
+4. *Accept undecidability.* Some futures are not survivable. Spending
+   resources trying to survive the non-survivable is like trying to
+   find a normal form for =(λx. x x)(λx. x x)=. Allocate those
+   resources instead to expanding the class of survivable scenarios.
+
+5. *Keep the cache, but know it's a cache.* My stockpiles are
+   memoized answers to common subproblems. They reduce latency when I
+   get a cache hit. But the real system, the one that handles cache
+   misses, is the set of composable capabilities between my ears.
+
+* The Formal Analogy
+
+For the reader who wants to see the mapping laid out precisely:
+
+| Lambda Calculus             | Prepping                                   |
+|-----------------------------+--------------------------------------------|
+| Lambda abstraction (λx.M)  | A generalizable, trainable skill           |
+| Function application (M N) | Deploying a capability against a situation  |
+| β-reduction                | Transforming a crisis into a more survivable state |
+| Normal form                | Stable survival (homeostasis)              |
+| Church encoding            | Building complex solutions from primitives |
+| Confluence (Church-Rosser) | Strategy works regardless of threat order  |
+| Y combinator               | Self-sustaining resource loops             |
+| Halting problem             | Inherent limits of any prep strategy       |
+| Lookup table / =case=      | Threat-specific stockpiles                 |
+| Turing completeness         | General-purpose capability set             |
+
+The mapping isn't metaphorical. It's structural. Both systems are about
+the same question: *given limited primitives, what is the most powerful
+set of transformation rules you can define?*
+
+Church answered this for computation. The answer applies to survival.
+
+Stop enumerating. Start abstracting.
