@@ -4,10 +4,45 @@
     <title>Jean-François Parent&#39;s Blog</title>
     <link>https://jf-parent.github.io</link>
     <description>Blog</description>
-    <pubDate>Wed, 26 Nov 2025 09:52:56 EST</pubDate>
-    <lastBuildDate>Wed, 26 Nov 2025 09:52:56 EST</lastBuildDate>
+    <pubDate>Sat, 15 Aug 2026 11:17:20 EDT</pubDate>
+    <lastBuildDate>Sat, 15 Aug 2026 11:17:20 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>UVS Nirmana - My Solutions</title>
+      <link>https://jf-parent.github.io/blog/2026/08/15/uvs_nirmana_solutions</link>
+      <description><![CDATA[My UVS Nirmana Solutions]]></description>
+      <pubDate>2026-08-15</pubDate>
+      <guid>https://jf-parent.github.io/blog/2026/08/15/uvs_nirmana_solutions</guid>
+    </item>
+    <item>
+      <title>Why APL Array Operations and Chess Tactical Patterns Are the Same Thing</title>
+      <link>https://jf-parent.github.io/blog/2026/03/08/apl_chess_tactics</link>
+      <description><![CDATA[The structural isomorphism between APL's array operations and chess tactical vision --- both are about applying operations to whole structures, not individual elements]]></description>
+      <pubDate>2026-03-13</pubDate>
+      <guid>https://jf-parent.github.io/blog/2026/03/08/apl_chess_tactics</guid>
+    </item>
+    <item>
+      <title>Category Theory and the Structure of Martial Arts Forms: A Formal Analogy</title>
+      <link>https://jf-parent.github.io/blog/2026/03/08/category_theory_martial_arts</link>
+      <description><![CDATA[How category theory formalizes the deep structure of martial arts forms, revealing that katas are composed morphisms, styles are functors, and a fighter's identity is determined by the Yoneda lemma]]></description>
+      <pubDate>2026-03-13</pubDate>
+      <guid>https://jf-parent.github.io/blog/2026/03/08/category_theory_martial_arts</guid>
+    </item>
+    <item>
+      <title>How Lambda Calculus Explains Why My Prepping Strategy Is Wrong</title>
+      <link>https://jf-parent.github.io/blog/2026/03/08/lambda_calculus_prepping</link>
+      <description><![CDATA[A cross-domain structural analysis of why prepping is a lookup table when it should be a lambda abstraction]]></description>
+      <pubDate>2026-03-13</pubDate>
+      <guid>https://jf-parent.github.io/blog/2026/03/08/lambda_calculus_prepping</guid>
+    </item>
+    <item>
+      <title>Rewriting Systems</title>
+      <link>https://jf-parent.github.io/blog/2026/03/08/rewriting_system</link>
+      <description><![CDATA[About rewriting systems]]></description>
+      <pubDate>2026-03-13</pubDate>
+      <guid>https://jf-parent.github.io/blog/2026/03/08/rewriting_system</guid>
+    </item>
     <item>
       <title>Opus Magnum - My Solutions</title>
       <link>https://jf-parent.github.io/blog/2025/11/06/opus_magnum_solutions</link>
@@ -42,41 +77,6 @@
       <description><![CDATA[My tis-100 Solutions]]></description>
       <pubDate>2025-02-21</pubDate>
       <guid>https://jf-parent.github.io/blog/2022/12/27/tis-100_solutions</guid>
-    </item>
-    <item>
-      <title>Dyalog APL Problem Solving Competition - My Solutions</title>
-      <link>https://jf-parent.github.io/blog/2023/03/31/apl_solutions</link>
-      <description><![CDATA[Dyalog APL Problem Solving Competition - My Solutions]]></description>
-      <pubDate>2025-02-15</pubDate>
-      <guid>https://jf-parent.github.io/blog/2023/03/31/apl_solutions</guid>
-    </item>
-    <item>
-      <title>Bongard Test</title>
-      <link>https://jf-parent.github.io/blog/2024/05/27/bongard</link>
-      <description><![CDATA[Bongard Test]]></description>
-      <pubDate>2024-05-27</pubDate>
-      <guid>https://jf-parent.github.io/blog/2024/05/27/bongard</guid>
-    </item>
-    <item>
-      <title>SuperSharp - Procedural Test (alpha version)</title>
-      <link>https://jf-parent.github.io/blog/2024/05/27/super-sharp</link>
-      <description><![CDATA[SuperSharp - Procedural Test]]></description>
-      <pubDate>2024-05-27</pubDate>
-      <guid>https://jf-parent.github.io/blog/2024/05/27/super-sharp</guid>
-    </item>
-    <item>
-      <title>Comet64 - My Solutions</title>
-      <link>https://jf-parent.github.io/blog/2023/12/16/comet64_solutions</link>
-      <description><![CDATA[My Comet64 Solutions]]></description>
-      <pubDate>2023-12-26</pubDate>
-      <guid>https://jf-parent.github.io/blog/2023/12/16/comet64_solutions</guid>
-    </item>
-    <item>
-      <title>A=B - A one instruction esolang - My Solutions</title>
-      <link>https://jf-parent.github.io/blog/2022/07/06/a_b_solutions</link>
-      <description><![CDATA[My A=B Solutions]]></description>
-      <pubDate>2022-12-26</pubDate>
-      <guid>https://jf-parent.github.io/blog/2022/07/06/a_b_solutions</guid>
     </item>
   </channel>
 </rss>

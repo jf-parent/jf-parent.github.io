@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>Category Theory and the Structure of Martial Arts Forms: A Formal Analogy - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-François Parent" />
+    <meta name="description" content="How category theory formalizes the deep structure of martial arts forms, revealing that katas are composed morphisms, styles are functors, and a fighter&#39;s identity is determined by the Yoneda lemma" />
+    <meta name="keywords" content="category_theory, martial_arts, kung_fu, functors, forms, kata" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="https://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <!--<a href="/about/">About</a>-->
+  <!--<a href="/boudoir/">Boudoir</a>-->
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>Category Theory and the Structure of Martial Arts Forms: A Formal Analogy</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org23d60c8">The Category of Positions</a></li>
+<li><a href="#org20735ed">A Form Is a Composed Morphism</a></li>
+<li><a href="#org0b495e9">Functors: Translation Between Styles</a></li>
+<li><a href="#orgb0534b4">Natural Transformations: Systematic Adaptation</a></li>
+<li><a href="#org79453ad">The Yoneda Lemma: You Are Your Relationships</a></li>
+<li><a href="#org1464d92">Products and Coproducts: Simultaneous and Alternative Action</a></li>
+<li><a href="#orgf035fa8">Monads: The Structure of Training Drills</a></li>
+<li><a href="#org87ea5af">Why This Matters</a></li>
+<li><a href="#org321984a">The Formal Analogy</a></li>
+</ul>
+</div>
+</div>
+<p>
+I trained Kung Fu for nine years under Claude Daneau. I have also spent
+a significant amount of time working through Bartosz Milewski's
+<i>Category Theory for Programmers</i>, all three parts, plus the illustrated
+guides and the MIT applied course.
+</p>
+
+<p>
+These two bodies of knowledge sat in separate rooms of my mind for a
+long time. Kung Fu was body. Category theory was abstraction. Then one
+day I was thinking about why certain transitions between stances feel
+inevitable --- why a horse stance <i>wants</i> to become a bow stance when you
+commit to a direction --- and I recognized the structure. I had seen it
+in a commutative diagram.
+</p>
+
+<p>
+Martial arts forms are not choreography. They are composed morphisms in a
+category. And the entire apparatus of category theory --- functors,
+natural transformations, the Yoneda lemma --- maps onto the structure of
+combat with a precision that is not metaphorical but formal.
+</p>
+
+<div id="outline-container-org23d60c8" class="outline-2">
+<h2 id="org23d60c8">The Category of Positions</h2>
+<div class="outline-text-2" id="text-org23d60c8">
+<p>
+A category requires three things: <b>objects</b>, <b>morphisms</b> between objects,
+and <b>composition</b> of morphisms that is associative and has identities.
+</p>
+
+<p>
+In martial arts, the category <b>Pos</b> is defined as follows:
+</p>
+
+<ul class="org-ul">
+<li><b>Objects</b> are body configurations: stances, guards, positions. Horse
+stance. Bow stance. Cat stance. Front guard. Closed guard. Mount.
+Turtle. Each is a distinct object in the category.</li>
+
+<li><b>Morphisms</b> are transitions: techniques that take you from one position
+to another. A front kick from fighting stance to extended stance is a
+morphism <code>fighting → extended</code>. A hip throw from clinch to mount is a
+morphism <code>clinch → mount</code>. A step-through punch from bow stance left
+to bow stance right is a morphism <code>bow-L → bow-R</code>.</li>
+
+<li><b>Composition</b> is chaining. If I have a morphism <code>f: A → B</code> (a
+technique from stance A to stance B) and a morphism <code>g: B → C</code> (a
+technique from B to C), then <code>g ∘ f: A → C</code> is the combined
+technique from A to C.</li>
+</ul>
+
+<pre class="example" id="org820100c">
+Objects:     Horse ── Bow-L ── Bow-R ── Cat ── Crane
+                 \      |    ×    |      /
+Morphisms:    step  lunge  reverse  shift  lift
+                 \      |    ×    |      /
+              (every arrow is a technique)
+</pre>
+
+<p>
+The axioms hold:
+</p>
+</div>
+
+<div id="outline-container-org3ece55a" class="outline-3">
+<h3 id="org3ece55a">Associativity</h3>
+<div class="outline-text-3" id="text-org3ece55a">
+<p>
+If I chain three techniques --- <i>f</i> from horse to bow, <i>g</i> from bow to
+cat, <i>h</i> from cat to crane --- it doesn't matter how I group them:
+</p>
+
+<pre class="example" id="orgfc98d9c">
+h ∘ (g ∘ f) = (h ∘ g) ∘ f
+</pre>
+
+<p>
+Whether I think of it as "step into bow <i>then</i> shift-and-lift to crane"
+or "step-and-shift to cat <i>then</i> lift to crane," the physical result is
+the same sequence of body positions. The grouping is mental; the path
+through configuration space is unique.
+</p>
+
+<p>
+Any martial artist who has practiced a long form knows this intuitively.
+You can "chunk" a form differently on different days --- group the first
+three moves, then the next five, or the first four then the next four
+--- and the form itself doesn't change. That's associativity.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org083bbae" class="outline-3">
+<h3 id="org083bbae">Identity</h3>
+<div class="outline-text-3" id="text-org083bbae">
+<p>
+Every position has an identity morphism: <b>staying in that position</b>. The
+identity on horse stance is maintaining horse stance. The identity on
+guard is maintaining guard.
+</p>
+
+<p>
+This is not trivial. In training, we spend enormous time on identities.
+Holding horse stance for five minutes. Maintaining guard under pressure.
+The identity morphism <code>id: A → A</code> is the foundation of every
+position --- the answer to the question "what do I do if nothing is
+happening?" The answer: hold. Persist. The identity is not the absence
+of technique. It is the most fundamental technique of all.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org20735ed" class="outline-2">
+<h2 id="org20735ed">A Form Is a Composed Morphism</h2>
+<div class="outline-text-2" id="text-org20735ed">
+<p>
+A kata (in karate), a taolu (in kung fu), a poomsae (in taekwondo) is a
+sequence of techniques starting from a position and returning to it.
+Formally:
+</p>
+
+<pre class="example" id="org86d9159">
+Form = fₙ ∘ fₙ₋₁ ∘ ... ∘ f₂ ∘ f₁ : Ready → Ready
+</pre>
+
+<p>
+where each <code>fᵢ : Posᵢ₋₁ → Posᵢ</code> is a single technique, <code>Pos₀ =
+Ready</code>, and <code>Posₙ = Ready</code>.
+</p>
+
+<p>
+A form is an <b>endomorphism</b> on the ready position. It is a loop in the
+category --- a path that starts and ends at the same object. The
+collection of all forms starting and ending at Ready constitutes a
+<b>monoid</b> under composition: the monoid <code>End(Ready)</code>.
+</p>
+
+<p>
+This immediately gives us a formal framework for comparing forms:
+</p>
+
+<ul class="org-ul">
+<li>Two forms are <b>equal</b> if they traverse the same sequence of positions
+via the same morphisms.</li>
+<li>Two forms are <b>equivalent</b> if they can be connected by a sequence of
+valid substitutions (replacing one sub-sequence with another that has
+the same source and target positions).</li>
+<li>A form is <b>reducible</b> if it contains a sub-sequence that can be
+simplified --- if <code>g ∘ f</code> between two positions has a single morphism
+<code>h</code> that accomplishes the same transition. This is how advanced
+practitioners "shorten" techniques: they find composed morphisms that
+reduce to a single efficient transition.</li>
+</ul>
+
+<p>
+The last point is key. When Claude Daneau said "stop doing two
+movements, make it one" --- that's reduction of a composed morphism. When
+a senior student's form looks shorter and more fluid than a beginner's
+form, it's because the senior student has found reductions that
+compress <code>g ∘ f</code> into a single <code>h</code>, where the beginner still executes
+each morphism separately.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b495e9" class="outline-2">
+<h2 id="org0b495e9">Functors: Translation Between Styles</h2>
+<div class="outline-text-2" id="text-org0b495e9">
+<p>
+A functor <code>F: C → D</code> maps objects to objects and morphisms to morphisms,
+preserving composition and identities.
+</p>
+
+<p>
+Between martial arts styles, functors are <b>style translations</b>. Consider
+a functor <code>F: KungFu → Karate</code>. It must:
+</p>
+
+<ol class="org-ol">
+<li>Map every Kung Fu position to a Karate position: <code>F(horse stance) =
+   kiba-dachi</code>, <code>F(bow stance) = zenkutsu-dachi</code>, <code>F(cat stance) =
+   neko-ashi-dachi</code>.</li>
+
+<li>Map every Kung Fu technique to a Karate technique: <code>F(straight punch)
+   = choku-zuki</code>, <code>F(front kick) = mae-geri</code>.</li>
+
+<li><b>Preserve composition</b>: if Kung Fu chains a punch into a kick, the
+Karate translation must chain the translated punch into the
+translated kick. <code>F(kick ∘ punch) = F(kick) ∘ F(punch)</code>.</li>
+
+<li><b>Preserve identities</b>: holding horse stance in Kung Fu maps to
+holding kiba-dachi in Karate. <code>F(id_{horse}) = id_{kiba-dachi}</code>.</li>
+</ol>
+
+<p>
+This is not a loose metaphor. Style translation that violates the
+functor laws is <i>bad</i> translation. If I tell a Karate student to do the
+"Kung Fu equivalent" of a kata, and my translation doesn't preserve
+composition --- if the techniques don't chain the same way in the
+translated version --- then the form breaks. Positions that should
+connect don't. Transitions that should flow, stutter.
+</p>
+
+<p>
+Every martial artist who has cross-trained knows the difference between a
+good style translation and a bad one. A good translation preserves the
+<b>logic</b> of the form even as the surface vocabulary changes. That's the
+functor law. A bad translation converts move-by-move without checking
+that the compositions still hold --- and produces a form that looks
+right in pieces but feels wrong as a whole.
+</p>
+</div>
+
+<div id="outline-container-org8d94e41" class="outline-3">
+<h3 id="org8d94e41">Faithful, Full, and Forgetful Functors</h3>
+<div class="outline-text-3" id="text-org8d94e41">
+<p>
+The functor types from category theory map precisely to types of style
+relationships:
+</p>
+
+<ul class="org-ul">
+<li>A <b>faithful functor</b> is an injective mapping: different techniques stay
+different. <code>KungFu → MMA</code> is faithful if no two distinct Kung Fu
+techniques collapse into the same MMA technique.</li>
+
+<li>A <b>full functor</b> is a surjective mapping: every technique in the target
+is hit. <code>AllMartialArts → MMA</code> is full if every MMA technique comes
+from some martial art.</li>
+
+<li>A <b>forgetful functor</b> drops structure. <code>KungFu → SelfDefense</code> forgets
+the stances, the forms, the aesthetic --- and retains only the
+morphisms that produce defensive outcomes. When a Kung Fu practitioner
+"applies" their art to a real fight, they are implicitly applying a
+forgetful functor that strips away everything non-functional.</li>
+</ul>
+
+<p>
+The forgetful functor is the most important one. It is the answer to "but
+does it work in a real fight?" The forgetful functor <code>F: Style →
+Combat</code> forgets the rituals, the belts, the tradition, and maps into the
+raw category of body mechanics under resistance. Styles that produce
+rich, functional images under this functor are "effective." Styles whose
+image collapses --- where many techniques map to the same ineffective
+movement, or where compositions break under pressure --- are not.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb0534b4" class="outline-2">
+<h2 id="orgb0534b4">Natural Transformations: Systematic Adaptation</h2>
+<div class="outline-text-2" id="text-orgb0534b4">
+<p>
+If <code>F</code> and <code>G</code> are two functors from KungFu to SelfDefense --- two
+different ways to apply Kung Fu to real situations --- a natural
+transformation <code>α: F ⇒ G</code> is a systematic way to convert from one
+application to the other, <b>for every position</b>, such that the conversion
+commutes with every technique.
+</p>
+
+<pre class="example" id="org03f1a89">
+           F(punch)
+F(guard) ──────────→ F(extended)
+   |                      |
+α_guard              α_extended
+   |                      |
+   ↓                      ↓
+G(guard) ──────────→ G(extended)
+           G(punch)
+</pre>
+
+<p>
+The diagram must commute: converting from interpretation F to
+interpretation G <i>before</i> executing a technique gives the same result as
+executing the technique <i>then</i> converting.
+</p>
+
+<p>
+What does this look like in practice? Consider two ways to apply Kung Fu
+to self-defense:
+</p>
+
+<ul class="org-ul">
+<li><code>F</code>: classical application. Horse stance maps to a square-on power
+base. Straight punch maps to a committed linear strike.</li>
+<li><code>G</code>: modern application. Horse stance maps to a lower sprawl base.
+Straight punch maps to a jab from an angled guard.</li>
+</ul>
+
+<p>
+A natural transformation <code>α: F ⇒ G</code> would be a systematic "modernization
+adjustment" that converts every classical application to its modern
+equivalent in a way that preserves the technique sequences. If the
+modernization of the guard and the modernization of the extended position
+are consistent with the modernization of the punch that connects them,
+then <code>α</code> is natural.
+</p>
+
+<p>
+When an instructor says "same technique, but from here instead of here"
+--- adjusting a student's guard while maintaining the same attack sequence
+--- they are constructing a component of a natural transformation. When
+this adjustment is <b>systematic</b> (the same principle applies to every
+position in the form), it is natural in the precise categorical sense.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org79453ad" class="outline-2">
+<h2 id="org79453ad">The Yoneda Lemma: You Are Your Relationships</h2>
+<div class="outline-text-2" id="text-org79453ad">
+<p>
+The Yoneda lemma is the deepest result in basic category theory. It
+says: <b>an object is completely determined by its morphisms to all other
+objects.</b>
+</p>
+
+<p>
+You don't need to look inside an object. You don't need to know what it
+"is." You only need to know its <b>relationships</b> --- every morphism from
+it to every other object --- and this data uniquely determines it up to
+isomorphism.
+</p>
+
+<p>
+Formally, for an object <code>A</code> in a category <code>C</code>:
+</p>
+
+<pre class="example" id="org771638c">
+A ≅ Hom(A, ─)
+</pre>
+
+<p>
+<code>A</code> is isomorphic to the functor that sends each object <code>B</code> to the set
+of morphisms from <code>A</code> to <code>B</code>.
+</p>
+
+<p>
+In the category of positions, the Yoneda lemma says: <b>a stance is
+completely determined by everything you can do from it.</b>
+</p>
+
+<p>
+You don't need to describe horse stance by its biomechanics (feet
+shoulder-width, knees bent, weight centered). You can determine it
+entirely by enumerating: from horse stance, I can throw a side kick (→
+extended), I can step forward into bow stance (→ bow), I can drop into a
+sweep (→ ground), I can rise into crane (→ crane), I can hold (→ horse).
+This collection of available transitions --- the hom-set <code>Hom(Horse,
+─)</code> --- is the stance. Change any of these morphisms and you have a
+different stance.
+</p>
+
+<p>
+This is profound because it matches a deep truth about martial arts
+training. Beginners learn stances as static shapes: "put your feet here,
+bend your knees this much." They describe objects by their internal
+structure. Advanced practitioners understand stances as <b>transition
+hubs</b>: horse stance is the place from which these ten techniques are
+available. The stance is defined not by how it looks but by what it
+<i>enables</i>. The advanced practitioner has internalized the Yoneda lemma.
+</p>
+
+<p>
+When Claude Daneau corrected my horse stance, he never said "your feet
+are wrong." He said "from there, you can't kick." He was telling me that
+my <code>Hom(Horse, ─)</code> was deficient --- that I had lost morphisms.
+Correcting the stance meant restoring the full hom-set. That's Yoneda.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1464d92" class="outline-2">
+<h2 id="org1464d92">Products and Coproducts: Simultaneous and Alternative Action</h2>
+<div class="outline-text-2" id="text-org1464d92">
+<p>
+Category theory has universal constructions for combining objects:
+</p>
+
+<ul class="org-ul">
+<li>The <b>product</b> <code>A × B</code> captures doing two things simultaneously.</li>
+<li>The <b>coproduct</b> <code>A + B</code> captures having two alternatives.</li>
+</ul>
+
+<p>
+In martial arts:
+</p>
+
+<ul class="org-ul">
+<li>A <b>product technique</b> is a simultaneous action: block-and-strike. The
+classic Kung Fu <code>pak sao</code> (slap block) simultaneous with a straight
+punch is a product morphism <code>block × punch: Guard → Striking</code>. The
+product exists when the body can execute both transitions at once
+without conflict.</li>
+
+<li>A <b>coproduct position</b> is a decision point: from this stance, I can
+kick <i>or</i> punch, and the choice is deferred until the opponent's
+action forces a commitment. The coproduct <code>Kick + Punch</code> from a given
+position represents the sum of available options.</li>
+</ul>
+
+<p>
+A well-designed form maximizes both. It places you in positions with rich
+coproducts (many options) and teaches product morphisms (simultaneous
+actions) that compress two sequential transitions into one. The "economy
+of motion" that every martial arts instructor preaches is, formally, the
+preference for product morphisms over sequential composition --- doing
+<code>f × g</code> in one beat rather than <code>g ∘ f</code> in two.
+</p>
+
+<p>
+This is also why certain stances are more fundamental than others. Horse
+stance and bow stance appear in every style because they have the
+richest coproducts --- the most morphisms out. In categorical terms,
+they are objects with the largest hom-sets. A crane stance, by contrast,
+is specialized: fewer transitions available, smaller coproduct. You pass
+through crane; you <i>live in</i> horse.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf035fa8" class="outline-2">
+<h2 id="orgf035fa8">Monads: The Structure of Training Drills</h2>
+<div class="outline-text-2" id="text-orgf035fa8">
+<p>
+A monad in category theory is an endofunctor <code>T: C → C</code> equipped with
+two natural transformations: <code>η: Id → T</code> (unit) and <code>μ: T² → T</code>
+(multiplication), satisfying coherence laws.
+</p>
+
+<p>
+In programming, monads wrap values in a context. In martial arts, drills
+wrap techniques in a training context.
+</p>
+
+<p>
+Consider the "drill monad" <code>D</code>:
+</p>
+
+<ul class="org-ul">
+<li><code>D(technique)</code> is that technique performed as a drill: repeated,
+against resistance, with feedback.</li>
+<li><code>η(technique)</code> embeds a raw technique into the drill context:
+"now practice this."</li>
+<li><code>μ(D(D(technique)))</code> flattens a drill-within-a-drill: if I drill
+the drill of a technique, that's just a more intense drill of the
+technique. <code>μ</code> compresses nested training contexts into a single
+context.</li>
+</ul>
+
+<p>
+The monadic bind <code>&gt;&gt;=</code> chains drills:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">punch-drill &gt;&gt;= (λresult. if clean then kick-drill else punch-drill)
+</pre>
+</div>
+
+<p>
+Execute the punch drill; if the result is clean technique, proceed to
+the kick drill; otherwise, repeat. This is precisely how structured
+martial arts training works: drills are chained, with the output of each
+drill determining the next step. The monad laws ensure that the chaining
+is associative and that embedding a technique into a drill and
+immediately extracting it gives back the technique.
+</p>
+
+<p>
+The instructor who designs a training session is composing in the Kleisli
+category of the drill monad. They are chaining context-aware
+transformations, where each drill produces not just a refined technique
+but also metadata (quality assessment, fatigue level, focus) that
+determines the next drill.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org87ea5af" class="outline-2">
+<h2 id="org87ea5af">Why This Matters</h2>
+<div class="outline-text-2" id="text-org87ea5af">
+<p>
+This is not an exercise in applying fancy words to simple things. The
+category-theoretic framing reveals structural properties that are
+invisible without it:
+</p>
+
+<ol class="org-ol">
+<li><b>Forms are endomorphisms, not sequences.</b> Thinking of a form as a
+loop <code>Ready → Ready</code> rather than a list of moves changes how you
+practice it. The form has algebraic properties (it can be composed
+with other forms, it has an inverse if reversible, it generates a
+monoid). You can ask: what is the <i>kernel</i> of this form? Which
+sub-sequences are equivalent?</li>
+
+<li><b>Style comparison requires functor laws.</b> Asking "is Kung Fu or
+Karate better?" is a type error. The question is: which functor into
+the Combat category has the richer image? Which style translation
+preserves the most compositional structure under pressure?</li>
+
+<li><b>The Yoneda perspective changes training.</b> If a stance is its
+hom-set, then learning a stance means learning every morphism out of
+it. A stance you "know" with only three available techniques is a
+stance you have a partial representation of. Mastery is completing
+the hom-functor.</li>
+
+<li><b>Products beat sequential composition.</b> The formal language gives a
+precise account of why simultaneous block-strike is superior to
+block-then-strike: it's a product morphism versus a composed pair,
+and the product has strictly better time complexity.</li>
+
+<li><b>Cross-style synthesis is a colimit.</b> The modern MMA project --- take
+the best from every style --- is, categorically, an attempt to
+construct the colimit of the diagram of all martial arts styles
+connected by style-translation functors. The colimit, if it exists,
+is the universal style that every other style maps into. Whether MMA
+actually achieves this colimit is an open question --- and category
+theory tells you what conditions would need to hold for it to work.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org321984a" class="outline-2">
+<h2 id="org321984a">The Formal Analogy</h2>
+<div class="outline-text-2" id="text-org321984a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Category Theory</th>
+<th scope="col" class="org-left">Martial Arts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Object</td>
+<td class="org-left">Stance / position / guard</td>
+</tr>
+
+<tr>
+<td class="org-left">Morphism</td>
+<td class="org-left">Technique / transition</td>
+</tr>
+
+<tr>
+<td class="org-left">Composition (g ∘ f)</td>
+<td class="org-left">Chaining techniques</td>
+</tr>
+
+<tr>
+<td class="org-left">Identity morphism</td>
+<td class="org-left">Holding a position</td>
+</tr>
+
+<tr>
+<td class="org-left">Endomorphism (A → A)</td>
+<td class="org-left">A complete form / kata</td>
+</tr>
+
+<tr>
+<td class="org-left">Category</td>
+<td class="org-left">A martial arts style (all positions + techniques)</td>
+</tr>
+
+<tr>
+<td class="org-left">Functor</td>
+<td class="org-left">Style translation</td>
+</tr>
+
+<tr>
+<td class="org-left">Faithful functor</td>
+<td class="org-left">Translation preserving distinctness</td>
+</tr>
+
+<tr>
+<td class="org-left">Forgetful functor</td>
+<td class="org-left">Applying a style to real combat</td>
+</tr>
+
+<tr>
+<td class="org-left">Natural transformation</td>
+<td class="org-left">Systematic adaptation of an application method</td>
+</tr>
+
+<tr>
+<td class="org-left">Yoneda lemma</td>
+<td class="org-left">A stance is defined by what you can do from it</td>
+</tr>
+
+<tr>
+<td class="org-left">Hom-set Hom(A, B)</td>
+<td class="org-left">All techniques from position A to position B</td>
+</tr>
+
+<tr>
+<td class="org-left">Product (A × B)</td>
+<td class="org-left">Simultaneous action (block-and-strike)</td>
+</tr>
+
+<tr>
+<td class="org-left">Coproduct (A + B)</td>
+<td class="org-left">Decision point (kick-or-punch)</td>
+</tr>
+
+<tr>
+<td class="org-left">Monad</td>
+<td class="org-left">Training drill context</td>
+</tr>
+
+<tr>
+<td class="org-left">Kleisli composition</td>
+<td class="org-left">Chaining drills with conditional progression</td>
+</tr>
+
+<tr>
+<td class="org-left">Colimit</td>
+<td class="org-left">Cross-style synthesis (MMA)</td>
+</tr>
+
+<tr>
+<td class="org-left">Isomorphism</td>
+<td class="org-left">Stances equivalent in all functional respects</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The mapping is structural, not decorative. It provides a formal language
+for questions that martial artists ask in informal terms every day: What
+makes a stance fundamental? When is a style translation faithful? What
+does it mean to truly know a position? Why do simultaneous techniques
+feel more advanced than sequential ones?
+</p>
+
+<p>
+Category theory doesn't teach you to fight. But it reveals the algebra
+beneath the art --- and if you have spent nine years learning the art and
+several years learning the algebra, you eventually recognize that they
+are the same structure viewed from different sides.
+</p>
+</div>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2026-03-08</span>
+        <span title="tags" class="post-info"><a href="/tags/category_theory/">category_theory</a>, <a href="/tags/martial_arts/">martial_arts</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>

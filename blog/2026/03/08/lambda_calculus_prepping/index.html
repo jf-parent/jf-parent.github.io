@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <title>How Lambda Calculus Explains Why My Prepping Strategy Is Wrong - Jean-François Parent&#39;s Blog</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jean-François Parent" />
+    <meta name="description" content="A cross-domain structural analysis of why prepping is a lookup table when it should be a lambda abstraction" />
+    <meta name="keywords" content="lambda_calculus, prepping, functional_programming, survival" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154154057-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-154154057-1');
+  </script>
+  <script async src="https://code.jquery.com/jquery-latest.min.js" async></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="/media/js/main.js"></script>
+  <script async src="/media/highlight/highlight.pack.js"></script>
+  <script>
+   hljs.initHighlightingOnLoad();
+   document.querySelectorAll('pre.src').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+  </script>
+  <link rel="shortcut icon" href="/media/images/penrose_rhombus_tiling.ico" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="/media/highlight/styles/railscasts.css">
+  <style type="text/css">
+   /* Mathjax */
+   .MathJax_Display {
+     background: white !important;
+   }
+  </style>
+</head>
+
+  <body class="container">
+    <nav class="main-nav">
+  <a href="/">
+    <img class="home-logo" src="/media/images/penrose_rhombus_tiling.png" />
+  </a>
+  <a href="/tags">Tags</a>
+  <!--<a href="/about/">About</a>-->
+  <!--<a href="/boudoir/">Boudoir</a>-->
+  <a href="https://github.com/jf-parent" target="_blank"><i style="font-size: 30px;" class="fab fa-github-square"></i></a>
+  <a href="https://twitter.com/hacker_pyrat" target="_blank"><i style="font-size: 30px;" class="fab fa-twitter-square"></i></a>
+  <a href="https://www.linkedin.com/in/parentjf/" target="_blank"><i style="font-size: 30px;" class="fab fa-linkedin"></i></a>
+</nav>
+
+    <div>
+    <section id="wrapper">
+        <article class="post">
+            <header>
+                    <h1>How Lambda Calculus Explains Why My Prepping Strategy Is Wrong</h1>
+            </header>
+            <br />
+            <section id="post-body">
+                <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3e64849">The Extensional Prepper</a></li>
+<li><a href="#org748a4e5">Lambda Abstraction as Survival Strategy</a></li>
+<li><a href="#orgea7d31e">Church Encoding: Everything from Almost Nothing</a></li>
+<li><a href="#orgb9e8dd4">Confluence and the Church-Rosser Theorem</a></li>
+<li><a href="#org448f07c">The Y Combinator and Self-Sustaining Systems</a></li>
+<li><a href="#org3be9e69">Beta Reduction as Resource Transformation</a></li>
+<li><a href="#org737e27b">The Halting Problem and Unknowable Futures</a></li>
+<li><a href="#orgaf60c48">What I Am Changing</a></li>
+<li><a href="#orgf793ba6">The Formal Analogy</a></li>
+</ul>
+</div>
+</div>
+<p>
+I have spent years building a prepping knowledge base. Fallout shelter
+ventilation specs. Sandbag protection factors. Potassium iodide dosing
+charts. An inventory of Faraday cages, dosimeters, water filters, and
+night vision optics. I have lists of lists, contingencies for
+contingencies, and backup plans for backup plans.
+</p>
+
+<p>
+I have also spent years studying lambda calculus, rewriting systems, and
+functional programming. And one evening, while reviewing my prepping
+notes and my lambda calculus notes in adjacent Emacs buffers, I realized
+something uncomfortable: *my prepping strategy has the same structural
+flaw as the programming paradigm that lambda calculus was invented to
+replace.*
+</p>
+
+<p>
+My prepping is a lookup table. It should be a function.
+</p>
+
+<div id="outline-container-org3e64849" class="outline-2">
+<h2 id="org3e64849">The Extensional Prepper</h2>
+<div class="outline-text-2" id="text-org3e64849">
+<p>
+In mathematical logic, there are two ways to define a function.
+</p>
+
+<p>
+The <b>extensional</b> definition lists every input-output pair. The function
+"double" on the set {1, 2, 3} is defined as: {(1, 2), (2, 4), (3, 6)}.
+You enumerate every case. If someone gives you an input you didn't list,
+you have no answer.
+</p>
+
+<p>
+The <b>intensional</b> definition gives a rule: <i>λx. x × 2</i>. It doesn't care
+what you hand it. Give it 1, give it 10000, give it a number you just
+invented --- it knows what to do, because it encodes the <b>transformation</b>,
+not the <b>cases</b>.
+</p>
+
+<p>
+My prepping strategy is extensional. It looks like this:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Threat</th>
+<th scope="col" class="org-left">Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Nuclear fallout</td>
+<td class="org-left">Shelter, KI tablets, dosimeter</td>
+</tr>
+
+<tr>
+<td class="org-left">EMP</td>
+<td class="org-left">Faraday cage, manual tools, cash</td>
+</tr>
+
+<tr>
+<td class="org-left">Pandemic</td>
+<td class="org-left">N95 masks, antibiotics, isolation</td>
+</tr>
+
+<tr>
+<td class="org-left">Grid failure</td>
+<td class="org-left">Jackery 1500, bike generator, candles</td>
+</tr>
+
+<tr>
+<td class="org-left">Economic crash</td>
+<td class="org-left">Gold, barter goods, food stores</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+For every threat I can imagine, I have prepared a specific response. I
+have essentially written a giant <code>case</code> statement over disaster
+scenarios:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(define (survive threat)
+  (case threat
+    [(nuclear)   (shelter + ki-tablets + dosimeter)]
+    [(emp)       (faraday-cage + manual-tools + cash)]
+    [(pandemic)  (masks + antibiotics + isolation)]
+    [(grid-down) (jackery + bike-gen + candles)]
+    [(economic)  (gold + barter + food-stores)]
+    [else        ???]))
+</pre>
+</div>
+
+<p>
+That <code>else</code> clause is the problem. The universe is not obligated to
+attack me with a scenario I enumerated. And history confirms that the
+disasters which actually kill people are almost never the ones they
+prepared for. The Fukushima engineers prepared for earthquakes <i>and</i>
+tsunamis --- but not for both at once knocking out the backup generators.
+COVID didn't look like any pandemic scenario the preppers had gamed.
+</p>
+
+<p>
+My lookup table has finite entries. The threat space is unbounded.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org748a4e5" class="outline-2">
+<h2 id="org748a4e5">Lambda Abstraction as Survival Strategy</h2>
+<div class="outline-text-2" id="text-org748a4e5">
+<p>
+Lambda calculus doesn't enumerate. It <i>abstracts</i>. The power of <i>λx.
+body</i> is that <code>x</code> is a variable --- it stands for anything. The function
+doesn't know what it will receive, and it doesn't need to. It knows what
+to <i>do with</i> whatever arrives.
+</p>
+
+<p>
+What would an intensional prepping strategy look like? Not a table of
+threat-response pairs, but a set of <b>composable transformation rules</b>
+that can be applied to any situation:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">;; Instead of case-matching on threats,
+;; compose general capabilities:
+
+(define assess    (λ (situation) → prioritized-needs))
+(define improvise (λ (need resource-set) → solution))
+(define adapt     (λ (solution feedback) → better-solution))
+
+(define survive
+  (λ (situation)
+    (fix (λ (state)
+           (adapt (improvise (assess state)
+                             (available-resources state))
+                  (observe state))))))
+</pre>
+</div>
+
+<p>
+The <code>fix</code> there is deliberate. We'll come back to it.
+</p>
+
+<p>
+The key shift: instead of stockpiling <b>specific responses to specific
+threats</b>, build <b>general-purpose transformation capabilities</b>. Not "I
+have potassium iodide for nuclear fallout," but "I can assess a
+biochemical situation, identify what my body needs, and find or
+synthesize it from available materials."
+</p>
+
+<p>
+This isn't just abstract philosophy. It has concrete implications for
+what I should be spending my time on:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Extensional (stockpile)</th>
+<th scope="col" class="org-left">Intensional (capability)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">600 lbs of sandbags</td>
+<td class="org-left">Understanding of radiation physics</td>
+</tr>
+
+<tr>
+<td class="org-left">Specific antibiotics</td>
+<td class="org-left">EMT-level medical assessment skill</td>
+</tr>
+
+<tr>
+<td class="org-left">Faraday cage for radio</td>
+<td class="org-left">Electrical engineering fundamentals</td>
+</tr>
+
+<tr>
+<td class="org-left">6 months of stored food</td>
+<td class="org-left">Ability to grow, forage, hunt, preserve food</td>
+</tr>
+
+<tr>
+<td class="org-left">Night vision goggles</td>
+<td class="org-left">Situational awareness training</td>
+</tr>
+
+<tr>
+<td class="org-left">Pre-planned bug-out route</td>
+<td class="org-left">Navigation by map, compass, stars</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The left column is a lookup table. It works exactly when the threat
+matches the key. The right column is a lambda abstraction. It works on
+inputs I haven't imagined yet.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgea7d31e" class="outline-2">
+<h2 id="orgea7d31e">Church Encoding: Everything from Almost Nothing</h2>
+<div class="outline-text-2" id="text-orgea7d31e">
+<p>
+Alonzo Church proved something astonishing in the 1930s. Starting with
+<i>nothing but function abstraction and application</i>, you can build:
+</p>
+
+<ul class="org-ul">
+<li>Booleans: <code>TRUE = λx.λy.x</code>, <code>FALSE = λx.λy.y</code></li>
+<li>Numbers: <code>0 = λf.λx.x</code>, <code>1 = λf.λx.f x</code>, <code>2 = λf.λx.f(f x)</code></li>
+<li>Pairs, lists, conditionals, recursion --- everything</li>
+</ul>
+
+<p>
+You don't need built-in data types. You don't need a separate
+representation for numbers versus booleans versus lists. *Pure
+transformation rules, composed correctly, generate all the structure you
+need.*
+</p>
+
+<p>
+This is a direct rebuke to the prepper mindset of "I need the right
+gear." Church encoding says: you don't need <i>stuff</i>. You need <i>composable
+operations</i>. With a small set of powerful primitives, you can construct
+whatever you need at the point of need.
+</p>
+
+<p>
+What are the Church encodings of survival? What are the minimal
+primitives from which everything else can be composed?
+</p>
+
+<p>
+I think they look something like:
+</p>
+
+<ol class="org-ol">
+<li><b>Thermoregulation</b> --- the ability to maintain body temperature in any
+environment (the survival "Rule of 3" starts here: 3 hours without
+shelter in harsh conditions)</li>
+<li><b>Water acquisition</b> --- finding, purifying, and storing water from any
+source (3 days without water)</li>
+<li><b>Caloric intake</b> --- identifying, acquiring, and processing food from
+the environment (3 weeks without food)</li>
+<li><b>Medical assessment</b> --- recognizing what is wrong with a body and
+what it needs</li>
+<li><b>Mechanical reasoning</b> --- understanding how physical systems work
+well enough to repair, repurpose, or build them</li>
+</ol>
+
+<p>
+Five primitives. Like Church's <code>λ</code> and application, these compose to
+generate solutions to problems I can't enumerate in advance. I don't
+need a Faraday cage if I understand electromagnetic shielding well enough
+to build one from a filing cabinet and aluminum tape. I don't need a
+pre-stocked medical kit if I can assess symptoms and find medicinal
+plants or synthesize rehydration solutions from salt and sugar.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb9e8dd4" class="outline-2">
+<h2 id="orgb9e8dd4">Confluence and the Church-Rosser Theorem</h2>
+<div class="outline-text-2" id="text-orgb9e8dd4">
+<p>
+Here is where the structural parallel gets interesting.
+</p>
+
+<p>
+The Church-Rosser theorem says: if a lambda expression can be reduced by
+two different paths, and both paths terminate, they arrive at the <b>same
+normal form</b>.
+</p>
+
+<pre class="example" id="org670e573">
+     (λx. x + x) ((λy. y × 3) 2)
+           /                    \
+          /                      \
+(λx. x + x) 6            ((λy. y × 3) 2) + ((λy. y × 3) 2)
+         \                      /
+          \                    /
+           6 + 6 = 12 = 12
+</pre>
+
+<p>
+Both reduction orders yield 12. The system is <b>confluent</b>: it doesn't
+matter which step you take first.
+</p>
+
+<p>
+This is an extraordinarily desirable property in a survival strategy. A
+confluent prepping strategy means: *regardless of which crisis hits
+first, regardless of which capability you deploy first, you converge on
+the same outcome --- survival.*
+</p>
+
+<p>
+My current strategy is not confluent. If I use my nuclear-specific
+supplies for a non-nuclear event, they're wasted. If I use my economic
+prep (gold) to solve a medical problem, I get a bad exchange rate on the
+conversion. Every item in my lookup table is optimized for one specific
+reduction path. There is no guarantee that alternate paths converge.
+</p>
+
+<p>
+A capability-based strategy is naturally more confluent. Medical
+assessment skill works whether the injury came from radiation, a
+pandemic, a societal collapse, or a farming accident. Mechanical
+reasoning applies whether I'm repairing a generator, building a water
+filter, or constructing a shelter. The "reduction paths" are different
+(different crises, different resource constraints), but the primitives
+compose to reach the same normal form: sustained life.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org448f07c" class="outline-2">
+<h2 id="org448f07c">The Y Combinator and Self-Sustaining Systems</h2>
+<div class="outline-text-2" id="text-org448f07c">
+<p>
+The Y combinator is one of the most beautiful constructions in all of
+computer science:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">Y = λf. (λx. f (x x)) (λx. f (x x))
+</pre>
+</div>
+
+<p>
+It creates <b>recursion from non-recursive components</b>. No function in the
+definition calls itself. Yet when you apply <code>Y</code> to any function <code>g</code>, you
+get <code>g(g(g(g(...))))</code> --- infinite self-application. Recursion emerges
+from the <i>structure of the composition</i>, not from any component's
+self-referentiality.
+</p>
+
+<p>
+This is exactly what a self-sustaining homestead needs to be. No single
+element of the system sustains itself:
+</p>
+
+<ul class="org-ul">
+<li>Chickens don't sustain themselves (they need feed, water, shelter)</li>
+<li>A garden doesn't sustain itself (it needs compost, water, weeding)</li>
+<li>A compost pile doesn't sustain itself (it needs organic input, turning)</li>
+<li>A water collection system doesn't sustain itself (it needs
+maintenance, filtration)</li>
+</ul>
+
+<p>
+But composed correctly:
+</p>
+
+<pre class="example" id="org959c6ac">
+Garden → food → human energy → maintenance →  Garden
+  ↓                                              ↑
+scraps → Compost → soil amendment ─────────────────┘
+  ↓
+feed → Chickens → eggs → human energy
+         ↓
+       manure → Compost
+</pre>
+
+<p>
+Like the Y combinator, no component is self-referential. The recursion
+--- the self-sustaining loop --- is a property of the <b>composition</b>, not
+of any individual part.
+</p>
+
+<p>
+My prepping strategy has been focused on the components: <i>what</i> to
+stockpile, <i>which</i> chickens to buy, <i>how much</i> water to store. Lambda
+calculus teaches me that the components are less important than the
+<b>composition</b>. The right composition can create self-sustaining recursion
+from non-self-sustaining parts. The wrong composition, no matter how
+high-quality the parts, produces a system that eventually halts.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3be9e69" class="outline-2">
+<h2 id="org3be9e69">Beta Reduction as Resource Transformation</h2>
+<div class="outline-text-2" id="text-org3be9e69">
+<p>
+In lambda calculus, computation is <i>β-reduction</i>: applying a function to
+an argument and substituting.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">(λx. x + 1) 5  →β  5 + 1  →  6
+</pre>
+</div>
+
+<p>
+Every survival situation is a chain of β-reductions. You have a
+situation (the argument) and capabilities (the functions), and you apply
+one to the other to transform the situation into something more
+survivable:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">(assess nuclear-fallout) →β priority-list: [shelter, water-purity, radiation-monitoring]
+(improvise shelter available-materials) →β basement-with-earth-shielding
+(improvise water-purity available-materials) →β charcoal-sand-filter
+(adapt monitoring observation) →β adjusted-exposure-schedule
+</pre>
+</div>
+
+<p>
+The question isn't whether you have the <i>right answer</i> pre-computed in a
+lookup table. The question is whether your <b>reduction rules are powerful
+enough</b> to transform any input into a survivable normal form.
+</p>
+
+<p>
+And here is the deepest lesson from lambda calculus: *a small, powerful
+set of reduction rules is strictly more powerful than a large lookup
+table*. Church and Turing proved that lambda calculus, with only
+abstraction and application, is <i>Turing-complete</i> --- it can compute
+anything that is computable. My lookup table, no matter how large, can
+only handle the cases I listed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org737e27b" class="outline-2">
+<h2 id="org737e27b">The Halting Problem and Unknowable Futures</h2>
+<div class="outline-text-2" id="text-org737e27b">
+<p>
+Turing's most famous result: there is no general algorithm that can
+decide, for every program and input, whether the program will halt.
+</p>
+
+<p>
+Translated to prepping: <b>there is no preparation strategy that
+guarantees survival against all possible futures</b>. Some scenarios are
+non-survivable regardless of preparation. Some situations are
+undecidable --- you cannot know in advance whether your strategy will
+"halt" (succeed) or loop forever (fail slowly).
+</p>
+
+<p>
+The extensional prepper responds to the halting problem with denial: "If
+I just prepare for <i>enough</i> scenarios, I'll cover everything." This is
+like claiming you can solve the halting problem by testing more inputs.
+It is mathematically impossible.
+</p>
+
+<p>
+The intensional prepper responds differently: "I cannot prepare for every
+scenario. But I can build transformation capabilities that maximize the
+<i>class</i> of survivable inputs." This is the lambda calculus response --- not
+claiming to decide every case, but building the most general possible
+reduction rules so that the largest possible class of inputs reaches a
+normal form.
+</p>
+
+<p>
+Some expressions in lambda calculus have no normal form. <code>(λx. x x)(λx.
+x x)</code> reduces to itself forever. Some disaster scenarios have no
+survival solution. The honest prepper acknowledges this. The strategic
+prepper then asks: for the situations that <i>are</i> survivable, is my
+system confluent and my reduction strategy powerful enough to find the
+normal form?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf60c48" class="outline-2">
+<h2 id="orgaf60c48">What I Am Changing</h2>
+<div class="outline-text-2" id="text-orgaf60c48">
+<p>
+I am not throwing away my sandbags. Physical supplies have value ---
+they're pre-computed answers that save reduction steps when the threat
+matches the key. A lookup table with a cache is faster than pure
+computation when you get a cache hit.
+</p>
+
+<p>
+But I am restructuring my prepping strategy around the lambda calculus
+insight:
+</p>
+
+<ol class="org-ol">
+<li><b>Prioritize capabilities over stockpiles.</b> Every hour spent learning
+emergency medicine, mechanical repair, foraging, or radio
+communication is an investment in general-purpose reduction rules.
+Every dollar spent on single-purpose gear is a cache entry that might
+never be hit.</li>
+
+<li><b>Design for confluence.</b> When I acquire a skill or tool, I now ask:
+"Does this converge with my other capabilities, or does it only work
+on one reduction path?" A generator only works when fuel is available.
+Understanding thermodynamics works in all situations involving heat
+and energy.</li>
+
+<li><b>Build Y-combinator loops.</b> Self-sustaining cycles are more valuable
+than stockpiles. A garden that feeds the compost that feeds the garden
+is recursive. A fuel reserve that gets consumed and never regenerated
+is a straight-line computation heading for termination.</li>
+
+<li><b>Accept undecidability.</b> Some futures are not survivable. Spending
+resources trying to survive the non-survivable is like trying to
+find a normal form for <code>(λx. x x)(λx. x x)</code>. Allocate those
+resources instead to expanding the class of survivable scenarios.</li>
+
+<li><b>Keep the cache, but know it's a cache.</b> My stockpiles are
+memoized answers to common subproblems. They reduce latency when I
+get a cache hit. But the real system, the one that handles cache
+misses, is the set of composable capabilities between my ears.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf793ba6" class="outline-2">
+<h2 id="orgf793ba6">The Formal Analogy</h2>
+<div class="outline-text-2" id="text-orgf793ba6">
+<p>
+For the reader who wants to see the mapping laid out precisely:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Lambda Calculus</th>
+<th scope="col" class="org-left">Prepping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Lambda abstraction (λx.M)</td>
+<td class="org-left">A generalizable, trainable skill</td>
+</tr>
+
+<tr>
+<td class="org-left">Function application (M N)</td>
+<td class="org-left">Deploying a capability against a situation</td>
+</tr>
+
+<tr>
+<td class="org-left">β-reduction</td>
+<td class="org-left">Transforming a crisis into a more survivable state</td>
+</tr>
+
+<tr>
+<td class="org-left">Normal form</td>
+<td class="org-left">Stable survival (homeostasis)</td>
+</tr>
+
+<tr>
+<td class="org-left">Church encoding</td>
+<td class="org-left">Building complex solutions from primitives</td>
+</tr>
+
+<tr>
+<td class="org-left">Confluence (Church-Rosser)</td>
+<td class="org-left">Strategy works regardless of threat order</td>
+</tr>
+
+<tr>
+<td class="org-left">Y combinator</td>
+<td class="org-left">Self-sustaining resource loops</td>
+</tr>
+
+<tr>
+<td class="org-left">Halting problem</td>
+<td class="org-left">Inherent limits of any prep strategy</td>
+</tr>
+
+<tr>
+<td class="org-left">Lookup table / <code>case</code></td>
+<td class="org-left">Threat-specific stockpiles</td>
+</tr>
+
+<tr>
+<td class="org-left">Turing completeness</td>
+<td class="org-left">General-purpose capability set</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The mapping isn't metaphorical. It's structural. Both systems are about
+the same question: <b>given limited primitives, what is the most powerful
+set of transformation rules you can define?</b>
+</p>
+
+<p>
+Church answered this for computation. The answer applies to survival.
+</p>
+
+<p>
+Stop enumerating. Start abstracting.
+</p>
+</div>
+</div>
+
+            </section>
+    </section>
+</div>
+
+        <div>
+    <section id="wrapper">
+      <div class="post-meta">
+        <span title="post date" class="post-info">2026-03-08</span>
+        <span title="tags" class="post-info"><a href="/tags/lambda_calculus/">lambda_calculus</a>, <a href="/tags/prepping/">prepping</a></span>
+      </div>
+      <br />
+      <br />
+      <div align="center">
+      <footer id="footer">
+        <p class="small">
+          Copyright &copy; 2018 - <span id="footerYear"></span> - Jean-François Parent
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/jf-parent/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+        <br />
+      </footer>
+      </div>
+      </section>
+    </div>
+
+  </body>
+</html>
