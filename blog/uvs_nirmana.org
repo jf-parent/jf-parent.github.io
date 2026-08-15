@@ -16,7 +16,7 @@
 * B7 Mimohe (1, 3, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_1_1">
+  <input type="checkbox" name="collapse" id="handle_1_1">
   <h2 class="handle">
     <label for="handle_1_1">Solution</label>
   </h2>
@@ -27,7 +27,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_1_2">
+  <input type="checkbox" name="collapse" id="handle_1_2">
   <h2 class="handle">
     <label for="handle_1_2">Scoreboard</label>
   </h2>
@@ -42,7 +42,7 @@
 * Hrum-Simigan (4, 3, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_2_1">
+  <input type="checkbox" name="collapse" id="handle_2_1">
   <h2 class="handle">
     <label for="handle_2_1">Solution</label>
   </h2>
@@ -53,7 +53,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_2_2">
+  <input type="checkbox" name="collapse" id="handle_2_2">
   <h2 class="handle">
     <label for="handle_2_2">Scoreboard</label>
   </h2>
@@ -68,7 +68,7 @@
 * Komidai (1, 2, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_3_1">
+  <input type="checkbox" name="collapse" id="handle_3_1">
   <h2 class="handle">
     <label for="handle_3_1">Solution</label>
   </h2>
@@ -79,7 +79,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_3_2">
+  <input type="checkbox" name="collapse" id="handle_3_2">
   <h2 class="handle">
     <label for="handle_3_2">Scoreboard</label>
   </h2>
@@ -94,7 +94,7 @@
 * Nagarahara — min width (2, 5, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_4_1">
+  <input type="checkbox" name="collapse" id="handle_4_1">
   <h2 class="handle">
     <label for="handle_4_1">Solution</label>
   </h2>
@@ -105,7 +105,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_4_2">
+  <input type="checkbox" name="collapse" id="handle_4_2">
   <h2 class="handle">
     <label for="handle_4_2">Scoreboard</label>
   </h2>
@@ -120,7 +120,7 @@
 * Nagarahara — no flux (3, 4, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_5_1">
+  <input type="checkbox" name="collapse" id="handle_5_1">
   <h2 class="handle">
     <label for="handle_5_1">Solution</label>
   </h2>
@@ -131,7 +131,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_5_2">
+  <input type="checkbox" name="collapse" id="handle_5_2">
   <h2 class="handle">
     <label for="handle_5_2">Scoreboard</label>
   </h2>
@@ -145,7 +145,7 @@
 * J9 Takka — min width (5, 5, 5)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_6_1">
+  <input type="checkbox" name="collapse" id="handle_6_1">
   <h2 class="handle">
     <label for="handle_6_1">Solution</label>
   </h2>
@@ -156,7 +156,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_6_2">
+  <input type="checkbox" name="collapse" id="handle_6_2">
   <h2 class="handle">
     <label for="handle_6_2">Scoreboard</label>
   </h2>
@@ -171,7 +171,7 @@
 * J9 Takka — min height (12, 4, 5)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_7_1">
+  <input type="checkbox" name="collapse" id="handle_7_1">
   <h2 class="handle">
     <label for="handle_7_1">Solution</label>
   </h2>
@@ -182,7 +182,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_7_2">
+  <input type="checkbox" name="collapse" id="handle_7_2">
   <h2 class="handle">
     <label for="handle_7_2">Scoreboard</label>
   </h2>
@@ -197,7 +197,7 @@
 * Atali-4 — min width (1, 6, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_8_1">
+  <input type="checkbox" name="collapse" id="handle_8_1">
   <h2 class="handle">
     <label for="handle_8_1">Solution</label>
   </h2>
@@ -208,7 +208,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_8_2">
+  <input type="checkbox" name="collapse" id="handle_8_2">
   <h2 class="handle">
     <label for="handle_8_2">Scoreboard</label>
   </h2>
@@ -223,7 +223,7 @@
 * Atali-4 — min height (6, 4, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_9_1">
+  <input type="checkbox" name="collapse" id="handle_9_1">
   <h2 class="handle">
     <label for="handle_9_1">Solution</label>
   </h2>
@@ -234,7 +234,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_9_2">
+  <input type="checkbox" name="collapse" id="handle_9_2">
   <h2 class="handle">
     <label for="handle_9_2">Scoreboard</label>
   </h2>
@@ -249,7 +249,7 @@
 * Syghinan Prime (12, 4, 7)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_10_1">
+  <input type="checkbox" name="collapse" id="handle_10_1">
   <h2 class="handle">
     <label for="handle_10_1">Solution</label>
   </h2>
@@ -260,7 +260,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_10_2">
+  <input type="checkbox" name="collapse" id="handle_10_2">
   <h2 class="handle">
     <label for="handle_10_2">Scoreboard</label>
   </h2>
@@ -275,7 +275,7 @@
 * D7 Balura — min height (9, 6, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_11_1">
+  <input type="checkbox" name="collapse" id="handle_11_1">
   <h2 class="handle">
     <label for="handle_11_1">Solution</label>
   </h2>
@@ -286,7 +286,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_11_2">
+  <input type="checkbox" name="collapse" id="handle_11_2">
   <h2 class="handle">
     <label for="handle_11_2">Scoreboard</label>
   </h2>
@@ -301,7 +301,7 @@
 * Object Jaguda — min height (8, 4, 3)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_12_1">
+  <input type="checkbox" name="collapse" id="handle_12_1">
   <h2 class="handle">
     <label for="handle_12_1">Solution</label>
   </h2>
@@ -312,7 +312,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_12_2">
+  <input type="checkbox" name="collapse" id="handle_12_2">
   <h2 class="handle">
     <label for="handle_12_2">Scoreboard</label>
   </h2>
@@ -327,7 +327,7 @@
 * Udyana-3 — min width (4, 6, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_13_1">
+  <input type="checkbox" name="collapse" id="handle_13_1">
   <h2 class="handle">
     <label for="handle_13_1">Solution</label>
   </h2>
@@ -338,7 +338,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_13_2">
+  <input type="checkbox" name="collapse" id="handle_13_2">
   <h2 class="handle">
     <label for="handle_13_2">Scoreboard</label>
   </h2>
@@ -353,7 +353,7 @@
 * Udyana-3 — min height (6, 4, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_14_1">
+  <input type="checkbox" name="collapse" id="handle_14_1">
   <h2 class="handle">
     <label for="handle_14_1">Solution</label>
   </h2>
@@ -364,7 +364,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_14_2">
+  <input type="checkbox" name="collapse" id="handle_14_2">
   <h2 class="handle">
     <label for="handle_14_2">Scoreboard</label>
   </h2>
@@ -379,7 +379,7 @@
 * N.S. Huoh — min height (12, 5, 8)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_15_1">
+  <input type="checkbox" name="collapse" id="handle_15_1">
   <h2 class="handle">
     <label for="handle_15_1">Solution</label>
   </h2>
@@ -390,7 +390,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_15_2">
+  <input type="checkbox" name="collapse" id="handle_15_2">
   <h2 class="handle">
     <label for="handle_15_2">Scoreboard</label>
   </h2>
@@ -405,7 +405,7 @@
 * Kita Oriens — min width (5, 8, 6)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_16_1">
+  <input type="checkbox" name="collapse" id="handle_16_1">
   <h2 class="handle">
     <label for="handle_16_1">Solution</label>
   </h2>
@@ -416,7 +416,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_16_2">
+  <input type="checkbox" name="collapse" id="handle_16_2">
   <h2 class="handle">
     <label for="handle_16_2">Scoreboard</label>
   </h2>
@@ -431,7 +431,7 @@
 * Kita Oriens — min height (7, 6, 8)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_17_1">
+  <input type="checkbox" name="collapse" id="handle_17_1">
   <h2 class="handle">
     <label for="handle_17_1">Solution</label>
   </h2>
@@ -442,7 +442,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_17_2">
+  <input type="checkbox" name="collapse" id="handle_17_2">
   <h2 class="handle">
     <label for="handle_17_2">Scoreboard</label>
   </h2>
@@ -457,7 +457,7 @@
 * Wakhsh Prime — min width (8, 9, 1)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_18_1">
+  <input type="checkbox" name="collapse" id="handle_18_1">
   <h2 class="handle">
     <label for="handle_18_1">Solution</label>
   </h2>
@@ -468,7 +468,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_18_2">
+  <input type="checkbox" name="collapse" id="handle_18_2">
   <h2 class="handle">
     <label for="handle_18_2">Scoreboard</label>
   </h2>
@@ -483,7 +483,7 @@
 * Wakhsh Prime — min height (12, 7, 1)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_19_1">
+  <input type="checkbox" name="collapse" id="handle_19_1">
   <h2 class="handle">
     <label for="handle_19_1">Solution</label>
   </h2>
@@ -494,7 +494,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_19_2">
+  <input type="checkbox" name="collapse" id="handle_19_2">
   <h2 class="handle">
     <label for="handle_19_2">Scoreboard</label>
   </h2>
@@ -509,7 +509,7 @@
 * Mathura Nova — min width (5, 5, 4)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_20_1">
+  <input type="checkbox" name="collapse" id="handle_20_1">
   <h2 class="handle">
     <label for="handle_20_1">Solution</label>
   </h2>
@@ -520,7 +520,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_20_2">
+  <input type="checkbox" name="collapse" id="handle_20_2">
   <h2 class="handle">
     <label for="handle_20_2">Scoreboard</label>
   </h2>
@@ -535,7 +535,7 @@
 * Mathura Nova — min height (7, 4, 3)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_21_1">
+  <input type="checkbox" name="collapse" id="handle_21_1">
   <h2 class="handle">
     <label for="handle_21_1">Solution</label>
   </h2>
@@ -546,7 +546,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_21_2">
+  <input type="checkbox" name="collapse" id="handle_21_2">
   <h2 class="handle">
     <label for="handle_21_2">Scoreboard</label>
   </h2>
@@ -561,7 +561,7 @@
 * Mathura Nova — min flux (7, 5, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_22_1">
+  <input type="checkbox" name="collapse" id="handle_22_1">
   <h2 class="handle">
     <label for="handle_22_1">Solution</label>
   </h2>
@@ -572,7 +572,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_22_2">
+  <input type="checkbox" name="collapse" id="handle_22_2">
   <h2 class="handle">
     <label for="handle_22_2">Scoreboard</label>
   </h2>
@@ -587,7 +587,7 @@
 * Maha Talakan — min width (9, 5, 9)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_23_1">
+  <input type="checkbox" name="collapse" id="handle_23_1">
   <h2 class="handle">
     <label for="handle_23_1">Solution</label>
   </h2>
@@ -598,7 +598,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_23_2">
+  <input type="checkbox" name="collapse" id="handle_23_2">
   <h2 class="handle">
     <label for="handle_23_2">Scoreboard</label>
   </h2>
@@ -613,7 +613,7 @@
 * Maha Talakan — min height (12, 3, 9)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_24_1">
+  <input type="checkbox" name="collapse" id="handle_24_1">
   <h2 class="handle">
     <label for="handle_24_1">Solution</label>
   </h2>
@@ -624,7 +624,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_24_2">
+  <input type="checkbox" name="collapse" id="handle_24_2">
   <h2 class="handle">
     <label for="handle_24_2">Scoreboard</label>
   </h2>
@@ -639,7 +639,7 @@
 * Nalanda-1 — min width (5, 7, 5)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_25_1">
+  <input type="checkbox" name="collapse" id="handle_25_1">
   <h2 class="handle">
     <label for="handle_25_1">Solution</label>
   </h2>
@@ -650,7 +650,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_25_2">
+  <input type="checkbox" name="collapse" id="handle_25_2">
   <h2 class="handle">
     <label for="handle_25_2">Scoreboard</label>
   </h2>
@@ -665,7 +665,7 @@
 * Nalanda-1 — min height (8, 5, 4)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_26_1">
+  <input type="checkbox" name="collapse" id="handle_26_1">
   <h2 class="handle">
     <label for="handle_26_1">Solution</label>
   </h2>
@@ -676,7 +676,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_26_2">
+  <input type="checkbox" name="collapse" id="handle_26_2">
   <h2 class="handle">
     <label for="handle_26_2">Scoreboard</label>
   </h2>
@@ -691,7 +691,7 @@
 * The Batira Object — min width (5, 8, 2)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_27_1">
+  <input type="checkbox" name="collapse" id="handle_27_1">
   <h2 class="handle">
     <label for="handle_27_1">Solution</label>
   </h2>
@@ -702,7 +702,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_27_2">
+  <input type="checkbox" name="collapse" id="handle_27_2">
   <h2 class="handle">
     <label for="handle_27_2">Scoreboard</label>
   </h2>
@@ -717,7 +717,7 @@
 * The Batira Object — min height (10, 5, 5)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_28_1">
+  <input type="checkbox" name="collapse" id="handle_28_1">
   <h2 class="handle">
     <label for="handle_28_1">Solution</label>
   </h2>
@@ -728,7 +728,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_28_2">
+  <input type="checkbox" name="collapse" id="handle_28_2">
   <h2 class="handle">
     <label for="handle_28_2">Scoreboard</label>
   </h2>
@@ -743,7 +743,7 @@
 * The Batira Object — min flux (11, 11, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_29_1">
+  <input type="checkbox" name="collapse" id="handle_29_1">
   <h2 class="handle">
     <label for="handle_29_1">Solution</label>
   </h2>
@@ -754,7 +754,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_29_2">
+  <input type="checkbox" name="collapse" id="handle_29_2">
   <h2 class="handle">
     <label for="handle_29_2">Scoreboard</label>
   </h2>
@@ -769,7 +769,7 @@
 * Kamarupa — min width (5, 9, 0)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_30_1">
+  <input type="checkbox" name="collapse" id="handle_30_1">
   <h2 class="handle">
     <label for="handle_30_1">Solution</label>
   </h2>
@@ -780,7 +780,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_30_2">
+  <input type="checkbox" name="collapse" id="handle_30_2">
   <h2 class="handle">
     <label for="handle_30_2">Scoreboard</label>
   </h2>
@@ -795,7 +795,7 @@
 * U.V.S. Nayuta — min width (5, 4, 4)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_31_1">
+  <input type="checkbox" name="collapse" id="handle_31_1">
   <h2 class="handle">
     <label for="handle_31_1">Solution</label>
   </h2>
@@ -806,7 +806,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_31_2">
+  <input type="checkbox" name="collapse" id="handle_31_2">
   <h2 class="handle">
     <label for="handle_31_2">Scoreboard</label>
   </h2>
@@ -821,7 +821,7 @@
 * U.V.S. Nayuta — min height (8, 3, 7)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_32_1">
+  <input type="checkbox" name="collapse" id="handle_32_1">
   <h2 class="handle">
     <label for="handle_32_1">Solution</label>
   </h2>
@@ -832,7 +832,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_32_2">
+  <input type="checkbox" name="collapse" id="handle_32_2">
   <h2 class="handle">
     <label for="handle_32_2">Scoreboard</label>
   </h2>
@@ -847,7 +847,7 @@
 * K.N. Uda — min width (3, 4, 8)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_33_1">
+  <input type="checkbox" name="collapse" id="handle_33_1">
   <h2 class="handle">
     <label for="handle_33_1">Solution</label>
   </h2>
@@ -858,7 +858,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_33_2">
+  <input type="checkbox" name="collapse" id="handle_33_2">
   <h2 class="handle">
     <label for="handle_33_2">Scoreboard</label>
   </h2>
@@ -873,7 +873,7 @@
 * K.N. Uda — min height (7, 3, 12)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_34_1">
+  <input type="checkbox" name="collapse" id="handle_34_1">
   <h2 class="handle">
     <label for="handle_34_1">Solution</label>
   </h2>
@@ -884,7 +884,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_34_2">
+  <input type="checkbox" name="collapse" id="handle_34_2">
   <h2 class="handle">
     <label for="handle_34_2">Scoreboard</label>
   </h2>
@@ -899,7 +899,7 @@
 * Gostana-1 — min height (12, 4, 12)
 #+BEGIN_EXPORT html
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_35_1">
+  <input type="checkbox" name="collapse" id="handle_35_1">
   <h2 class="handle">
     <label for="handle_35_1">Solution</label>
   </h2>
@@ -910,7 +910,7 @@
   </div>
 </section>
 <section class="accordion" style="margin: 1em">
-  <input type="checkbox" name="collapse" checked="checked" id="handle_35_2">
+  <input type="checkbox" name="collapse" id="handle_35_2">
   <h2 class="handle">
     <label for="handle_35_2">Scoreboard</label>
   </h2>
